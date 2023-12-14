@@ -1,0 +1,8 @@
+uuid: 2d8df2fc-98ba-455f-994f-2d6492fd365c
+langcode: en
+status: true
+dependencies: {  }
+id: solarmobilemenu
+label: 'Solar Mobile Menu'
+description: 'Solar Mobile Menu'
+locked: false
