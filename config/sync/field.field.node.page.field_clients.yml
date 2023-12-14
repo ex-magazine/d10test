@@ -1,0 +1,19 @@
+uuid: c740a08f-9a9a-4cdb-9883-397464f6b90e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clients
+    - node.type.page
+id: node.page.field_clients
+field_name: field_clients
+entity_type: node
+bundle: page
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

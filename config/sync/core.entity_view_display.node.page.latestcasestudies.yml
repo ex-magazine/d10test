@@ -1,0 +1,39 @@
+uuid: 04fedf23-9474-472e-ab26-33bd23c14824
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latestcasestudies
+    - field.field.node.page.body
+    - field.field.node.page.field_clients
+    - field.field.node.page.field_domain_access
+    - field.field.node.page.field_domain_all_affiliates
+    - field.field.node.page.field_image
+    - node.type.page
+  module:
+    - user
+id: node.page.latestcasestudies
+targetEntityType: node
+bundle: page
+mode: latestcasestudies
+content:
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_image: true
+  langcode: true

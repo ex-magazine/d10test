@@ -1,0 +1,46 @@
+display:
+  default:
+    display_title: 마스터
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 필터
+          reset_button_label: 재설정
+          exposed_sorts_label: 정렬기준
+          sort_asc_label: Asc
+          sort_desc_label: 설명
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: '페이지 당 항목 수'
+            items_per_page_options_all_label: '- 모두 -'
+            offset_label: 건너뛰기
+      fields:
+        label:
+          label: 레이블
+        type:
+          label: 종류
+        paragraphs__target_id:
+          label: 단락
+        langcode:
+          label: 언어
+        id:
+          label: 아이디
+        changed:
+          label: 변경됨
+        operations:
+          label: 작업
+      filters:
+        label:
+          expose:
+            label: 레이블
+          group_info:
+            label: 레이블
+        type:
+          expose:
+            label: 종류
+  page_1:
+    display_title: 쪽

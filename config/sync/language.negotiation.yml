@@ -8,8 +8,12 @@ url:
     en: ''
     vi: vi
     zh-hans: zh-hans
+    ja: ja
+    ko: ko
   domains:
     en: ''
     vi: ''
     zh-hans: ''
+    ja: ''
+    ko: ''
 selected_langcode: site_default

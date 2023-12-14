@@ -5,10 +5,14 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_clients
     - field.field.node.page.field_domain_access
     - field.field.node.page.field_domain_all_affiliates
+    - field.field.node.page.field_image
+    - image.style.medium
     - node.type.page
   module:
+    - image
     - text
     - user
 _core:
@@ -31,10 +35,22 @@ content:
     third_party_settings: {  }
     weight: 100
     region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
   links:
     weight: 101
     region: content
 hidden:
+  field_clients: true
   field_domain_access: true
   field_domain_all_affiliates: true
   langcode: true
