@@ -12,6 +12,7 @@ regions:
   topbar: Topbar
   header: Header
   help: Help
+  language: Language interface
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
   highlighted: Highlighted
