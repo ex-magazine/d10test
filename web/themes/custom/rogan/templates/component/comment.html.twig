@@ -1,0 +1,38 @@
+
+{% if threaded %}
+{{ attach_library('classy/drupal.comment.threaded') }}
+{% endif %}
+{%
+set classes = [
+'comment',
+'js-comment',
+status != 'published' ? 'comment--' ~ status,
+comment.owner.anonymous ? 'by-anonymous',
+author_id and author_id == commented_entity.getOwnerId() ? 'by-' ~ commented_entity.getEntityTypeId() ~ '-author',
+'clearfix',
+]
+%}
+<article role="article"{{ attributes.addClass(classes)|without('role') }}>
+{#
+Hide the "new" indicator by default, let a piece of JavaScript ask the
+server which comments are new for the user. Rendering the final "new"
+indicator here would break the render cache.
+#}
+<span class="hidden" data-comment-timestamp="{{ new_indicator_timestamp }}"></span>
+<div class="single-comment d-sm-flex align-items-top">
+  <div class="comment-author-picture user-img"> 
+    {{ user_picture }}
+  </div>
+  <div{{ content_attributes.addClass('comment__content user-comment-data') }}>
+    <h6 class="name">{{ author }}</h6>
+    <div class="date">{{ comment.getCreatedTime|date('F d') }}</div>
+    {{ content|without('links') }}
+    {% if parent %}
+      <p class="visually-hidden">{{ parent }}</p>
+    {% endif %}
+    <div class="comment__link col-sm-12 col-xs-12 text-right">
+      {{ content.links }}
+    </div>
+  </div>
+</div>
+</article>

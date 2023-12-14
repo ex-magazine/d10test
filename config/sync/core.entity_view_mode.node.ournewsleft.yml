@@ -1,0 +1,10 @@
+uuid: 8b69c342-74b4-49d3-b460-3b718bd30d52
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.ournewsleft
+label: 'Our News Left'
+targetEntityType: node
+cache: true

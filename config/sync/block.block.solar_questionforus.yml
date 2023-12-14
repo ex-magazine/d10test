@@ -1,0 +1,26 @@
+uuid: 78c75527-0e25-43e0-9e08-7759c196cc48
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f40d0788-ad9d-48eb-b950-7d3e3bfa3ba9'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - solar
+id: solar_questionforus
+theme: solar
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:f40d0788-ad9d-48eb-b950-7d3e3bfa3ba9'
+settings:
+  id: 'block_content:f40d0788-ad9d-48eb-b950-7d3e3bfa3ba9'
+  label: 'Question For US'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

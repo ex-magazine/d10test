@@ -1,0 +1,157 @@
+uuid: 2df5a544-23df-4440-81a7-a06ac0dfb2bd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_the_challenge_of_project
+    - node.type.project_details
+    - paragraphs.paragraphs_type.challengeproject
+  module:
+    - entity_reference_revisions
+id: node.project_details.field_the_challenge_of_project
+field_name: field_the_challenge_of_project
+entity_type: node
+bundle: project_details
+label: 'The Challenge Of Project'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      challengeproject: challengeproject
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 44
+        enabled: false
+      accordion_item:
+        weight: 45
+        enabled: false
+      attachments:
+        weight: 46
+        enabled: false
+      bp_accordion:
+        weight: 47
+        enabled: false
+      bp_accordion_section:
+        weight: 48
+        enabled: false
+      bp_blank:
+        weight: 49
+        enabled: false
+      bp_block:
+        weight: 50
+        enabled: false
+      bp_callout:
+        weight: 51
+        enabled: false
+      bp_card:
+        weight: 52
+        enabled: false
+      bp_carousel:
+        weight: 53
+        enabled: false
+      bp_column_wrapper:
+        weight: 57
+        enabled: false
+      bp_columns:
+        weight: 54
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 55
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 56
+        enabled: false
+      bp_contact:
+        weight: 58
+        enabled: false
+      bp_image:
+        weight: 59
+        enabled: false
+      bp_modal:
+        weight: 60
+        enabled: false
+      bp_quicklinks:
+        weight: 61
+        enabled: false
+      bp_simple:
+        weight: 62
+        enabled: false
+      bp_stat:
+        weight: 63
+        enabled: false
+      bp_statistics:
+        weight: 64
+        enabled: false
+      bp_tab_section:
+        weight: 66
+        enabled: false
+      bp_tabs:
+        weight: 65
+        enabled: false
+      bp_view:
+        weight: 67
+        enabled: false
+      bp_webform:
+        weight: 68
+        enabled: false
+      callout:
+        weight: 69
+        enabled: false
+      carousel:
+        weight: 70
+        enabled: false
+      challengeproject:
+        weight: 71
+        enabled: true
+      citation:
+        weight: 72
+        enabled: false
+      cmenergysection:
+        weight: 73
+        enabled: false
+      content:
+        weight: 74
+        enabled: false
+      from_library:
+        weight: 75
+        enabled: false
+      gallery:
+        weight: 76
+        enabled: false
+      gallery_item:
+        weight: 77
+        enabled: false
+      hero:
+        weight: 78
+        enabled: false
+      map:
+        weight: 79
+        enabled: false
+      node_reference:
+        weight: 80
+        enabled: false
+      section:
+        weight: 81
+        enabled: false
+      settings:
+        weight: 82
+        enabled: false
+      slide:
+        weight: 83
+        enabled: false
+      timeline:
+        weight: 84
+        enabled: false
+      timeline_item:
+        weight: 85
+        enabled: false
+      webform:
+        weight: 86
+        enabled: false
+field_type: entity_reference_revisions

@@ -1,0 +1,32 @@
+uuid: 384e93aa-c69a-4d67-a717-f331bced47dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.call_to_action
+  module:
+    - block_classes
+    - system
+    - webform
+  theme:
+    - solar
+id: solar_webform
+theme: solar
+region: cta
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: call_to_action
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

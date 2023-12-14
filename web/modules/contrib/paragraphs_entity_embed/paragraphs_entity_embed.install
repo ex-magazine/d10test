@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Update hooks for paragraphs entity embed.
+ */
+
+/**
+ * Make the embedded_paragraphs entity revisionable.
+ */
+function paragraphs_entity_embed_update_8001(&$sandbox) {
+  $definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+
+  $entity_type = $definition_update_manager->getEntityType('embedded_paragraphs');
+
+  $entity_keys = $entity_type->getKeys();
+  $entity_keys['revision'] = 'revision_id';
+
+  $entity_type->set('revision_table', 'embedded_paragraphs_revision');
+  $entity_type->set('entity_keys', $entity_keys);
+
+  $field_definitions = \Drupal::service('entity_field.manager')
+    ->getFieldStorageDefinitions('embedded_paragraphs');
+
+  $definition_update_manager->updateFieldableEntityType($entity_type, $field_definitions, $sandbox);
+}

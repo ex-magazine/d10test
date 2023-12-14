@@ -1,0 +1,25 @@
+uuid: 42612bfd-9ac4-48a0-89a7-ab6933d5c6ff
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.usefullinks
+  module:
+    - system
+  theme:
+    - solar
+id: solar_cmegroups
+theme: solar
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:usefullinks'
+settings:
+  id: 'system_menu_block:usefullinks'
+  label: 'CME Groups'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

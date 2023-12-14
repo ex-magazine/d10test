@@ -1,0 +1,20 @@
+uuid: 1e4bc968-2a9e-4bb4-a97e-8329029e85d7
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: Auo2lAzICEQY8lhQzLFchSVBwthTW3dpOzeVtk-XnDE
+id: paragraph.field_hero_image_light
+field_name: field_hero_image_light
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

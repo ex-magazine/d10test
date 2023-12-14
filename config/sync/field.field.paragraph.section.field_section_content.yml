@@ -1,0 +1,24 @@
+uuid: 0b741af0-37e4-45b6-b566-06017c0aed88
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - paragraphs.paragraphs_type.section
+  module:
+    - text
+_core:
+  default_config_hash: 1SHlmSwyRBJCvSOTV4XGxOD-L75RELqhA2l9YT8o0a8
+id: paragraph.section.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: section
+label: 'Section content'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

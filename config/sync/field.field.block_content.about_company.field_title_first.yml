@@ -1,0 +1,24 @@
+uuid: fbf0ffa5-1409-48fa-92bb-7efe69692463
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_company
+    - field.storage.block_content.field_title_first
+    - filter.format.full_html
+  module:
+    - text
+id: block_content.about_company.field_title_first
+field_name: field_title_first
+entity_type: block_content
+bundle: about_company
+label: 'Title First'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text

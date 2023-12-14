@@ -1,0 +1,18 @@
+uuid: 8b35939e-8312-48eb-83b8-d3d768fd7cc0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.challengeproject
+id: paragraph.challengeproject.created
+field_name: created
+entity_type: paragraph
+bundle: challengeproject
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

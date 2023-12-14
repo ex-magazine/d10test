@@ -1,0 +1,7 @@
+.ebt-block-tiles.ebt-tiles-one_column {
+  .ebt-tiles-wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+}

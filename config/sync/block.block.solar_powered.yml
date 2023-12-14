@@ -1,0 +1,22 @@
+uuid: cb03289e-2c10-47f9-8f59-b2c457af8258
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - solar
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: solar_powered
+theme: solar
+region: footer_bottom
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

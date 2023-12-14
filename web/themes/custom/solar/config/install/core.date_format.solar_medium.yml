@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - solar
+id: solar_medium
+label: 'solar Medium'
+locked: false
+pattern: 'j  F,  Y'

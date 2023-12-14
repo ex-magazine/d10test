@@ -1,0 +1,25 @@
+uuid: 85037ab7-b6d6-413c-abc8-3f7f289bac5f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:142e0608-25ec-4c74-813c-cb3d9f756098'
+  module:
+    - block_content
+  theme:
+    - solar
+id: solar_contactus
+theme: solar
+region: footer_four
+weight: 0
+provider: null
+plugin: 'block_content:142e0608-25ec-4c74-813c-cb3d9f756098'
+settings:
+  id: 'block_content:142e0608-25ec-4c74-813c-cb3d9f756098'
+  label: 'Contact Us'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

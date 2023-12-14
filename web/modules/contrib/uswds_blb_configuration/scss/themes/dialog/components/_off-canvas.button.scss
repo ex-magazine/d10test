@@ -1,0 +1,73 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+button,
+[type="submit"] {
+  &.link {
+    color: $button-text-color;
+
+    &:hover,
+    &:focus {
+      color: $button-text-color-hover;
+    }
+  }
+
+  &:disabled,
+  &.is-disabled {
+    color: #5c5c5c;
+    background: #555;
+
+    &:active {
+      color: #5c5c5c;
+      background: #555;
+    }
+  }
+
+  &.button {
+    &:not(.media-library-item__remove button) {
+      width: 100%;
+      min-width: auto;
+      margin: 1rem 0 0;
+      padding: 11px 20px;
+      color: $button-text-color;
+      border: 0;
+      border-radius: $border-radius;
+      background: $button-bg-color !important;
+      font-family: inherit;
+      font-weight: normal;
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $button-text-color;
+        background: $button-bg-color;
+      }
+    }
+  }
+}
+
+.button--primary {
+  &:hover,
+  &:focus,
+  &:active {
+    color: $button-text-color;
+    background: $button-bg-color-hover;
+  }
+}
+
+.button--danger {
+  color: $state-error;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($state-error, 10%); /* stylelint-disable-line */
+  }
+
+  &:disabled,
+  &.is-disabled {
+    color: #737373;
+  }
+}
+
+

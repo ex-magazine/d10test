@@ -1,0 +1,14 @@
+uuid: d9177629-13eb-4997-82dd-3f89187a0ead
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmesolar_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_remove_action.cmesolar_cmenergy_local
+label: 'Remove selected content from the cmesolar.cmenergy.local domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: cmesolar_cmenergy_local

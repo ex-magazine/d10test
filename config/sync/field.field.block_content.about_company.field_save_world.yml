@@ -1,0 +1,19 @@
+uuid: 0921b9f0-69e8-4fce-ade9-00fabb58dbb5
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_company
+    - field.storage.block_content.field_save_world
+id: block_content.about_company.field_save_world
+field_name: field_save_world
+entity_type: block_content
+bundle: about_company
+label: 'Save World'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

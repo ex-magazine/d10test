@@ -1,0 +1,15 @@
+name: Domain Site Settings
+type: module
+description: 'Basic Site Setting for Domains.'
+dependencies:
+  - domain:domain
+  - domain:domain_config
+
+package: Domain
+core_version_requirement: ^8.8 || ^9 || ^10
+configure: domain_site_settings.list
+
+# Information added by Drupal.org packaging script on 2023-08-23
+version: '8.x-1.5'
+project: 'domain_site_settings'
+datestamp: 1692773266

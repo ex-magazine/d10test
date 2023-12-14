@@ -1,0 +1,19 @@
+uuid: f4017727-fb27-4f4d-a442-ef0409329fbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_company
+    - field.storage.block_content.field_installed_capacity
+id: block_content.about_company.field_installed_capacity
+field_name: field_installed_capacity
+entity_type: block_content
+bundle: about_company
+label: 'Installed Capacity'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

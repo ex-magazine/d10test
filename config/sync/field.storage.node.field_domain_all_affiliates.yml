@@ -1,0 +1,23 @@
+uuid: 89269f3d-1f79-4eff-9300-e792a5e5e325
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  enforced:
+    module:
+      - domain_access
+_core:
+  default_config_hash: r9WVqyCC-OcWIvrMHvSqNavFjzjAVyVQCqTL7cXvwQo
+id: node.field_domain_all_affiliates
+field_name: field_domain_all_affiliates
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

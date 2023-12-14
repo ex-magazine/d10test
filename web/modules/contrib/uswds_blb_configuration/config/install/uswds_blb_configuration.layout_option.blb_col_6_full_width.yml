@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: blb_col_6_full_width
+layout_id: blb_col_6
+label: 'Full width'
+structure: '12'
+breakpoints:
+  desktop: desktop
+  mobile: mobile
+  tablet: tablet
+default_breakpoints:
+  desktop: desktop
+  mobile: '0'
+  tablet: '0'
+weight: 0

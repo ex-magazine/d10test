@@ -1,0 +1,75 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Reset most HTML elements styles for the off-canvas dialog.
+ *
+ * This is a generic reset. Drupal-specific classes are reset in components.
+ */
+
+textarea,
+select,
+[type="date"],
+[type="datetime"],
+[type="datetime-local"],
+[type="email"],
+[type="month"],
+[type="number"],
+[type="password"],
+[type="search"],
+[type="tel"],
+[type="text"],
+[type="time"],
+[type="url"],
+[type="week"] {
+  height: auto;
+  padding: 0.65rem 1rem;
+  vertical-align: middle;
+  color: $panel-text-color;
+  border: 2px solid $tabs-bottom-border-color;
+  border-radius: $border-radius;
+  background-color: transparent;
+
+  &::placeholder {
+    color: rgba($panel-text-color, 0.5);
+  }
+
+  &[disabled] {
+    background-color: rgba($panel-text-color, 0.1);
+  }
+}
+
+input,
+textarea {
+  &::placeholder {
+    color: rgba($panel-text-color, 0.8);
+  }
+}
+
+optgroup {
+  color: $black;
+}
+
+* button {
+  color: $black;
+  border: 0;
+}
+
+* textarea,
+* select,
+*:not(div) {
+  textarea,
+  select {
+    color: $black;
+    border: 1px solid $gray-f8f;
+    background: $white;
+  }
+}
+
+/* To standardize off-canvas selection color. */
+::-moz-selection,
+::selection {
+  color: inherit;
+  background-color: rgba(175, 175, 175, 0.5);
+}

@@ -1,0 +1,36 @@
+type: theme
+name: Rhythm
+base theme: false
+description: 'Drupal USWDS Base Theme - The U.S. Web Design System provides design guidelines and code to help you quickly create trustworthy, accessible, and consistent digital government services.'
+package: USWDS Base
+core_version_requirement: ^9 || ^10
+logo: 'logo.png'
+screenshot: 'screenshot.png'
+
+
+
+
+
+libraries:
+  - rhythm/theme-styling
+
+# Regions
+regions:
+  logo: 'Logo'
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: 'Footer'
+
+
+
+# Information added by Drupal.org packaging script on 2023-07-28
+version: '1.0.3'
+project: 'rhythm'
+datestamp: 1690544599

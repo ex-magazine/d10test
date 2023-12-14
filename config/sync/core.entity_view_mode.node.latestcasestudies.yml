@@ -1,0 +1,10 @@
+uuid: e49d3153-5bd1-4071-843c-714317b6eeec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.latestcasestudies
+label: 'Our Latest Case Studies'
+targetEntityType: node
+cache: true

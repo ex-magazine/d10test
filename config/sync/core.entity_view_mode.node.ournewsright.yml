@@ -1,0 +1,10 @@
+uuid: 0a0e738f-3e4f-49a2-927f-ee22e46cf591
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.ournewsright
+label: 'Our News Right'
+targetEntityType: node
+cache: true

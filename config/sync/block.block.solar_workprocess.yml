@@ -1,0 +1,31 @@
+uuid: 0d7bb7ba-9f8b-4b19-adb8-d0f0ff1b9927
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3048a8a7-83bd-4f5c-ab23-9c72312922e1'
+  module:
+    - block_classes
+    - block_content
+    - system
+  theme:
+    - solar
+id: solar_workprocess
+theme: solar
+region: working_process
+weight: 0
+provider: null
+plugin: 'block_content:3048a8a7-83bd-4f5c-ab23-9c72312922e1'
+settings:
+  id: 'block_content:3048a8a7-83bd-4f5c-ab23-9c72312922e1'
+  label: 'Work Process'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

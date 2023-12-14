@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.video_and_image_gallery_item
+label: 'Video and Image gallery item'
+targetEntityType: media
+cache: true

@@ -1,0 +1,14 @@
+uuid: c2752c1e-743c-4004-8ceb-1672110b99e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmesolar_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_add_editor_action.cmesolar_cmenergy_local
+label: 'Add editors to the cmesolar.cmenergy.local domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: cmesolar_cmenergy_local

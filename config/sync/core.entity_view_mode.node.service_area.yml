@@ -1,0 +1,10 @@
+uuid: eb874fbf-d7d4-4f03-9353-c4c5696ba691
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.service_area
+label: 'Service area'
+targetEntityType: node
+cache: true

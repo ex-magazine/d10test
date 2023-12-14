@@ -1,0 +1,22 @@
+uuid: 63ea0895-624b-426c-9cbd-546abad4ab6e
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - solar
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: solar_content
+theme: solar
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

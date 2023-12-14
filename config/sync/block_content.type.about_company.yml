@@ -1,0 +1,8 @@
+uuid: 151304e1-b514-4630-8359-fd6d93a05d78
+langcode: en
+status: true
+dependencies: {  }
+id: about_company
+label: 'About Company'
+revision: 0
+description: 'About Company'

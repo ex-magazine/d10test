@@ -1,0 +1,23 @@
+uuid: ad731ec2-658c-4f5a-9991-1eb275e95677
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_color
+    - paragraphs.paragraphs_type.hero
+  module:
+    - options
+_core:
+  default_config_hash: _TjuMzdVH2wMxUtIa7HTj51glzjqZtbXUuzSx4RmlX0
+id: paragraph.hero.field_color
+field_name: field_color
+entity_type: paragraph
+bundle: hero
+label: 'Overlay color'
+description: 'Choose the color of the overlay. In this version only <em>Primary</em> work. <a href="https://italia.github.io/bootstrap-italia/docs/componenti/hero/#con-overlay-di-colore-primario" title="Read the Docs" target="_blank">Docs</a>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

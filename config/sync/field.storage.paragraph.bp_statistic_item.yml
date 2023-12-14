@@ -1,0 +1,23 @@
+uuid: 350063cb-082c-4f14-8944-f4b149bace6a
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: CmBFvXHTSdGbSvtEk6oiQx4FQEayjIBkL0WNdUrg-Qc
+id: paragraph.bp_statistic_item
+field_name: bp_statistic_item
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

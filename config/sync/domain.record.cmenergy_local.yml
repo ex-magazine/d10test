@@ -1,0 +1,11 @@
+uuid: 36f465e1-fced-49d1-8266-b32c23dc4d52
+langcode: en
+status: true
+dependencies: {  }
+id: cmenergy_local
+domain_id: 13944466
+hostname: adn.id.vn
+name: adn.id.vn
+scheme: http
+weight: 1
+is_default: true

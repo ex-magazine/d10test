@@ -1,0 +1,101 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Visual styling for summary and details in the off-canvas dialog.
+ */
+
+details {
+  margin: 0 -10px;
+  padding: 0;
+  border: 0;
+
+  &[open] {
+    > summary {
+      &::after {
+        top: 20px;
+        transform: rotate(-135deg);
+      }
+    }
+  }
+}
+
+details,
+summary,
+.ui-dialog-content {
+  color: $panel-text-color;
+  outline: 0;
+  background: transparent;
+}
+
+details,
+summary,
+.details-wrapper {
+  margin: 0;
+  padding: 0;
+  background-image: none;
+  -webkit-appearance: none;
+}
+
+.details-wrapper {
+  display: block;
+  padding: 1rem;
+}
+
+summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 40px;
+  margin: 4px 0;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: $summary-link-color-active;
+  border-radius: $border-radius;
+  background-color: $summary-bg-color-active;
+  font-size: 1rem;
+  font-weight: normal;
+
+  * {
+    cursor: pointer;
+  }
+
+  &[aria-expanded="true"],
+  &:hover,
+  &:focus {
+    color: $summary-link-color-hover;
+    background-color: $summary-bg-color-hover;
+  }
+
+  img,
+  svg {
+    width: 24px;
+    margin-right: 1rem;
+
+    g,
+    path {
+      fill: $panel-text-color;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    content: "";
+
+    @include smooth-all-transition;
+
+    transform: rotate(45deg);
+    border-right: 2px solid $summary-link-color-hover;
+    border-bottom: 2px solid  $summary-link-color-hover;
+  }
+
+  &::-webkit-details-marker {
+    display: none;
+  }
+}

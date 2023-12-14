@@ -1,0 +1,22 @@
+uuid: d72d3eb5-e183-45af-9483-290e836bfae9
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - rhythm
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: rhythm_primary_local_tasks
+theme: rhythm
+region: header
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

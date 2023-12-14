@@ -1,0 +1,80 @@
+.media-library-add-form__input-wrapper {
+  margin-bottom: 1.5rem;
+
+  .js-form-item-upload {
+    .form-file {
+      box-sizing: border-box;
+      margin-bottom: 1rem;
+      padding: calc(0.75rem - 1px) calc(1rem - 1px);
+      color: #232429;
+      border: 1px solid #919297;
+      border-radius: 15px;
+      background: #fff;
+      line-height: 1.5rem;
+    }
+  }
+}
+
+/* stylelint-disable */
+#views-exposed-form-media-library-widget {
+  .media-library-content {
+    width: unset !important;
+
+    .usa-button {
+      margin-top: 2rem !important;
+    }
+  }
+}
+/* stylelint-enable */
+
+.media-library-views-form {
+  display: block;
+  flex-wrap: wrap !important;
+}
+
+.media-library-add-form {
+  .media-library-add-form__input-wrapper {
+    display: block !important;
+    width: 100% !important;
+    max-width: 50% !important;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #d3d3d3;
+  }
+}
+
+.media-library-view {
+  padding-right: 1rem;
+  padding-left: 1rem;
+
+  .views-exposed-form {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block: 1.5rem;
+    padding: 0.5rem 1.5rem 1.5rem 1.5rem;
+    border: 1px solid #dedfe4;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 0.25rem rgba(0, 0, 0, 0.1);
+
+    .form-item {
+      margin-top: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    .usa-label {
+      margin-top: 0;
+    }
+
+    [data-drupal-selector="edit-actions"] {
+      align-self: flex-end;
+    }
+  }
+}
+
+.media-library-views-form__rows {
+  .media-library-item__attributes {
+    bottom: 10px !important;
+    background: transparent;
+  }
+}

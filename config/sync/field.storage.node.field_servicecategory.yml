@@ -1,0 +1,27 @@
+uuid: 4d803c1e-0e94-42a4-9278-3b6a5a5decc0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_servicecategory
+field_name: field_servicecategory
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Environment
+    -
+      value: '2'
+      label: Main
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

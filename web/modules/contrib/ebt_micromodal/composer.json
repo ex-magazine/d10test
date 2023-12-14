@@ -1,0 +1,17 @@
+{
+    "name": "drupal/ebt_micromodal",
+    "type": "drupal-module",
+    "description": "Extra Block Types (EBT): Micromodal",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0-or-later",
+    "homepage": "http://drupal.org/project/ebt_micromodal",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ebt_micromodal",
+        "source": "https://git.drupalcode.org/project/ebt_micromodal"
+    },
+    "require": {
+        "drupal/ebt_core": "^1.4",
+        "levmyshkin/micromodal": "^1.0"
+    }
+}

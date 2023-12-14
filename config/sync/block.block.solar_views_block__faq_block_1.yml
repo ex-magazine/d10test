@@ -1,0 +1,30 @@
+uuid: 1a53fb7e-f910-40c7-b3b0-e0dceb16bdb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.faq
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - solar
+id: solar_views_block__faq_block_1
+theme: solar
+region: faq
+weight: 0
+provider: null
+plugin: 'views_block:faq-block_1'
+settings:
+  id: 'views_block:faq-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

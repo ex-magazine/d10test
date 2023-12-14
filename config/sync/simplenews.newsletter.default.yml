@@ -1,0 +1,20 @@
+uuid: ec03c669-67d7-4ecc-b31d-3d2eedd385b4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 6wgXMbTWVfjhYZ3wFXLy3vAISxQeKEJz9SdNqt9SLMY
+name: 'Default newsletter'
+id: default
+description: 'This is an example newsletter. Change it.'
+format: plain
+priority: 0
+receipt: true
+from_name: 'CME - Copper Mountain Energy'
+subject: '[[simplenews-newsletter:name]] [node:title]'
+from_address: thuy.tranthanh.bd@gmail.com
+hyperlinks: false
+allowed_handlers: {  }
+new_account: none
+access: default
+weight: 0

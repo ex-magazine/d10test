@@ -1,0 +1,57 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Set base styles for the off-canvas autocomplete.
+ */
+.ui-autocomplete {
+  margin-top: 1rem;
+  padding: 0.5rem 0;
+  border: 2px solid $tabs-bottom-border-color;
+  border-radius: $border-radius;
+  background-color: $panel-bg-color;
+
+  li {
+    a {
+      display: block;
+      width: 100%;
+      padding: 0.75rem 1rem;
+
+      @include smooth-all-transition;
+
+      color: $panel-link-color !important;
+      border: 0 !important;
+
+      &:hover {
+        color: $panel-bg-color !important;
+        background-color: $panel-link-color !important;
+      }
+    }
+  }
+
+  /* stylelint-disable force-element-nesting, force-pseudo-nesting */
+  .ui-state-active,
+  .ui-widget-content .ui-state-active,
+  .ui-widget-header .ui-state-active,
+  .ui-autocomplete, .ui-autocomplete:hover,
+  .ui-menu-item, .ui-menu-item:hover,
+  .ui-menu-item a, .ui-menu-item a:hover,
+  .ui-widget-content .ui-state-focus,
+  .ui-widget-header .ui-state-focus,
+  .ui-widget-content .ui-state-hover,
+  .ui-widget-header .ui-state-hover,
+  .ui-menu .ui-menu-item a.ui-state-focus,
+  .ui-menu .ui-menu-item a.ui-state-active,
+  .ui-menu .ui-menu-item a {
+    display: block;
+    margin: 0;
+    border: 0;
+    border-collapse: collapse;
+  }
+  /* stylelint-enable force-element-nesting, force-pseudo-nesting */
+}
+
+
+
+

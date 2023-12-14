@@ -1,0 +1,25 @@
+// Main spacing.
+@mixin make-spacing($prop, $abbrev) {
+  // Generate the general spacing classes first.
+  @each $size, $length in $uswds-spacers {
+    .#{$abbrev}-#{$size} {
+      #{$prop}: $length !important;
+    }
+
+    .#{$abbrev}-left-#{$size} {
+      #{$prop}-left: $length !important;
+    }
+
+    .#{$abbrev}-right-#{$size} {
+      #{$prop}-right: $length !important;
+    }
+
+    .#{$abbrev}-top-#{$size} {
+      #{$prop}-top: $length !important;
+    }
+
+    .#{$abbrev}-bottom-#{$size} {
+      #{$prop}-bottom: $length !important;
+    }
+  }
+}

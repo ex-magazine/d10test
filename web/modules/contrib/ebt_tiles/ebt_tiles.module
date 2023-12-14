@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Add templates for EBT Tiles.
+ */
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function ebt_tiles_theme_registry_alter(&$theme_registry) {
+  $ept_module = 'ebt_tiles';
+  $module_path = \Drupal::service('extension.list.module')->getPath($ept_module);
+  $base_theme = 'paragraph';
+  $theme_registry['paragraph__ebt_tiles_item__default'] = [
+    'path' => $module_path . '/templates',
+    'template' => 'paragraph--ebt-tiles-item--default',
+    'render element' => $theme_registry[$base_theme]['render element'],
+    'base hook' => $base_theme,
+    'type' => 'module',
+    'theme path' => $module_path,
+    'preprocess functions' => $theme_registry[$base_theme]['preprocess functions'],
+  ];
+}

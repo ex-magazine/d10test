@@ -1,0 +1,10 @@
+uuid: cbf11ad9-175c-4eb1-8644-4c1bb2a30b64
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Bq771Xvx_H37kSWFB815qpiEo95dAS7QhtTKzRs3PWE
+name: Subjects
+vid: subjects
+description: Subjects
+weight: 0

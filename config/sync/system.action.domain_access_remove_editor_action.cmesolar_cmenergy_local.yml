@@ -1,0 +1,14 @@
+uuid: 4db14544-4323-491c-94b4-50c188efe675
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmesolar_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.cmesolar_cmenergy_local
+label: 'Remove editors from the cmesolar.cmenergy.local domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: cmesolar_cmenergy_local

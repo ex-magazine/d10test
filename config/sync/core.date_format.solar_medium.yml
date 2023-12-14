@@ -1,0 +1,13 @@
+uuid: dcfd144e-a330-4e17-a910-91ba32f09c5b
+langcode: en
+status: true
+dependencies:
+  enforced:
+    theme:
+      - solar
+_core:
+  default_config_hash: kqU4s72JLH_8cmgddhAVqlFMD-iYfdCQH86ZMyvZYnM
+id: solar_medium
+label: 'solar Medium'
+locked: false
+pattern: 'j  F,  Y'

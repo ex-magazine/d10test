@@ -1,0 +1,111 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Visual styling for forms in the off-canvas dialog.
+ */
+
+form {
+  display: inline-block;
+  width: 100%;
+  color: $panel-text-color;
+  font-family: inherit;
+}
+
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    margin-right: 0.5rem;
+  }
+}
+
+label {
+  color: $panel-text-color;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.form-item {
+  width: 100%;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+
+  .description {
+    margin-top: 0.25rem;
+    margin-bottom: 1rem;
+    color: rgba($panel-text-color, 0.5);
+    font-size: 0.875rem;
+  }
+}
+
+.details-description {
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  color: rgba($panel-text-color, 0.5);
+  font-size: 0.875rem;
+}
+
+.fieldset-legend {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: rgba($panel-text-color, 0.6);
+  font-size: 0.875rem;
+  font-weight: normal;
+}
+
+.form-select {
+  background: no-repeat right 10px center;
+  background-size: 25px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &:not([multiple]) {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  option {
+    color: $black;
+  }
+}
+
+/* Reduce contrast for fields against dark background. */
+.form-select,
+.form-text,
+.form-tel,
+.form-email,
+.form-url,
+.form-search,
+.form-number,
+.form-color,
+.form-file,
+.form-textarea,
+.form-date,
+.form-time {
+  width: 100%;
+  padding: 0.65rem 1rem;
+
+  @include smooth-all-transition;
+
+  color: inherit;
+  border: 2px solid $tabs-bottom-border-color;
+  border-radius: $border-radius;
+  background-color: transparent;
+  box-shadow: none;
+  font-size: 1rem;
+
+
+  &:hover {
+    border-color: rgba($panel-text-color, 0.75);
+  }
+
+  &:focus {
+    border-color: $panel-link-color;
+    outline: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

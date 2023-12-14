@@ -1,0 +1,16 @@
+ebt_countdown:
+  css:
+    component:
+      /libraries/flipdown/dist/flipdown.min.css: { minified: true }
+      css/flipdown.css: { }
+  js:
+    /libraries/flipdown/dist/flipdown.min.js: { minified: true }
+    js/ebt_countdown.js: { }
+  dependencies:
+    - core/once
+    - core/drupalSettings
+
+new_year:
+  css:
+    component:
+      css/new-year.css: { }

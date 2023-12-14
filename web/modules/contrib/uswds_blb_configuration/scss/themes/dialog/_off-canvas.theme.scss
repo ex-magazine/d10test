@@ -1,0 +1,73 @@
+@import "../../variables";
+@import "../../mixins";
+
+/**
+ * @file
+ * Styling for the off-canvas ui dialog. Including overrides for jQuery UI.
+ */
+
+.ui-dialog-off-canvas {
+  padding: 0 $offcanvas-tray-padding $offcanvas-tray-padding;
+}
+
+/* Style the dialog-off-canvas container. */
+.ui-dialog.ui-dialog-off-canvas {
+  color: $panel-text-color;
+  background: $panel-bg-color;
+  font-size: $offcanvas-font-size;
+
+  @media only screen and (min-width: 1200px) {
+    min-width: $offcanvas-tray-width;
+  }
+}
+
+.ui-widget.ui-dialog.ui-dialog-off-canvas {
+  border: 1px solid transparent;
+}
+
+/* Style the off-canvas dialog header. */
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar {
+  color: $panel-text-color;
+  border-bottom: 1px solid $tabs-bottom-border-color;
+  background: $panel-bg-color;
+}
+
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close {
+  top: 50%;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-top: -0.75rem;
+  opacity: 0.6;
+  border: 0;
+  border-radius: 1.5rem;
+  outline: 0;
+  background: #{$close-circle-icon} center center no-repeat $panel-bg-color;
+  background-size: contain;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    border: 0;
+    background: #{$close-circle-icon} center center no-repeat $panel-bg-color;
+    background-size: contain;
+  }
+}
+
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-title {
+  padding-left: 40px; /* LTR */
+  font-family: inherit;
+  font-size: 1.25rem;
+}
+
+[dir="rtl"] .ui-dialog.ui-dialog-off-canvas .ui-dialog-title {
+  padding-right: 40px;
+}
+
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-title::before {
+  background: transparent #{$configure-icon} no-repeat scroll center center;
+  background-size: 100% auto;
+}
+
+.ui-dialog.ui-dialog-off-canvas .layout-selection {
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+uuid: 67e0827d-5b72-4148-a203-ba084aafd55c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_to_read
+    - node.type.news
+_core:
+  default_config_hash: S-gRW6aG4cTyfMgdPQTaeFUIcMPgOb4Tg19Be5A5ODY
+id: node.news.field_time_to_read
+field_name: field_time_to_read
+entity_type: node
+bundle: news
+label: 'Time to read'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ' min Read'
+field_type: integer

@@ -1,0 +1,17 @@
+uuid: 5c688afd-b1bf-49b1-b056-3cf0311e48a7
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: news232x232
+label: News232x232
+effects:
+  f8fc1a5f-f1f9-49c2-9420-ae21d02f07a2:
+    uuid: f8fc1a5f-f1f9-49c2-9420-ae21d02f07a2
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 232
+      height: 232
+      crop_type: focal_point

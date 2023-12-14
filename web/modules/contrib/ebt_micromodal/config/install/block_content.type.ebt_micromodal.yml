@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ebt_micromodal
+label: 'EBT Micromodal'
+revision: 0
+description: 'Extra Block Type (EBT): Micromodal'

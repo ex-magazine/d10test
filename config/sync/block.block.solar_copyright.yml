@@ -1,0 +1,25 @@
+uuid: 1fc6f648-48c0-4462-abe3-f92729c382ff
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:663c2004-b42b-4b06-bccf-4c170583f44f'
+  module:
+    - block_content
+  theme:
+    - solar
+id: solar_copyright
+theme: solar
+region: footer_copyright
+weight: 0
+provider: null
+plugin: 'block_content:663c2004-b42b-4b06-bccf-4c170583f44f'
+settings:
+  id: 'block_content:663c2004-b42b-4b06-bccf-4c170583f44f'
+  label: Copyright
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

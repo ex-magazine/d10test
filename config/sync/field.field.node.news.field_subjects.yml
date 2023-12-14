@@ -1,0 +1,31 @@
+uuid: 50c10010-89f5-4201-b97c-b1b835b77dad
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_subjects
+    - node.type.news
+    - taxonomy.vocabulary.subjects
+_core:
+  default_config_hash: aQmhnQnZSTcPtYFLE6eeDrXJX7NMNPCn5V1SBQ8mhiE
+id: node.news.field_subjects
+field_name: field_subjects
+entity_type: node
+bundle: news
+label: Subjects
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      subjects: subjects
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 409a725e-9661-4653-adb2-7c6afde11a0f
+langcode: en
+status: true
+dependencies:
+  module:
+    - domain
+id: solar_cmenergy_local
+label: solar.cmenergy.local
+weight: 0
+theme: solar
+admin_theme: gin
+conjunction: and
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      cmesolar_cmenergy_local: cmesolar_cmenergy_local

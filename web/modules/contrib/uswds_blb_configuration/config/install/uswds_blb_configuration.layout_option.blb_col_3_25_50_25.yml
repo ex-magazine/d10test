@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies: {  }
+id: blb_col_3_25_50_25
+layout_id: blb_col_3
+label: '25% 50% 25% '
+structure: '3 6 3'
+breakpoints:
+  desktop: desktop
+  mobile: mobile
+  tablet: tablet
+default_breakpoints:
+  desktop: desktop
+  mobile: '0'
+  tablet: '0'
+weight: 0

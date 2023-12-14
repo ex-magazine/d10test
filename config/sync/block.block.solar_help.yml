@@ -1,0 +1,22 @@
+uuid: bfa0fa99-ae3f-4736-9b25-8c9980ef3fc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - solar
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: solar_help
+theme: solar
+region: content_above
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

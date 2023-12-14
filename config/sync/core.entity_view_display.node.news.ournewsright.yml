@@ -1,0 +1,72 @@
+uuid: 5b7ee29c-4e56-4fda-b2d9-184934fc8f48
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ournewsright
+    - field.field.node.news.body
+    - field.field.node.news.field_abstract
+    - field.field.node.news.field_domain_access
+    - field.field.node.news.field_domain_all_affiliates
+    - field.field.node.news.field_expiration_date
+    - field.field.node.news.field_image
+    - field.field.node.news.field_news_type
+    - field.field.node.news.field_paragraph
+    - field.field.node.news.field_subjects
+    - field.field.node.news.field_time_to_read
+    - image.style.news232x232
+    - node.type.news
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+_core:
+  default_config_hash: wjY9nb3-O4pQasS5h44bHMyc286-ERpuHXrJ4xGq4vU
+id: node.news.ournewsright
+targetEntityType: node
+bundle: news
+mode: ournewsright
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: news232x232
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_expiration_date: true
+  field_news_type: true
+  field_paragraph: true
+  field_subjects: true
+  langcode: true
+  links: true
+  toc_js: true

@@ -1,0 +1,25 @@
+uuid: a2cf7dc1-db1b-40ed-ad5c-af258e7e767f
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.whatwedo
+  module:
+    - system
+  theme:
+    - solar
+id: solar_whatwedo
+theme: solar
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:whatwedo'
+settings:
+  id: 'system_menu_block:whatwedo'
+  label: 'What We Do'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

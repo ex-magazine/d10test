@@ -1,0 +1,18 @@
+uuid: 51ed98b5-065e-4609-8559-50109070447d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bp_contact
+id: paragraph.bp_contact.created
+field_name: created
+entity_type: paragraph
+bundle: bp_contact
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

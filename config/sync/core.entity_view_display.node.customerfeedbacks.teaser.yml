@@ -1,0 +1,52 @@
+uuid: 2857f1ab-709a-4dd3-a3cf-50dbae6e8d71
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.customerfeedbacks.body
+    - field.field.node.customerfeedbacks.field_domain_access
+    - field.field.node.customerfeedbacks.field_domain_all_affiliates
+    - field.field.node.customerfeedbacks.field_image
+    - field.field.node.customerfeedbacks.field_position
+    - image.style.medium
+    - node.type.customerfeedbacks
+  module:
+    - image
+    - text
+    - user
+id: node.customerfeedbacks.teaser
+targetEntityType: node
+bundle: customerfeedbacks
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_position: true
+  langcode: true

@@ -1,0 +1,24 @@
+uuid: 12a01ca1-e1ae-4777-89d5-788a1de970e9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_svg
+    - filter.format.full_html
+    - node.type.banner
+  module:
+    - text
+id: node.banner.field_svg
+field_name: field_svg
+entity_type: node
+bundle: banner
+label: SVG
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

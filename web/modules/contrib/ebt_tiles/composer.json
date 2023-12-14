@@ -1,0 +1,16 @@
+{
+    "name": "drupal/ebt_tiles",
+    "type": "drupal-module",
+    "description": "Extra Block Types (EBT): Tiles",
+    "keywords": ["Drupal"],
+    "license": "GPL-2.0-or-later",
+    "homepage": "http://drupal.org/project/ebt_tiles",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/ebt_tiles",
+        "source": "https://git.drupalcode.org/project/ebt_tiles"
+    },
+    "require": {
+        "drupal/ebt_core": "^1.4"
+    }
+}

@@ -1,0 +1,18 @@
+uuid: f6d0b498-dad8-46db-9f01-cc9ce3af4d32
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bp_column_wrapper
+id: paragraph.bp_column_wrapper.created
+field_name: created
+entity_type: paragraph
+bundle: bp_column_wrapper
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

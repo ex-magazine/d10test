@@ -1,0 +1,15 @@
+uuid: 87e69f87-7867-4899-a061-e606f835c485
+langcode: en
+status: true
+dependencies: {  }
+name: news608x282
+label: News608x282
+effects:
+  59838408-8d37-424f-927f-c34ea151f594:
+    uuid: 59838408-8d37-424f-927f-c34ea151f594
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 608
+      height: 288
+      anchor: center-center

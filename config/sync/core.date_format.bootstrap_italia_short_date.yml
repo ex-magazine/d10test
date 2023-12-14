@@ -1,0 +1,10 @@
+uuid: 9bbf18c2-07cc-4fde-b263-9f6cd15798da
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VCruFEoHWh9biaDyb24V6Yos8wjL8gYCejQBvAOZjIo
+id: bootstrap_italia_short_date
+label: 'Bootstrap Italia short date'
+locked: false
+pattern: j/n/Y

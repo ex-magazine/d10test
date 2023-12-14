@@ -1,0 +1,10 @@
+uuid: dac55b08-7bbe-42ee-bf2d-0f6b4c256fe2
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: P4EQts6VfjW1y9szQ_lbR1Gbk522xDscjMT3--P-no0
+name: 'News types'
+vid: news_types
+description: 'News types'
+weight: 0

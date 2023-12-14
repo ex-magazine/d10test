@@ -1,0 +1,25 @@
+uuid: 8349f3a9-c112-466f-88c2-c357c0893d51
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_domain_access
+    - node.type.landingpage
+id: node.landingpage.field_domain_access
+field_name: field_domain_access
+entity_type: node
+bundle: landingpage
+label: 'Domain Access'
+description: 'Select the affiliate domain(s) for this content'
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: 'Drupal\domain_access\DomainAccessManager::getDefaultValue'
+settings:
+  handler: 'default:domain'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: weight
+      direction: ASC
+field_type: entity_reference

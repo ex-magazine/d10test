@@ -1,0 +1,138 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ebt_tiles
+    - field.storage.block_content.field_ebt_tiles
+    - paragraphs.paragraphs_type.ebt_tiles_item
+  module:
+    - entity_reference_revisions
+id: block_content.ebt_tiles.field_ebt_tiles
+field_name: field_ebt_tiles
+entity_type: block_content
+bundle: ebt_tiles
+label: Tiles
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      ebt_tiles_item: ebt_tiles_item
+    negate: 0
+    target_bundles_drag_drop:
+      ebt_accordion:
+        weight: 38
+        enabled: false
+      ebt_carousel:
+        weight: 39
+        enabled: false
+      ebt_counter_item:
+        weight: 40
+        enabled: false
+      ebt_slick_slider:
+        weight: 41
+        enabled: false
+      ebt_slideshow:
+        weight: 42
+        enabled: false
+      ebt_stats_item:
+        weight: 43
+        enabled: false
+      ebt_tab:
+        weight: 44
+        enabled: false
+      ebt_tiles_item:
+        weight: 45
+        enabled: true
+      ebt_timeline:
+        weight: 46
+        enabled: false
+      ebt_video_and_image_gallery_item:
+        weight: 47
+        enabled: false
+      ept_accordion:
+        weight: 48
+        enabled: false
+      ept_accordion_section:
+        weight: 49
+        enabled: false
+      ept_basic_button:
+        weight: 50
+        enabled: false
+      ept_bootstrap_button:
+        weight: 51
+        enabled: false
+      ept_carousel:
+        weight: 52
+        enabled: false
+      ept_carousel_item:
+        weight: 53
+        enabled: false
+      ept_countdown:
+        weight: 54
+        enabled: false
+      ept_counter:
+        weight: 55
+        enabled: false
+      ept_counter_item:
+        weight: 56
+        enabled: false
+      ept_cta:
+        weight: 57
+        enabled: false
+      ept_image:
+        weight: 58
+        enabled: false
+      ept_image_gallery:
+        weight: 59
+        enabled: false
+      ept_micromodal:
+        weight: 60
+        enabled: false
+      ept_quote:
+        weight: 61
+        enabled: false
+      ept_slick_slider:
+        weight: 62
+        enabled: false
+      ept_slick_slider_item:
+        weight: 63
+        enabled: false
+      ept_slideshow:
+        weight: 64
+        enabled: false
+      ept_slideshow_item:
+        weight: 65
+        enabled: false
+      ept_stats:
+        weight: 66
+        enabled: false
+      ept_stats_item:
+        weight: 67
+        enabled: false
+      ept_tabs:
+        weight: 68
+        enabled: false
+      ept_tabs_item:
+        weight: 69
+        enabled: false
+      ept_text:
+        weight: 70
+        enabled: false
+      ept_timeline:
+        weight: 71
+        enabled: false
+      ept_timeline_item:
+        weight: 72
+        enabled: false
+      ept_webform:
+        weight: 73
+        enabled: false
+      ept_webform_popup:
+        weight: 74
+        enabled: false
+field_type: entity_reference_revisions

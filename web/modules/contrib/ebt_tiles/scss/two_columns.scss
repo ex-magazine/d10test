@@ -1,0 +1,10 @@
+.ebt-block-tiles.ebt-tiles-two_columns {
+  .ebt-tiles-wrapper {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    @media(min-width:481px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}

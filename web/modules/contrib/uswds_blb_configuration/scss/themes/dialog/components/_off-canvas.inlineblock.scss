@@ -1,0 +1,71 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+.inline-block-create-button,
+.inline-block-list__item {
+  position: relative;
+  display: inline-block;
+  height: auto;
+  cursor: pointer;
+
+  @include smooth-all-transition;
+
+  text-align: center;
+  text-decoration: none !important;
+  border: 0 !important;
+  border-radius: $border-radius;
+  box-shadow: none;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.inline-block-create-button {
+  margin: 20px auto !important;
+  padding: 15px 2rem !important;
+  color: $button-text-color !important;
+  background: $button-bg-color !important;
+  font-weight: bold;
+
+  &:hover {
+    background: darken($button-bg-color, 10%) !important; /* stylelint-disable-line */
+  }
+}
+
+.inline-block-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-right: -5px;
+  margin-left: -5px;
+
+  li {
+    display: flex;
+    width: 50%;
+    padding: 0 0.5rem 1rem;
+  }
+}
+
+.inline-block-list__item {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 80px;
+  margin: 0 !important;
+  padding: 11px !important;
+  color: $panel-text-color !important;
+  border: 2px solid transparent !important;
+  border-radius: $border-radius;
+  background: $box-input-bg !important;
+  font-size: 0.75rem;
+
+  &:hover {
+    border: 2px solid $panel-link-color !important;
+  }
+
+  &:focus {
+    color: $panel-bg-color !important;
+    background-color: $panel-link-color !important;
+  }
+}

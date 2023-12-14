@@ -1,0 +1,18 @@
+uuid: cd87917d-f145-40b0-b147-9777a70a3fac
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bp_blank
+id: paragraph.bp_blank.created
+field_name: created
+entity_type: paragraph
+bundle: bp_blank
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

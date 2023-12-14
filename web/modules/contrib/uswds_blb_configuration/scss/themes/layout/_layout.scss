@@ -1,0 +1,178 @@
+@import "../../variables";
+@import "../../mixins";
+
+$conainer-icon-path: "../../images/layout/";
+
+// Container types
+.fieldgroup.uswds_lb_container_type {
+  .fieldset-wrapper > div {
+    display: flex;
+
+    // Our actual form item.
+    > div {
+      @include uswds_boxed_inputs($width: 100%, $height: 70px, $bg: $box-input-bg, $active_color: inherit, $active_bg: $box-input-bg-checked);
+
+      input {
+        + label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: calc(100% - 4px);
+          margin: 2px;
+          padding: 8px;
+          cursor: pointer;
+          text-align: center;
+          border-radius: 0;
+          background-color: $icon-box-input-bg;
+          font-size: 10px;
+          font-weight: normal;
+
+          &:hover {
+            background-color: $icon-box-input-bg-hover;
+          }
+        }
+
+        // Active state.
+        &:checked + label {
+          font-weight: bold;
+
+          .input-icon::after { /* stylelint-disable-line */
+            background-image: url($conainer-icon-path + "container-active.svg");
+          }
+        }
+      }
+
+      .input-icon {
+        width: 50px !important;
+        height: 26px;
+        margin-bottom: 10px;
+        background: url($conainer-icon-path + "stripe-sm.svg") center top repeat;
+
+        &::after {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto 1rem auto;
+          content: "";
+          background-color: $box-input-bg;
+          background-image: url($conainer-icon-path + "container.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 100% 26px;
+        }
+
+        // Containers
+        &.container::after {
+          width: 60%;
+        }
+
+        &.container-fluid::after {
+            width: 80%;
+        }
+
+        &.w-100::after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// Gutters
+.fieldgroup.blb_gutter_type {
+  .fieldset-wrapper > div {
+    display: flex;
+
+    // Our actual form item.
+    > div {
+      @include uswds_boxed_inputs($width: 100%, $height: 105px, $bg: transparent, $active_color: inherit, $active_bg: transparent);
+
+      input {
+        + label {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: calc(100% - 4px);
+          margin: 2px;
+          padding: 8px;
+          cursor: pointer;
+          text-align: center;
+          border-radius: 0;
+          background-color: transparent;
+          font-size: 10px;
+          font-weight: normal;
+
+          &:hover {
+            background-color: transparent;
+          }
+        }
+
+        // Active state.
+        &:checked + label {
+          color: $panel-link-color;
+          font-weight: bold;
+
+          .input-icon::after { /* stylelint-disable-line */
+            background-image: url($conainer-icon-path + "gutter-active.svg");
+          }
+        }
+      }
+
+      .input-icon {
+        width: 80%;
+        height: 66px;
+        margin-bottom: 10px;
+        background: url($conainer-icon-path + "stripe-lg.svg") center top repeat;
+
+        &::after {
+          display: block;
+          width: 100%;
+          height: 100%;
+          margin: 0 auto 1rem auto;
+          content: "";
+          background-color: $box-input-bg;
+          background-image: url($conainer-icon-path + "gutter.svg");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: cover;
+        }
+
+        // Container Types
+        &.container::after {
+          width: 60%;
+        }
+
+        &.container-fluid::after {
+          width: 70%;
+        }
+
+        &.w-100::after {
+          width: 100%;
+        }
+
+        // Gutter Types
+        &.gutter-icon-0::after {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+// Graphical Layout Columns
+.uswds_breakpoint_cols label:hover .uswds_breakpoint_col {
+  color: $panel-bg-color;
+  background-color: rgba($panel-text-color, 0.8);
+}
+
+input:checked + label .uswds_breakpoint_col {
+  color: $panel-bg-color;
+  background-color: $panel-link-color;
+}
+
+.uswds_breakpoint_col {
+  color: $panel-text-color;
+  background-color: rgba($panel-text-color, 0.2);
+}

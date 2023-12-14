@@ -1,0 +1,73 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Set base styles for the off-canvas dialog.
+ */
+
+/* Generic elements. */
+a,
+.link {
+  font-family: inherit;
+
+  &:hover {
+    border: 1px solid $panel-link-color;
+  }
+}
+
+hr {
+  background: $panel-text-color;
+}
+
+/* Override jQuery UI */
+.ui-widget-content {
+  a {
+    color: $panel-link-color !important;
+  }
+}
+
+.messages {
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  background-repeat: no-repeat;
+  background-position: 5px 10px;
+  background-size: 40px;
+}
+
+.messages--status {
+  color: darken($state-success, 20%); /* stylelint-disable-line */
+  background-color: lighten($state-success, 30%); /* stylelint-disable-line */
+  background-image: $state-success-icon;
+
+  div,
+  em {
+    color: darken($state-success, 20%); /* stylelint-disable-line */
+  }
+}
+
+.messages--warning {
+  color: darken($state-warning, 20%); /* stylelint-disable-line */
+  background-color: lighten($state-warning, 30%); /* stylelint-disable-line */
+  background-image: $state-warning-icon;
+
+  div,
+  em {
+    color: darken($state-warning, 20%); /* stylelint-disable-line */
+  }
+}
+
+.messages--error {
+  color: darken($state-error, 20%); /* stylelint-disable-line */
+  background-color: lighten($state-error, 30%); /* stylelint-disable-line */
+  background-image: $state-error-icon;
+
+  div,
+  em {
+    color: darken($state-error, 20%); /* stylelint-disable-line */
+  }
+}
+
+.dialog-cancel {
+  margin-top: 1rem;
+}

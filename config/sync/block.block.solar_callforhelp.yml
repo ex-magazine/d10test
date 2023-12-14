@@ -1,0 +1,25 @@
+uuid: c8df8201-50a8-47a3-b357-3ea3f939b833
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b668ceab-8a1f-4e9b-af7e-32f573278107'
+  module:
+    - block_content
+  theme:
+    - solar
+id: solar_callforhelp
+theme: solar
+region: help
+weight: -8
+provider: null
+plugin: 'block_content:b668ceab-8a1f-4e9b-af7e-32f573278107'
+settings:
+  id: 'block_content:b668ceab-8a1f-4e9b-af7e-32f573278107'
+  label: 'Call for help'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

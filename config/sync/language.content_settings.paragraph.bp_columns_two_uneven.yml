@@ -1,0 +1,18 @@
+uuid: 7633d8d6-4e81-4105-81c9-a41fa17f7be2
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bp_columns_two_uneven
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.bp_columns_two_uneven
+target_entity_type_id: paragraph
+target_bundle: bp_columns_two_uneven
+default_langcode: site_default
+language_alterable: false

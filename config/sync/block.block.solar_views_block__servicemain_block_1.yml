@@ -1,0 +1,30 @@
+uuid: dfefa56c-8767-416a-85c8-25dcb93bbc09
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.servicemain
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - solar
+id: solar_views_block__servicemain_block_1
+theme: solar
+region: content_below
+weight: 0
+provider: null
+plugin: 'views_block:servicemain-block_1'
+settings:
+  id: 'views_block:servicemain-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

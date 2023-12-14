@@ -1,0 +1,23 @@
+uuid: 7b48eba1-6c6f-4624-959f-8ad1cea690d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_image_type
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - options
+_core:
+  default_config_hash: MmrSmarDoemnzG00OHS-8x5D3meu-Jg2m1Zhrp_VzSg
+id: paragraph.carousel.field_carousel_image_type
+field_name: field_carousel_image_type
+entity_type: paragraph
+bundle: carousel
+label: 'Image type'
+description: 'If you are building an image carousel, select how you want to display the images. Note: if you choose "standard" or "big" the images will be displayed with the theme "Landscape abstract: 3 cols". '
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

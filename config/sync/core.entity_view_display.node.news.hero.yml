@@ -1,0 +1,65 @@
+uuid: 6092b530-2cfc-4bff-a338-90f57e8637e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero
+    - field.field.node.news.body
+    - field.field.node.news.field_abstract
+    - field.field.node.news.field_domain_access
+    - field.field.node.news.field_domain_all_affiliates
+    - field.field.node.news.field_expiration_date
+    - field.field.node.news.field_image
+    - field.field.node.news.field_news_type
+    - field.field.node.news.field_paragraph
+    - field.field.node.news.field_subjects
+    - field.field.node.news.field_time_to_read
+    - node.type.news
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: hlahqmSErN7ArPAiHSawDqrrL21WqjqorAHCMG9Ec_s
+id: node.news.hero
+targetEntityType: node
+bundle: news
+mode: hero
+content:
+  field_abstract:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_subjects:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_expiration_date: true
+  field_news_type: true
+  field_paragraph: true
+  field_time_to_read: true
+  langcode: true
+  links: true
+  toc_js: true

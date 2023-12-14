@@ -1,0 +1,76 @@
+uuid: db76b5cd-f36a-42e4-bfd1-6825129cbc47
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latestcasestudies
+    - field.field.node.project_details.body
+    - field.field.node.project_details.field_address
+    - field.field.node.project_details.field_category
+    - field.field.node.project_details.field_clients
+    - field.field.node.project_details.field_domain_access
+    - field.field.node.project_details.field_domain_all_affiliates
+    - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_the_challenge_of_project
+    - image.style.casestudies
+    - node.type.project_details
+  module:
+    - image
+    - layout_builder
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.project_details.latestcasestudies
+targetEntityType: node
+bundle: project_details
+mode: latestcasestudies
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: casestudies
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  field_address: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_the_challenge_of_project: true
+  langcode: true

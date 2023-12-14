@@ -1,0 +1,17 @@
+uuid: cdb31fe9-f4e8-4b97-a51d-48f028d03420
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: casestudies
+label: 'Case Studies'
+effects:
+  7e745657-b1d9-4f2c-aa4b-adda88b5a46c:
+    uuid: 7e745657-b1d9-4f2c-aa4b-adda88b5a46c
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 560
+      crop_type: focal_point

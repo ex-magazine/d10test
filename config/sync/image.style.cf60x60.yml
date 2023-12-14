@@ -1,0 +1,17 @@
+uuid: 569b570f-b2bb-461e-b0f9-cf0f117370da
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: cf60x60
+label: 'Customer Feedbacks'
+effects:
+  6e10074d-429e-4c45-9d86-4f81d4302b8a:
+    uuid: 6e10074d-429e-4c45-9d86-4f81d4302b8a
+    id: focal_point_scale_and_crop
+    weight: 2
+    data:
+      width: 60
+      height: 60
+      crop_type: focal_point

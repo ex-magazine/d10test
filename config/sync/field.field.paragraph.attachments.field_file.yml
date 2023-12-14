@@ -1,0 +1,29 @@
+uuid: 11e422af-9f4e-4704-90e5-9169a097cc00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_file
+    - paragraphs.paragraphs_type.attachments
+  module:
+    - file
+_core:
+  default_config_hash: TI9c6osPfMZ1rMOdlzKKNNjML-PLTGYRJCmbOtQSE-A
+id: paragraph.attachments.field_file
+field_name: field_file
+entity_type: paragraph
+bundle: attachments
+label: 'File legacy'
+description: 'Upload one or more files from your device. If you want to attach a file that has already been uploaded, use the <em>File Browser</em> by positioning yourself in the <strong>public://attachments</strong> folder.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: attachments
+  file_extensions: 'txt pdf zip tar.gz 7z odt ods xml'
+  max_filesize: ''
+  description_field: true
+field_type: file

@@ -1,0 +1,20 @@
+uuid: d2032ca7-5dc9-4767-9454-bf6060150a1b
+langcode: en-gb
+status: false
+dependencies:
+  theme:
+    - rhythm
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: rhythm_primary_admin_actions
+theme: rhythm
+region: header
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

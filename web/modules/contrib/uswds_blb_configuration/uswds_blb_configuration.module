@@ -1,0 +1,347 @@
+<?php
+
+/**
+ * @file
+ * USWDS Layout Builder module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Render\Element;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Template\Attribute;
+
+/**
+ * Implements hook_help().
+ */
+function uswds_blb_configuration_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // @todo update.
+    case 'help.page.uswds_blb_configuration':
+      $output = '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Add USWDS Grid support to Layout Builder module.
+      currently') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function uswds_blb_configuration_theme($existing, $type, $theme, $path) {
+  return [
+    'uswds_container_wrapper' => [
+      'variables' => [
+        'attributes' => [],
+        'children' => [],
+      ],
+    ],
+    'uswds_container' => [
+      'variables' => [
+        'attributes' => [],
+        'children' => [],
+      ],
+    ],
+    'uswds_section' => [
+      'template' => 'uswds-section',
+      'render element' => 'content',
+      'base hook' => 'layout',
+    ],
+    'form_element__bs' => [
+      'template' => 'form-element--bs',
+      'base hook' => 'form-element',
+      'path' => $path . '/templates/form',
+    ],
+    'fieldset__bs' => [
+      'template' => 'fieldset--bs',
+      'base hook' => 'fieldset',
+      'path' => $path . '/templates/form',
+    ],
+    'input__bs' => [
+      'template' => 'input--bs',
+      'base hook' => 'input',
+      'path' => $path . '/templates/form',
+    ],
+    'radios__bs' => [
+      'template' => 'radios--bs',
+      'base hook' => 'radios',
+      'path' => $path . '/templates/form',
+    ],
+    'uswds_video_background' => [
+      'variables' => [
+        'video_background_url' => '',
+        'attributes' => [],
+        'children' => [],
+      ],
+    ],
+    'spacing_preview' => [
+      'render element' => 'element',
+    ],
+    'border_preview' => [
+      'render element' => 'element',
+    ],
+    'shadow_preview' => [
+      'render element' => 'element',
+    ],
+    'details__bs' => [
+      'template' => 'details--bs',
+      'base hook' => 'fieldset',
+      'path' => $path . '/templates',
+    ],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function uswds_blb_configuration_preprocess_html(&$variables) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  if (preg_match('/node\/\d*\/layout/', $current_path) || preg_match('/display\/\w*\/layout/', $current_path)) {
+    $variables['attributes']['class'][] = 'layout-builder-form';
+  }
+
+  $logged_in = \Drupal::currentUser()->isAuthenticated();
+  if ($logged_in) {
+    $variables['attributes']['class'][] = 'user-logged-in';
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function uswds_blb_configuration_preprocess_uswds_section(&$variables) {
+  foreach (Element::children($variables['content']) as $name) {
+    if (!isset($variables['content'][$name]['#attributes'])) {
+      $variables['content'][$name]['#attributes'] = [];
+    }
+
+    /*
+     * This is a workaround for modules that pass array as css class value
+     * this results in array of arrays that must be flattened before displaying
+     * in twig.
+     */
+    foreach ($variables['content'][$name]['#attributes'] as $k => $v) {
+      if (is_array($v)) {
+        $result = [];
+        array_walk_recursive($v, function ($elem) use (&$result) {
+          if ($elem) {
+            $result[] = $elem;
+          }
+        });
+        $variables['content'][$name]['#attributes'][$k] = $result;
+      }
+    }
+
+    $variables['region_attributes'][$name] = new Attribute($variables['content'][$name]['#attributes']);
+  }
+}
+
+/**
+ * Implements hook_page_attachments_alter().
+ */
+function uswds_blb_configuration_page_attachments_alter(array &$page) {
+  $settings = \Drupal::config('uswds_blb_configuration.style_settings');
+  $entity_types = array_keys(\Drupal::entityTypeManager()->getDefinitions());
+  $layout_routes = [];
+
+  foreach ($entity_types as $entity_type_id) {
+    $layout_routes[] = 'layout_builder.defaults.' . $entity_type_id . '.view';
+    $layout_routes[] = 'layout_builder.overrides.' . $entity_type_id . '.view';
+    // layout_library module.
+    $layout_routes[] = 'layout_builder.layout_library.' . $entity_type_id . '.view';
+  }
+
+  $route_match = \Drupal::routeMatch();
+  // Attach the libraries only in layout route.
+  if (in_array($route_match->getRouteName(), $layout_routes)) {
+    // Attach the layout builder form styles.
+    $page['#attached']['library'][] = 'uswds_blb_configuration/layout_builder_form_style';
+    // Attach the font.
+    $page['#attached']['library'][] = 'uswds_blb_configuration/offcanvas-font';
+
+    if ($settings->get('layout_builder_theme') && $settings->get('layout_builder_theme') == 'light') {
+      $page['#attached']['library'][] = 'uswds_blb_configuration/theme.light';
+    }
+    else {
+      // Attach the default dark theme.
+      $page['#attached']['library'][] = 'uswds_blb_configuration/theme.dark';
+    }
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_alter().
+ */
+function uswds_blb_configuration_theme_suggestions_alter(array &$suggestions, array $variables, $hook) {
+  $parents = $variables['element']['#array_parents'] ?? FALSE;
+  $uswds_parents = ['ui', 'tab_content', 'appearance', 'layout_settings'];
+
+  // UI/Tab content are expected, and one of appearance or layout settings.
+  if ($parents && count(array_intersect($uswds_parents, $parents)) >= 3) {
+    $suggestions[] = $hook . '__bs';
+  }
+}
+
+/**
+ * Implements hook_library_info_alter().
+ */
+function uswds_blb_configuration_library_info_alter(&$libraries, $extension) {
+
+  if ($extension == 'uswds_blb_configuration'
+    && isset($libraries['plugin.scroll_effects.build'])
+    && file_exists(DRUPAL_ROOT . '/libraries/aos/dist/aos.js')) {
+
+    if (isset($libraries['plugin.scroll_effects.build']['dependencies'])
+      && ($dependency_key = array_search('aos.remote', $libraries['plugin.scroll_effects.build']['dependencies'])) !== FALSE) {
+
+      unset($libraries['plugin.scroll_effects.build']['dependencies'][$dependency_key]);
+      $libraries['plugin.scroll_effects.build']['dependencies'][] = 'uswds_blb_configuration/aos.local';
+
+    }
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function uswds_blb_configuration_form_alter(&$form, FormStateInterface $form_state) {
+  if ($form['#form_id'] === 'layout_builder_add_block' || $form['#form_id'] === 'layout_builder_update_block') {
+    $allowed = FALSE;
+
+    /** @var \Drupal\layout_builder\Form\ConfigureBlockFormBase $form_object */
+    $form_object = $form_state->getFormObject();
+    $component = $form_object->getCurrentComponent();
+
+    $block_plugin_id = $component->getPluginId();
+
+    $config = \Drupal::config('uswds_blb_configuration.block_styles');
+
+    // If this is a reusable block, retrieve the block bundle.
+    $bundle = FALSE;
+    if (str_starts_with($block_plugin_id, "block_content:")) {
+      $uuid = str_replace('block_content:', '', $block_plugin_id);
+      $bundle = \Drupal::service('entity.repository')->loadEntityByUuid('block_content', $uuid)
+        ->bundle();
+    }
+
+    if (
+      empty($config->get('block_restrictions'))
+      || in_array($block_plugin_id, $config->get('block_restrictions'))
+      || $bundle && in_array('inline_block:' . $bundle, $config->get('block_restrictions'))
+    ) {
+      // Return parent form.
+      $allowed = TRUE;
+    }
+
+    if ($allowed) {
+      // Our main set of tabs.
+      $form['ui'] = [
+        '#type' => 'container',
+        '#weight' => -100,
+        '#attributes' => [
+          'id' => 'uswds_ui',
+        ],
+        '#tree' => FALSE,
+        '#parents' => ['ui'],
+      ];
+
+      $tabs = [
+        [
+          'machine_name' => 'content',
+          'icon' => 'content.svg',
+          'title' => t('Content'),
+          'active' => TRUE,
+        ],
+        [
+          'machine_name' => 'appearance',
+          'icon' => 'appearance.svg',
+          'title' => t('Style'),
+        ],
+      ];
+
+      // Create our tabs from above.
+      $form['ui']['nav_tabs'] = [
+        '#type' => 'html_tag',
+        '#tag' => 'ul',
+        '#attributes' => [
+          'class' => 'uswds_nav-tabs',
+          'id' => 'uswds_nav-tabs',
+          'role' => 'tablist',
+        ],
+      ];
+
+      $form['ui']['tab_content'] = [
+        '#type' => 'container',
+        '#attributes' => [
+          'class' => 'blb_tab-content',
+          'id' => 'uswds_tabContent',
+        ],
+        '#tree' => FALSE,
+        '#parents' => ['tab_content'],
+      ];
+
+      // Create our tab & tab panes.
+      foreach ($tabs as $tab) {
+        $form['ui']['nav_tabs'][$tab['machine_name']] = [
+          '#type' => 'inline_template',
+          '#template' => '<li><a data-target="{{ target|clean_class }}" class="{{active}}"><span role="img">{% include icon %}</span>{{ title }}</a></li>',
+          '#context' => [
+            'title' => $tab['title'],
+            'target' => $tab['machine_name'],
+            'active' => isset($tab['active']) && $tab['active'] == TRUE ? 'active' : '',
+            'icon' => \Drupal::service('extension.list.module')->getPath('uswds_blb_configuration') . '/images/ui/' . ($tab['icon'] ?: 'default.svg'),
+          ],
+        ];
+
+        $form['ui']['tab_content'][$tab['machine_name']] = [
+          '#type' => 'container',
+          '#attributes' => [
+            'class' => [
+              'uswds_tab-pane',
+              'uswds_tab-pane--' . $tab['machine_name'],
+              isset($tab['active']) && $tab['active'] ? 'active' : '',
+            ],
+          ],
+          '#tree' => FALSE,
+          '#parents' => [$tab['machine_name']],
+        ];
+      }
+
+      $form['ui']['tab_content']['appearance']['#tree'] = TRUE;
+
+      $configuration = [
+        'uswds_styles' => [
+          'block_style' => [],
+        ],
+      ];
+
+      if ($component->get('uswds_styles')) {
+        $uswds_styles = $component->get('uswds_styles');
+        if (isset($uswds_styles['block_style'])) {
+          $configuration['uswds_styles'] = $uswds_styles;
+        }
+      }
+
+      $form['ui']['tab_content']['appearance'] += \Drupal::service('plugin.manager.uswds_styles_group')->buildStylesFormElements($form['ui']['tab_content']['appearance'], $form_state, $configuration['uswds_styles']['block_style'], 'uswds_blb_configuration.block_styles');
+
+      $form['#attached']['library'][] = 'uswds_blb_configuration/content_tab';
+
+      array_unshift($form['#submit'], '_uswds_blb_configuration_submit_block_form');
+    }
+  }
+}
+
+/**
+ * Custom submit handler for submitting LB block forms.
+ */
+function _uswds_blb_configuration_submit_block_form(array &$form, FormStateInterface $form_state) {
+  $uswds_styles = [];
+  $uswds_styles['block_style'] = [];
+  $uswds_styles['block_style'] = \Drupal::service('plugin.manager.uswds_styles_group')->submitStylesFormElements($form['ui']['tab_content']['appearance'], $form_state, ['appearance'], $uswds_styles['block_style'], 'uswds_blb_configuration.block_styles');
+
+  // Save styles' configurations.
+  $formObject = $form_state->getFormObject();
+  $component = $formObject->getCurrentComponent();
+  $component->set('uswds_styles', $uswds_styles);
+}

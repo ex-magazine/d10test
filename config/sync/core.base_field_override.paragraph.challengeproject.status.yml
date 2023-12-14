@@ -1,0 +1,22 @@
+uuid: a1732531-0c3f-4bb9-a78d-1871da4a9509
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.challengeproject
+id: paragraph.challengeproject.status
+field_name: status
+entity_type: paragraph
+bundle: challengeproject
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

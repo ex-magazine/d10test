@@ -1,0 +1,18 @@
+uuid: 470f5fb5-581a-4db5-8b90-61b09c919986
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.customerfeedbacks
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.customerfeedbacks
+target_entity_type_id: node
+target_bundle: customerfeedbacks
+default_langcode: site_default
+language_alterable: true

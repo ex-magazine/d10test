@@ -1,0 +1,98 @@
+type: theme
+core_version_requirement: '>=9.3'
+base theme: false
+name: 'CME - Solar'
+description: 'A Drupal Bootstrap 5 based theme. A clean, accessible, and flexible Drupal front-end theme.'
+package: 'Bootstrap'
+
+libraries:
+  - solar/global-styling 
+
+regions: 
+  topbar: Topbar
+  header: Header
+  help: Help
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  highlighted: Highlighted
+  breadcrumb: Breadcrumb
+  hero: 'Hero (Display none)'
+  content_above: Content Above
+  content: Content
+  sidebar: 'Sidebar'
+  banner: 'Banner'
+  content_below: 'Content Below'
+  about_us: 'About Us'
+  service_area: 'Service area'
+  working_process: 'Working process'
+  cta: 'Call to Action'
+  faq: 'FAQ'
+  our_latest_case_studies: 'Our Latest Case Studies'
+  customer_feedbacks: 'Customer Feedbacks'
+  our_news: 'Our News'
+  footer_client: 'Footer Client'
+  footer_first: 'Footer First'
+  footer_second: 'Footer Second'
+  footer_third: 'Footer Third'
+  footer_four: 'Footer Four'
+  footer_bottom: 'Footer Bottom'
+  footer_copyright: 'Footer Copyright'  
+libraries-override:
+  system/admin:
+    css:
+      theme:
+        css/system.admin.css: false
+  system/base:
+    css:
+      component:
+        css/components/ajax-progress.module.css: css/components/ajax-progress.module.css
+        css/components/autocomplete-loading.module.css: css/components/autocomplete-loading.module.css
+  core/drupal.checkbox: false
+  core/drupal.dropbutton:
+    css:
+      component:
+        misc/dropbutton/dropbutton.css: css/components/dropbutton.css
+  core/drupal.vertical-tabs:
+    css:
+      component:
+        misc/vertical-tabs.css: css/components/vertical-tabs.css
+  media/oembed.formatter: false
+  layout_builder/twocol_section: solar/layout_builder_twocol_section
+  layout_builder/threecol_section: solar/layout_builder_threecol_section
+  layout_builder/fourcol_section: solar/layout_builder_fourcol_section
+libraries-extend:
+  core/drupal.message:
+    - solar/drupal.message
+  core/drupal.collapse:
+    - solar/details
+  core/drupal.dialog:
+    - solar/drupal.dialog
+  core/drupal.dialog.off_canvas:
+    - solar/dialog.off_canvas
+  core/drupal.progress:
+    - solar/progress
+  layout_discovery/onecol:
+    - solar/layout_discovery_section
+  layout_discovery/twocol_bricks:
+    - solar/layout_discovery_section
+  layout_discovery/twocol:
+    - solar/layout_discovery_section
+  layout_discovery/threecol_25_50_25:
+    - solar/layout_discovery_section
+  layout_discovery/threecol_33_34_33:
+    - solar/layout_discovery_section
+  node/drupal.node.preview:
+    - solar/drupal.node.preview
+  core/ckeditor:
+    - solar/cke-dialog
+  content_moderation/content_moderation:
+    - solar/content_moderation
+ckeditor_stylesheets:
+  - css/base/fonts.css
+  - css/base/base.css
+  - css/components/embedded-media.css
+  - css/components/table.css
+  - css/components/text-content.css
+  - css/theme/ckeditor-frame.css
+
+ckeditor5-stylesheets: false

@@ -1,0 +1,22 @@
+uuid: 0c07bcf6-9285-40b2-b107-6ed8a66538fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bp_card
+id: paragraph.bp_card.status
+field_name: status
+entity_type: paragraph
+bundle: bp_card
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

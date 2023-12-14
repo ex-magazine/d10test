@@ -1,0 +1,10 @@
+uuid: ee9bc481-c914-4cce-a8b9-7186621211f5
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.testimonials
+label: Testimonials
+targetEntityType: node
+cache: true

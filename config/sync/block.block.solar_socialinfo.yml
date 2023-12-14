@@ -1,0 +1,29 @@
+uuid: b2b0fd52-c282-417c-905f-f588b4faa3c9
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4afee987-cf46-4964-85a0-9439f379e5c9'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - solar
+third_party_settings:
+  block_classes:
+    block_class: right
+id: solar_socialinfo
+theme: solar
+region: topbar
+weight: 0
+provider: null
+plugin: 'block_content:4afee987-cf46-4964-85a0-9439f379e5c9'
+settings:
+  id: 'block_content:4afee987-cf46-4964-85a0-9439f379e5c9'
+  label: 'Social info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

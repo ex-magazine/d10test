@@ -1,0 +1,25 @@
+uuid: 1b676cc6-9425-43f0-a8f4-12cdcaa54af3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.challengeproject.bp_text
+    - paragraphs.paragraphs_type.challengeproject
+  module:
+    - text
+id: paragraph.challengeproject.default
+targetEntityType: paragraph
+bundle: challengeproject
+mode: default
+content:
+  bp_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

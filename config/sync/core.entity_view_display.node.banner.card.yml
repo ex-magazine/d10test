@@ -1,0 +1,87 @@
+uuid: 3891fe01-d3df-46ae-8b47-86e627927200
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.card
+    - field.field.node.banner.body
+    - field.field.node.banner.field_domain_access
+    - field.field.node.banner.field_domain_all_affiliates
+    - field.field.node.banner.field_image
+    - field.field.node.banner.field_lean_more
+    - field.field.node.banner.field_position
+    - field.field.node.banner.field_svg
+    - field.field.node.banner.field_title_second
+    - image.style.wide
+    - node.type.banner
+  module:
+    - image
+    - layout_builder
+    - link
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.banner.card
+targetEntityType: node
+bundle: banner
+mode: card
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_lean_more:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title_second:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_svg: true
+  langcode: true

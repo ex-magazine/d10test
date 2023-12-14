@@ -1,0 +1,90 @@
+/* stylelint-disable selector-max-id, selector-id-pattern */
+.layout-builder-form #drupal-off-canvas .form-item {
+  width: 100%;
+}
+
+.layout-builder-form #drupal-off-canvas .js-media-library-open-button {
+  display: block !important;
+  width: 80% !important;
+  margin: 0 auto !important;
+}
+
+.layout-builder-form #drupal-off-canvas .block-categories {
+  padding-top: 1rem;
+}
+
+.layout-builder-form #drupal-off-canvas .inline-block-list {
+  display: inherit !important;
+}
+
+.layout-builder-form #drupal-off-canvas .form-type-radio {
+  width: auto;
+}
+
+.layout-builder-form #drupal-off-canvas .form-type-checkbox {
+  align-items: center;
+}
+
+.layout-builder-form #drupal-off-canvas .form-type-checkbox .usa-checkbox__label {
+  padding-left: 0 !important;
+}
+
+.layout-builder-form #drupal-off-canvas .uswds_background--position {
+  padding-bottom: 1.5rem;
+}
+
+.layout-builder-form #drupal-off-canvas .uswds_background--position,
+.layout-builder-form #drupal-off-canvas .uswds_background--repeat {
+  max-width: 100% !important;
+}
+
+.layout-builder-form #drupal-off-canvas .uswds_background--position .form-radios,
+.layout-builder-form #drupal-off-canvas .uswds_background--repeat .form-radios {
+  max-width: unset !important;
+}
+
+.layout-builder-form #drupal-off-canvas .uswds-group-title {
+  margin-left: 0 !important;
+}
+
+.layout-builder-form #drupal-off-canvas .usa-form-group {
+  margin-top: 0 !important;
+}
+
+.layout-builder-form #drupal-off-canvas .spacing-preview .padding-box {
+  height: auto !important;
+}
+
+.layout-builder-form #drupal-off-canvas .usa-radio__label {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.layout-builder-form #drupal-off-canvas #uswds-border-preview {
+  width: auto !important;
+}
+
+.layout-builder-form #drupal-off-canvas .inline-block-list li {
+  width: 100% !important;
+  border-bottom: 0 !important;
+}
+
+.layout-builder-form .node-layout-builder-form {
+  max-width: 100%;
+}
+
+.layout-builder-form .usa-alert {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.layout-builder-form .entity-view-display-layout-builder-form {
+  max-width: 100% !important;
+  padding: 1rem 0;
+}
+
+.layout-builder-form .entity-view-display-layout-builder-form .layout-builder__message {
+  padding-top: 1rem;
+}
+
+/* stylelint-enable selector-max-id, selector-id-pattern */

@@ -1,0 +1,24 @@
+uuid: b9990121-8ff3-4907-8336-e7ce27d8a8ce
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_svg
+    - filter.format.full_html
+    - node.type.service
+  module:
+    - text
+id: node.service.field_svg
+field_name: field_svg
+entity_type: node
+bundle: service
+label: SVG
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

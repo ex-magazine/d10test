@@ -1,0 +1,21 @@
+uuid: e5d6c6b1-d909-4528-8cc3-ac7dd74c93d5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clientcategory
+    - node.type.client
+  module:
+    - options
+id: node.client.field_clientcategory
+field_name: field_clientcategory
+entity_type: node
+bundle: client
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

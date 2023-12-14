@@ -1,0 +1,21 @@
+uuid: 455fc660-8752-4c2b-a4aa-041c103b8578
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.hero
+_core:
+  default_config_hash: P8uaG7MKmIo9kXe0mx3tg_5covyUhxChsXeUxUgBGRw
+id: paragraph.hero.field_description
+field_name: field_description
+entity_type: paragraph
+bundle: hero
+label: Description
+description: 'Accessibility text. Default: <em>Highlights section</em>'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

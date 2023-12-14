@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ebt_micromodal
+    - field.storage.block_content.field_ebt_micromodal_title
+  module:
+    - text
+id: block_content.ebt_micromodal.field_ebt_micromodal_title
+field_name: field_ebt_micromodal_title
+entity_type: block_content
+bundle: ebt_micromodal
+label: 'Micromodal Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

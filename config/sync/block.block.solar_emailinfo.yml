@@ -1,0 +1,29 @@
+uuid: c79c47a2-e2ba-4312-a54b-6c2922786416
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d32cb378-716b-432d-b90e-28a0868d25f9'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - solar
+third_party_settings:
+  block_classes:
+    block_class: left
+id: solar_emailinfo
+theme: solar
+region: topbar
+weight: 0
+provider: null
+plugin: 'block_content:d32cb378-716b-432d-b90e-28a0868d25f9'
+settings:
+  id: 'block_content:d32cb378-716b-432d-b90e-28a0868d25f9'
+  label: 'Email info'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

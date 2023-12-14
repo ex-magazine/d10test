@@ -1,0 +1,200 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Table drag behavior for off-canvas dialog.
+ *
+ * @see tabledrag.js
+ */
+
+.drag {
+  cursor: move;
+}
+
+table {
+  .region-message {
+    color: #fff;
+  }
+
+  .region-populated {
+    display: none;
+  }
+}
+
+.add-new {
+  .tabledrag-changed {
+    display: none;
+  }
+}
+
+.draggable {
+  .tabledrag-handle {
+    float: left; /* LTR */
+    overflow: hidden;
+    min-width: 20px;
+    height: auto;
+    margin: 0 5px 0 0;
+    padding: 0;
+    cursor: move;
+    text-decoration: none;
+    background-image: none;
+
+    .handle {
+      width: auto;
+      height: auto;
+      margin: 0;
+      padding: 0;
+
+      @include smooth-all-transition;
+
+      opacity: 0.75;
+      background-color: transparent;
+      background-image: $move-icon;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    &:hover,
+    &:focus {
+      .handle {
+        text-decoration: none;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+tr {
+  td {
+    transition: background 0.3s ease;
+
+    abbr {
+      margin-left: 5px; /* LTR */
+    }
+  }
+
+  &:hover {
+    td {
+      background: darken($panel-bg-color, 5%); /* stylelint-disable-line */
+    }
+  }
+
+  &.drag {
+    td {
+      background: darken($panel-bg-color, 7%); /* stylelint-disable-line */
+    }
+  }
+
+  &.region-title {
+    font-weight: normal;
+  }
+
+  &.drag-previous {
+    td {
+      background: darken($panel-bg-color, 10%); /* stylelint-disable-line */
+    }
+
+    &:hover {
+      td {
+        background: darken($panel-bg-color, 12%); /* stylelint-disable-line */
+      }
+    }
+  }
+}
+
+.link {
+  &.tabledrag-toggle-weight {
+    margin-bottom: 1rem;
+    color: $panel-link-color;
+    outline: none;
+  }
+}
+
+.tabledrag-changed-warning {
+  margin-bottom: 1.5rem;
+  color: darken($state-warning, 10%); /* stylelint-disable-line */
+}
+
+.touchevents {
+  .draggable {
+    td {
+      padding: 0 10px;
+    }
+
+    .menu-item__link {
+      display: inline-block;
+      padding: 10px 0;
+    }
+  }
+
+  .tabledrag-handle {
+    width: 40px;
+    height: 44px;
+
+    .handle {
+      height: 21px;
+      background-position: 40% 19px; /* LTR */
+    }
+  }
+
+  &.drag {
+    .tabledrag-handle {
+      .handle {
+        background-position: 50% -32px;
+      }
+    }
+  }
+
+}
+
+.tabledrag-toggle-weight-wrapper {
+  padding-top: 10px;
+  text-align: right; /* LTR */
+}
+
+.indentation {
+  float: left; /* LTR */
+  width: auto;
+  height: auto;
+  margin: 0 3px 0 -10px; /* LTR */
+  padding: 0 0 0 10px; /* LTR */
+}
+
+[dir="rtl"] {
+  .draggable {
+    .tabledrag-handle {
+      float: right;
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+
+  tr {
+    td {
+      abbr {
+        margin-right: 5px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .touch {
+    .tabledrag-handle {
+      .handle {
+        background-position: right 40% top 19px;
+      }
+    }
+  }
+
+  .tabledrag-toggle-weight-wrapper {
+    text-align: left;
+  }
+
+  .indentation {
+    float: right;
+    margin: 0 -10px 0 3px;
+    padding: 0 10px 0 0;
+  }
+}

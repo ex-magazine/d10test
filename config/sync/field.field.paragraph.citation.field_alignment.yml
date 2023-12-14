@@ -1,0 +1,25 @@
+uuid: e3281e4d-2296-4150-b3b2-699531f4432a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_alignment
+    - paragraphs.paragraphs_type.citation
+  module:
+    - options
+_core:
+  default_config_hash: wWiTOHH54w72pcZg4g9ABJW71VcUA7vt9KbWIqJOXZ0
+id: paragraph.citation.field_alignment
+field_name: field_alignment
+entity_type: paragraph
+bundle: citation
+label: Alignment
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: text-start
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,23 @@
+uuid: eba89934-babd-4113-b70a-57c754eddafa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_carousel_slide_spacing
+    - paragraphs.paragraphs_type.carousel
+  module:
+    - options
+_core:
+  default_config_hash: VXJbFnuP8gXx2E0g-5sOowzBAuS3XZ3DQpmJFwNMsSo
+id: paragraph.carousel.field_carousel_slide_spacing
+field_name: field_carousel_slide_spacing
+entity_type: paragraph
+bundle: carousel
+label: 'Slide spacing'
+description: 'Select slide separator.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

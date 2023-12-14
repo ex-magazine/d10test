@@ -1,0 +1,14 @@
+uuid: 6c9f7024-eb49-4785-9260-10f7fc672476
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmesolar_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_add_action.cmesolar_cmenergy_local
+label: 'Add selected content to the cmesolar.cmenergy.local domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: cmesolar_cmenergy_local

@@ -1,0 +1,27 @@
+uuid: 2e2b6aa4-c71c-40a9-89f9-0783ece294d1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_clientcategory
+field_name: field_clientcategory
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: Client
+    -
+      value: '2'
+      label: Member
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: ec22b27b-0b36-43aa-b0bc-7d5e17f722e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lean_more
+    - node.type.banner
+  module:
+    - link
+id: node.banner.field_lean_more
+field_name: field_lean_more
+entity_type: node
+bundle: banner
+label: 'Learn more'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

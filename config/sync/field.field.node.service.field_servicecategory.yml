@@ -1,0 +1,21 @@
+uuid: f929e963-a7eb-498b-a866-22cb74c78518
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_servicecategory
+    - node.type.service
+  module:
+    - options
+id: node.service.field_servicecategory
+field_name: field_servicecategory
+entity_type: node
+bundle: service
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

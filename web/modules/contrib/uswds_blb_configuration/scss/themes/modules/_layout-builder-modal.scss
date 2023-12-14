@@ -1,0 +1,75 @@
+@import "../../variables";
+@import "../../mixins";
+
+#layout-builder-modal {
+  padding: 1.5rem 2rem;
+  color: $panel-text-color;
+  border-radius: 0 0 $border-radius $border-radius;
+  background: $panel-bg-color;
+
+  // Update Button.
+  #uswds_lb_ui  {
+    margin: -1.5rem -2rem;
+
+    #uswds_nav-tabs {
+      width: calc(100% + 40px);
+      margin: 0 -40px 30px -40px;
+    }
+
+    .blb_tab-content {
+      padding: 0 2rem;
+    }
+  }
+
+  // Primary modal action button.
+  form > {
+    #uswds_lb_ui,
+    .form-wrapper {
+      ~ button.button,
+      ~ input[type="submit"].button {
+        float: right;
+        width: auto !important;
+        margin: 1.5rem 0;
+      }
+    }
+  }
+}
+
+// Layout Builder Modal
+.ui-dialog.ui-layout-builder-modal {
+  border: 0;
+  border-radius: $border-radius;
+  background: transparent;
+
+  .ui-dialog-titlebar {
+    padding: 1rem 2rem;
+    color: $panel-text-color;
+    border: 0;
+    border-radius: $border-radius $border-radius 0 0;
+    background-color: $tab-bg-color;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  .ui-dialog-titlebar-close {
+    top: 50%;
+    right: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-top: -0.75rem;
+    opacity: 0.6;
+    border: 0;
+    border-radius: 1.5rem;
+    outline: 0;
+    background: #{$close-circle-icon} center center no-repeat $panel-bg-color;
+    background-size: contain;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      border: 0;
+      background: #{$close-circle-icon} center center no-repeat $panel-bg-color;
+      background-size: contain;
+    }
+  }
+}

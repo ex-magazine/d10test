@@ -1,0 +1,11 @@
+uuid: d8cb0565-9406-43d9-9429-5ee568792078
+langcode: en
+status: true
+dependencies: {  }
+id: cmesolar_cmenergy_local
+domain_id: 12231833
+hostname: solar.adn.id.vn
+name: solar.adn.id.vn
+scheme: http
+weight: 2
+is_default: false

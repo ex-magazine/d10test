@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: ebt_tiles
+label: 'EBT Tiles'
+revision: 0
+description: 'Extra Block Type (EBT): Tiles'

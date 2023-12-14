@@ -1,0 +1,86 @@
+uuid: f5764534-fe46-4fe1-84b9-6b7f5f7ffb95
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.project_details.body
+    - field.field.node.project_details.field_address
+    - field.field.node.project_details.field_category
+    - field.field.node.project_details.field_clients
+    - field.field.node.project_details.field_domain_access
+    - field.field.node.project_details.field_domain_all_affiliates
+    - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_the_challenge_of_project
+    - image.style.wide
+    - node.type.project_details
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+    - user
+id: node.project_details.default
+targetEntityType: node
+bundle: project_details
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_the_challenge_of_project:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  langcode: true

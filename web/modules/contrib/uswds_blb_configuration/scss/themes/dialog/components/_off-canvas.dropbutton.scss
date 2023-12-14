@@ -1,0 +1,72 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Styles for dropbuttons in the off-canvas dialog.
+ */
+
+.dropbutton-widget {
+  color: #fff;
+  background: #277abd;
+
+  *:hover {
+    background: #2b8bd8;
+  }
+}
+
+/*
+ * Style dropbutton single.
+ */
+.dropbutton {
+  li,
+  a {
+    color: $panel-link-color;
+
+    &:hover,
+    &:focus {
+      color: darken($panel-link-color, 10%); /* stylelint-disable-line */
+      background: transparent;
+    }
+  }
+}
+
+/*
+ * Style dropbutton multiple.
+ */
+
+.dropbutton-multiple {
+  .dropbutton-widget {
+    &:hover {
+      background-color: lighten($panel-link-color, 20%); /* stylelint-disable-line */
+    }
+  }
+}
+
+/* The toggle to expand the button. */
+.dropbutton-toggle {
+  color: $panel-text-color;
+}
+
+/* The toggle arrow. */
+.dropbutton-arrow {
+  color: $panel-text-color;
+}
+
+/* Push the widget to the right so text expands left. */
+td {
+  .dropbutton-widget {
+    background: lighten($panel-link-color, 20%) none; /* stylelint-disable-line */
+  }
+
+  .dropbutton-multiple {
+    &.open {
+      .dropbutton {
+        li,
+        a {
+          color: $panel-text-color;
+        }
+      }
+    }
+  }
+}

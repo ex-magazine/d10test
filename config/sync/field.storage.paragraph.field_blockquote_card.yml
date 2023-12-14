@@ -1,0 +1,20 @@
+uuid: 1d87d0bc-da64-49e7-829e-c010e9b0ecb3
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: _50_9U6td_scIqh0yIRTTx5pKOBDddHZym9qRTakboU
+id: paragraph.field_blockquote_card
+field_name: field_blockquote_card
+entity_type: paragraph
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

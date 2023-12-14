@@ -1,0 +1,56 @@
+@import "../../variables";
+@import "../../mixins";
+
+.ui-dialog .ui-resizable-w {
+  left: -20px;
+  width: 20px;
+  cursor: col-resize;
+
+  // Draggable tab.
+  &::before {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 75px;
+    margin-top: -10px;
+    content: "";
+
+    @include smooth-all-transition;
+
+    border-radius: $border-radius/2 0 0 $border-radius/2;
+    background-color: $panel-bg-color;
+    box-shadow: -2px 0 4px 0 rgba(0,0,0,0.6);
+  }
+
+  // 2 Lines.
+  &::after {
+
+    position: absolute;
+    top: 50%;
+    left: 8px;
+    display: block;
+    width: 6px;
+    height: 55px;
+    margin-top: 0;
+    content: "";
+
+    @include smooth-all-transition;
+
+    border-right: 1px solid darken($panel-bg-color, 10%); /* stylelint-disable-line */
+    border-left: 1px solid darken($panel-bg-color, 10%); /* stylelint-disable-line */
+    background-size: contain;
+  }
+
+  &:hover {
+    &::before {
+      box-shadow: -2px 0 4px 0 rgba(0,0,0,0.6),
+        inset -7px 0 7px -7px rgba(0,0,0,0.2);
+    }
+
+    &::after {
+      border-right-color: darken($panel-bg-color, 15%); /* stylelint-disable-line */
+      border-left-color: darken($panel-bg-color, 15%); /* stylelint-disable-line */
+    }
+  }
+}

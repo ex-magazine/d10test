@@ -1,0 +1,14 @@
+cmenergy_local:
+  site_name: 'CME - Copper Mountain Energy'
+  site_slogan: ''
+  site_mail: thuy.tranthanh.bd@gmail.com
+  site_frontpage: /node/203
+  site_403: /node/198
+  site_404: /node/198
+cmesolar_cmenergy_local:
+  site_name: 'CME - Solar'
+  site_slogan: ''
+  site_mail: thuy.tranthanh.bd@gmail.com
+  site_frontpage: /node/152
+  site_403: /node/198
+  site_404: /node/198

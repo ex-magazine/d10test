@@ -1,0 +1,28 @@
+uuid: f295c374-6c32-4d94-800f-1a19bda6a757
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.ourmember
+  module:
+    - block_classes
+    - views
+  theme:
+    - solar
+third_party_settings:
+  block_classes:
+    block_class: mt--200
+id: solar_views_block__ourmember_block_1
+theme: solar
+region: footer_client
+weight: 0
+provider: null
+plugin: 'views_block:ourmember-block_1'
+settings:
+  id: 'views_block:ourmember-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

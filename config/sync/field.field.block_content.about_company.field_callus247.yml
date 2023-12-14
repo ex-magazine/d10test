@@ -1,0 +1,19 @@
+uuid: ddc27f23-9d14-4627-83d6-31ce452ec46e
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.about_company
+    - field.storage.block_content.field_callus247
+id: block_content.about_company.field_callus247
+field_name: field_callus247
+entity_type: block_content
+bundle: about_company
+label: 'Call Us 24/7'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

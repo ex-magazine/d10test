@@ -1,0 +1,30 @@
+@import "../../../variables";
+@import "../../../mixins";
+
+/**
+ * @file
+ * Visual styling for tables in the off-canvas dialog.
+ */
+
+table {
+  color: $panel-text-color;
+}
+
+td,
+th {
+  border-bottom: 1px solid rgba($panel-text-color, 0.2);
+}
+
+td {
+  vertical-align: middle;
+  color: $panel-text-color;
+}
+
+tr {
+  &:hover {
+    td {
+      background-color: rgba($panel-text-color, 0.035);
+    }
+
+  }
+}

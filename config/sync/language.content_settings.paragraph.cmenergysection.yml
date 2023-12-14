@@ -1,0 +1,18 @@
+uuid: 09627b9d-db69-4012-9410-d43f39a0ee1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.cmenergysection
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.cmenergysection
+target_entity_type_id: paragraph
+target_bundle: cmenergysection
+default_langcode: site_default
+language_alterable: false

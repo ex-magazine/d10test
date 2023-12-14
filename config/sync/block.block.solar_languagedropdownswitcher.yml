@@ -1,0 +1,54 @@
+uuid: d886b1f1-6750-4caa-a862-08a96f273a80
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_classes
+    - domain
+    - lang_dropdown
+  theme:
+    - solar
+id: solar_languagedropdownswitcher
+theme: solar
+region: help
+weight: -9
+provider: null
+plugin: 'language_dropdown_block:language_interface'
+settings:
+  id: 'language_dropdown_block:language_interface'
+  label: 'Language dropdown switcher'
+  label_display: '0'
+  provider: lang_dropdown
+  showall: true
+  hide_only_one: true
+  tohome: false
+  width: 165
+  display: 1
+  widget: 1
+  msdropdown:
+    visible_rows: 5
+    rounded: true
+    animation: slideDown
+    event: click
+    skin: ldsSkin
+    custom_skin: ''
+  chosen:
+    disable_search: true
+    no_results_text: 'No language match'
+  ddslick:
+    ddslick_height: 0
+    showSelectedHTML: true
+    imagePosition: left
+    skin: ddsDefault
+    custom_skin: ''
+  languageicons:
+    flag_position: 1
+  hidden_languages: {  }
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      cmesolar_cmenergy_local: cmesolar_cmenergy_local

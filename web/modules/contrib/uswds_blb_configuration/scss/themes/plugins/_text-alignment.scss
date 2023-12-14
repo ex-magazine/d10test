@@ -1,0 +1,39 @@
+@import "../../variables";
+@import "../../mixins";
+
+$text-alignment-icon-path: "../../images/plugins/text-alignment/";
+
+// Text Alignment
+.field-text-alignment {
+  .form-radios {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input {
+    + label {
+      text-indent: -999em;
+      font-size: 0;
+
+      .input-icon {
+        margin-bottom: 0;
+
+        &[class*="left"] {
+          background-image: url($text-alignment-icon-path + 'text-left.svg');
+        }
+
+        &[class*="center"] {
+          background-image: url($text-alignment-icon-path + 'text-center.svg');
+        }
+
+        &[class*="right"] {
+          background-image: url($text-alignment-icon-path + 'text-right.svg');
+        }
+
+        &[class*="justify"] {
+          background-image: url($text-alignment-icon-path + 'text-justify.svg');
+        }
+      }
+    }
+  }
+}

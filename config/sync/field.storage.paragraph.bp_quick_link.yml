@@ -1,0 +1,21 @@
+uuid: 8708a672-bff6-4dc3-9735-ed2de8a94e9c
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - paragraphs
+_core:
+  default_config_hash: qCBhRcoQExRCW9iOuR5IwfUQprrFjvCOYXojsuSu3y4
+id: paragraph.bp_quick_link
+field_name: bp_quick_link
+entity_type: paragraph
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

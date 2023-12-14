@@ -1,0 +1,30 @@
+uuid: 2e16c786-d321-43e1-a966-338399427aaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latestcasestudies
+  module:
+    - block_classes
+    - system
+    - views
+  theme:
+    - solar
+id: solar_views_block__latestcasestudies_block_1
+theme: solar
+region: our_latest_case_studies
+weight: 0
+provider: null
+plugin: 'views_block:latestcasestudies-block_1'
+settings:
+  id: 'views_block:latestcasestudies-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

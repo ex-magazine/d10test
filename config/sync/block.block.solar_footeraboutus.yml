@@ -1,0 +1,25 @@
+uuid: a83ff8b8-b0a7-4dd1-9a3c-3dab7e06ce8a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:0a036eef-5246-490e-b7f0-4496df996106'
+  module:
+    - block_content
+  theme:
+    - solar
+id: solar_footeraboutus
+theme: solar
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:0a036eef-5246-490e-b7f0-4496df996106'
+settings:
+  id: 'block_content:0a036eef-5246-490e-b7f0-4496df996106'
+  label: 'Footer About us'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

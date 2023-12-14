@@ -1,0 +1,14 @@
+uuid: 49acbe19-5e7a-490d-96c2-2bed652b7930
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmenergy_local
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.cmenergy_local
+label: 'Remove editors from the CME - Copper Mountain Energy domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: cmenergy_local

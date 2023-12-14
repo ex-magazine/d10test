@@ -1,0 +1,22 @@
+uuid: 80012cc9-4bd2-4e19-a182-2d5a7d553395
+langcode: en
+status: true
+dependencies:
+  module:
+    - geofield
+    - paragraphs
+_core:
+  default_config_hash: e1T_Zz5bWd5OShz_oqjMBEfgy8RQzuc1vq7lzumsdy0
+id: paragraph.field_location
+field_name: field_location
+entity_type: paragraph
+type: geofield
+settings:
+  backend: geofield_backend_default
+module: geofield
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

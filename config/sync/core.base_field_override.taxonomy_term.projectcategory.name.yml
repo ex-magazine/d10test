@@ -1,0 +1,18 @@
+uuid: 8fe4ea69-2890-4dd8-b8f9-d76817c0f531
+langcode: en
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.projectcategory
+id: taxonomy_term.projectcategory.name
+field_name: name
+entity_type: taxonomy_term
+bundle: projectcategory
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

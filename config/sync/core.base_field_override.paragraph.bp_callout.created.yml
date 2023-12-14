@@ -1,0 +1,18 @@
+uuid: 0b310516-1498-4108-87cc-258c5d0f3d4d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.bp_callout
+id: paragraph.bp_callout.created
+field_name: created
+entity_type: paragraph
+bundle: bp_callout
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,100 @@
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+/* stylelint-disable-line */
+@keyframes hover-pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes hover-pop {
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+/* stylelint-disable selector-max-id */
+#drupal-off-canvas .form-type-checkbox,
+#drupal-off-canvas .form-radios > div,
+#layout-builder-modal .form-type-checkbox,
+#layout-builder-modal .form-radios > div {
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
+
+#drupal-off-canvas .form-control,
+#layout-builder-modal .form-control {
+  border: 0;
+}
+
+#drupal-off-canvas .custom-control-input,
+#layout-builder-modal .custom-control-input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 1;
+}
+
+#drupal-off-canvas .uswds_flex,
+#layout-builder-modal .uswds_flex {
+  display: flex;
+}
+
+#drupal-off-canvas .uswds-justify-content-between,
+#layout-builder-modal .uswds-justify-content-between {
+  justify-content: space-between;
+}
+
+#drupal-off-canvas .uswds_row,
+#layout-builder-modal .uswds_row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#drupal-off-canvas .uswds_col,
+#layout-builder-modal .uswds_col {
+  -ms-flex-preferred-size: 0;
+  flex-basis: 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  min-width: 0;
+  max-width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#drupal-off-canvas .uswds_col--50,
+#layout-builder-modal .uswds_col--50 {
+  flex: 50%;
+  max-width: 50%;
+}
+
+#drupal-off-canvas .uswds_col--100,
+#layout-builder-modal .uswds_col--100 {
+  flex: 100%;
+  max-width: 100%;
+}
+
+#drupal-off-canvas .uswds-group-title,
+#layout-builder-modal .uswds-group-title {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+
+#drupal-off-canvas .sr-only,
+#layout-builder-modal .sr-only {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+/* stylelint-enable selector-max-id */

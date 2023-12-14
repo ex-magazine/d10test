@@ -1,0 +1,184 @@
+uuid: bd395ac5-8502-4688-a13c-d08153a74b1e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_paragraphs
+    - node.type.landingpage
+    - paragraphs.paragraphs_type.accordion
+    - paragraphs.paragraphs_type.attachments
+    - paragraphs.paragraphs_type.callout
+    - paragraphs.paragraphs_type.carousel
+    - paragraphs.paragraphs_type.citation
+    - paragraphs.paragraphs_type.cmenergysection
+    - paragraphs.paragraphs_type.content
+    - paragraphs.paragraphs_type.from_library
+    - paragraphs.paragraphs_type.gallery
+    - paragraphs.paragraphs_type.hero
+    - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.section
+    - paragraphs.paragraphs_type.settings
+    - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.webform
+  module:
+    - entity_reference_revisions
+id: node.landingpage.field_paragraphs
+field_name: field_paragraphs
+entity_type: node
+bundle: landingpage
+label: Paragraphs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      accordion: accordion
+      attachments: attachments
+      callout: callout
+      carousel: carousel
+      citation: citation
+      content: content
+      gallery: gallery
+      from_library: from_library
+      hero: hero
+      map: map
+      node_reference: node_reference
+      section: section
+      settings: settings
+      timeline: timeline
+      webform: webform
+      cmenergysection: cmenergysection
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 19
+        enabled: true
+      accordion_item:
+        weight: 20
+        enabled: false
+      attachments:
+        weight: 21
+        enabled: true
+      bp_accordion:
+        weight: 46
+        enabled: false
+      bp_accordion_section:
+        weight: 47
+        enabled: false
+      bp_blank:
+        weight: 48
+        enabled: false
+      bp_block:
+        weight: 49
+        enabled: false
+      bp_callout:
+        weight: 50
+        enabled: false
+      bp_card:
+        weight: 51
+        enabled: false
+      bp_carousel:
+        weight: 52
+        enabled: false
+      bp_column_wrapper:
+        weight: 56
+        enabled: false
+      bp_columns:
+        weight: 53
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 54
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 55
+        enabled: false
+      bp_contact:
+        weight: 57
+        enabled: false
+      bp_image:
+        weight: 58
+        enabled: false
+      bp_modal:
+        weight: 59
+        enabled: false
+      bp_quicklinks:
+        weight: 60
+        enabled: false
+      bp_simple:
+        weight: 61
+        enabled: false
+      bp_stat:
+        weight: 62
+        enabled: false
+      bp_statistics:
+        weight: 63
+        enabled: false
+      bp_tab_section:
+        weight: 65
+        enabled: false
+      bp_tabs:
+        weight: 64
+        enabled: false
+      bp_view:
+        weight: 66
+        enabled: false
+      bp_webform:
+        weight: 67
+        enabled: false
+      callout:
+        weight: 22
+        enabled: true
+      carousel:
+        weight: 23
+        enabled: true
+      citation:
+        weight: 24
+        enabled: true
+      cmenergysection:
+        weight: 71
+        enabled: true
+      content:
+        weight: 25
+        enabled: true
+      from_library:
+        weight: 27
+        enabled: true
+      gallery:
+        weight: 26
+        enabled: true
+      gallery_item:
+        weight: 27
+        enabled: false
+      hero:
+        weight: 28
+        enabled: true
+      map:
+        weight: 29
+        enabled: true
+      node_reference:
+        weight: 30
+        enabled: true
+      section:
+        weight: 31
+        enabled: true
+      settings:
+        weight: 32
+        enabled: true
+      slide:
+        weight: 33
+        enabled: false
+      timeline:
+        weight: 34
+        enabled: true
+      timeline_item:
+        weight: 35
+        enabled: false
+      webform:
+        weight: 36
+        enabled: true
+field_type: entity_reference_revisions

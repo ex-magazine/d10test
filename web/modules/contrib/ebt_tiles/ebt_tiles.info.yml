@@ -1,0 +1,13 @@
+type: module
+name: 'Extra Block Types (EBT): Tiles'
+description: 'Adds Tiles block type with WYSIWYG editor.'
+core_version_requirement: ^9.3 || ^10
+package: 'Extra Block Types'
+
+dependencies:
+  - ebt_core:ebt_core
+
+# Information added by Drupal.org packaging script on 2023-11-12
+version: '1.4.0'
+project: 'ebt_tiles'
+datestamp: 1699794394

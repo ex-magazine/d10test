@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+id: media.ebt_video
+label: 'EBT Video'
+targetEntityType: media
+cache: true
