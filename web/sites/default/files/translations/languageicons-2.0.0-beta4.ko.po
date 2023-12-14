@@ -1,0 +1,22 @@
+# Korean translation of Language Icons (2.0.0-beta4)
+# Copyright (c) 2023 by the Korean translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Language Icons (2.0.0-beta4)\n"
+"POT-Creation-Date: 2023-02-10 14:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Korean\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Image size"
+msgstr "이미지 크기"
+msgid "Icons"
+msgstr "아이콘"
+msgid "Node links"
+msgstr "노드 링크"
+msgid "Multilingual"
+msgstr "다국어"
