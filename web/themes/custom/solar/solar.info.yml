@@ -14,6 +14,7 @@ regions:
   help: Help
   language: Language interface
   primary_menu: 'Primary menu'
+  mobile_menu: Mobile menu
   secondary_menu: 'Secondary menu'
   highlighted: Highlighted
   breadcrumb: Breadcrumb

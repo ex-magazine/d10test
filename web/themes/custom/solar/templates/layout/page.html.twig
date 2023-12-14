@@ -254,8 +254,16 @@
 <div id="side-bar" class="side-bar header-two">
     <button class="close-icon-menu"><i class="far fa-times"></i></button>
     <!-- inner menu area desktop start -->
-    {{ drupal_entity('node', 211, 'hero') }}    
-    <!-- mobile menu area start -->
+    {{ drupal_entity('node', 211, 'hero') }}
+
+    <!-- mobile menu area start -->    
+    {% if page.mobile_menu %}   
+        <div class="mobile-menu-main">
+            <nav class="nav-main mainmenu-nav mt--30">
+                {{ page.mobile_menu }} 
+            </nav>
+        </div>
+    {% endif %}
     <div class="mobile-menu-main">
         <nav class="nav-main mainmenu-nav mt--30">
             <ul class="mainmenu metismenu" id="mobile-menu-active">
