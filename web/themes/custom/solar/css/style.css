@@ -15310,6 +15310,17 @@ header.header-four .header-right .action-button-menu #menu-btn {
 .mobile-menu-main nav ul li.has-droupdown.third-lvl ul {
   padding: 0 20px;
 }
+.mobile-menu-main nav ul li.has-droupdown.third-lvl ul.menu--level-3 li a{
+  padding: 5px 0;
+  font-weight: 400;
+  font-size: 14px;
+}
+.mobile-menu-main nav ul li.has-droupdown.third-lvl ul.menu--level-3 li{
+  margin: 0px 0 !important;
+}
+.mobile-menu-main nav ul li.has-droupdown.third-lvl ul.menu--level-3 li:last-child{
+  border-bottom: 0px !important;
+}
 .mobile-menu-main nav ul li.has-droupdown.third-lvl ul li {
   margin: 10px 0 !important;
   position: relative;
@@ -15320,9 +15331,9 @@ header.header-four .header-right .action-button-menu #menu-btn {
   color: var(--color-primary);
 }
 .mobile-menu-main nav ul li.has-droupdown.third-lvl ul li a {
-  position: absolute;
+  /* position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100%; */
   transition: all 0.3s;
 }
 .mobile-menu-main nav ul li a {
