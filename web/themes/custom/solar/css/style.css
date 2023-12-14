@@ -23653,7 +23653,7 @@ p {
   justify-content: center;
 }
 .side-bar .inner-main-wrapper-desk .thumbnail img {
-  width: 85%;
+  width: 100%;
   margin: auto;
 }
 .side-bar .inner-main-wrapper-desk .inner-content {
@@ -23669,8 +23669,8 @@ p {
   font-weight: 600;
 }
 .side-bar .inner-main-wrapper-desk .inner-content .footer {
-  padding-top: 50px;
-  margin-top: 80px;
+  padding-top: 30px;
+  margin-top: 30px;
   border-top: 1px solid #c2c2c2;
 }
 .side-bar .inner-main-wrapper-desk .inner-content .footer .title {
