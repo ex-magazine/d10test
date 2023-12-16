@@ -19132,6 +19132,7 @@ nav ul li a {
 .title-area-left {
   text-align: left;
 }
+.title-area-center p.pre,
 .title-area-left p.pre {
   margin-bottom: 40px;
 }
