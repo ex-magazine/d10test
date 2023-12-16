@@ -126,36 +126,35 @@
 {% endif %}
 
 
-<main role="main">
-	{% if page.sidebar and not is_front %}	
-		<div class="page-with-sidebar section-spacing inner-page">
-			<div class="container">
-		        <div class="row">
-					<div class='col-md-8 col-lg-9'>
-	{% elseif not is_front %}
-		<div class="page-without-sidebar section-spacing inner-page">
-			<div class='container'>
-	{% else %}
-		<div class="page-without-sidebar section-spacing">
-	{% endif %}
-			{{ page.content_above }}
-			{{ page.content }}
-			
-	{% if page.sidebar and not is_front %}	
-					</div>
-					<div class="col-md-4 col-lg-3 right-sidebar">
-						{{ page.sidebar }}
-					</div>
-				</div>
-			</div>
-		</div>
-	{% elseif not is_front %}
-			</div>
-		</div>
-	{% else %}
-		</div>
-	{% endif %}
-</main>
+
+{% if page.sidebar and not is_front %}	
+    <div class="rts-service-details-area rts-section-gap">
+        <div class="container">
+            <div class="row g-40">
+                <div class="col-lg-8">
+{% elseif not is_front %}
+    <div class="page-without-sidebar section-spacing inner-page">
+        <div class='container'>
+{% else %}
+    <div class="page-without-sidebar section-spacing">
+{% endif %}
+        {{ page.content_above }}
+        {{ page.content }}         
+{% if page.sidebar and not is_front %}	
+                </div>
+                <div class="col-xl-4 col-md-12 col-sm-12 col-12">
+                    {{ page.sidebar }}
+                </div>
+            </div>
+        </div>
+    </div>
+{% elseif not is_front %}
+        </div>
+    </div>
+{% else %}
+    </div>
+{% endif %}
+
 
 
 <!-- banner two swiper start -->
