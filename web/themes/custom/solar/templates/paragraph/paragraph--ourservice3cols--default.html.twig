@@ -1,0 +1,70 @@
+{%
+  set classes = [
+    'paragraph',
+    'rts-service-area rts-section-gap bg-service_s',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+        <div class="container">
+            <div class="row g-40">
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="service-single-s-main">
+                        <div class="icon">                          
+                            {{ paragraph.field_ourservice3cols.0.entity.bp_unrestricted.value|raw  }}
+                        </div>
+                        <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.uri }}">
+                            <h5 class="title">
+                                {{ paragraph.field_ourservice3cols.0.entity.field_title.value|raw  }}                                
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            {{ paragraph.field_ourservice3cols.0.entity.bp_card_text.value|raw  }}                          
+                        </p>
+                        <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                        {{ paragraph.field_ourservice3cols.0.entity.bp_card_link.title }}<i class="fa-regular fa-arrow-right"></i></a>                        
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="service-single-s-main yellow-bg">
+                        <div class="icon">                          
+                            {{ paragraph.field_ourservice3cols.1.entity.bp_unrestricted.value|raw  }}
+                        </div>
+                        <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.uri }}">
+                            <h5 class="title">
+                                {{ paragraph.field_ourservice3cols.1.entity.field_title.value|raw  }}                                
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            {{ paragraph.field_ourservice3cols.1.entity.bp_card_text.value|raw  }} 
+                        </p>
+                        <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                        {{ paragraph.field_ourservice3cols.1.entity.bp_card_link.title }}<i class="fa-regular fa-arrow-right"></i></a>             
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                    <div class="service-single-s-main">
+                        <div class="icon">                          
+                            {{ paragraph.field_ourservice3cols.2.entity.bp_unrestricted.value|raw  }}
+                        </div>
+                        <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.uri }}">
+                            <h5 class="title">
+                                {{ paragraph.field_ourservice3cols.2.entity.field_title.value|raw  }}                                
+                            </h5>
+                        </a>
+                        <p class="disc">
+                            {{ paragraph.field_ourservice3cols.2.entity.bp_card_text.value|raw  }} 
+                        </p>
+                        <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                        {{ paragraph.field_ourservice3cols.2.entity.bp_card_link.title }}<i class="fa-regular fa-arrow-right"></i></a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
