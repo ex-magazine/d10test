@@ -1,0 +1,24 @@
+uuid: 73906c8d-c247-47a9-b574-19b74277e197
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_text
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solar_content_item
+  module:
+    - text
+id: paragraph.solar_content_item.bp_text
+field_name: bp_text
+entity_type: paragraph
+bundle: solar_content_item
+label: Text
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

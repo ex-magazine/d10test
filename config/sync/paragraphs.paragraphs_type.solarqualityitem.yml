@@ -1,0 +1,10 @@
+uuid: 0b534935-e6b1-4724-abdf-fef0d35b337c
+langcode: en
+status: true
+dependencies: {  }
+id: solarqualityitem
+label: 'Solar QUALITY HANDYMAN SOLUTION item'
+icon_uuid: null
+icon_default: null
+description: 'Solar QUALITY HANDYMAN SOLUTION item'
+behavior_plugins: {  }

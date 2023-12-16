@@ -1,0 +1,84 @@
+uuid: c008b690-d9aa-46b2-a6ca-c00bf4627bd7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solaraboutcompanytab.bp_accordion_section_title
+    - field.field.paragraph.solaraboutcompanytab.bp_card_image
+    - field.field.paragraph.solaraboutcompanytab.bp_card_link
+    - field.field.paragraph.solaraboutcompanytab.bp_modal_title
+    - field.field.paragraph.solaraboutcompanytab.field_items
+    - field.field.paragraph.solaraboutcompanytab.field_section_content
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.solaraboutcompanytab
+  module:
+    - image
+    - link
+    - paragraphs
+    - text
+id: paragraph.solaraboutcompanytab.default
+targetEntityType: paragraph
+bundle: solaraboutcompanytab
+mode: default
+content:
+  bp_accordion_section_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_card_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  bp_card_link:
+    type: link_default
+    weight: 2
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  bp_modal_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_items:
+    type: paragraphs
+    weight: 5
+    region: content
+    settings:
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
+    third_party_settings: {  }
+  field_section_content:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

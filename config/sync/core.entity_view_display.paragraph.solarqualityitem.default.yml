@@ -1,0 +1,39 @@
+uuid: 70ceeff4-e176-497c-a71f-0cc58353b710
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solarqualityitem.bp_header
+    - field.field.paragraph.solarqualityitem.bp_text
+    - field.field.paragraph.solarqualityitem.field_citation
+    - paragraphs.paragraphs_type.solarqualityitem
+  module:
+    - text
+id: paragraph.solarqualityitem.default
+targetEntityType: paragraph
+bundle: solarqualityitem
+mode: default
+content:
+  bp_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  bp_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_citation:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

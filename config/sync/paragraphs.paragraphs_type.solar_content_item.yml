@@ -1,0 +1,10 @@
+uuid: bbb57bde-17d3-433a-b075-7fccd865470a
+langcode: en
+status: true
+dependencies: {  }
+id: solar_content_item
+label: 'Solar content item'
+icon_uuid: null
+icon_default: null
+description: 'Solar content item'
+behavior_plugins: {  }

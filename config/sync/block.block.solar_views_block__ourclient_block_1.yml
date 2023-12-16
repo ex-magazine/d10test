@@ -10,6 +10,9 @@ dependencies:
     - views
   theme:
     - solar
+third_party_settings:
+  block_classes:
+    block_class: mb--200
 id: solar_views_block__ourclient_block_1
 theme: solar
 region: footer_client

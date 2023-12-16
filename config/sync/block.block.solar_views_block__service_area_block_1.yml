@@ -5,7 +5,6 @@ dependencies:
   config:
     - views.view.service_area
   module:
-    - block_classes
     - system
     - views
   theme:

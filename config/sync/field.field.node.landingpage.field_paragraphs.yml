@@ -19,6 +19,8 @@ dependencies:
     - paragraphs.paragraphs_type.node_reference
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.settings
+    - paragraphs.paragraphs_type.solar_about_company
+    - paragraphs.paragraphs_type.solarqualityhandymansolution
     - paragraphs.paragraphs_type.timeline
     - paragraphs.paragraphs_type.webform
   module:
@@ -53,6 +55,8 @@ settings:
       timeline: timeline
       webform: webform
       cmenergysection: cmenergysection
+      solarqualityhandymansolution: solarqualityhandymansolution
+      solar_about_company: solar_about_company
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -136,6 +140,9 @@ settings:
       carousel:
         weight: 23
         enabled: true
+      challengeproject:
+        weight: 75
+        enabled: false
       citation:
         weight: 24
         enabled: true
@@ -171,6 +178,18 @@ settings:
         enabled: true
       slide:
         weight: 33
+        enabled: false
+      solar_about_company:
+        weight: 91
+        enabled: true
+      solaraboutcompanytab:
+        weight: 88
+        enabled: false
+      solarqualityhandymansolution:
+        weight: 89
+        enabled: true
+      solarqualityitem:
+        weight: 90
         enabled: false
       timeline:
         weight: 34

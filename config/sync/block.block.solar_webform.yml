@@ -5,7 +5,6 @@ dependencies:
   config:
     - webform.webform.call_to_action
   module:
-    - block_classes
     - system
     - webform
   theme:

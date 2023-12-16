@@ -1,0 +1,33 @@
+uuid: 978d1ec3-6854-4d46-975d-5de99979e491
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.solarmobilemenu
+  module:
+    - domain
+    - system
+  theme:
+    - solar
+id: solar_solarmobilemenu
+theme: solar
+region: mobile_menu
+weight: 0
+provider: null
+plugin: 'system_menu_block:solarmobilemenu'
+settings:
+  id: 'system_menu_block:solarmobilemenu'
+  label: 'Solar Mobile Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      cmesolar_cmenergy_local: cmesolar_cmenergy_local

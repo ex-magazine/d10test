@@ -5,7 +5,6 @@ dependencies:
   content:
     - 'block_content:about_company:59616d0c-24c7-4834-af1e-e6397e844352'
   module:
-    - block_classes
     - block_content
     - system
   theme:

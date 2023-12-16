@@ -1,0 +1,37 @@
+uuid: 7fdc7848-fd99-4609-827d-d85862114f5a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6a9398bc-6520-4890-bcab-4e7ef712b578'
+  module:
+    - block_classes
+    - block_content
+    - node
+  theme:
+    - solar
+third_party_settings:
+  block_classes:
+    block_class: mt--40
+id: solar_getintouch
+theme: solar
+region: sidebar
+weight: 0
+provider: null
+plugin: 'block_content:6a9398bc-6520-4890-bcab-4e7ef712b578'
+settings:
+  id: 'block_content:6a9398bc-6520-4890-bcab-4e7ef712b578'
+  label: 'Get in Touch'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      service: service

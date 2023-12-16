@@ -1,0 +1,19 @@
+uuid: 75094f16-cb41-4543-ad52-2243d58613ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_accordion_section_title
+    - paragraphs.paragraphs_type.solaraboutcompanytab
+id: paragraph.solaraboutcompanytab.bp_accordion_section_title
+field_name: bp_accordion_section_title
+entity_type: paragraph
+bundle: solaraboutcompanytab
+label: 'Play video'
+description: 'Play video'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

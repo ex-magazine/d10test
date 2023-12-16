@@ -1,0 +1,169 @@
+uuid: 1b7085b2-856b-470c-9569-374b55f639d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_qualityhandyman
+    - paragraphs.paragraphs_type.solarqualityhandymansolution
+    - paragraphs.paragraphs_type.solarqualityitem
+  module:
+    - entity_reference_revisions
+id: paragraph.solarqualityhandymansolution.field_qualityhandyman
+field_name: field_qualityhandyman
+entity_type: paragraph
+bundle: solarqualityhandymansolution
+label: 'QUALITY HANDYMAN'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      solarqualityitem: solarqualityitem
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 48
+        enabled: false
+      accordion_item:
+        weight: 49
+        enabled: false
+      attachments:
+        weight: 50
+        enabled: false
+      bp_accordion:
+        weight: 51
+        enabled: false
+      bp_accordion_section:
+        weight: 52
+        enabled: false
+      bp_blank:
+        weight: 53
+        enabled: false
+      bp_block:
+        weight: 54
+        enabled: false
+      bp_callout:
+        weight: 55
+        enabled: false
+      bp_card:
+        weight: 56
+        enabled: false
+      bp_carousel:
+        weight: 57
+        enabled: false
+      bp_column_wrapper:
+        weight: 61
+        enabled: false
+      bp_columns:
+        weight: 58
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 59
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 60
+        enabled: false
+      bp_contact:
+        weight: 62
+        enabled: false
+      bp_image:
+        weight: 63
+        enabled: false
+      bp_modal:
+        weight: 64
+        enabled: false
+      bp_quicklinks:
+        weight: 65
+        enabled: false
+      bp_simple:
+        weight: 66
+        enabled: false
+      bp_stat:
+        weight: 67
+        enabled: false
+      bp_statistics:
+        weight: 68
+        enabled: false
+      bp_tab_section:
+        weight: 70
+        enabled: false
+      bp_tabs:
+        weight: 69
+        enabled: false
+      bp_view:
+        weight: 71
+        enabled: false
+      bp_webform:
+        weight: 72
+        enabled: false
+      callout:
+        weight: 73
+        enabled: false
+      carousel:
+        weight: 74
+        enabled: false
+      challengeproject:
+        weight: 75
+        enabled: false
+      citation:
+        weight: 76
+        enabled: false
+      cmenergysection:
+        weight: 77
+        enabled: false
+      content:
+        weight: 78
+        enabled: false
+      from_library:
+        weight: 79
+        enabled: false
+      gallery:
+        weight: 80
+        enabled: false
+      gallery_item:
+        weight: 81
+        enabled: false
+      hero:
+        weight: 82
+        enabled: false
+      map:
+        weight: 83
+        enabled: false
+      node_reference:
+        weight: 84
+        enabled: false
+      section:
+        weight: 85
+        enabled: false
+      settings:
+        weight: 86
+        enabled: false
+      slide:
+        weight: 87
+        enabled: false
+      solar_about_company:
+        weight: 91
+        enabled: false
+      solaraboutcompanytab:
+        weight: 88
+        enabled: false
+      solarqualityhandymansolution:
+        weight: 89
+        enabled: false
+      solarqualityitem:
+        weight: 90
+        enabled: true
+      timeline:
+        weight: 92
+        enabled: false
+      timeline_item:
+        weight: 93
+        enabled: false
+      webform:
+        weight: 94
+        enabled: false
+field_type: entity_reference_revisions

@@ -7,10 +7,15 @@ dependencies:
     - field.field.node.landingpage.body
     - field.field.node.landingpage.field_domain_access
     - field.field.node.landingpage.field_domain_all_affiliates
+    - field.field.node.landingpage.field_image
+    - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_viewreference
+    - image.style.medium
     - node.type.landingpage
   module:
     - entity_reference_revisions
+    - image
     - text
     - user
 id: node.landingpage.teaser
@@ -25,6 +30,17 @@ content:
       trim_length: 600
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
     region: content
   field_paragraphs:
     type: entity_reference_revisions_entity_view
@@ -41,6 +57,9 @@ content:
     weight: 0
     region: content
 hidden:
+  addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_ldbackground: true
+  field_viewreference: true
   langcode: true

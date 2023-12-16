@@ -1,0 +1,24 @@
+uuid: 75f5c4eb-9614-4edb-81a0-6fe8e42e11a8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solaraboutcompanytab
+  module:
+    - text
+id: paragraph.solaraboutcompanytab.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: solaraboutcompanytab
+label: Body
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

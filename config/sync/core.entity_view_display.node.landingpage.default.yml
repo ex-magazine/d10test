@@ -6,13 +6,18 @@ dependencies:
     - field.field.node.landingpage.body
     - field.field.node.landingpage.field_domain_access
     - field.field.node.landingpage.field_domain_all_affiliates
+    - field.field.node.landingpage.field_image
+    - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_viewreference
     - node.type.landingpage
   module:
+    - image
     - layout_builder
     - layout_paragraphs
     - text
     - user
+    - viewsreference
 third_party_settings:
   layout_builder:
     enabled: false
@@ -29,6 +34,28 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_ldbackground:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 105
+    region: content
   field_paragraphs:
     type: layout_paragraphs_builder
     label: above
@@ -41,6 +68,15 @@ content:
       empty_message: ''
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_viewreference:
+    type: viewsreference_formatter
+    label: above
+    settings:
+      plugin_types:
+        - block
+    third_party_settings: {  }
+    weight: 104
     region: content
   links:
     settings: {  }

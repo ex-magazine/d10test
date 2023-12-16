@@ -1,0 +1,29 @@
+uuid: bac64495-6984-4851-861a-231393dee9a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_viewreference
+    - node.type.landingpage
+  module:
+    - viewsreference
+id: node.landingpage.field_viewreference
+field_name: field_viewreference
+entity_type: node
+bundle: landingpage
+label: 'View Reference'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:view'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  plugin_types:
+    block: block
+  preselect_views: {  }
+  enabled_settings: {  }
+field_type: viewsreference

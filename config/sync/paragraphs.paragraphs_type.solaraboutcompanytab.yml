@@ -1,0 +1,10 @@
+uuid: 3c0fa4fa-1158-4a25-b6b5-7923f285b0eb
+langcode: en
+status: true
+dependencies: {  }
+id: solaraboutcompanytab
+label: 'Solar about company tab'
+icon_uuid: null
+icon_default: null
+description: 'Solar about company tab'
+behavior_plugins: {  }

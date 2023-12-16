@@ -1,0 +1,34 @@
+uuid: d584c64f-cf55-48d4-81ab-fda9b6b33cb7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a54c177a-795d-4535-b824-f53ea31b067b'
+  module:
+    - block_classes
+    - block_content
+    - node
+  theme:
+    - solar
+id: solar_callusnow
+theme: solar
+region: sidebar
+weight: -19
+provider: null
+plugin: 'block_content:a54c177a-795d-4535-b824-f53ea31b067b'
+settings:
+  id: 'block_content:a54c177a-795d-4535-b824-f53ea31b067b'
+  label: 'Call Us Now'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      service: service

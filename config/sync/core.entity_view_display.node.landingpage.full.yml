@@ -7,7 +7,10 @@ dependencies:
     - field.field.node.landingpage.body
     - field.field.node.landingpage.field_domain_access
     - field.field.node.landingpage.field_domain_all_affiliates
+    - field.field.node.landingpage.field_image
+    - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_viewreference
     - node.type.landingpage
   module:
     - entity_reference_revisions
@@ -48,4 +51,7 @@ hidden:
   addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_image: true
+  field_ldbackground: true
+  field_viewreference: true
   langcode: true

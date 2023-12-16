@@ -1,0 +1,19 @@
+uuid: eb2ed3f5-5da5-4094-b126-9752f3fc6cf5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_card_text
+    - paragraphs.paragraphs_type.solar_about_company
+id: paragraph.solar_about_company.bp_card_text
+field_name: bp_card_text
+entity_type: paragraph
+bundle: solar_about_company
+label: 'Title first'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

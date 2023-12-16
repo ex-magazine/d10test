@@ -5,7 +5,6 @@ dependencies:
   content:
     - 'block_content:basic:f40d0788-ad9d-48eb-b950-7d3e3bfa3ba9'
   module:
-    - block_classes
     - block_content
   theme:
     - solar

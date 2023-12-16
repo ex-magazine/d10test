@@ -1,0 +1,19 @@
+uuid: 92425f90-f018-4702-bc94-ad33c9286512
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.solar_about_company
+id: paragraph.solar_about_company.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: solar_about_company
+label: 'Title second'
+description: 'Accordion item title'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

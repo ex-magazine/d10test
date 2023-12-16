@@ -1,0 +1,22 @@
+uuid: f85d279a-bda6-41b5-bd4b-c3b10e5c945e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solar_content_item.bp_text
+    - paragraphs.paragraphs_type.solar_content_item
+  module:
+    - text
+id: paragraph.solar_content_item.default
+targetEntityType: paragraph
+bundle: solar_content_item
+mode: default
+content:
+  bp_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

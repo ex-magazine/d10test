@@ -6,12 +6,18 @@ dependencies:
     - field.field.node.landingpage.body
     - field.field.node.landingpage.field_domain_access
     - field.field.node.landingpage.field_domain_all_affiliates
+    - field.field.node.landingpage.field_image
+    - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_viewreference
+    - image.style.thumbnail
     - node.type.landingpage
   module:
+    - image
     - layout_paragraphs
     - path
     - text
+    - viewsreference
 id: node.landingpage.default
 targetEntityType: node
 bundle: landingpage
@@ -46,6 +52,22 @@ content:
     settings:
       display_label: true
     third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 1
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_ldbackground:
+    type: image_image
+    weight: 28
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   field_paragraphs:
     type: layout_paragraphs
     weight: 26
@@ -55,6 +77,16 @@ content:
       nesting_depth: 0
       require_layouts: 0
       empty_message: ''
+    third_party_settings: {  }
+  field_viewreference:
+    type: viewsreference_autocomplete
+    weight: 27
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select
