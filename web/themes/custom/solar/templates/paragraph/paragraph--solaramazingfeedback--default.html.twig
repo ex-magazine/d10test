@@ -1,0 +1,154 @@
+<!-- our clients feedback start -->
+{%
+  set classes = [
+    'paragraph',
+    'rts-clients-feedback rts-section-gapBottom bg-feedback-about bg_image',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="rts-solution-left-area-left">
+                        <div class="thumbnail">
+                            {{ content.bp_card_image }} 
+                        </div>
+                        <div class="small-image images">                            
+                            {{ content.bp_image_field }} 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 pl--90 pl_md--10 pl_sm--10 mt_md--50 mt_sm--30">
+
+                    <div class="feed-back-about-wrapper reveal">
+                        <div class="title-area-left title-g">
+                            {{ content.bp_unrestricted|raw }}     
+                            <h2 class="title skew-up">
+                                {{ content.field_title }}  
+                            </h2>
+                        </div>
+                        <div class="swiper mySwiper-about-feedback">
+                            <div class="swiper-wrapper">
+                                {% if paragraph.field_amazingfeedback.0.entity.field_section_content.value is not empty %}
+                                <div class="swiper-slide">
+                                    <div class="feedback-about-swiper-wrapper">
+                                        <div class="single-feedback-about">
+                                            <div class="head">
+                                                <a href="javascript:void(0)" class="thumbnail">                                                   
+                                                    <img src="{{ file_url(paragraph.field_amazingfeedback.0.entity.bp_card_image.entity.fileuri|image_style('thumbnail')) }}" alt="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}" title="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}">                                            
+                                                </a>
+                                                <div class="info">
+                                                    <h5 class="title">{{ paragraph.field_amazingfeedback.0.entity.field_title.value|raw  }}</h5>
+                                                    <span>{{ paragraph.field_amazingfeedback.0.entity.field_source.value|raw  }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="body">
+                                                {{ paragraph.field_amazingfeedback.0.entity.field_section_content.value|raw  }}  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if paragraph.field_amazingfeedback.1.entity.field_section_content.value is not empty %}
+                                <div class="swiper-slide">
+                                    <div class="feedback-about-swiper-wrapper">
+                                        <div class="single-feedback-about">
+                                            <div class="head">
+                                                <a href="javascript:void(0)" class="thumbnail">                                                   
+                                                    <img src="{{ file_url(paragraph.field_amazingfeedback.1.entity.bp_card_image.entity.fileuri|image_style('thumbnail')) }}" alt="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}" title="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}">                                            
+                                                </a>
+                                                <div class="info">
+                                                    <h5 class="title">{{ paragraph.field_amazingfeedback.1.entity.field_title.value|raw  }}</h5>
+                                                    <span>{{ paragraph.field_amazingfeedback.1.entity.field_source.value|raw  }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="body">
+                                                {{ paragraph.field_amazingfeedback.1.entity.field_section_content.value|raw  }}  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if paragraph.field_amazingfeedback.2.entity.field_section_content.value is not empty %}
+                                <div class="swiper-slide">
+                                    <div class="feedback-about-swiper-wrapper">
+                                        <div class="single-feedback-about">
+                                            <div class="head">
+                                                <a href="javascript:void(0)" class="thumbnail">                                                   
+                                                    <img src="{{ file_url(paragraph.field_amazingfeedback.2.entity.bp_card_image.entity.fileuri|image_style('thumbnail')) }}" alt="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}" title="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}">                                            
+                                                </a>
+                                                <div class="info">
+                                                    <h5 class="title">{{ paragraph.field_amazingfeedback.2.entity.field_title.value|raw  }}</h5>
+                                                    <span>{{ paragraph.field_amazingfeedback.2.entity.field_source.value|raw  }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="body">
+                                                {{ paragraph.field_amazingfeedback.2.entity.field_section_content.value|raw  }}  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if paragraph.field_amazingfeedback.3.entity.field_section_content.value is not empty %}
+                                <div class="swiper-slide">
+                                    <div class="feedback-about-swiper-wrapper">
+                                        <div class="single-feedback-about">
+                                            <div class="head">
+                                                <a href="javascript:void(0)" class="thumbnail">                                                   
+                                                    <img src="{{ file_url(paragraph.field_amazingfeedback.3.entity.bp_card_image.entity.fileuri|image_style('thumbnail')) }}" alt="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}" title="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}">                                            
+                                                </a>
+                                                <div class="info">
+                                                    <h5 class="title">{{ paragraph.field_amazingfeedback.3.entity.field_title.value|raw  }}</h5>
+                                                    <span>{{ paragraph.field_amazingfeedback.3.entity.field_source.value|raw  }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="body">
+                                                {{ paragraph.field_amazingfeedback.3.entity.field_section_content.value|raw  }}  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                                {% if paragraph.field_amazingfeedback.4.entity.field_section_content.value is not empty %}
+                                <div class="swiper-slide">
+                                    <div class="feedback-about-swiper-wrapper">
+                                        <div class="single-feedback-about">
+                                            <div class="head">
+                                                <a href="javascript:void(0)" class="thumbnail">                                                   
+                                                    <img src="{{ file_url(paragraph.field_amazingfeedback.4.entity.bp_card_image.entity.fileuri|image_style('thumbnail')) }}" alt="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}" title="{{ paragraph.field_amazingfeedback.0.entity.bp_card_image.alt }}">                                            
+                                                </a>
+                                                <div class="info">
+                                                    <h5 class="title">{{ paragraph.field_amazingfeedback.4.entity.field_title.value|raw  }}</h5>
+                                                    <span>{{ paragraph.field_amazingfeedback.4.entity.field_source.value|raw  }}</span>
+                                                </div>
+                                            </div>
+                                            <div class="body">
+                                                {{ paragraph.field_amazingfeedback.4.entity.field_section_content.value|raw  }}  
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% endif %}
+                               
+                               
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+<!-- our clients feedback end -->
