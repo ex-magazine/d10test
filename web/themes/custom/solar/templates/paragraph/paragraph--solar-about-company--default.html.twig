@@ -1,0 +1,259 @@
+<!-- rts about area start --> 
+{%
+  set classes = [
+    'paragraph',
+    'rts-about-area rts-section-gap',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- about inner solar energy -->
+                    <div class="rts-about-left-image-area">
+                        <div class="thumbnail">                           
+                            {{ content.bp_card_image }} 
+                        </div>
+                    </div>
+                    <!-- about inner solar energy end -->
+                </div>
+                <div class="col-lg-6">
+                    <!-- about nrighht content area start -->
+                    <div class="about-right-content-area-solar-energy">
+                        <div class="title-area-left">
+                            {{ content.bp_unrestricted|raw }}                         
+                            <h2 class="title skew-up">                            
+                                {{ content.field_title }}                                
+                            </h2>
+                        </div>
+                        <!-- tab area start about -->
+                        <ul class="nav custom-nav-soalr-about nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">{{ paragraph.field_tabs.0.entity.bp_modal_title.value|raw  }}</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">{{ paragraph.field_tabs.1.entity.bp_modal_title.value|raw  }}</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">{{ paragraph.field_tabs.2.entity.bp_modal_title.value|raw  }}</button>
+                            </li>
+                        </ul>
+
+                        <!-- nav content start -->
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <!-- single nav content start -->
+                                <div class="single-about-content-solar">
+                                    <div class="disc">
+                                        {{ paragraph.field_tabs.0.entity.field_section_content.value|raw  }}                                        
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="left-area-wrapper">             
+                                                <img src="{{ file_url(paragraph.field_tabs.0.entity.bp_card_image.entity.fileuri|image_style('wide')) }}" alt="{{ paragraph.field_tabs.0.entity.bp_card_image.alt }}" title="{{ paragraph.field_tabs.0.entity.bp_card_image.alt }}">                                            
+                                               
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            
+                                            {% if paragraph.field_tabs.0.entity.field_items.0.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.0.entity.field_items.0.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                            {% if paragraph.field_tabs.0.entity.field_items.1.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.0.entity.field_items.1.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.0.entity.field_items.2.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.0.entity.field_items.2.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.0.entity.field_items.3.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.0.entity.field_items.3.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.0.entity.field_items.4.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.0.entity.field_items.4.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                          
+                                        </div>
+                                    </div>
+                                    <!-- vedio area start -->
+                                    <div class="vedio-area-start">
+                                        <a href="{{ paragraph.field_tabs.0.entity.bp_card_link.uri }}" class="rts-btn btn-primary">{{ paragraph.field_tabs.0.entity.bp_card_link.title }}
+                                        <i class="fa-regular fa-arrow-right"></i></a>
+                                        <div class="vedio-icone">
+                                            <a class=" play-video video-play-button" href="#">
+                                                <span></span>
+                                                <p class="text">
+                                                    {{ paragraph.field_tabs.0.entity.bp_accordion_section_title.value|raw  }}  
+                                                </p>
+                                            </a>
+                                            <div class="video-overlay">
+                                                <a class="video-overlay-close">×</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vedio area end -->
+                                </div>
+                                <!-- single nav content end -->
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <!-- single nav content start -->
+                                <div class="single-about-content-solar">
+                                    <div class="disc">
+                                        {{ paragraph.field_tabs.1.entity.field_section_content.value|raw  }}                                        
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="left-area-wrapper">
+                                                <img src="{{ file_url(paragraph.field_tabs.1.entity.bp_card_image.entity.fileuri|image_style('wide')) }}" alt="{{ paragraph.field_tabs.1.entity.bp_card_image.alt }}" title="{{ paragraph.field_tabs.1.entity.bp_card_image.alt }}">    
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            {% if paragraph.field_tabs.1.entity.field_items.0.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.1.entity.field_items.0.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                            {% if paragraph.field_tabs.1.entity.field_items.1.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.1.entity.field_items.1.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.1.entity.field_items.2.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.1.entity.field_items.2.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.1.entity.field_items.3.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.1.entity.field_items.3.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.1.entity.field_items.4.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.1.entity.field_items.4.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- vedio area start -->
+                                    <div class="vedio-area-start">
+                                        <a href="{{ paragraph.field_tabs.1.entity.bp_card_link.uri }}" class="rts-btn btn-primary">{{ paragraph.field_tabs.1.entity.bp_card_link.title }}
+                                        <i class="fa-regular fa-arrow-right"></i></a>
+                                        <div class="vedio-icone">
+                                            <a class=" play-video video-play-button" href="#">
+                                                <span></span>
+                                                <p class="text">
+                                                   {{ paragraph.field_tabs.1.entity.bp_accordion_section_title.value|raw  }}  
+                                                </p>
+                                            </a>
+                                            <div class="video-overlay">
+                                                <a class="video-overlay-close">×</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vedio area end -->
+                                </div>
+                                <!-- single nav content end -->
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                                <!-- single nav content start -->
+                                <div class="single-about-content-solar">
+                                    <div class="disc">
+                                        {{ paragraph.field_tabs.2.entity.field_section_content.value|raw  }}                                        
+                                    </div>
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="left-area-wrapper">
+                                                <img src="{{ file_url(paragraph.field_tabs.2.entity.bp_card_image.entity.fileuri|image_style('wide')) }}" alt="{{ paragraph.field_tabs.2.entity.bp_card_image.alt }}" title="{{ paragraph.field_tabs.2.entity.bp_card_image.alt }}">    
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            {% if paragraph.field_tabs.2.entity.field_items.0.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.2.entity.field_items.0.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                            {% if paragraph.field_tabs.2.entity.field_items.1.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.2.entity.field_items.1.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.2.entity.field_items.2.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.2.entity.field_items.2.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.2.entity.field_items.3.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.2.entity.field_items.3.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                              {% if paragraph.field_tabs.2.entity.field_items.4.entity.bp_text.value is not empty %}
+                                            <div class="single-ckeck-wrapper">
+                                                <img src="/themes/custom/solar/images/dt.png" alt="dotted">                                            
+                                                {{ paragraph.field_tabs.2.entity.field_items.4.entity.bp_text.value|raw  }}   
+                                            </div>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    <!-- vedio area start -->
+                                    <div class="vedio-area-start">
+                                        <a href="{{ paragraph.field_tabs.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">{{ paragraph.field_tabs.2.entity.bp_card_link.title }}
+                                        <i class="fa-regular fa-arrow-right"></i></a>
+                                        <div class="vedio-icone">
+                                            <a class=" play-video video-play-button" href="#">
+                                                <span></span>
+                                                <p class="text">
+                                                    {{ paragraph.field_tabs.2.entity.bp_accordion_section_title.value|raw  }}  
+                                                </p>
+                                            </a>
+                                            <div class="video-overlay">
+                                                <a class="video-overlay-close">×</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- vedio area end -->
+                                </div>
+                                <!-- single nav content end -->
+                            </div>
+                        </div>
+                        <!-- nav content end -->
+                        <!-- tab area start about end -->
+
+                    </div>
+                    <!-- about nrighht content area end -->
+                </div>
+            </div>
+        </div>    
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+

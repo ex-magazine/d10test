@@ -15921,7 +15921,10 @@ nav ul li a {
   line-height: 28px;
   color: #FFFFFF;
 }
-
+.node--type-landingpage .node-about-us {
+  margin: 0;
+  line-height: 0;
+}
 .bg-breadcrumb {
   background-image: url(../images/01_2.jpg);
 }
@@ -18259,7 +18262,7 @@ nav ul li a {
   background: var(--color-primary) !important;
   color: #fff !important;
 }
-
+.single-about-content-solar div.disc p,
 .single-about-content-solar p.disc {
   margin-bottom: 30px;
   width: 90%;
@@ -19128,6 +19131,9 @@ nav ul li a {
 
 .title-area-left {
   text-align: left;
+}
+.title-area-left p.pre {
+  margin-bottom: 40px;
 }
 .title-area-left .field--name-field-title-first,
 .title-area-left p.pre {

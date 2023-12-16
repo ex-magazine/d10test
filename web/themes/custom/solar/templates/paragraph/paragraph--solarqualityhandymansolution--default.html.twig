@@ -1,0 +1,104 @@
+<!-- rts easy step area start -->
+{%
+  set classes = [
+    'paragraph',
+    'rts-easy-step-area rts-section-gapBottom reveal',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}  
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title-area-center title-g">
+                         {{ content.bp_unrestricted|raw }}   
+                        <h2 class="title skew-up">
+                            {{ content.field_title }}    
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt--10 g-24">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <!-- single working steps area -->
+                    <div class="rts-single-working-process">
+                        <div class="icon">
+                            {{ paragraph.field_qualityhandyman.0.entity.bp_text.value|raw  }}
+                        </div>
+                        <div class="content">
+                            <h5 class="title">{{ paragraph.field_qualityhandyman.0.entity.bp_header.value|raw  }}</h5>
+                            <p class="disc">
+                                {{ paragraph.field_qualityhandyman.0.entity.field_citation.value|raw  }}
+                            </p>
+                            <div class="step_number">
+                                <span>01</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single working steps area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt--70">
+                    <!-- single working steps area -->
+                    <div class="rts-single-working-process">
+                        <div class="icon">
+                            {{ paragraph.field_qualityhandyman.1.entity.bp_text.value|raw  }}
+                        </div>
+                        <div class="content">
+                            <h5 class="title">{{ paragraph.field_qualityhandyman.1.entity.bp_header.value|raw  }}</h5>
+                            <p class="disc">
+                                {{ paragraph.field_qualityhandyman.1.entity.field_citation.value|raw  }}
+                            </p>
+                            <div class="step_number">
+                                <span>02</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single working steps area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+                    <!-- single working steps area -->
+                    <div class="rts-single-working-process">
+                        <div class="icon">
+                            {{ paragraph.field_qualityhandyman.2.entity.bp_text.value|raw  }}
+                        </div>
+                        <div class="content">
+                           <h5 class="title">{{ paragraph.field_qualityhandyman.2.entity.bp_header.value|raw  }}</h5>
+                            <p class="disc">
+                                {{ paragraph.field_qualityhandyman.2.entity.field_citation.value|raw  }}
+                            </p>
+                            <div class="step_number">
+                                <span>03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single working steps area end -->
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mt--70">
+                    <!-- single working steps area -->
+                    <div class="rts-single-working-process">
+                        <div class="icon">
+                            {{ paragraph.field_qualityhandyman.3.entity.bp_text.value|raw  }}
+                        </div>
+                        <div class="content">
+                            <h5 class="title">{{ paragraph.field_qualityhandyman.3.entity.bp_header.value|raw  }}</h5>
+                            <p class="disc">
+                                {{ paragraph.field_qualityhandyman.3.entity.field_citation.value|raw  }}
+                            </p>
+                            <div class="step_number">
+                                <span>04</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- single working steps area end -->
+                </div>
+            </div>
+        </div>
+    
+    {% endblock %}
+  </div>
+{% endblock paragraph %}
+<!-- rts easy step area end -->
