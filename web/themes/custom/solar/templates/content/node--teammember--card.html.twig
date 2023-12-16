@@ -100,6 +100,6 @@
         <a href="{{ url }}" rel="bookmark">
             <h5 class="title">{{ node.label }}</h5>
         </a>
-        <span>{{ content.field_position }}</span>
+        <span>{{ content.field_position|render|striptags|trim }}</span>
     </div>
 </div>

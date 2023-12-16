@@ -72,6 +72,7 @@
 {%
   set classes = [
     'node',
+    'rts-single-testimonials-one',
     'node--type-' ~ node.bundle|clean_class,
     layout ? 'grid-full',
     layout ? 'ie11-autorow',
@@ -81,32 +82,23 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<article{{ attributes.addClass(classes) }}>
-    <!-- rts breadcrumb area -->
-    <div class="rts-bread-crumb-area bg_image" style="background-image: url('{{ file_url(node.field_ldbackground.entity.fileuri) }}');">
-        <div class="container ptb--65">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="con-tent-main">
-                        <div class="wrapper">
-                            <span class="bg-text-stok">{{ label }}</span>
-                            <div class="title skew-up">                               
-                               <a href="{{ url }}" rel="bookmark">{{ label }}</a>                                 
-                            </div>
-                            <div class="slug skew-up">
-                                <a href="/">HOME /</a>  
-                                <h1{{ title_attributes.addClass('node-about-us') }}>
-                                     <a class="active" href="{{ url }}" rel="bookmark">{{ label }}</a>
-                                </h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div{{ attributes.addClass(classes) }}>
+    
+    <div class="logo">
+         {{ content.field_icon }}
+    </div>
+    <p class="disc">
+         {{ content.body|raw }}
+    </p>
+    <div class="awener-area">
+        <a href="{{ url }}" class="author">
+            {{ content.field_image }}
+        </a>
+        <div class="main">         
+            <a href="{{ url }}" rel="bookmark">
+                <h6 class="title">{{ node.label }}</h6>
+            </a>
+            <span>{{ content.field_position|render|striptags|trim }}</span>
         </div>
     </div>
-    <!-- rts breadcrumb area end -->
-    {{ content.field_paragraphs }}
-
-   
-</article>
+</div>
