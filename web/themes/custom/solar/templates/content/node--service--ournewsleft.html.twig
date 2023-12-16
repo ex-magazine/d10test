@@ -95,9 +95,9 @@
         <a href="{{ url }}">
             <h5 class="title">{{ node.label }}</h5>
         </a>
-        <div class="disc">
-            {{ content.body|raw }}
-        </div>
+        <p class="disc">
+            {{ content.body|render|striptags|trim }}
+        </p>
         <a href="{{ url }}" class="rts-btn btn-primary">{{ 'Read More'|t }} <i class="fa-regular fa-arrow-right"></i></a>
     </div>
 </div>
