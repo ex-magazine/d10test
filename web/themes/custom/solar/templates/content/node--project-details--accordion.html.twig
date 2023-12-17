@@ -73,7 +73,7 @@
   set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
-    'col-lg-4 col-md-6 col-sm-6 col-12',
+    'project-one-wrapper',
     layout ? 'grid-full',
     layout ? 'ie11-autorow',
     node.isPromoted() ? 'node--promoted',
@@ -82,53 +82,18 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
-    <div class="project-one-wrapper">
-        <div class="shape">
-            <img src="/themes/custom/solar/images/shap-01.png" alt="shape">
-        </div>
-        <a href="{{ url }}" class="thumbnail">
-            {{ content.field_image }}
+<div{{ attributes.addClass(classes) }}>    
+    <div class="shape">
+        <img src="/themes/custom/solar/images/shap-01.png" alt="shape">
+    </div>
+    <a href="{{ url }}" class="thumbnail">
+        {{ content.field_image }}
+    </a>
+    <div class="content">
+        <div class="pre">{{ content.field_category }}</div>
+        <a href="{{ url }}" rel="bookmark">
+            <h5 class="title">{{ node.label }}</h5>
         </a>
-        <div class="content">
-            <div class="pre">{{ content.field_category }}</div>
-            <a href="{{ url }}" rel="bookmark">
-                <h5 class="title">{{ node.label }}</h5>
-            </a>
-            <img src="/themes/custom/solar/images/shap-02.png" alt="CME Solar">
-        </div>
+        <img src="/themes/custom/solar/images/shap-02.png" alt="CME Solar">
     </div>
-              
-
-  <header class="{{ layout }}">
-    {{ title_prefix }}
-      {% if label and not page %}
-      <h2{{ title_attributes.addClass('node__title') }}>
-        <a href="{{ url }}" rel="bookmark">{{ label }}</a>
-      </h2>
-    {% endif %}
-    {{ title_suffix }}
-    {% if display_submitted %}
-      <div class="node__meta">
-      {% if author_picture %}
-        <div class="node__author-image">
-          {{ author_picture }}
-        </div>
-      {% endif %}
-        <span{{ author_attributes }}>
-          {{ 'By'|t }} {% apply spaceless %}{{ author_name }}{% endapply %}, {{ date }}
-        </span>
-        {{ metadata }}
-      </div>
-    {% endif %}
-  </header>
-  <div{{ content_attributes.addClass('node__content', layout) }}>
-    {# Comments not part of content, so they won't inherit .text-content styles. #}
-    {{ content|without('comment') }}
-  </div>
-  {% if content.comment %}
-    <div id="comments" class="{{ layout }}">
-      {{ content.comment }}
-    </div>
-  {% endif %}
 </div>
