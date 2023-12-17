@@ -24228,6 +24228,9 @@ p {
   display: flex;
   align-items: center;
 }
+.rts-single-testimonials-one .awener-area a.author img {
+  border-radius: 50%;
+}
 .rts-single-testimonials-one .awener-area a {
   margin-right: 12px;
   display: block;
