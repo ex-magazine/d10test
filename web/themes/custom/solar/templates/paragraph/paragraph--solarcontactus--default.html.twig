@@ -1,0 +1,86 @@
+{%
+  set classes = [
+    'paragraph',
+    'rts-contact-info-area rts-section-gap',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}  
+        <div class="container">
+            <div class="row g-24">
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact--info-wrapper">
+                        <div class="thumbnail">                            
+                            <img src="{{ file_url(paragraph.field_solarcontactus.0.entity.bp_image_field.entity.fileuri|image_style('contact312x200')) }}" alt="{{ paragraph.field_solarcontactus.0.entity.bp_image_field.alt }}" title="{{ paragraph.field_solarcontactus.0.entity.bp_image_field.alt }}">  
+                            <div class="icon">
+                                {{ paragraph.field_solarcontactus.0.entity.bp_unrestricted.value|raw  }}
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span>{{ paragraph.field_solarcontactus.0.entity.field_title.value|raw  }}</span>
+                            <a href="{{ paragraph.field_solarcontactus.0.entity.bp_header.value|raw  }}" target="_blank">
+                                <h5 class="title">{{ paragraph.field_solarcontactus.0.entity.bp_card_title.value|raw  }}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact--info-wrapper">
+                        <div class="thumbnail">
+                            <img src="{{ file_url(paragraph.field_solarcontactus.1.entity.bp_image_field.entity.fileuri|image_style('contact312x200')) }}" alt="{{ paragraph.field_solarcontactus.1.entity.bp_image_field.alt }}" title="{{ paragraph.field_solarcontactus.1.entity.bp_image_field.alt }}">
+                            <div class="icon">
+                                {{ paragraph.field_solarcontactus.1.entity.bp_unrestricted.value|raw  }}
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span>{{ paragraph.field_solarcontactus.1.entity.field_title.value|raw  }}</span>
+                           <a href="{{ paragraph.field_solarcontactus.1.entity.bp_header.value|raw  }}" target="_blank">
+                                <h5 class="title">{{ paragraph.field_solarcontactus.1.entity.bp_card_title.value|raw  }}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact--info-wrapper">
+                        <div class="thumbnail">
+                            <img src="{{ file_url(paragraph.field_solarcontactus.2.entity.bp_image_field.entity.fileuri|image_style('contact312x200')) }}" alt="{{ paragraph.field_solarcontactus.2.entity.bp_image_field.alt }}" title="{{ paragraph.field_solarcontactus.2.entity.bp_image_field.alt }}">
+                            <div class="icon">
+                                {{ paragraph.field_solarcontactus.2.entity.bp_unrestricted.value|raw  }}                             
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span>{{ paragraph.field_solarcontactus.2.entity.field_title.value|raw  }}</span>
+                            <a href="{{ paragraph.field_solarcontactus.2.entity.bp_header.value|raw  }}" target="_blank">
+                                <h5 class="title">{{ paragraph.field_solarcontactus.2.entity.bp_card_title.value|raw  }}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                    <div class="single-contact--info-wrapper">
+                        <div class="thumbnail">
+                            <img src="{{ file_url(paragraph.field_solarcontactus.3.entity.bp_image_field.entity.fileuri|image_style('contact312x200')) }}" alt="{{ paragraph.field_solarcontactus.3.entity.bp_image_field.alt }}" title="{{ paragraph.field_solarcontactus.3.entity.bp_image_field.alt }}">
+                            <div class="icon">
+                                {{ paragraph.field_solarcontactus.3.entity.bp_unrestricted.value|raw  }}                              
+                            </div>
+                        </div>
+                        <div class="content">
+                            <span>{{ paragraph.field_solarcontactus.3.entity.field_title.value|raw  }}</span>
+                            <a href="{{ paragraph.field_solarcontactus.3.entity.bp_header.value|raw  }}" target="_blank">
+                                <h5 class="title">{{ paragraph.field_solarcontactus.3.entity.bp_card_title.value|raw  }}</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
+
+
+
