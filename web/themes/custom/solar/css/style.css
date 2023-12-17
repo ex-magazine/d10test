@@ -20900,6 +20900,7 @@ p {
   z-index: 5;
   transform: scaleY(0);
 }
+.project-one-wrapper .content div.pre a,
 .project-one-wrapper .content span {
   display: block;
   margin-bottom: 10px;
