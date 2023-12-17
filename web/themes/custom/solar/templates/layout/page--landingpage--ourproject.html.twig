@@ -1,0 +1,362 @@
+{#
+/**
+ * @file
+ * solar's theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template normally located in the
+ * core/modules/system directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ * - page.highlighted: Items for the highlighted region.
+ * - page.primary_menu: Items for the primary menu region.
+ * - page.secondary_menu: Items for the secondary menu region.
+ * - page.content: The main content of the current page.
+ * - page.sidebar: Items for the first sidebar.
+ * - page.featured_bottom_first: Items for the first featured bottom region.
+ * - page.featured_bottom_second: Items for the second featured bottom region.
+ * - page.footer_first: Items for the first footer column.
+ * - page.footer_second: Items for the second footer column.
+ * - page.breadcrumb: Items for the breadcrumb region.
+ * - page.social: Items for the social region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ */
+#}
+
+
+<div class="header-header-two">
+	<!-- header two -->
+	{% if page.topbar %}
+		<div class="header-two-solari header-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						{{ page.topbar }}
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif %}
+	<!-- header two end -->
+	<!-- header man start -->
+	<div class="header-main-h2  header--sticky">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main-haeder-wrapper-h2">
+						{{ page.header }}
+						<div class="actions-area">
+                            {% if page.language %}
+								{{ page.language }}
+							{% endif %}
+							<div class="search-btn" id="search">
+									<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M15.75 14.7188C16.0625 15.0312 16.0625 15.5 15.75 15.7812C15.625 15.9375 15.4375 16 15.25 16C15.0312 16 14.8438 15.9375 14.6875 15.7812L10.5 11.5938C9.375 12.5 7.96875 13 6.46875 13C2.90625 13 0 10.0938 0 6.5C0 2.9375 2.875 0 6.46875 0C10.0312 0 12.9688 2.9375 12.9688 6.5C12.9688 8.03125 12.4688 9.4375 11.5625 10.5312L15.75 14.7188ZM1.5 6.5C1.5 9.28125 3.71875 11.5 6.5 11.5C9.25 11.5 11.5 9.28125 11.5 6.5C11.5 3.75 9.25 1.5 6.5 1.5C3.71875 1.5 1.5 3.75 1.5 6.5Z" fill="#4AAB3D"></path>
+									</svg>
+							</div>
+							<div class="menu-btn" id="menu-btn">
+									<svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<rect y="14" width="20" height="2" fill="#4AAB3D"></rect>
+											<rect y="7" width="20" height="2" fill="#4AAB3D"></rect>
+											<rect width="20" height="2" fill="#4AAB3D"></rect>
+									</svg>
+							</div>
+							{% if page.help %}
+								{{ page.help }}
+							{% endif %}
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- header man end -->
+</div>
+<!-- header style two End -->
+
+{% if page.highlighted or page.secondary_menu %}
+    <div class='page-highlighted'>
+        <div class="container">
+            <div class="row g-24">
+                {{ page.highlighted }}
+                {{ page.page.secondary_menu }}
+            </div>
+        </div>
+    </div>
+{% endif %}
+
+
+<div id="main">
+    {% if page.content_above %}
+    <div class="main-above">
+        {{ page.content_above }}
+    </div> 
+    {% endif %}  
+    {{ page.content }}    
+</div>
+
+<!-- banner two swiper start -->
+{% if page.banner %}
+    <div class="banner-two-swiper-start">
+        {{ page.banner }}
+    </div> 
+{% endif %}    
+<!-- banner two swiper end -->
+
+<!-- rts service area start -->
+{% if page.content_below %}
+    <div class="rts-secvice-area-solaric-banner-bottom start rts-section-gapBottom">
+        {{ page.content_below }}
+    </div> 
+{% endif %}   
+<!-- rts service area end -->
+
+<!-- rts about area starat -->
+{% if page.about_us %}
+    <div class="rts-about-area rts-section-gapBottom position-relative">
+        {{ page.about_us }}
+    </div> 
+{% endif %}
+<!-- rts about area end -->
+
+<!-- service heign area start -->
+{% if page.service_area %}
+    <div class="rts-service-area-height-solari rts-section-gap position-relative">
+        {{ page.service_area }}
+    </div> 
+{% endif %}
+<!-- service heign area end -->
+
+<!-- our working proces area start -->
+{% if page.working_process %}
+    <div class="our-working-process-start rts-section-gap">
+        {{ page.working_process }}
+    </div>
+{% endif %}
+<!-- our working proces area end -->
+
+{% if page.cta %}
+    <div class="rts-cta-area rts-section-gapBottom">
+        <div class="container">
+            {{ page.cta }}
+        </div>
+    </div>
+{% endif %}
+<!-- rts cta area end -->
+
+
+{% if page.faq %}
+    <div class="faq-section-start-solar rts-section-gapBottom">
+        {{ page.faq }}
+    </div>
+{% endif %}
+
+<!-- rts case studies area start -->
+{% if page.our_latest_case_studies %}
+    <div class="rts-case-studyes rts-section-gapBottom bg-white">
+        {{ page.our_latest_case_studies }}
+    </div>
+{% endif %}
+<!-- rts-case studyes ends -->
+
+<!-- rts- clients review area start -->
+{% if page.customer_feedbacks %}
+    <div class="rts-client-review-area-h2 rts-section-gapBottom">
+        {{ page.customer_feedbacks }}
+    </div>
+{% endif %}
+<!-- rts- clients review area end -->
+
+
+    <!-- rts blog area start -->
+{% if page.our_news %}
+<div class="rts-solari-blog-area-start rts-section-gap reveal" id="blog">
+    {{ page.our_news }}
+</div>
+{% endif %}
+
+
+<!-- rts brand area start -->
+{% if page.footer_client %}   
+<div class="rts-brand-area rts-section-gap">
+    {{ page.footer_client }} 
+</div>
+{% endif %}
+<!-- rts brand area end -->
+
+
+
+
+<!-- header style two -->
+<div id="side-bar" class="side-bar header-two">
+    <button class="close-icon-menu"><i class="far fa-times"></i></button>
+    <!-- inner menu area desktop start -->
+    {{ drupal_entity('node', 211, 'hero') }}
+
+    <!-- mobile menu area start -->    
+    <div class="mobile-menu-main">
+        {% if page.mobile_menu %}   
+            {{ page.mobile_menu }} 
+        {% endif %}
+
+        <div class="rts-social-style-one pl--20 mt--100">
+            <ul>
+                <li>
+                    <a href="{{ solar_social_link_facebook }}" target='_blank'>
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ solar_social_link_twitter }}" target='_blank'>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ solar_social_link_youtube }}" target='_blank'>
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ solar_social_link_linkedin }}" target='_blank'>
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- mobile menu area end -->
+</div>
+<!-- header style two End -->
+
+
+<!-- Footer style two -->
+<!-- rts footer two area start -->
+    <div class="rts-footer-one footer-bg-two">
+        <div class="shape-image-f-2">
+            <img src="{{ solar_path }}/images/07_1.png" alt="shape-footer">
+        </div>
+        <div class="container">
+            <div class="row pt--90  pb--55 pb_sm--40">
+                <div class="col-lg-12">
+                    <div class="single-footer-one-wrapper two">
+                        <div class="single-footer-component first">
+                            <a href="/" class="logo-area-footer">
+                                <img src="{{ solar_path }}/images/logo-02.png" alt="logo">
+                            </a>
+                            <div class="body mt--45">
+                            	{{ page.footer_first }}                           
+                                <div class="rts-social-style-one">
+                                    <ul>
+                                        <li>
+                                            <a href="{{ solar_social_link_facebook }}" target='_blank'>
+                                                <i class="fa-brands fa-facebook-f"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ solar_social_link_twitter }}" target='_blank'>
+                                                <i class="fa-brands fa-x-twitter"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ solar_social_link_youtube }}" target='_blank'>
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ solar_social_link_instagram }}" target='_blank'>
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="{{ solar_social_link_linkedin }}" target='_blank'>
+                                                <i class="fa-brands fa-linkedin-in"></i>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-footer-component">
+                            {{ page.footer_second }}
+                        </div>
+                        <div class="single-footer-component">
+                            {{ page.footer_third }}
+                        </div>
+                        <div class="single-footer-component last">
+                            {{ page.footer_four }}                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pb--20 pt--20 border-top-copyright">
+                <div class="col-lg-12">       
+                    {% if page.footer_copyright %}        
+                        {{ page.footer_copyright }}
+                   	{% endif %}    
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- rts footer area one end -->
+<!-- Footer style two End -->
+
+
+
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;"></path>
+    </svg>
+</div>
+
+
+<!-- pre loader start -->
+<div id="elevate-load">
+    <div class="loader-wrapper">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+<!-- pre loader end -->
+
+
+<div class="search-input-area">
+    <div class="container">
+        <div class="search-input-inner">
+            <div class="input-div">
+                <input id="searchInput1" class="search-input" type="text" placeholder="{{ 'Search by keyword or'|t }} #">
+                <button><i class="far fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+    <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
+</div>
+
+<div id="anywhere-home" class="ah"></div>

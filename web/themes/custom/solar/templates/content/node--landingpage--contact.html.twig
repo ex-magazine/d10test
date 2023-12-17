@@ -73,7 +73,6 @@
   set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
-    'blog-single-one text-center',
     layout ? 'grid-full',
     layout ? 'ie11-autorow',
     node.isPromoted() ? 'node--promoted',
@@ -82,29 +81,33 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>    
-    <a href="{{ url }}" class="thumbnail">
-        <div class="inner">
-            {{ content.field_image }}
-        </div>
-    </a>
-    <div class="head">
-        <div class="date-area single-info">
-            <i class="fa-light fa-calendar-days"></i>
-            <p><time>{{ node.published_at.getString|date("d M Y") }}</time></p>
-        </div>
-        <div class="tag-area single-info">
-            <i class="fa-light fa-tags"></i>
-            &nbsp{{ content.field_news_type }}
+<article{{ attributes.addClass(classes) }}>
+    <!-- rts breadcrumb area -->
+    <div class="rts-bread-crumb-area bg_image" style="background-image: url('{{ file_url(node.field_ldbackground.entity.fileuri) }}');">
+        <div class="container ptb--65">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="con-tent-main">
+                        <div class="wrapper">
+                            <span class="bg-text-stok">{{ label }}</span>
+                            <div class="title skew-up">                               
+                               <a href="{{ url }}" rel="bookmark">{{ label }}</a>                                 
+                            </div>
+                            <div class="slug skew-up">
+                                <a href="/">HOME /</a>  
+                                <h1{{ title_attributes.addClass('node-about-us') }}>
+                                     <a class="active" href="{{ url }}" rel="bookmark">{{ label }}</a>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="body text-start">
-        <a href="{{ url }}">
-            <h5 class="title">{{ node.label }}</h5>
-        </a>
-        <a href="{{ url }}" class="rts-btn btn-border radious-0">
-            {{ 'Read Details'|t }}
-            <i class="fa-regular fa-arrow-up-right"></i>
-        </a>
-    </div>
-</div>
+    <!-- rts breadcrumb area end -->
+
+    {{ content.field_paragraphs }}
+
+   
+</article>
