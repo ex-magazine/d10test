@@ -21,7 +21,7 @@
  * @ingroup themeable
  */
 #}
-<div id="contact-form" class="contact-page-form mt--30">
+{# <div id="contact-form" class="contact-page-form mt--30">
 <form{{ attributes}}>
 {{ title_prefix }}	
     <div class="name-email-wraper">
@@ -37,4 +37,10 @@
     {{ element.confirmation }}
 {{ title_suffix }}
 </form>
-</div>
+</div> #}
+
+<form{{ attributes }}>
+  {{ title_prefix }}
+  {{ children }}
+  {{ title_suffix }}
+</form>
