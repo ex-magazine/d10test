@@ -15617,6 +15617,16 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .index-two .rts-btn.btn-primary {
   border-radius: 4px;
 }
+.contact-page-form .form-item-your-name{
+  width: 49%;
+  float: left;
+  margin-bottom: 20px;
+}
+.contact-page-form .form-item-your-email{
+  width: 49%;
+  float: right;
+  margin-bottom: 20px;
+}
 .contact-page-form input.rts-btn.btn-primary{
   width: 100%;
   background:  var(--color-primary);
