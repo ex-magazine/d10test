@@ -22,7 +22,8 @@
  */
 #}
 <div id="contact-form" class="contact-page-form mt--30">
-<form{{ attributes}} >
+<form{{ attributes}}>
+{{ title_prefix }}	
     <div class="name-email-wraper">
         {{ element.elements.your_name }}
         {{ element.elements.your_email }}
@@ -34,5 +35,6 @@
     {{ element.form_token }}
     {{ element.form_id }}						
     {{ element.confirmation }}
+{{ title_suffix }}
 </form>
 </div>
