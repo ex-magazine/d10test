@@ -15617,19 +15617,15 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .index-two .rts-btn.btn-primary {
   border-radius: 4px;
 }
-.contact-page-form .rts-btn.btn-primary{
+.contact-page-form input.rts-btn.btn-primary{
   width: 100%;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  min-width: max-content;
+  background:  var(--color-primary);
   border: 1px solid var(--color-border);
   transition: all 0.4s ease-out 0s;
-  color: var(--color-body);
+  color: #fff;
+}
+.contact-page-form input.rts-btn.btn-primary:hover{
+  background:  #1f1f25;
 }
 .rts-btn.btn-primary::before {
   background: var(--color-primary);
