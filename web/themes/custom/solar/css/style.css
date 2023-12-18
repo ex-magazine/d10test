@@ -25922,6 +25922,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
   align-items: center;
   justify-content: space-between;
 }
+.contact-page-form .name-email-wraper .js-form-item,
 .contact-page-form .name-email-wraper input {
   flex-basis: 48.8%;
 }
