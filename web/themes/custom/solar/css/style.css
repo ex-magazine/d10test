@@ -15952,6 +15952,9 @@ nav ul li a {
 .bg-breadcrumb {
   background-image: url(../images/01_2.jpg);
 }
+.bg-breadcrumb-news {
+  background-image: url(/sites/default/files/2023-12/title-bg_news.jpg);
+}
 
 .banner-one-swiper--wrapper-area .banner-main-wrapper-one .pre-title {
   transition-delay: 0.5s;

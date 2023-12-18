@@ -125,7 +125,9 @@
 </div>
 {% endif %}
 
-
+{% if page.content_above %}
+    {{ page.content_above }} 
+{% endif %}  
 
 {% if page.sidebar and not is_front %}	
     <div class="rts-service-details-area rts-section-gap">
@@ -137,8 +139,7 @@
         <div class='container'>
 {% else %}
     <div class="page-without-sidebar section-spacing">
-{% endif %}
-        {{ page.content_above }}
+{% endif %}       
         {{ page.content }}         
 {% if page.sidebar and not is_front %}	
                 </div>
