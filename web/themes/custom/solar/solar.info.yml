@@ -21,6 +21,8 @@ regions:
   hero: 'Hero (Display none)'
   content_above: Content Above
   content: Content
+  contact: Webform contact
+  map: Google map
   sidebar: 'Sidebar'
   banner: 'Banner'
   content_below: 'Content Below'
