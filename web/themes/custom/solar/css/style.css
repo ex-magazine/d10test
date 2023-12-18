@@ -15617,6 +15617,13 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 .index-two .rts-btn.btn-primary {
   border-radius: 4px;
 }
+.contact-page-form .rts-btn.btn-primary{
+  width: 100%;
+  background: transparent; 
+  border: 1px solid var(--color-border);
+  transition: all 0.4s ease-out 0s;
+  color: var(--color-body);
+}
 .index-two .rts-btn.btn-primary::before {
   border-radius: 4px;
 }
