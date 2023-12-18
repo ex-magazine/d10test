@@ -177,6 +177,9 @@ function solar_theme_suggestions_page_alter(array &$suggestions, array $variable
         } 
       }
     }
+    if(is_object($node) && ('landingpage' != $node->bundle()) ){
+      array_splice($suggestions, 1, 0, 'page__' .$node->bundle());     
+    }
   }
 }
 
