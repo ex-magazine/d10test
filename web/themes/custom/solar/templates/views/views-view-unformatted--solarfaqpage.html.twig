@@ -1,0 +1,88 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if title %}
+  <h3>{{ title }}</h3>
+{% endif %}
+<div class="row g-24 align-items-start">
+  <div class="col-lg-6">
+    {{ drupal_entity('block', 'solar_questionforus') }}
+    <div class="accordion-solar-faq">
+      <div class="accordion" id="accordionExample">
+        {% for key,row in rows %}
+          {%
+            set row_classes = [
+              default_row_class ? 'views-row accordion-item',
+            ]
+          %}
+          {% if loop.first%}
+            <div{{ row.attributes.addClass(row_classes) }}> 
+              <h2 class="accordion-header" id="heading{{key}}">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{key}}" aria-expanded="true" aria-controls="collapse{{key}}">
+                  {{ row.content['#node'].title[0].value }} 
+                </button>
+              </h2>
+              <div id="collapse{{key}}" class="accordion-collapse collapse show" aria-labelledby="heading{{key}}" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {{ row.content['#node'].body[0].value|raw }} 
+                </div>
+              </div>
+            </div>
+          {% else %}
+            <div{{ row.attributes.addClass(row_classes) }}>             
+              <h2 class="accordion-header" id="heading{{key}}">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{key}}" aria-expanded="false" aria-controls="collapse{{key}}">
+                  {{ row.content['#node'].title[0].value }} 
+                </button>
+              </h2>
+              <div id="collapse{{key}}" class="accordion-collapse collapse" aria-labelledby="heading{{key}}" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  {{ row.content['#node'].body[0].value|raw }}
+                </div>
+              </div>
+            </div>  
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 pl--40">
+    <div class="faq-solari-image-area">
+      <div class="thumbnail-small">
+          <img src="/themes/custom/solar/images/04_1.png" alt="solar">
+          <div class="video-area-start">
+              <div class="vedio-icone">
+                  <a class="video-play-button play-video" href="#">
+                      <span></span>
+                      <p class="text">                          
+                        {{ 'Watch Our Intro'|t }} 
+                      </p>
+                  </a>
+                  <div class="video-overlay">
+                      <a class="video-overlay-close">×</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="thumbnail-large-bottom">
+          <img src="/themes/custom/solar/images/05_1.png" alt="solar">
+      </div>
+    </div>
+  </div>
+</div>
