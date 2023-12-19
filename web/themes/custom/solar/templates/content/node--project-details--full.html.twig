@@ -92,13 +92,82 @@
             </div>
             {% endif %}
             {% if content.field_pcategory|render|striptags|trim  == 'video' %}
-
+                <div class="vedio-area-project-details">
+                    <iframe width="750" height="720" src="https://www.youtube.com/embed/44Wp3WE1AHs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                </div>
             {% endif %}
             {% if content.field_pcategory|render|striptags|trim  == 'carousel' %}
-
+                <div class="project-details-carousel-big">
+                    <div class="swiper project-details-carousel">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="project-details-area-main">
+                                    <div class="thumbnail">
+                                        <img src="images/09.jpg" alt="project-details">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-details-area-main">
+                                    <div class="thumbnail">
+                                        <img src="images/09.jpg" alt="project-details">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="project-details-area-main">
+                                    <div class="thumbnail">
+                                        <img src="images/09.jpg" alt="project-details">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
             {% endif %}
             {% if content.field_pcategory|render|striptags|trim  == 'gallery' %}
-
+                <section id="gallery">
+                    <div class="container">
+                        <div id="image-gallery">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                                    <div class="img-wrapper">
+                                        <a href="assets/images/project/20.jpg"><img src="images/20.jpg" class="img-responsive" alt="img"></a>
+                                        <div class="img-overlay">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                                    <div class="img-wrapper">
+                                        <a href="assets/images/project/21.jpg"><img src="images/21.jpg" class="img-responsive" alt="img"></a>
+                                        <div class="img-overlay">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                                    <div class="img-wrapper">
+                                        <a href="assets/images/project/22.jpg"><img src="images/22.jpg" class="img-responsive" alt="img"></a>
+                                        <div class="img-overlay">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 image">
+                                    <div class="img-wrapper">
+                                        <a href="assets/images/project/23.jpg"><img src="images/23.jpg" class="img-responsive" alt="img"></a>
+                                        <div class="img-overlay">
+                                            <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End row -->
+                        </div><!-- End image gallery -->
+                    </div><!-- End container -->
+                </section>
             {% endif %}
         </div>
     </div> 
