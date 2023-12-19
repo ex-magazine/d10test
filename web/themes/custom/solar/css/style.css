@@ -15955,6 +15955,7 @@ nav ul li a {
 .bg-breadcrumb-news {
   background-image: url(/sites/default/files/2023-12/title-bg_news.jpg);
 }
+.node--type-project-details h1.title,
 .blog-listing-content h1.title{
   font-size: var(--h3);
   line-height: 40px;
@@ -21062,6 +21063,18 @@ p {
   margin-bottom: 5px;
 }
 
+.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-clients .field__item,
+.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-category .field__item,
+.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-address .field__item{
+  color: var(--color-heading-1);
+  font-size: 18px;
+  margin-bottom: 0;
+  margin-top: 3px;
+  word-break: break-word;
+  font-family: "Exo", sans-serif;
+  font-weight: var(--s-bold);
+
+}
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .name {
   font-size: 18px;
   margin-bottom: 0;
