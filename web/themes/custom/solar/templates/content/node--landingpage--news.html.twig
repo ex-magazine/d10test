@@ -91,7 +91,11 @@
                         <div class="wrapper">
                             <span class="bg-text-stok">{{ label }}</span>
                             <div class="title skew-up">                               
-                               <a href="{{ url }}" rel="bookmark">{{ label }}</a>                                 
+                                 {% if content.field_titlesecond|render|striptags|trim  is not empty %}
+                                    <a href="{{ url }}" rel="bookmark">{{ content.field_titlesecond|render|striptags|trim  }}</a>
+                                {% else %}
+                                <a href="{{ url }}" rel="bookmark">{{ label }}</a>
+                                {% endif %}                                 
                             </div>
                             <div class="slug skew-up">
                                 <a href="/">HOME /</a>  
