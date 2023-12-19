@@ -1,0 +1,24 @@
+uuid: 7b4c65b5-5a7a-4db6-9787-47591f5c6b81
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_unrestricted
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solaramazingfeedback
+  module:
+    - text
+id: paragraph.solaramazingfeedback.bp_unrestricted
+field_name: bp_unrestricted
+entity_type: paragraph
+bundle: solaramazingfeedback
+label: 'Title first'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

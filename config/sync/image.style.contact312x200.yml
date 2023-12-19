@@ -1,0 +1,17 @@
+uuid: 73f4cca2-2708-4686-84d6-508094caeac8
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: contact312x200
+label: contact312x200
+effects:
+  24f966fe-6262-47a6-99df-37b9ace76887:
+    uuid: 24f966fe-6262-47a6-99df-37b9ace76887
+    id: focal_point_scale_and_crop
+    weight: 1
+    data:
+      width: 312
+      height: 200
+      crop_type: focal_point

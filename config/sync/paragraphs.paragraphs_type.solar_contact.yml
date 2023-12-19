@@ -1,0 +1,10 @@
+uuid: e26c69a1-92cd-4471-af42-a379979dd67f
+langcode: en
+status: true
+dependencies: {  }
+id: solar_contact
+label: 'Solar contact'
+icon_uuid: null
+icon_default: null
+description: 'Solar contact'
+behavior_plugins: {  }

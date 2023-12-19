@@ -1,0 +1,39 @@
+uuid: 5c5c66e6-71c4-486a-80f1-d58dca37114c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_format
+field_name: field_format
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: hone
+      label: Home
+    -
+      value: aboutus
+      label: 'About us'
+    -
+      value: ourservice
+      label: 'Our Service'
+    -
+      value: news
+      label: News
+    -
+      value: ourproject
+      label: 'Our Project'
+    -
+      value: contact
+      label: Contact
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

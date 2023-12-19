@@ -1,0 +1,19 @@
+uuid: 43c5e336-f72d-4b55-bb91-e76625f7dd76
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_address
+    - node.type.teammember
+id: node.teammember.field_address
+field_name: field_address
+entity_type: node
+bundle: teammember
+label: Facebook
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

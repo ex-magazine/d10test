@@ -1,0 +1,31 @@
+uuid: 734bab06-03fd-4777-9b35-d324675ce78a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:80440912-a2c1-4497-ae18-c4a2cbc33d27'
+  module:
+    - block_classes
+    - block_content
+    - system
+  theme:
+    - solar
+id: solar_letsgetintouch
+theme: solar
+region: contact
+weight: 0
+provider: null
+plugin: 'block_content:80440912-a2c1-4497-ae18-c4a2cbc33d27'
+settings:
+  id: 'block_content:80440912-a2c1-4497-ae18-c4a2cbc33d27'
+  label: 'Let’s Get in Touch'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/220

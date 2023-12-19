@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.paragraph.solar_about_company.bp_card_image
     - field.field.paragraph.solar_about_company.bp_card_text
+    - field.field.paragraph.solar_about_company.bp_unrestricted
     - field.field.paragraph.solar_about_company.field_tabs
     - field.field.paragraph.solar_about_company.field_title
     - image.style.thumbnail
@@ -12,6 +13,7 @@ dependencies:
   module:
     - image
     - paragraphs
+    - text
 id: paragraph.solar_about_company.default
 targetEntityType: paragraph
 bundle: solar_about_company
@@ -19,15 +21,15 @@ mode: default
 content:
   bp_card_image:
     type: image_image
-    weight: 4
+    weight: 2
     region: content
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  bp_card_text:
-    type: string_textarea
-    weight: 3
+  bp_unrestricted:
+    type: text_textarea
+    weight: 1
     region: content
     settings:
       rows: 5
@@ -35,7 +37,7 @@ content:
     third_party_settings: {  }
   field_tabs:
     type: paragraphs
-    weight: 5
+    weight: 3
     region: content
     settings:
       title: Paragraph
@@ -53,12 +55,13 @@ content:
     third_party_settings: {  }
   field_title:
     type: string_textfield
-    weight: 2
+    weight: 0
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  bp_card_text: true
   created: true
   status: true

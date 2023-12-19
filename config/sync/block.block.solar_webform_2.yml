@@ -1,0 +1,32 @@
+uuid: 7c513731-905f-4e80-b283-ad7ebb17ac13
+langcode: en
+status: true
+dependencies:
+  config:
+    - webform.webform.getintouch
+  module:
+    - block_classes
+    - system
+    - webform
+  theme:
+    - solar
+id: solar_webform_2
+theme: solar
+region: contact
+weight: 0
+provider: null
+plugin: webform_block
+settings:
+  id: webform_block
+  label: Webform
+  label_display: '0'
+  provider: webform
+  webform_id: getintouch
+  default_data: ''
+  redirect: false
+  lazy: false
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/220

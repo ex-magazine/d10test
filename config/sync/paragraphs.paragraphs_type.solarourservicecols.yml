@@ -1,0 +1,10 @@
+uuid: 93c4e3cc-8eed-4cd3-9720-e4087f884864
+langcode: en
+status: true
+dependencies: {  }
+id: solarourservicecols
+label: 'Solar Our Service 3 cols item'
+icon_uuid: null
+icon_default: null
+description: 'Solar Our Service 3 cols item'
+behavior_plugins: {  }

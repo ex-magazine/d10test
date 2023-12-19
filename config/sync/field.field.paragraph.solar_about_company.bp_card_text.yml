@@ -9,7 +9,7 @@ id: paragraph.solar_about_company.bp_card_text
 field_name: bp_card_text
 entity_type: paragraph
 bundle: solar_about_company
-label: 'Title first'
+label: 'Title first bk'
 description: ''
 required: false
 translatable: false

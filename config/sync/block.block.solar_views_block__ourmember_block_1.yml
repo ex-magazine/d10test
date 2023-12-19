@@ -6,7 +6,7 @@ dependencies:
     - views.view.ourmember
   module:
     - block_classes
-    - node
+    - system
     - views
   theme:
     - solar
@@ -24,10 +24,7 @@ settings:
   views_label: ''
   items_per_page: none
 visibility:
-  'entity_bundle:node':
-    id: 'entity_bundle:node'
+  request_path:
+    id: request_path
     negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
-    bundles:
-      service: service
+    pages: '<front>'

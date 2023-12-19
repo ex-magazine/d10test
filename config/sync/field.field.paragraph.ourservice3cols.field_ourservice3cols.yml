@@ -1,0 +1,187 @@
+uuid: a3cd4b91-164c-4398-b9a3-af68d93ae270
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_ourservice3cols
+    - paragraphs.paragraphs_type.ourservice3cols
+    - paragraphs.paragraphs_type.solarourservicecols
+  module:
+    - entity_reference_revisions
+id: paragraph.ourservice3cols.field_ourservice3cols
+field_name: field_ourservice3cols
+entity_type: paragraph
+bundle: ourservice3cols
+label: 'Our Service 3 cols'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      solarourservicecols: solarourservicecols
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 54
+        enabled: false
+      accordion_item:
+        weight: 55
+        enabled: false
+      attachments:
+        weight: 56
+        enabled: false
+      bp_accordion:
+        weight: 57
+        enabled: false
+      bp_accordion_section:
+        weight: 58
+        enabled: false
+      bp_blank:
+        weight: 59
+        enabled: false
+      bp_block:
+        weight: 60
+        enabled: false
+      bp_callout:
+        weight: 61
+        enabled: false
+      bp_card:
+        weight: 62
+        enabled: false
+      bp_carousel:
+        weight: 63
+        enabled: false
+      bp_column_wrapper:
+        weight: 67
+        enabled: false
+      bp_columns:
+        weight: 64
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 65
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 66
+        enabled: false
+      bp_contact:
+        weight: 68
+        enabled: false
+      bp_image:
+        weight: 69
+        enabled: false
+      bp_modal:
+        weight: 70
+        enabled: false
+      bp_quicklinks:
+        weight: 71
+        enabled: false
+      bp_simple:
+        weight: 72
+        enabled: false
+      bp_stat:
+        weight: 73
+        enabled: false
+      bp_statistics:
+        weight: 74
+        enabled: false
+      bp_tab_section:
+        weight: 76
+        enabled: false
+      bp_tabs:
+        weight: 75
+        enabled: false
+      bp_view:
+        weight: 77
+        enabled: false
+      bp_webform:
+        weight: 78
+        enabled: false
+      callout:
+        weight: 79
+        enabled: false
+      carousel:
+        weight: 80
+        enabled: false
+      challengeproject:
+        weight: 81
+        enabled: false
+      citation:
+        weight: 82
+        enabled: false
+      cmenergysection:
+        weight: 83
+        enabled: false
+      content:
+        weight: 84
+        enabled: false
+      from_library:
+        weight: 85
+        enabled: false
+      gallery:
+        weight: 86
+        enabled: false
+      gallery_item:
+        weight: 87
+        enabled: false
+      hero:
+        weight: 88
+        enabled: false
+      map:
+        weight: 89
+        enabled: false
+      node_reference:
+        weight: 90
+        enabled: false
+      ourservice3cols:
+        weight: 91
+        enabled: false
+      section:
+        weight: 92
+        enabled: false
+      settings:
+        weight: 93
+        enabled: false
+      slide:
+        weight: 94
+        enabled: false
+      solar_about_company:
+        weight: 100
+        enabled: false
+      solar_amazing_feedback_item:
+        weight: 101
+        enabled: false
+      solar_contact:
+        weight: 102
+        enabled: false
+      solar_content_item:
+        weight: 103
+        enabled: false
+      solaraboutcompanytab:
+        weight: 95
+        enabled: false
+      solaramazingfeedback:
+        weight: 96
+        enabled: false
+      solarourservicecols:
+        weight: 97
+        enabled: true
+      solarqualityhandymansolution:
+        weight: 98
+        enabled: false
+      solarqualityitem:
+        weight: 99
+        enabled: false
+      timeline:
+        weight: 104
+        enabled: false
+      timeline_item:
+        weight: 105
+        enabled: false
+      webform:
+        weight: 106
+        enabled: false
+field_type: entity_reference_revisions

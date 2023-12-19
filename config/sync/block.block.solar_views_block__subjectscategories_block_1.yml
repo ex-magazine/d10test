@@ -1,0 +1,33 @@
+uuid: b5b9096b-f997-4b4d-8ba9-f251f7404e3e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.subjectscategories
+  module:
+    - block_classes
+    - node
+    - views
+  theme:
+    - solar
+id: solar_views_block__subjectscategories_block_1
+theme: solar
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:subjectscategories-block_1'
+settings:
+  id: 'views_block:subjectscategories-block_1'
+  label: Categories
+  label_display: visible
+  provider: views
+  views_label: Categories
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      news: news

@@ -1,0 +1,24 @@
+uuid: 3b1dc7b3-fa38-4160-9013-d92c92abfb04
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ourservice3cols.field_ourservice3cols
+    - paragraphs.paragraphs_type.ourservice3cols
+  module:
+    - entity_reference_revisions
+id: paragraph.ourservice3cols.default
+targetEntityType: paragraph
+bundle: ourservice3cols
+mode: default
+content:
+  field_ourservice3cols:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

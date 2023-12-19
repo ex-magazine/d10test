@@ -1,0 +1,24 @@
+uuid: 514990f4-b4bd-4d29-9dc9-0eff7ec459d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solarwebform
+  module:
+    - text
+id: paragraph.solarwebform.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: solarwebform
+label: Map
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

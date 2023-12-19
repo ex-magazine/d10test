@@ -1,0 +1,10 @@
+uuid: cc1bccdb-7b68-42a0-8c6e-9fe737078d7e
+langcode: en
+status: true
+dependencies: {  }
+id: solarwebform
+label: 'Solar Webform'
+icon_uuid: null
+icon_default: null
+description: 'Solar Webform'
+behavior_plugins: {  }

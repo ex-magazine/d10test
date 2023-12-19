@@ -1,0 +1,10 @@
+uuid: f9efc493-3ddb-48c0-a7c8-ac1ed8c2dcfa
+langcode: en
+status: true
+dependencies: {  }
+id: ourservice3cols
+label: 'Solar Our Service 3 cols'
+icon_uuid: null
+icon_default: null
+description: 'Solar Our Service 3 cols'
+behavior_plugins: {  }

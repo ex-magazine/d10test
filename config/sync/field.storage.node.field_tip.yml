@@ -1,0 +1,24 @@
+uuid: 576f753c-5ffb-4260-923b-ac285faa0da4
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_tip
+field_name: field_tip
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: growthsolution
+      label: 'Growth Solution'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

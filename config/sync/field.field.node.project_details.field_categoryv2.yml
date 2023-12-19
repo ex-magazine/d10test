@@ -1,0 +1,21 @@
+uuid: aac1c281-efc3-4862-b463-64173261fa30
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_categoryv2
+    - node.type.project_details
+  module:
+    - options
+id: node.project_details.field_categoryv2
+field_name: field_categoryv2
+entity_type: node
+bundle: project_details
+label: Category
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

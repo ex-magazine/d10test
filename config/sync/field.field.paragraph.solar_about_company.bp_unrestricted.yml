@@ -1,0 +1,24 @@
+uuid: 67f9ac4c-1423-4595-9565-4604555727e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_unrestricted
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solar_about_company
+  module:
+    - text
+id: paragraph.solar_about_company.bp_unrestricted
+field_name: bp_unrestricted
+entity_type: paragraph
+bundle: solar_about_company
+label: 'Title first'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -1,0 +1,24 @@
+uuid: a3369401-1433-45a7-b736-57e214dd10a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solar_amazing_feedback_item
+  module:
+    - text
+id: paragraph.solar_amazing_feedback_item.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: solar_amazing_feedback_item
+label: Des
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

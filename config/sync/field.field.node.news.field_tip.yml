@@ -1,0 +1,21 @@
+uuid: 2232a318-57ad-4d54-a0a3-e0725f09f63c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tip
+    - node.type.news
+  module:
+    - options
+id: node.news.field_tip
+field_name: field_tip
+entity_type: node
+bundle: news
+label: Tip
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

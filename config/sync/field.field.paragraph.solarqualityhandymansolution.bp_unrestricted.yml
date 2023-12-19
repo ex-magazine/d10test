@@ -1,0 +1,24 @@
+uuid: 70c620f3-1064-4f9c-9c74-c7198508d9a9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_unrestricted
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solarqualityhandymansolution
+  module:
+    - text
+id: paragraph.solarqualityhandymansolution.bp_unrestricted
+field_name: bp_unrestricted
+entity_type: paragraph
+bundle: solarqualityhandymansolution
+label: 'Title first'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

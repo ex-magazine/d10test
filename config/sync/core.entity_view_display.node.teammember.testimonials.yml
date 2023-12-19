@@ -1,0 +1,45 @@
+uuid: 727c3bbd-bfc6-484d-bf44-f03215dbaa25
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.testimonials
+    - field.field.node.teammember.body
+    - field.field.node.teammember.field_address
+    - field.field.node.teammember.field_clients
+    - field.field.node.teammember.field_domain_access
+    - field.field.node.teammember.field_domain_all_affiliates
+    - field.field.node.teammember.field_image
+    - field.field.node.teammember.field_position
+    - field.field.node.teammember.field_twitter
+    - node.type.teammember
+  module:
+    - user
+id: node.teammember.testimonials
+targetEntityType: node
+bundle: teammember
+mode: testimonials
+content:
+  field_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_address: true
+  field_clients: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_image: true
+  field_twitter: true
+  langcode: true

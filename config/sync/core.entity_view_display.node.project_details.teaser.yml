@@ -7,10 +7,12 @@ dependencies:
     - field.field.node.project_details.body
     - field.field.node.project_details.field_address
     - field.field.node.project_details.field_category
+    - field.field.node.project_details.field_categoryv2
     - field.field.node.project_details.field_clients
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
     - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_pcategory
     - field.field.node.project_details.field_the_challenge_of_project
     - image.style.medium
     - node.type.project_details
@@ -51,8 +53,10 @@ hidden:
   addtoany: true
   field_address: true
   field_category: true
+  field_categoryv2: true
   field_clients: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_pcategory: true
   field_the_challenge_of_project: true
   langcode: true

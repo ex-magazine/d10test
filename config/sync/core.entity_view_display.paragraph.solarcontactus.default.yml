@@ -1,0 +1,24 @@
+uuid: 6d6d808c-b9ab-4e16-b625-7976cf98e01d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solarcontactus.field_solarcontactus
+    - paragraphs.paragraphs_type.solarcontactus
+  module:
+    - entity_reference_revisions
+id: paragraph.solarcontactus.default
+targetEntityType: paragraph
+bundle: solarcontactus
+mode: default
+content:
+  field_solarcontactus:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,15 +1,15 @@
-uuid: a891355b-2396-4e3b-894f-641441cc541a
+uuid: 5450df46-b520-4e04-9be7-d17fce8b9d35
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.bp_card_text
-    - paragraphs.paragraphs_type.solarqualityhandymansolution
-id: paragraph.solarqualityhandymansolution.bp_card_text
+    - paragraphs.paragraphs_type.solarourservicecols
+id: paragraph.solarourservicecols.bp_card_text
 field_name: bp_card_text
 entity_type: paragraph
-bundle: solarqualityhandymansolution
-label: 'Title first'
+bundle: solarourservicecols
+label: Des
 description: ''
 required: false
 translatable: false

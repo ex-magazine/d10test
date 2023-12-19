@@ -1,0 +1,22 @@
+uuid: c40b4d36-5500-4ef1-b93f-8a44ef5be201
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solar_contact.bp_unrestricted
+    - paragraphs.paragraphs_type.solar_contact
+  module:
+    - text
+id: paragraph.solar_contact.default
+targetEntityType: paragraph
+bundle: solar_contact
+mode: default
+content:
+  bp_unrestricted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+hidden: {  }

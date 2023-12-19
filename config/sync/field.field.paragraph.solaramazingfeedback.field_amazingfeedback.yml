@@ -1,0 +1,181 @@
+uuid: c5d9b97b-cd4a-4f05-9cd4-329ad49bd436
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_amazingfeedback
+    - paragraphs.paragraphs_type.solar_amazing_feedback_item
+    - paragraphs.paragraphs_type.solaramazingfeedback
+  module:
+    - entity_reference_revisions
+id: paragraph.solaramazingfeedback.field_amazingfeedback
+field_name: field_amazingfeedback
+entity_type: paragraph
+bundle: solaramazingfeedback
+label: 'Amazing Feedback item'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      solar_amazing_feedback_item: solar_amazing_feedback_item
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 52
+        enabled: false
+      accordion_item:
+        weight: 53
+        enabled: false
+      attachments:
+        weight: 54
+        enabled: false
+      bp_accordion:
+        weight: 55
+        enabled: false
+      bp_accordion_section:
+        weight: 56
+        enabled: false
+      bp_blank:
+        weight: 57
+        enabled: false
+      bp_block:
+        weight: 58
+        enabled: false
+      bp_callout:
+        weight: 59
+        enabled: false
+      bp_card:
+        weight: 60
+        enabled: false
+      bp_carousel:
+        weight: 61
+        enabled: false
+      bp_column_wrapper:
+        weight: 65
+        enabled: false
+      bp_columns:
+        weight: 62
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 63
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 64
+        enabled: false
+      bp_contact:
+        weight: 66
+        enabled: false
+      bp_image:
+        weight: 67
+        enabled: false
+      bp_modal:
+        weight: 68
+        enabled: false
+      bp_quicklinks:
+        weight: 69
+        enabled: false
+      bp_simple:
+        weight: 70
+        enabled: false
+      bp_stat:
+        weight: 71
+        enabled: false
+      bp_statistics:
+        weight: 72
+        enabled: false
+      bp_tab_section:
+        weight: 74
+        enabled: false
+      bp_tabs:
+        weight: 73
+        enabled: false
+      bp_view:
+        weight: 75
+        enabled: false
+      bp_webform:
+        weight: 76
+        enabled: false
+      callout:
+        weight: 77
+        enabled: false
+      carousel:
+        weight: 78
+        enabled: false
+      challengeproject:
+        weight: 79
+        enabled: false
+      citation:
+        weight: 80
+        enabled: false
+      cmenergysection:
+        weight: 81
+        enabled: false
+      content:
+        weight: 82
+        enabled: false
+      from_library:
+        weight: 83
+        enabled: false
+      gallery:
+        weight: 84
+        enabled: false
+      gallery_item:
+        weight: 85
+        enabled: false
+      hero:
+        weight: 86
+        enabled: false
+      map:
+        weight: 87
+        enabled: false
+      node_reference:
+        weight: 88
+        enabled: false
+      section:
+        weight: 89
+        enabled: false
+      settings:
+        weight: 90
+        enabled: false
+      slide:
+        weight: 91
+        enabled: false
+      solar_about_company:
+        weight: 96
+        enabled: false
+      solar_amazing_feedback_item:
+        weight: 97
+        enabled: true
+      solar_contact:
+        weight: 98
+        enabled: false
+      solar_content_item:
+        weight: 99
+        enabled: false
+      solaraboutcompanytab:
+        weight: 92
+        enabled: false
+      solaramazingfeedback:
+        weight: 93
+        enabled: false
+      solarqualityhandymansolution:
+        weight: 94
+        enabled: false
+      solarqualityitem:
+        weight: 95
+        enabled: false
+      timeline:
+        weight: 100
+        enabled: false
+      timeline_item:
+        weight: 101
+        enabled: false
+      webform:
+        weight: 102
+        enabled: false
+field_type: entity_reference_revisions

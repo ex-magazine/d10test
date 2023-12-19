@@ -5,12 +5,14 @@ dependencies:
   config:
     - field.field.paragraph.solar_about_company.bp_card_image
     - field.field.paragraph.solar_about_company.bp_card_text
+    - field.field.paragraph.solar_about_company.bp_unrestricted
     - field.field.paragraph.solar_about_company.field_tabs
     - field.field.paragraph.solar_about_company.field_title
     - paragraphs.paragraphs_type.solar_about_company
   module:
     - entity_reference_revisions
     - image
+    - text
 id: paragraph.solar_about_company.default
 targetEntityType: paragraph
 bundle: solar_about_company
@@ -29,6 +31,13 @@ content:
     region: content
   bp_card_text:
     type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  bp_unrestricted:
+    type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }

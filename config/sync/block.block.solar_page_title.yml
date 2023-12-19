@@ -2,6 +2,9 @@ uuid: d6a38861-cf8b-4b8a-8b95-23e7b115d35f
 langcode: en
 status: true
 dependencies:
+  module:
+    - block_classes
+    - node
   theme:
     - solar
 _core:
@@ -17,4 +20,11 @@ settings:
   label: 'Page title'
   label_display: '0'
   provider: core
-visibility: {  }
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      article: article

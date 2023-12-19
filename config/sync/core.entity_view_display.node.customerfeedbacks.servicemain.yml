@@ -1,0 +1,45 @@
+uuid: 311ccba4-1425-40bf-a244-5f0f733df3c8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.servicemain
+    - field.field.node.customerfeedbacks.body
+    - field.field.node.customerfeedbacks.field_domain_access
+    - field.field.node.customerfeedbacks.field_domain_all_affiliates
+    - field.field.node.customerfeedbacks.field_icon
+    - field.field.node.customerfeedbacks.field_image
+    - field.field.node.customerfeedbacks.field_position
+    - node.type.customerfeedbacks
+  module:
+    - image
+    - user
+id: node.customerfeedbacks.servicemain
+targetEntityType: node
+bundle: customerfeedbacks
+mode: servicemain
+content:
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_image: true
+  field_position: true
+  langcode: true

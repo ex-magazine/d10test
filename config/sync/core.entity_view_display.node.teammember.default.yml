@@ -1,0 +1,84 @@
+uuid: b31c3c55-8a60-49b4-80ba-165529e83726
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.teammember.body
+    - field.field.node.teammember.field_address
+    - field.field.node.teammember.field_clients
+    - field.field.node.teammember.field_domain_access
+    - field.field.node.teammember.field_domain_all_affiliates
+    - field.field.node.teammember.field_image
+    - field.field.node.teammember.field_position
+    - field.field.node.teammember.field_twitter
+    - image.style.wide
+    - node.type.teammember
+  module:
+    - image
+    - text
+    - user
+id: node.teammember.default
+targetEntityType: node
+bundle: teammember
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_address:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  field_position:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_twitter:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  langcode: true

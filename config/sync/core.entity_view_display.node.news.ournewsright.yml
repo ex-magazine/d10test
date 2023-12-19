@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.ournewsright
     - field.field.node.news.body
+    - field.field.node.news.comment
     - field.field.node.news.field_abstract
     - field.field.node.news.field_domain_access
     - field.field.node.news.field_domain_all_affiliates
@@ -13,7 +14,9 @@ dependencies:
     - field.field.node.news.field_news_type
     - field.field.node.news.field_paragraph
     - field.field.node.news.field_subjects
+    - field.field.node.news.field_tags
     - field.field.node.news.field_time_to_read
+    - field.field.node.news.field_tip
     - image.style.news232x232
     - node.type.news
   module:
@@ -61,12 +64,15 @@ content:
 hidden:
   addtoany: true
   body: true
+  comment: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_expiration_date: true
   field_news_type: true
   field_paragraph: true
   field_subjects: true
+  field_tags: true
+  field_tip: true
   langcode: true
   links: true
   toc_js: true

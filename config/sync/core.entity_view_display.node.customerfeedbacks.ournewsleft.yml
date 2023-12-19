@@ -1,0 +1,71 @@
+uuid: 04c9c8a8-8a89-4aa7-849d-a0c995e5bf17
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ournewsleft
+    - field.field.node.customerfeedbacks.body
+    - field.field.node.customerfeedbacks.field_domain_access
+    - field.field.node.customerfeedbacks.field_domain_all_affiliates
+    - field.field.node.customerfeedbacks.field_icon
+    - field.field.node.customerfeedbacks.field_image
+    - field.field.node.customerfeedbacks.field_position
+    - image.style.thumbnail
+    - node.type.customerfeedbacks
+  module:
+    - image
+    - text
+    - user
+id: node.customerfeedbacks.ournewsleft
+targetEntityType: node
+bundle: customerfeedbacks
+mode: ournewsleft
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_icon:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_position:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  langcode: true

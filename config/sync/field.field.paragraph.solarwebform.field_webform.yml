@@ -1,0 +1,25 @@
+uuid: c925fa08-a18e-4f0c-a37b-6daf73b92c0f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_webform
+    - paragraphs.paragraphs_type.solarwebform
+  module:
+    - webform
+id: paragraph.solarwebform.field_webform
+field_name: field_webform
+entity_type: paragraph
+bundle: solarwebform
+label: Webform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

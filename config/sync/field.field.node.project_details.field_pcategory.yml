@@ -1,0 +1,21 @@
+uuid: 4251f1ff-a48c-4ac8-a7d9-feffb304999d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pcategory
+    - node.type.project_details
+  module:
+    - options
+id: node.project_details.field_pcategory
+field_name: field_pcategory
+entity_type: node
+bundle: project_details
+label: Format
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

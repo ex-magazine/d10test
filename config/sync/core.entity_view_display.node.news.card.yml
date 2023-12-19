@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.card
     - field.field.node.news.body
+    - field.field.node.news.comment
     - field.field.node.news.field_abstract
     - field.field.node.news.field_domain_access
     - field.field.node.news.field_domain_all_affiliates
@@ -13,9 +14,13 @@ dependencies:
     - field.field.node.news.field_news_type
     - field.field.node.news.field_paragraph
     - field.field.node.news.field_subjects
+    - field.field.node.news.field_tags
     - field.field.node.news.field_time_to_read
+    - field.field.node.news.field_tip
+    - image.style.story424x310
     - node.type.news
   module:
+    - image
     - user
 _core:
   default_config_hash: oY7ZDGYF_9WxTD3ZZHiaa3iPZqYBZvSwyJyRIImhvtY
@@ -28,6 +33,17 @@ content:
     type: basic_string
     label: hidden
     settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: story424x310
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 1
     region: content
@@ -42,17 +58,19 @@ content:
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
 hidden:
   addtoany: true
   body: true
+  comment: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_expiration_date: true
-  field_image: true
   field_paragraph: true
   field_subjects: true
+  field_tags: true
   field_time_to_read: true
+  field_tip: true
   langcode: true
   toc_js: true

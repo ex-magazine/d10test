@@ -1,0 +1,24 @@
+uuid: b7aee3e7-6dc5-4d34-83f1-bfe02915f617
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_unrestricted
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solarcontactusitem
+  module:
+    - text
+id: paragraph.solarcontactusitem.bp_unrestricted
+field_name: bp_unrestricted
+entity_type: paragraph
+bundle: solarcontactusitem
+label: SVG
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

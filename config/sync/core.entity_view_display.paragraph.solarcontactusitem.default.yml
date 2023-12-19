@@ -1,0 +1,62 @@
+uuid: d6ff6bc7-b9f6-43b3-af64-49e3e2f0cbd3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solarcontactusitem.bp_card_title
+    - field.field.paragraph.solarcontactusitem.bp_header
+    - field.field.paragraph.solarcontactusitem.bp_image_field
+    - field.field.paragraph.solarcontactusitem.bp_unrestricted
+    - field.field.paragraph.solarcontactusitem.field_title
+    - paragraphs.paragraphs_type.solarcontactusitem
+  module:
+    - image
+    - text
+id: paragraph.solarcontactusitem.default
+targetEntityType: paragraph
+bundle: solarcontactusitem
+mode: default
+content:
+  bp_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  bp_header:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  bp_image_field:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  bp_unrestricted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

@@ -1,0 +1,24 @@
+uuid: bb27ccd2-ab6a-4d4d-9796-60eec0553ccf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_unrestricted
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.solarourservicecols
+  module:
+    - text
+id: paragraph.solarourservicecols.bp_unrestricted
+field_name: bp_unrestricted
+entity_type: paragraph
+bundle: solarourservicecols
+label: SVG
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

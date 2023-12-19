@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.customerfeedbacks.body
     - field.field.node.customerfeedbacks.field_domain_access
     - field.field.node.customerfeedbacks.field_domain_all_affiliates
+    - field.field.node.customerfeedbacks.field_icon
     - field.field.node.customerfeedbacks.field_image
     - field.field.node.customerfeedbacks.field_position
     - image.style.wide
@@ -25,6 +26,17 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_icon:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
     region: content
   field_image:
     type: image

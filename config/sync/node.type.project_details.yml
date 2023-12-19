@@ -29,9 +29,9 @@ third_party_settings:
     sticky_offset: '0'
     sticky_stop: ''
     sticky_stop_padding: '0'
-name: 'Project Details'
+name: Project
 type: project_details
-description: 'Project Details'
+description: Project
 help: ''
 new_revision: true
 preview_mode: 1

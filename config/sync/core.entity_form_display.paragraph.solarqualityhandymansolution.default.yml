@@ -3,19 +3,20 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.solarqualityhandymansolution.bp_card_text
+    - field.field.paragraph.solarqualityhandymansolution.bp_unrestricted
     - field.field.paragraph.solarqualityhandymansolution.field_qualityhandyman
     - field.field.paragraph.solarqualityhandymansolution.field_title
     - paragraphs.paragraphs_type.solarqualityhandymansolution
   module:
     - paragraphs
+    - text
 id: paragraph.solarqualityhandymansolution.default
 targetEntityType: paragraph
 bundle: solarqualityhandymansolution
 mode: default
 content:
-  bp_card_text:
-    type: string_textarea
+  bp_unrestricted:
+    type: text_textarea
     weight: 3
     region: content
     settings:

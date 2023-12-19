@@ -1,0 +1,41 @@
+uuid: 28fc5cf7-d869-4eb3-8d26-c6c447b0f78b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solarwebform.field_section_content
+    - field.field.paragraph.solarwebform.field_text
+    - field.field.paragraph.solarwebform.field_webform
+    - paragraphs.paragraphs_type.solarwebform
+  module:
+    - text
+    - webform
+id: paragraph.solarwebform.default
+targetEntityType: paragraph
+bundle: solarwebform
+mode: default
+content:
+  field_section_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: false
+      lazy: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

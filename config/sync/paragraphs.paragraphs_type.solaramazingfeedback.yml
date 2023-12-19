@@ -1,0 +1,10 @@
+uuid: 872ae89e-3be5-4c03-8cc3-8f2d2e0528bf
+langcode: en
+status: true
+dependencies: {  }
+id: solaramazingfeedback
+label: 'Solar Amazing Feedback'
+icon_uuid: null
+icon_default: null
+description: 'Solar Amazing Feedback'
+behavior_plugins: {  }

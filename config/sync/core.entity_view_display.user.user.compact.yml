@@ -4,9 +4,12 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_des
     - field.field.user.user.field_domain_access
     - field.field.user.user.field_domain_admin
     - field.field.user.user.field_domain_all_affiliates
+    - field.field.user.user.field_fullname
+    - field.field.user.user.field_position
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -31,7 +34,12 @@ content:
     weight: 0
     region: content
 hidden:
+  field_des: true
   field_domain_access: true
   field_domain_admin: true
   field_domain_all_affiliates: true
+  field_fullname: true
+  field_position: true
+  langcode: true
   member_for: true
+  simplenews: true

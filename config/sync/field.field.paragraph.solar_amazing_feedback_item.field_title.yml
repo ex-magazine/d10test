@@ -1,0 +1,19 @@
+uuid: 944ad56d-bef3-4b8b-a9b7-a380c33e744d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.solar_amazing_feedback_item
+id: paragraph.solar_amazing_feedback_item.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: solar_amazing_feedback_item
+label: Title
+description: 'Accordion item title'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

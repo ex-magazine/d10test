@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.customerfeedbacks.body
     - field.field.node.customerfeedbacks.field_domain_access
     - field.field.node.customerfeedbacks.field_domain_all_affiliates
+    - field.field.node.customerfeedbacks.field_icon
     - field.field.node.customerfeedbacks.field_image
     - field.field.node.customerfeedbacks.field_position
     - image.style.cf60x60
@@ -60,4 +61,5 @@ hidden:
   addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_icon: true
   langcode: true

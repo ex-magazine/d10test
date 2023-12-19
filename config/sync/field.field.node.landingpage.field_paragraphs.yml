@@ -5,22 +5,22 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.landingpage
-    - paragraphs.paragraphs_type.accordion
-    - paragraphs.paragraphs_type.attachments
-    - paragraphs.paragraphs_type.callout
-    - paragraphs.paragraphs_type.carousel
-    - paragraphs.paragraphs_type.citation
+    - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.cmenergysection
     - paragraphs.paragraphs_type.content
-    - paragraphs.paragraphs_type.from_library
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.map
     - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.ourservice3cols
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.settings
     - paragraphs.paragraphs_type.solar_about_company
+    - paragraphs.paragraphs_type.solar_contact
+    - paragraphs.paragraphs_type.solaramazingfeedback
+    - paragraphs.paragraphs_type.solarcontactus
     - paragraphs.paragraphs_type.solarqualityhandymansolution
+    - paragraphs.paragraphs_type.solarwebform
     - paragraphs.paragraphs_type.timeline
     - paragraphs.paragraphs_type.webform
   module:
@@ -39,14 +39,8 @@ settings:
   handler: 'default:paragraph'
   handler_settings:
     target_bundles:
-      accordion: accordion
-      attachments: attachments
-      callout: callout
-      carousel: carousel
-      citation: citation
       content: content
       gallery: gallery
-      from_library: from_library
       hero: hero
       map: map
       node_reference: node_reference
@@ -54,20 +48,26 @@ settings:
       settings: settings
       timeline: timeline
       webform: webform
+      bp_view: bp_view
       cmenergysection: cmenergysection
       solarqualityhandymansolution: solarqualityhandymansolution
+      ourservice3cols: ourservice3cols
       solar_about_company: solar_about_company
+      solaramazingfeedback: solaramazingfeedback
+      solar_contact: solar_contact
+      solarcontactus: solarcontactus
+      solarwebform: solarwebform
     negate: 0
     target_bundles_drag_drop:
       accordion:
         weight: 19
-        enabled: true
+        enabled: false
       accordion_item:
         weight: 20
         enabled: false
       attachments:
         weight: 21
-        enabled: true
+        enabled: false
       bp_accordion:
         weight: 46
         enabled: false
@@ -130,22 +130,22 @@ settings:
         enabled: false
       bp_view:
         weight: 66
-        enabled: false
+        enabled: true
       bp_webform:
         weight: 67
         enabled: false
       callout:
         weight: 22
-        enabled: true
+        enabled: false
       carousel:
         weight: 23
-        enabled: true
+        enabled: false
       challengeproject:
         weight: 75
         enabled: false
       citation:
         weight: 24
-        enabled: true
+        enabled: false
       cmenergysection:
         weight: 71
         enabled: true
@@ -154,7 +154,7 @@ settings:
         enabled: true
       from_library:
         weight: 27
-        enabled: true
+        enabled: false
       gallery:
         weight: 26
         enabled: true
@@ -170,6 +170,9 @@ settings:
       node_reference:
         weight: 30
         enabled: true
+      ourservice3cols:
+        weight: 91
+        enabled: true
       section:
         weight: 31
         enabled: true
@@ -182,8 +185,29 @@ settings:
       solar_about_company:
         weight: 91
         enabled: true
+      solar_amazing_feedback_item:
+        weight: 97
+        enabled: false
+      solar_contact:
+        weight: 94
+        enabled: true
+      solar_content_item:
+        weight: 95
+        enabled: false
       solaraboutcompanytab:
         weight: 88
+        enabled: false
+      solaramazingfeedback:
+        weight: 93
+        enabled: true
+      solarcontactus:
+        weight: 100
+        enabled: true
+      solarcontactusitem:
+        weight: 101
+        enabled: false
+      solarourservicecols:
+        weight: 97
         enabled: false
       solarqualityhandymansolution:
         weight: 89
@@ -191,6 +215,9 @@ settings:
       solarqualityitem:
         weight: 90
         enabled: false
+      solarwebform:
+        weight: 105
+        enabled: true
       timeline:
         weight: 34
         enabled: true

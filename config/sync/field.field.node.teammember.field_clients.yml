@@ -1,0 +1,19 @@
+uuid: d17885d1-902d-4a74-87ce-8357a1324b00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clients
+    - node.type.teammember
+id: node.teammember.field_clients
+field_name: field_clients
+entity_type: node
+bundle: teammember
+label: Skype
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

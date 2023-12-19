@@ -1,0 +1,54 @@
+uuid: f2505d62-fe0f-4f2e-9f12-029a5c6fc43f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solar_amazing_feedback_item.bp_card_image
+    - field.field.paragraph.solar_amazing_feedback_item.field_section_content
+    - field.field.paragraph.solar_amazing_feedback_item.field_source
+    - field.field.paragraph.solar_amazing_feedback_item.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.solar_amazing_feedback_item
+  module:
+    - image
+    - text
+id: paragraph.solar_amazing_feedback_item.default
+targetEntityType: paragraph
+bundle: solar_amazing_feedback_item
+mode: default
+content:
+  bp_card_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_section_content:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_source:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

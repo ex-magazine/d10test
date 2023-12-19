@@ -1,0 +1,10 @@
+uuid: 8d0bb2c6-054c-44db-885e-a6018f490a01
+langcode: en
+status: true
+dependencies: {  }
+id: solarcontactusitem
+label: 'Solar Contact Us item'
+icon_uuid: null
+icon_default: null
+description: 'Solar Contact Us item'
+behavior_plugins: {  }

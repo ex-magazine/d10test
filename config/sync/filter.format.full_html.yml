@@ -46,6 +46,6 @@ filters:
     status: false
     weight: -10
     settings:
-      allowed_html: '<i> <svg> <path> <span> <circle>'
+      allowed_html: '<i> <svg> <path> <span> <circle> <iframe>'
       filter_html_help: true
       filter_html_nofollow: false

@@ -11,7 +11,7 @@ third_party_settings:
       - main
     parent: 'main:'
   toc_js:
-    toc_js_active: 1
+    toc_js_active: 0
     title: 'Table of contents'
     selectors: 'h2, h3, h4'
     selectors_minimum: '0'

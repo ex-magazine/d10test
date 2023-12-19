@@ -1,0 +1,31 @@
+uuid: 05c816ef-3508-495f-b301-c05ff9d85588
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9e0f999c-dd57-4017-872e-dd6a28038369'
+  module:
+    - block_classes
+    - block_content
+    - system
+  theme:
+    - solar
+id: solar_googlemap
+theme: solar
+region: map
+weight: 0
+provider: null
+plugin: 'block_content:9e0f999c-dd57-4017-872e-dd6a28038369'
+settings:
+  id: 'block_content:9e0f999c-dd57-4017-872e-dd6a28038369'
+  label: 'Google map'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/220

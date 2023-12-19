@@ -1,0 +1,20 @@
+uuid: 5806dc1f-c110-47cd-9cb9-7885be901126
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_des
+  module:
+    - user
+id: user.user.field_des
+field_name: field_des
+entity_type: user
+bundle: user
+label: Des
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

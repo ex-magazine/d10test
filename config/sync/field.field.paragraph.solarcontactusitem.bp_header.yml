@@ -1,0 +1,19 @@
+uuid: c17e7487-494c-466b-aeda-3590563f957f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_header
+    - paragraphs.paragraphs_type.solarcontactusitem
+id: paragraph.solarcontactusitem.bp_header
+field_name: bp_header
+entity_type: paragraph
+bundle: solarcontactusitem
+label: 'Contact link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

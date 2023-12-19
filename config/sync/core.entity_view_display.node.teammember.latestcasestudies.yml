@@ -1,0 +1,45 @@
+uuid: a2aa0ea4-85a8-41d7-9cb9-0d907498eba9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latestcasestudies
+    - field.field.node.teammember.body
+    - field.field.node.teammember.field_address
+    - field.field.node.teammember.field_clients
+    - field.field.node.teammember.field_domain_access
+    - field.field.node.teammember.field_domain_all_affiliates
+    - field.field.node.teammember.field_image
+    - field.field.node.teammember.field_position
+    - field.field.node.teammember.field_twitter
+    - node.type.teammember
+  module:
+    - user
+id: node.teammember.latestcasestudies
+targetEntityType: node
+bundle: teammember
+mode: latestcasestudies
+content:
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_address: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_image: true
+  field_position: true
+  field_twitter: true
+  langcode: true

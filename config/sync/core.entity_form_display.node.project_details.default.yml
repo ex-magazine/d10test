@@ -6,10 +6,12 @@ dependencies:
     - field.field.node.project_details.body
     - field.field.node.project_details.field_address
     - field.field.node.project_details.field_category
+    - field.field.node.project_details.field_categoryv2
     - field.field.node.project_details.field_clients
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
     - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_pcategory
     - field.field.node.project_details.field_the_challenge_of_project
     - image.style.thumbnail
     - node.type.project_details
@@ -53,6 +55,12 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_categoryv2:
+    type: options_select
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_clients:
     type: string_textfield
     weight: 26
@@ -81,6 +89,12 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_pcategory:
+    type: options_select
+    weight: 31
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_the_challenge_of_project:
     type: paragraphs
@@ -146,6 +160,11 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  translation:
+    weight: 10
+    region: content
+    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
