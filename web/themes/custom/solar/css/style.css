@@ -20970,6 +20970,11 @@ p {
 .portfolio-disc-content {
   margin-top: 50px;
 }
+.messages--status .messages__container{
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
 .portfolio-disc-content .title-area .field--name-field-growth,
 .portfolio-disc-content .title-area span {
   font-weight: 600;
