@@ -93,7 +93,7 @@
             {% endif %}
             {% if content.field_pcategory|render|striptags|trim  == 'video' %}
                 <div class="vedio-area-project-details">
-                    <iframe width="750" height="720" src="https://www.youtube.com/embed/44Wp3WE1AHs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+                    <iframe width="750" height="720" src="{{ content.field_youtube|render|striptags|trim }}" title="Solar Project" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
                 </div>
             {% endif %}
             {% if content.field_pcategory|render|striptags|trim  == 'carousel' %}
