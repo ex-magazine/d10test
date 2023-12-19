@@ -20970,6 +20970,7 @@ p {
 .portfolio-disc-content {
   margin-top: 50px;
 }
+.portfolio-disc-content .title-area .field--name-field-growth,
 .portfolio-disc-content .title-area span {
   font-weight: 600;
   font-size: 16px;
@@ -21063,6 +21064,7 @@ p {
   margin-bottom: 5px;
 }
 
+.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-categoryv2 .field__item,
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-clients .field__item,
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-category .field__item,
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-address .field__item{
