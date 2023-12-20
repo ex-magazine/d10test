@@ -1,0 +1,20 @@
+{%
+  set classes = [
+    'paragraph',
+    'rts-make-an-appoinemtn-area rts-section-gap reveal',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>  
+        <div class="container">
+            <div class="row align-items-center g-0 bg-appoinment">
+                {% block content %}        
+                    {{ content }}
+                {% endblock %}
+            </div>
+        </div>
+  </div>
+{% endblock paragraph %}
