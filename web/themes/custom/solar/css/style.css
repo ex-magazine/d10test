@@ -15627,6 +15627,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   float: right;
   margin-bottom: 20px;
 }
+.rts-make-an-appoinemtn-area input.rts-btn.btn-primary,
 .contact-page-form input.rts-btn.btn-primary{
   width: 100%;
   background:  var(--color-primary);
@@ -15634,6 +15635,7 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
   transition: all 0.4s ease-out 0s;
   color: #fff;
 }
+.rts-make-an-appoinemtn-area input.rts-btn.btn-primary:hover,
 .contact-page-form input.rts-btn.btn-primary:hover{
   background:  #1f1f25;
 }
@@ -25452,6 +25454,12 @@ form.appoinment-form .input-half-wrapper .single-input input {
 }
 .field__item .appoinment-form .input-half-wrapper,
 form.appoinment-form .input-half-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 26px;
+}
+.field__item .appoinment-form  #edit-select-date {
   display: flex;
   align-items: center;
   width: 100%;
