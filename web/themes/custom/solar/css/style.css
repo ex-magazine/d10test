@@ -25442,7 +25442,7 @@ li.ui-timepicker-selected .ui-timepicker-duration, .ui-timepicker-list li:hover 
 .bg-appoinment {
   background: #F6F6F6;
 }
-
+.field__item .appoinment-form .input-half-wrapper .js-form-item input,
 form.appoinment-form .input-half-wrapper .single-input input {
   height: 60px;
   background: #FFFFFF;
@@ -25450,14 +25450,14 @@ form.appoinment-form .input-half-wrapper .single-input input {
   padding: 0 30px;
   border: 1px solid transparent;
 }
-
+.field__item .appoinment-form .input-half-wrapper,
 form.appoinment-form .input-half-wrapper {
   display: flex;
   align-items: center;
   width: 100%;
   gap: 26px;
 }
-
+.field__item .appoinment-form select,
 form.appoinment-form select {
   height: 60px;
   background: #FFFFFF;
@@ -25468,12 +25468,12 @@ form.appoinment-form select {
   box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01);
   border-radius: 33px;
 }
-
+.field__item .appoinment-form select option,
 form.appoinment-form select option {
   border-radius: 0;
   padding: 5px 6px;
 }
-
+.field__item .appoinment-form .input-half-wrapper,
 form.appoinment-form .input-half-wrapper {
   display: flex;
   align-items: center;
@@ -25481,16 +25481,17 @@ form.appoinment-form .input-half-wrapper {
   gap: 26px;
 }
 @media only screen and (max-width: 479px) {
+  .field__item .appoinment-form .input-half-wrapper,
   form.appoinment-form .input-half-wrapper {
     gap: 8px;
   }
 }
-
+.field__item .appoinment-form .input-half-wrapper .js-form-item,
 form.appoinment-form .input-half-wrapper .single-input {
   display: block;
   width: 50%;
 }
-
+.field__item .appoinment-form .input-half-wrapper .js-form-item input ,
 form.appoinment-form .input-half-wrapper .single-input input {
   height: 60px;
   background: #FFFFFF;
