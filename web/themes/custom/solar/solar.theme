@@ -194,11 +194,23 @@ function solar_theme_suggestions_node_alter(array &$suggestions, array $variable
         if($layout){
           array_splice($suggestions, 1, 0, 'node__landingpage__' . $layout);
         }else{
-          array_splice($suggestions, 1, 0, 'node__layout__' . $node->getType());
+          array_splice($suggestions, 1, 0, 'node__landingpage__' .$variables['elements']['#view_mode']);
         } 
       }      
     }    
   }
+  // if (isset($variables['elements']['#view_mode'])) {
+  //   $suggestions[] = $variables['theme_hook_original']
+  //     . '__view_mode__' . $variables['elements']['#view_mode'];
+
+  //   if (isset($variables['elements']['#node']) &&
+  //     ($variables['elements']['#node'] instanceof Node)
+  //   ) {
+  //     $suggestions[] = $variables['theme_hook_original']
+  //       . '__type_' . $variables['elements']['#node']->getType()
+  //       . '__view_mode_' . $variables['elements']['#view_mode'];
+  //   }
+  // }
 }
 
 /**
