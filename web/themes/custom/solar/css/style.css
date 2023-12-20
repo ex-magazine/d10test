@@ -25465,6 +25465,7 @@ form.appoinment-form .input-half-wrapper {
   width: 100%;
   gap: 26px;
 }
+.field__item .appoinment-form .select2,
 .field__item .appoinment-form select, 
 form.appoinment-form select {
   font-size: var(--font-size-b2);
