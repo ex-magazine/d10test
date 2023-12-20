@@ -25465,8 +25465,10 @@ form.appoinment-form .input-half-wrapper {
   width: 100%;
   gap: 26px;
 }
-.field__item .appoinment-form select,
+.field__item .appoinment-form select, 
 form.appoinment-form select {
+  font-size: var(--font-size-b2);
+  font-weight: 400;
   height: 60px;
   background: #FFFFFF;
   display: block;
@@ -25496,7 +25498,7 @@ form.appoinment-form .input-half-wrapper {
 }
 .field__item .appoinment-form .input-half-wrapper .js-form-item,
 form.appoinment-form .input-half-wrapper .single-input {
-  display: block;
+  display: contents;
   width: 50%;
 }
 .field__item .appoinment-form .input-half-wrapper .js-form-item input ,
