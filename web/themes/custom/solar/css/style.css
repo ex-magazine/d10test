@@ -24662,10 +24662,11 @@ p {
     font-size: 16px;
   }
 }
+.faq-area-start-one .accordion .accordion-item h2 .accordion-button  .faq-title {
+  margin-right: 40px;
+}
 .faq-area-start-one .accordion .accordion-item h2 .accordion-button {
   position: relative;
-  display: flex;
-  gap: 30px;
 }
 .faq-area-start-one .accordion .accordion-item h2 .accordion-button::after {
   display: none;
