@@ -20142,7 +20142,7 @@ p {
 .single-service-solari {
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.8);
   transition: 0.3s;
   overflow: hidden;
   display: block;
@@ -20239,6 +20239,7 @@ p {
 .single-solari-service-start {
   padding: 30px;
   /* background-image: url(../images/20.png); */
+  box-shadow: 0px 10px 34px rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
