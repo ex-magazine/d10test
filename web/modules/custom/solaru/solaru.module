@@ -35,7 +35,7 @@ use Drupal\Core\Session\AccountInterface;
 /**
 * Implements hook_ENTITY_TYPE_view().
 */
-function solar_node_view(array &$build, $entity, $display, $view_mode) {  
+function solaru_node_view(array &$build, $entity, $display, $view_mode) {  
   $host = \Drupal::request()->getHost();
   if (($host == 'adn.id.vn') && ($entity->get('field_domain_access')->target_id == 'cmesolar_cmenergy_local')) {
     if (($entity->bundle() == 'teammember') ||

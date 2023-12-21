@@ -1,5 +1,5 @@
-name: 'Solar Utilities'
-description: 'Solar Utilities Functions'
+name: 'Solaru Utilities'
+description: 'Solaru Utilities Functions'
 package: CME
 type: module
 version: '9.x-1.0'
