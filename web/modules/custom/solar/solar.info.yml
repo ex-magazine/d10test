@@ -1,0 +1,6 @@
+name: 'Solar Utilities'
+description: 'Solar Utilities Functions'
+package: CME
+type: module
+version: '9.x-1.0'
+core_version_requirement: ^9.2 || ^10

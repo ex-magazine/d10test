@@ -1,0 +1,60 @@
+<?php
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\Core\Entity\ContentEntityInterface;
+use Drupal\taxonomy\Entity\Term;
+use Drupal\Component\Render\FormattableMarkup;
+use Drupal\Core\Ajax\InvokeCommand;
+use Drupal\Core\Ajax\ReplaceCommand;
+use Drupal\Core\Field\FieldFilteredMarkup;
+use Drupal\Core\Link;
+use Drupal\Core\Render\Element\PathElement;
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\pathauto\PathautoPatternInterface;
+use Drupal\views\Entity\View;
+use Drupal\views\Plugin\views\cache\CachePluginBase;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+use Drupal\views\ViewExecutable;
+use Drupal\views\Views;
+use Drupal\webform\Entity\WebformSubmission;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\node\Entity\NodeType;
+use Drupal\Core\Session\AccountInterface;
+
+
+/**
+* Implements hook_ENTITY_TYPE_view().
+*/
+function solar_node_view(array &$build, $entity, $display, $view_mode) {  
+  $host = \Drupal::request()->getHost();
+  if (($host == 'adn.id.vn') && ($entity->get('field_domain_access')->target_id == 'cmesolar_cmenergy_local')) {
+    if (($entity->bundle() == 'teammember') ||
+    ($entity->bundle() == 'service') ||
+    ($entity->bundle() == 'project_details') ||
+    ($entity->bundle() == 'news') ||
+    ($entity->bundle() == 'landingpage') ||
+    ($entity->bundle() == 'faq') ||
+    ($entity->bundle() == 'customerfeedbacks') ||
+    ($entity->bundle() == 'client') ||
+    ($entity->bundle() == 'article') ||
+    ($entity->bundle() == 'page') ||
+    ($entity->bundle() == 'banner')) {
+      if ($view_mode == 'full') {              
+        $response = new RedirectResponse(Url::fromUri('http://solar.adn.id.vn/node/'.$entity->id())
+        ->toString(), 301);
+        $response->send();
+        die();
+      }     
+    }
+  } 
+}
