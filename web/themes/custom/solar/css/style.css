@@ -339,7 +339,7 @@ p {
   line-height: var(--line-height-b2);
   font-weight: var(--p-regular);
   color: var(--color-body);
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 @media only screen and (max-width: 767px) {
   p {
@@ -21923,6 +21923,7 @@ p {
   margin: 0;
   margin-right: 10px;
 }
+.rts-elevate-pagination ul li a,
 .rts-elevate-pagination ul li button {
   width: 50px;
   height: 50px;
@@ -21933,11 +21934,17 @@ p {
   color: #000;
   border: 1px solid #E9E9E9;
   transition: 0.3s;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
+.rts-elevate-pagination ul li a.is-active,
 .rts-elevate-pagination ul li button.active {
   background: var(--color-primary);
   color: #fff;
 }
+.rts-elevate-pagination ul li a:hover,
 .rts-elevate-pagination ul li button:hover {
   background: var(--color-primary);
   color: #fff;
