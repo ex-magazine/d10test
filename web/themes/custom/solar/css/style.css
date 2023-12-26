@@ -21120,7 +21120,22 @@ p {
 #form-messages.error {
   color: var(--color-danger);
 }
-
+.cl-swiper-wrapper{
+  position: relative;
+  overflow: hidden;  
+}
+.cl-swiper-wrapper .swiper-wrapper{
+  align-items: center;
+}
+.cl-swiper-wrapper .node--view-mode-latestcasestudies{
+  margin: 20px 0;
+}
+.cl-swiper-wrapper .field--name-field-image{
+  align-items: center;  
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
 .air-condition-swiper-wrapper {
   position: relative;
   overflow: hidden;

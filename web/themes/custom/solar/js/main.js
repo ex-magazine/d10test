@@ -425,6 +425,45 @@
           });
 
           $(document).ready(function () {
+            var swiper = new Swiper(".mySwiper-h-2-cl", {
+              slidesPerView: 5,
+              spaceBetween: 24,
+              slidesPerGroup: 1,
+              centeredSlides: true,            
+              // effect: 'coverflow',
+              loop: true,
+              autoplay: {
+                delay: 3000,
+              },
+              loopFillGroupWithBlank: true,
+              // pagination: {
+              //   el: ".swiper-pagination-h2-cl",
+              //   clickable: true,
+              // },
+              breakpoints: {
+                1500: {
+                  slidesPerView: 5,
+                },
+                1199: {
+                  slidesPerView:4,
+                },
+                991: {
+                  slidesPerView: 3,
+                },
+                767: {
+                  slidesPerView: 1,
+                  spaceBetween: 30,
+                },
+                575: {
+                  slidesPerView: 1,
+                },
+                0: {
+                  slidesPerView: 1,
+                }
+              },
+            });
+          });
+          $(document).ready(function () {
             var swiper = new Swiper(".mySwiper-h3-project", {
               slidesPerView: 3.6,
               spaceBetween: 24,
