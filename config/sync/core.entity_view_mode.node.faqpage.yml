@@ -1,0 +1,10 @@
+uuid: 0edfca02-1b8b-4058-a289-3417d2be4a3d
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.faqpage
+label: 'FAQ Page'
+targetEntityType: node
+cache: true

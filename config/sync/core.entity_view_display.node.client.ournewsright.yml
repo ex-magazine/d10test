@@ -1,0 +1,43 @@
+uuid: 9bf67348-1ae4-4ad6-819a-dda62f6df53b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ournewsright
+    - field.field.node.client.body
+    - field.field.node.client.field_clientcategory
+    - field.field.node.client.field_domain_access
+    - field.field.node.client.field_domain_all_affiliates
+    - field.field.node.client.field_image
+    - field.field.node.client.field_time_to_read
+    - node.type.client
+  module:
+    - user
+id: node.client.ournewsright
+targetEntityType: node
+bundle: client
+mode: ournewsright
+content:
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_clientcategory: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_image: true
+  langcode: true
+  search_api_excerpt: true

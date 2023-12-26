@@ -1,0 +1,22 @@
+uuid: b128af34-ab9a-421f-96f8-8a2a0acc444f
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - biomass
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: biomass_help
+theme: biomass
+region: navigation
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

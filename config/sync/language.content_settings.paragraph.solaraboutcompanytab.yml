@@ -1,0 +1,18 @@
+uuid: af30c7d0-d5f5-4403-8a2b-150ffc317fed
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solaraboutcompanytab
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solaraboutcompanytab
+target_entity_type_id: paragraph
+target_bundle: solaraboutcompanytab
+default_langcode: site_default
+language_alterable: false

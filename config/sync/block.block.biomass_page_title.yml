@@ -1,0 +1,20 @@
+uuid: 5ab611b6-d1c2-4e6e-9745-0e21d166bfd2
+langcode: en
+status: true
+dependencies:
+  theme:
+    - biomass
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: biomass_page_title
+theme: biomass
+region: navigation
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

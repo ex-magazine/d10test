@@ -1,0 +1,22 @@
+uuid: 39feb903-3c64-4160-b9d3-fd024d0f4890
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarqualityitem
+id: paragraph.solarqualityitem.status
+field_name: status
+entity_type: paragraph
+bundle: solarqualityitem
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

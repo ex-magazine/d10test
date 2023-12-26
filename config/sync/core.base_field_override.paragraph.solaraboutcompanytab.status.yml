@@ -1,0 +1,22 @@
+uuid: 01c8f562-a48a-4a31-8bbf-982f38a01206
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solaraboutcompanytab
+id: paragraph.solaraboutcompanytab.status
+field_name: status
+entity_type: paragraph
+bundle: solaraboutcompanytab
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

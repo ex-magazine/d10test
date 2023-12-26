@@ -1,0 +1,22 @@
+uuid: 9ddc4f04-29d3-41c9-ae70-96b430bc6d56
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: cme_breadcrumbs
+theme: cme
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

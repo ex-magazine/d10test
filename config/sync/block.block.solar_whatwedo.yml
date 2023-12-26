@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.whatwedo
   module:
+    - block_classes
     - system
   theme:
     - solar
@@ -16,7 +17,7 @@ provider: null
 plugin: 'system_menu_block:whatwedo'
 settings:
   id: 'system_menu_block:whatwedo'
-  label: 'What We Do'
+  label: 'About us'
   label_display: visible
   provider: system
   level: 1

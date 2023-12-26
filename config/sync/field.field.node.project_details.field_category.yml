@@ -1,4 +1,4 @@
-uuid: 03b96fce-6979-4ce4-9421-328a4e69ddb7
+uuid: 7240459b-da24-4faf-9c1e-852d3105d9d8
 langcode: en
 status: true
 dependencies:
@@ -10,10 +10,10 @@ id: node.project_details.field_category
 field_name: field_category
 entity_type: node
 bundle: project_details
-label: Category
+label: Industries
 description: ''
-required: false
-translatable: true
+required: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

@@ -1,0 +1,55 @@
+uuid: 4b41a059-0136-4d7a-b5fb-17ae4cf6d453
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.careers.body
+    - field.field.node.careers.field_domain_access
+    - field.field.node.careers.field_domain_all_affiliates
+    - field.field.node.careers.field_expiration_date
+    - field.field.node.careers.field_image
+    - field.field.node.careers.field_webform
+    - image.style.medium
+    - node.type.careers
+  module:
+    - image
+    - text
+    - user
+id: node.careers.teaser
+targetEntityType: node
+bundle: careers
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_expiration_date: true
+  field_webform: true
+  langcode: true
+  search_api_excerpt: true

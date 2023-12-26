@@ -1,0 +1,14 @@
+uuid: 6d06105d-44da-4555-9a36-f4c48e242a05
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.wind_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_add_action.wind_cmenergy_local
+label: 'Add selected content to the wind.cmenergy.local domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: wind_cmenergy_local

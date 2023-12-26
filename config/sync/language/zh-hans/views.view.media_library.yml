@@ -1,0 +1,30 @@
+display:
+  default:
+    display_title: 默认
+    display_options:
+      filters:
+        name:
+          expose:
+            label: 名称
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: 编辑
+        delete_media:
+          text: 删除
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: 名称
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: 名称
+      filters:
+        name:
+          expose:
+            label: 名称

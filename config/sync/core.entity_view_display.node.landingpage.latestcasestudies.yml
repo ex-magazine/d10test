@@ -1,0 +1,49 @@
+uuid: 84a78eaf-16c2-4b46-be4f-f4b847812210
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latestcasestudies
+    - field.field.node.landingpage.body
+    - field.field.node.landingpage.field_clients
+    - field.field.node.landingpage.field_domain_access
+    - field.field.node.landingpage.field_domain_all_affiliates
+    - field.field.node.landingpage.field_format
+    - field.field.node.landingpage.field_image
+    - field.field.node.landingpage.field_ldbackground
+    - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_titlesecond
+    - field.field.node.landingpage.field_viewreference
+    - node.type.landingpage
+  module:
+    - user
+id: node.landingpage.latestcasestudies
+targetEntityType: node
+bundle: landingpage
+mode: latestcasestudies
+content:
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_format: true
+  field_image: true
+  field_ldbackground: true
+  field_paragraphs: true
+  field_titlesecond: true
+  field_viewreference: true
+  langcode: true

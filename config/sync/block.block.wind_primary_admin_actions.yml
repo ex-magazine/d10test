@@ -1,0 +1,20 @@
+uuid: f1978def-1dcb-43b5-bd7e-d2c359e39216
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wind
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: wind_primary_admin_actions
+theme: wind
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

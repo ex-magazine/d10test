@@ -5,17 +5,18 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.landingpage.body
+    - field.field.node.landingpage.field_clients
     - field.field.node.landingpage.field_domain_access
     - field.field.node.landingpage.field_domain_all_affiliates
     - field.field.node.landingpage.field_format
     - field.field.node.landingpage.field_image
     - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_titlesecond
     - field.field.node.landingpage.field_viewreference
     - image.style.medium
     - node.type.landingpage
   module:
-    - entity_reference_revisions
     - image
     - text
     - user
@@ -41,27 +42,18 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
-    region: content
-  field_paragraphs:
-    type: entity_reference_revisions_entity_view
-    label: above
-    settings:
-      view_mode: default
-      link: ''
-    third_party_settings: {  }
-    weight: 2
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
     weight: 0
     region: content
 hidden:
   addtoany: true
+  field_clients: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_format: true
   field_ldbackground: true
+  field_paragraphs: true
+  field_titlesecond: true
   field_viewreference: true
   langcode: true
+  links: true
+  search_api_excerpt: true

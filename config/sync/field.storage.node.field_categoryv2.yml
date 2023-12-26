@@ -13,10 +13,34 @@ settings:
   allowed_values:
     -
       value: cleaning
-      label: Cleaning
+      label: Taiwan
     -
       value: businesssolution
-      label: 'Business Solution'
+      label: Korean
+    -
+      value: '3'
+      label: Vietnam
+    -
+      value: '4'
+      label: Belgium
+    -
+      value: '5'
+      label: France
+    -
+      value: '6'
+      label: Japan
+    -
+      value: '7'
+      label: Cambodia
+    -
+      value: '8'
+      label: China
+    -
+      value: '9'
+      label: Hongkong
+    -
+      value: '10'
+      label: Italy
   allowed_values_function: ''
 module: options
 locked: false

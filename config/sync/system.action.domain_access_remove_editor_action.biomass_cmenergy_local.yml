@@ -1,0 +1,14 @@
+uuid: 778f2e18-0b81-40b5-849f-4cf913280397
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.biomass_cmenergy_local
+label: 'Remove editors from the biomass.cmenergy.local domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: biomass_cmenergy_local

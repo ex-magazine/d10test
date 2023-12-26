@@ -1,0 +1,18 @@
+uuid: df36d45b-c6e9-4ee0-bfbd-56ee85e4a9a0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarqualityitem
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solarqualityitem
+target_entity_type_id: paragraph
+target_bundle: solarqualityitem
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,10 @@
+uuid: 7622c5f4-5a80-4d50-8275-c94ca359d3bd
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs
+id: paragraph.makeanappointment
+label: 'Make An Appointment'
+targetEntityType: paragraph
+cache: true

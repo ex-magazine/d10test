@@ -1,0 +1,22 @@
+uuid: a2b7c906-fe7b-440e-88ab-ecaa841c3aaa
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solar_content_item
+id: paragraph.solar_content_item.status
+field_name: status
+entity_type: paragraph
+bundle: solar_content_item
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

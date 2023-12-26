@@ -5,6 +5,7 @@ dependencies:
   config:
     - system.menu.usefullinks
   module:
+    - block_classes
     - system
   theme:
     - solar

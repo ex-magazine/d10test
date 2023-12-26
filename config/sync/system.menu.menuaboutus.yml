@@ -1,0 +1,8 @@
+uuid: 68c11ed2-531b-4bf7-8d73-70416dc03928
+langcode: en
+status: true
+dependencies: {  }
+id: menuaboutus
+label: 'Menu About us'
+description: 'Menu About us'
+locked: false

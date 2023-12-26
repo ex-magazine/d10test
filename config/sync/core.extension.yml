@@ -83,11 +83,14 @@ module:
   path_alias: 0
   pdf: 0
   responsive_image: 0
-  search: 0
+  search_api: 0
+  search_api_db: 0
+  search_api_db_defaults: 0
   shortcut: 0
   simple_sitemap: 0
   simple_sitemap_views: 0
   simplenews: 0
+  solaru: 0
   statistics: 0
   syslog: 0
   system: 0
@@ -113,6 +116,8 @@ theme:
   claro: 0
   gin: 0
   stable9: 0
-  olivero: 0
   solar: 0
+  biomass: 0
+  wind: 0
+  cme: 0
 profile: standard

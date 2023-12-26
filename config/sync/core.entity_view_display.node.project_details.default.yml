@@ -10,10 +10,12 @@ dependencies:
     - field.field.node.project_details.field_clients
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
+    - field.field.node.project_details.field_growth
     - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_multi_images
     - field.field.node.project_details.field_pcategory
     - field.field.node.project_details.field_the_challenge_of_project
-    - image.style.wide
+    - field.field.node.project_details.field_youtube
     - node.type.project_details
   module:
     - entity_reference_revisions
@@ -45,9 +47,9 @@ content:
     type: entity_reference_label
     label: above
     settings:
-      link: false
+      link: true
     third_party_settings: {  }
-    weight: 103
+    weight: 111
     region: content
   field_categoryv2:
     type: list_default
@@ -64,6 +66,13 @@ content:
     third_party_settings: {  }
     weight: 102
     region: content
+  field_growth:
+    type: list_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
   field_image:
     type: image
     label: hidden
@@ -75,9 +84,20 @@ content:
     third_party_settings: {  }
     weight: -1
     region: content
-  field_pcategory:
-    type: list_default
+  field_multi_images:
+    type: image
     label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  field_pcategory:
+    type: list_key
+    label: hidden
     settings: {  }
     third_party_settings: {  }
     weight: 107
@@ -91,6 +111,14 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
+  field_youtube:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 109
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -101,3 +129,4 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   langcode: true
+  search_api_excerpt: true

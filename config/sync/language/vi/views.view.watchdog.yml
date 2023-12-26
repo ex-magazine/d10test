@@ -1,0 +1,15 @@
+display:
+  default:
+    display_title: 'Mặc định'
+    display_options:
+      fields:
+        type:
+          label: Kiểu
+        timestamp:
+          label: 'Ngày tháng'
+        link:
+          label: 'Thao tác'
+      filters:
+        type:
+          expose:
+            label: Kiểu

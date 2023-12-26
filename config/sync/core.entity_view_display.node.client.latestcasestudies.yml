@@ -1,0 +1,47 @@
+uuid: 3b90673d-91ed-41a1-8a3e-8d38e2643694
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.latestcasestudies
+    - field.field.node.client.body
+    - field.field.node.client.field_clientcategory
+    - field.field.node.client.field_domain_access
+    - field.field.node.client.field_domain_all_affiliates
+    - field.field.node.client.field_image
+    - field.field.node.client.field_time_to_read
+    - node.type.client
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.client.latestcasestudies
+targetEntityType: node
+bundle: client
+mode: latestcasestudies
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_clientcategory: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_time_to_read: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,20 @@
+uuid: ed0429b0-9bdd-482a-8cc2-f5b6483d25b8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - biomass
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: biomass_primary_admin_actions
+theme: biomass
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

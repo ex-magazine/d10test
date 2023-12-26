@@ -1,0 +1,18 @@
+uuid: 4cc7eb2d-6983-401b-94d1-adea6730021a
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarwebform
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solarwebform
+target_entity_type_id: paragraph
+target_bundle: solarwebform
+default_langcode: site_default
+language_alterable: false

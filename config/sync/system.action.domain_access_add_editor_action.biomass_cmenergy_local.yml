@@ -1,0 +1,14 @@
+uuid: 532b3131-6342-4b58-bd86-b06ecc7e9b50
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_add_editor_action.biomass_cmenergy_local
+label: 'Add editors to the biomass.cmenergy.local domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: biomass_cmenergy_local

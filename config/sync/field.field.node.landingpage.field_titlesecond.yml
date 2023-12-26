@@ -1,0 +1,19 @@
+uuid: 53ac442b-fbaa-43ff-9e9d-c99b469313f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titlesecond
+    - node.type.landingpage
+id: node.landingpage.field_titlesecond
+field_name: field_titlesecond
+entity_type: node
+bundle: landingpage
+label: 'Title second'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

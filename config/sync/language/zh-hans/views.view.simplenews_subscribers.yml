@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      fields:
+        operations:
+          label: 操作
+      filters:
+        subscriptions_status:
+          expose:
+            label: 状态

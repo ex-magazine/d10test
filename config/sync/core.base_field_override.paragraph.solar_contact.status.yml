@@ -1,0 +1,22 @@
+uuid: f712fd20-d69b-4624-9a1a-b2f4d8f8d5e4
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solar_contact
+id: paragraph.solar_contact.status
+field_name: status
+entity_type: paragraph
+bundle: solar_contact
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.faq.field_domain_access
     - field.field.node.faq.field_domain_all_affiliates
     - field.field.node.faq.field_image
+    - field.field.node.faq.field_time_to_read
     - image.style.medium
     - node.type.faq
   module:
@@ -25,7 +26,7 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    weight: 101
+    weight: 1
     region: content
   field_image:
     type: image
@@ -36,15 +37,13 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
-    region: content
-  links:
-    settings: {  }
-    third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_time_to_read: true
   langcode: true
+  links: true
+  search_api_excerpt: true

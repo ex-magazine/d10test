@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      fields:
+        label:
+          label: 标签
+        type:
+          label: 类型
+        id:
+          label: ID
+        operations:
+          label: 操作
+      filters:
+        label:
+          expose:
+            label: 标签
+          group_info:
+            label: 标签
+        type:
+          expose:
+            label: 类型

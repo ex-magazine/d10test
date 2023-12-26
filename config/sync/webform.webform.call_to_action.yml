@@ -151,7 +151,7 @@ settings:
   draft_pending_single_message: ''
   draft_pending_multiple_message: ''
   confirmation_type: url
-  confirmation_url: 'http://solar.adn.id.vn/node/220'
+  confirmation_url: /node/231
   confirmation_title: Thanks
   confirmation_message: '<p>Thanks</p>'
   confirmation_attributes: {  }

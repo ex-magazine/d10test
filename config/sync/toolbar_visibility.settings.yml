@@ -1,8 +1,12 @@
 themes:
+  biomass: biomass
+  cme: cme
   solar: solar
+  wind: wind
   claro: 0
-  olivero: 0
   stable9: 0
   gin: 0
 domains:
+  biomass_cmenergy_local: biomass_cmenergy_local
   cmesolar_cmenergy_local: cmesolar_cmenergy_local
+  wind_cmenergy_local: wind_cmenergy_local

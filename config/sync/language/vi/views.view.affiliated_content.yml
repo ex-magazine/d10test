@@ -1,0 +1,44 @@
+display:
+  default:
+    display_options:
+      fields:
+        title:
+          label: 'Tiêu đề'
+        status:
+          label: 'Trạng thái'
+        operations:
+          label: 'Thao tác'
+      filters:
+        status:
+          expose:
+            label: 'Trạng thái'
+        type:
+          expose:
+            label: Kiểu
+        title:
+          expose:
+            label: 'Tiêu đề'
+  page_1:
+    display_options:
+      filters:
+        status:
+          expose:
+            label: 'Trạng thái'
+        type:
+          expose:
+            label: Kiểu
+        title:
+          expose:
+            label: 'Tiêu đề'
+  page_2:
+    display_options:
+      filters:
+        status:
+          expose:
+            label: 'Trạng thái'
+        type:
+          expose:
+            label: Kiểu
+        title:
+          expose:
+            label: 'Tiêu đề'

@@ -10,7 +10,7 @@ dependencies:
     - field.field.user.user.field_fullname
     - field.field.user.user.field_position
     - field.field.user.user.user_picture
-    - image.style.thumbnail
+    - image.style.large
   module:
     - image
     - user
@@ -45,6 +45,8 @@ content:
     weight: 7
     region: content
   member_for:
+    settings: {  }
+    third_party_settings: {  }
     weight: 5
     region: content
   user_picture:
@@ -52,7 +54,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: thumbnail
+      image_style: large
       image_loading:
         attribute: lazy
     third_party_settings: {  }

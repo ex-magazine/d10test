@@ -10,7 +10,6 @@ dependencies:
     - filter
     - media
     - paragraphs_type_permissions
-    - search
     - simplenews
     - system
 _core:
@@ -23,7 +22,7 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access site-wide contact form'
-  - 'search content'
+  - 'post comments'
   - 'subscribe to newsletters'
   - 'use text format restricted_html'
   - 'view media'

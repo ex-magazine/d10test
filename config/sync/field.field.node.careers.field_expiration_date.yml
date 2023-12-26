@@ -1,0 +1,21 @@
+uuid: b5e9a8b3-7c98-4ca8-a035-c4449c539ec1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_expiration_date
+    - node.type.careers
+  module:
+    - datetime
+id: node.careers.field_expiration_date
+field_name: field_expiration_date
+entity_type: node
+bundle: careers
+label: 'Expiration date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

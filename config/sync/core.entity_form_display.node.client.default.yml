@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.client.field_domain_access
     - field.field.node.client.field_domain_all_affiliates
     - field.field.node.client.field_image
+    - field.field.node.client.field_time_to_read
     - image.style.thumbnail
     - node.type.client
   module:
@@ -61,6 +62,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_time_to_read:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   langcode:
     type: language_select

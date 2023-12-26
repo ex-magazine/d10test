@@ -1,0 +1,18 @@
+uuid: b246bfb4-72b3-4c45-94bf-ca5ab8ba55e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarcontactusitem
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solarcontactusitem
+target_entity_type_id: paragraph
+target_bundle: solarcontactusitem
+default_langcode: site_default
+language_alterable: false

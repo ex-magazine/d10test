@@ -1,0 +1,8 @@
+uuid: e9389b06-eed0-4a57-9ed6-5f7a7aca42d2
+langcode: en
+status: true
+dependencies: {  }
+id: menusolutions
+label: 'Menu Solutions'
+description: 'Menu Solutions'
+locked: false

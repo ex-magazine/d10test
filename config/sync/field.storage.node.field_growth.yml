@@ -1,0 +1,84 @@
+uuid: 5442fe52-d9da-4e58-ab4a-2c3a6a0552e1
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_growth
+field_name: field_growth
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: growthsolution
+      label: 'Kien Giang'
+    -
+      value: '1'
+      label: 'Ho Chi Minh City'
+    -
+      value: '2'
+      label: 'Binh Duong'
+    -
+      value: '3'
+      label: 'Dong Nai'
+    -
+      value: '4'
+      label: 'Kien Giang'
+    -
+      value: '5'
+      label: 'Ba Ria - Vung Tau'
+    -
+      value: '6'
+      label: 'Tra Vinh'
+    -
+      value: '7'
+      label: 'Soc Trang'
+    -
+      value: '8'
+      label: 'Nghe An'
+    -
+      value: '9'
+      label: 'Long An'
+    -
+      value: '10'
+      label: Hue
+    -
+      value: '11'
+      label: 'An Giang'
+    -
+      value: '12'
+      label: 'Ha Nam'
+    -
+      value: '13'
+      label: 'Bac Giang - Bac Ninh'
+    -
+      value: '14'
+      label: 'Hai Phong'
+    -
+      value: '15'
+      label: 'Thai Binh'
+    -
+      value: '16'
+      label: 'Nam Dinh'
+    -
+      value: '17'
+      label: 'Khanh Hoa'
+    -
+      value: '18'
+      label: 'Quang Nam'
+    -
+      value: '19'
+      label: 'Tay Ninh'
+    -
+      value: '20'
+      label: 'Binh Phuoc'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

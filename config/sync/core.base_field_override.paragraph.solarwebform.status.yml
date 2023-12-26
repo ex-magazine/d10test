@@ -1,0 +1,22 @@
+uuid: ca6a1aa1-fdd7-4399-ae32-841c532f064d
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarwebform
+id: paragraph.solarwebform.status
+field_name: status
+entity_type: paragraph
+bundle: solarwebform
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

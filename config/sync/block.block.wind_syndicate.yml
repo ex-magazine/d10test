@@ -1,0 +1,23 @@
+uuid: 6dbf5a43-4c84-4081-a5d7-44faa83288ec
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - wind
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: wind_syndicate
+theme: wind
+region: navigation
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

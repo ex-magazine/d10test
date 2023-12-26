@@ -1,0 +1,22 @@
+uuid: 54a53e39-b4fe-4fc8-9020-6b4593b4c23f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: cme_primary_local_tasks
+theme: cme
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

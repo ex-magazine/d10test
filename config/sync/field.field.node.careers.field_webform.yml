@@ -1,0 +1,25 @@
+uuid: 5fa4ecaa-c5e3-4035-bc32-f64cc49efd42
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_webform
+    - node.type.careers
+  module:
+    - webform
+id: node.careers.field_webform
+field_name: field_webform
+entity_type: node
+bundle: careers
+label: Webform
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

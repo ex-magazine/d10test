@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: whatwedo
-label: 'What We Do'
-description: 'What We Do'
+label: 'About us'
+description: 'About us'
 locked: false

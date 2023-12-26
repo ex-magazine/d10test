@@ -1,0 +1,8 @@
+uuid: 96ba3701-c36a-482a-970a-1e0d8c30a807
+langcode: en
+status: true
+dependencies: {  }
+id: menugreenprojected
+label: 'Menu Green Projected'
+description: 'Menu Green Projected'
+locked: false

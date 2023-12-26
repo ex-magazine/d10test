@@ -3,6 +3,6 @@ langcode: en
 status: true
 dependencies: {  }
 id: usefullinks
-label: 'CME Groups'
-description: 'CME Groups'
+label: Resources
+description: Resources
 locked: false

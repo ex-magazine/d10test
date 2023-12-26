@@ -1,0 +1,22 @@
+uuid: 5a301a9a-ebee-45df-b4e7-07e0721afa43
+langcode: en
+status: true
+dependencies:
+  theme:
+    - wind
+_core:
+  default_config_hash: ydSxdq7R66I8UMC460rOzlfzvlUL4VRbdwc6z9DWaUI
+id: wind_secondary_local_tasks
+theme: wind
+region: highlighted
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Secondary tabs'
+  label_display: '0'
+  provider: core
+  primary: false
+  secondary: true
+visibility: {  }

@@ -1,0 +1,18 @@
+uuid: fceb61bc-d950-4d0a-a27f-bde5d6059231
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarcontactus
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solarcontactus
+target_entity_type_id: paragraph
+target_bundle: solarcontactus
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,34 @@
+uuid: 6ef9a253-dbac-4b0f-9e25-b058b2fbb56a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.makeanappointment
+    - field.field.paragraph.solarwebform.field_section_content
+    - field.field.paragraph.solarwebform.field_text
+    - field.field.paragraph.solarwebform.field_webform
+    - paragraphs.paragraphs_type.solarwebform
+  module:
+    - layout_builder
+    - webform
+third_party_settings:
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: paragraph.solarwebform.makeanappointment
+targetEntityType: paragraph
+bundle: solarwebform
+mode: makeanappointment
+content:
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: false
+      lazy: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_section_content: true
+  field_text: true

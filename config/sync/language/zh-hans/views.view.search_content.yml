@@ -1,0 +1,10 @@
+display:
+  default:
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 搜索
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 搜索

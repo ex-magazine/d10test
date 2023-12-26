@@ -1,0 +1,18 @@
+uuid: 16796270-56f6-4035-af9e-ecd8d18d6d8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solar_about_company
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solar_about_company
+target_entity_type_id: paragraph
+target_bundle: solar_about_company
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 14bc4a21-5b1c-4a20-9c98-3e61dec7dad0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_growth
+    - node.type.project_details
+  module:
+    - options
+id: node.project_details.field_growth
+field_name: field_growth
+entity_type: node
+bundle: project_details
+label: Location
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

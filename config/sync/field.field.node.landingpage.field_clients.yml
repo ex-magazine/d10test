@@ -1,0 +1,19 @@
+uuid: a0396ddf-57aa-4a49-9414-c1a4a95a0bcd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_clients
+    - node.type.landingpage
+id: node.landingpage.field_clients
+field_name: field_clients
+entity_type: node
+bundle: landingpage
+label: Button
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

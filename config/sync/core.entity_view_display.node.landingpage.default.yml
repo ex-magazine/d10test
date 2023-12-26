@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.landingpage.body
+    - field.field.node.landingpage.field_clients
     - field.field.node.landingpage.field_domain_access
     - field.field.node.landingpage.field_domain_all_affiliates
     - field.field.node.landingpage.field_format
     - field.field.node.landingpage.field_image
     - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_titlesecond
     - field.field.node.landingpage.field_viewreference
     - node.type.landingpage
   module:
@@ -35,6 +37,14 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 101
+    region: content
+  field_clients:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
     region: content
   field_format:
     type: list_default
@@ -77,6 +87,14 @@ content:
       empty_message: ''
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_titlesecond:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
     region: content
   field_viewreference:
     type: viewsreference_formatter
