@@ -150,10 +150,31 @@
         <div class="col-lg-8 pr--30">
             <div class="portfolio-disc-content">
                 <div class="title-area">
-                    <div class="info-ico">
-                        <i class="fas fa-map-marker-alt"></i>
+                    
+                     <div class="pr-align-items-center">                        
+                        <!-- tags details -->                     
+                        <div class="details-tag">
+                            <i class="fas fa-map-marker-alt"></i>
+                            {{ content.field_growth }}                  
+                        </div>
+                        <div class="single">
+                            <i class="fa-light fa-phone-office"></i>
+                            {{ content.field_time_to_read }}
+                        </div>
+                        <!-- tags details End -->     
+                        <div class="details-share">
+                            {{ content|without('comment','body', 'field_tags', 
+                            'field_time_to_read', 'field_the_challenge_of_project', 'field_image', 
+                            'field_address', 'field_category', 'field_co2emissions', 
+                            'field_growth', 'field_commercialdate', 'field_categoryv2', 
+                            'field_multi_images', 'field_youtube',
+                            'field_clients') }}
+                                                
+                        </div>                        
                     </div>
-                    {{ content.field_growth }}                                   
+                    
+                   
+                                                     
                     <h1{{ title_attributes.addClass('title animated fadeIn') }}>
                         <a href="{{ url }}" rel="bookmark">{{ node.label }}</a>
                     </h1>
