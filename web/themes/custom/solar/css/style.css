@@ -21069,7 +21069,21 @@ p {
   background: #FFFFFF;
   box-shadow: 0px 6px 31px rgba(0, 0, 0, 0.05);
 }
-
+.portfolio-disc-content .pr-align-items-center{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.portfolio-disc-content .pr-align-items-center .details-tag,
+.portfolio-disc-content .pr-align-items-center .single{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+.portfolio-disc-content .pr-align-items-center ul.links.inline{ 
+  display: none;
+}
 .big-bg-porduct-details .project-info .info-body .single-info .info-details span {
   margin-bottom: 5px;
 }
