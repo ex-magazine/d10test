@@ -20980,7 +20980,7 @@ p {
   margin: 10px 0;
   align-items: center;
 }
-.portfolio-disc-content .title-area .field--name-field-growth,
+
 .portfolio-disc-content .title-area span {
   font-weight: 600;
   font-size: 16px;
@@ -21055,11 +21055,13 @@ p {
 .big-bg-porduct-details .project-info .info-body .single-info .info-details {
   margin-left: 20px;
 }
-
+.portfolio-disc-content .pr-align-items-center .single i {
+  color: var(--color-primary);  
+}
+.portfolio-disc-content .pr-align-items-center .details-tag i,
 .big-bg-porduct-details .project-info .info-body .single-info .info-ico i {
   height: 50px;
-  width: 50px;
-  background: #F9F0F0;
+  width: 50px; 
   color: var(--color-primary);
   font-size: 18px;
   display: flex;
@@ -21087,7 +21089,7 @@ p {
 .big-bg-porduct-details .project-info .info-body .single-info .info-details span {
   margin-bottom: 5px;
 }
-
+.portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item,
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
   color: var(--color-heading-1);
   font-size: 18px;
