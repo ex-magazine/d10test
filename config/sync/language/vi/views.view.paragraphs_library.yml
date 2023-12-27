@@ -1,0 +1,21 @@
+display:
+  default:
+    display_options:
+      fields:
+        label:
+          label: Nhãn
+        type:
+          label: Kiểu
+        id:
+          label: Mã
+        operations:
+          label: 'Thao tác'
+      filters:
+        label:
+          expose:
+            label: Nhãn
+          group_info:
+            label: Nhãn
+        type:
+          expose:
+            label: Kiểu

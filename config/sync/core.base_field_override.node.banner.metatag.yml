@@ -1,0 +1,18 @@
+uuid: 7fc28c13-162d-45e1-b914-6c45e3c58b6a
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.banner
+id: node.banner.metatag
+field_name: metatag
+entity_type: node
+bundle: banner
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

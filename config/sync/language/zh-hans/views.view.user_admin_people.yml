@@ -1,0 +1,17 @@
+display:
+  default:
+    display_title: 默认
+    display_options:
+      fields:
+        user_bulk_form:
+          label: 批量更新
+        status:
+          label: 状态
+        roles_target_id:
+          label: 角色
+        operations:
+          label: 操作
+      filters:
+        status:
+          group_info:
+            label: 状态

@@ -5,6 +5,7 @@ dependencies:
   config:
     - views.view.servicesrightsidebar
   module:
+    - block_classes
     - node
     - views
   theme:
@@ -20,6 +21,7 @@ settings:
   label: 'Our Services'
   label_display: visible
   provider: views
+  context_mapping: {  }
   views_label: 'Our Services'
   items_per_page: none
 visibility:
@@ -29,4 +31,10 @@ visibility:
     context_mapping:
       node: '@node.node_route_context:node'
     bundles:
+      banner: banner
+      client: client
+      customerfeedbacks: customerfeedbacks
+      faq: faq
+      news: news
       service: service
+      teammember: teammember

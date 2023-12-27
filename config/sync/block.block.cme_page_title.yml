@@ -1,0 +1,20 @@
+uuid: b63ba1a8-8392-4329-ab08-a9f42cc679d0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: cme_page_title
+theme: cme
+region: navigation
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

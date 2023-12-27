@@ -1,0 +1,20 @@
+uuid: fa7d4a10-3bbb-47c6-833d-c38c42cf14c2
+langcode: en
+status: true
+dependencies:
+  module:
+    - domain
+id: biomass_cmenergy_local
+label: biomass.cmenergy.local
+weight: 0
+theme: biomass
+admin_theme: gin
+conjunction: and
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      biomass_cmenergy_local: biomass_cmenergy_local

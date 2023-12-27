@@ -10,9 +10,12 @@ dependencies:
     - field.field.node.project_details.field_clients
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
+    - field.field.node.project_details.field_growth
     - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_multi_images
     - field.field.node.project_details.field_pcategory
     - field.field.node.project_details.field_the_challenge_of_project
+    - field.field.node.project_details.field_youtube
     - image.style.thumbnail
     - node.type.project_details
   module:
@@ -27,7 +30,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 9
+    weight: 10
     region: content
     settings:
       rows: 9
@@ -37,13 +40,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 3
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address:
     type: string_textfield
-    weight: 28
+    weight: 15
     region: content
     settings:
       size: 60
@@ -51,19 +54,19 @@ content:
     third_party_settings: {  }
   field_category:
     type: options_select
-    weight: 27
+    weight: 17
     region: content
     settings: {  }
     third_party_settings: {  }
   field_categoryv2:
     type: options_select
-    weight: 30
+    weight: 18
     region: content
     settings: {  }
     third_party_settings: {  }
   field_clients:
     type: string_textfield
-    weight: 26
+    weight: 14
     region: content
     settings:
       size: 60
@@ -71,20 +74,34 @@ content:
     third_party_settings: {  }
   field_domain_access:
     type: options_buttons
-    weight: 10
+    weight: 11
     region: content
     settings: {  }
     third_party_settings: {  }
   field_domain_all_affiliates:
     type: boolean_checkbox
-    weight: 11
+    weight: 13
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
+  field_growth:
+    type: options_select
+    weight: 19
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 1
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_multi_images:
+    type: image_image
+    weight: 22
     region: content
     settings:
       progress_indicator: throbber
@@ -92,13 +109,13 @@ content:
     third_party_settings: {  }
   field_pcategory:
     type: options_select
-    weight: 31
+    weight: 20
     region: content
     settings: {  }
     third_party_settings: {  }
   field_the_challenge_of_project:
     type: paragraphs
-    weight: 29
+    weight: 16
     region: content
     settings:
       title: Paragraph
@@ -114,6 +131,14 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_youtube:
+    type: string_textfield
+    weight: 21
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 1
@@ -123,32 +148,32 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 7
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 5
+    weight: 6
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   simple_sitemap:
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 8
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 6
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -162,13 +187,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 10
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 2
+    weight: 3
     region: content
     settings:
       match_operator: CONTAINS

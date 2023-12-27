@@ -1,0 +1,26 @@
+uuid: 98b31a6c-4388-4ab7-9338-f48b382da992
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1abd4e4a-ca1a-468f-a0dc-7019af54ad1b'
+  module:
+    - block_classes
+    - block_content
+  theme:
+    - solar
+id: solar_faqcallusnow
+theme: solar
+region: hero
+weight: 0
+provider: null
+plugin: 'block_content:1abd4e4a-ca1a-468f-a0dc-7019af54ad1b'
+settings:
+  id: 'block_content:1abd4e4a-ca1a-468f-a0dc-7019af54ad1b'
+  label: 'FAQ Call us Now'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,8 +1,0 @@
-uuid: 9062bf6b-a34c-4162-8e91-a174528cebb3
-langcode: en
-status: true
-dependencies: {  }
-id: newheader
-label: 'New Header'
-revision: 0
-description: 'New Header'

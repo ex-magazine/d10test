@@ -1,0 +1,22 @@
+uuid: cbb93753-5123-4f91-9304-9a7c7ccb9344
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarcontactus
+id: paragraph.solarcontactus.status
+field_name: status
+entity_type: paragraph
+bundle: solarcontactus
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

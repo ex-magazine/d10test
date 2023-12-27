@@ -1,0 +1,14 @@
+uuid: 665e9041-db49-436a-a0a1-059b9277c61b
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_remove_action.biomass_cmenergy_local
+label: 'Remove selected content from the biomass.cmenergy.local domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: biomass_cmenergy_local

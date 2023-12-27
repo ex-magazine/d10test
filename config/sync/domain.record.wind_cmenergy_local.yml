@@ -1,0 +1,11 @@
+uuid: 8ad3e803-3ea6-47ef-a48f-f57b633e4c21
+langcode: en
+status: true
+dependencies: {  }
+id: wind_cmenergy_local
+domain_id: 13008617
+hostname: wind.adn.id.vn
+name: wind.adn.id.vn
+scheme: http
+weight: 3
+is_default: false

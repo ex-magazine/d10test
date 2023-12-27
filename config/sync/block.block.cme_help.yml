@@ -1,0 +1,22 @@
+uuid: b7eb1fa6-b198-4253-a018-cb3ac2157e30
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: cme_help
+theme: cme
+region: navigation
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

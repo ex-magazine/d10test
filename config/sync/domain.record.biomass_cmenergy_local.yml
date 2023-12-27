@@ -1,0 +1,11 @@
+uuid: 88d34562-6598-4be0-86e9-642df1d8daf7
+langcode: en
+status: true
+dependencies: {  }
+id: biomass_cmenergy_local
+domain_id: 3196987
+hostname: biomass.adn.id.vn
+name: biomass.adn.id.vn
+scheme: http
+weight: 4
+is_default: false

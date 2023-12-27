@@ -1,0 +1,22 @@
+uuid: a5d5b8e0-49d5-41d1-9c4a-ab8d863320f8
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solaramazingfeedback
+id: paragraph.solaramazingfeedback.status
+field_name: status
+entity_type: paragraph
+bundle: solaramazingfeedback
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

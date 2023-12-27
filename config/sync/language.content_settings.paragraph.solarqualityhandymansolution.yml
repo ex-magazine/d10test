@@ -1,0 +1,18 @@
+uuid: b3e011c9-8da3-4176-ac61-6138bcda7448
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarqualityhandymansolution
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solarqualityhandymansolution
+target_entity_type_id: paragraph
+target_bundle: solarqualityhandymansolution
+default_langcode: site_default
+language_alterable: false

@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.latestcasestudies
     - field.storage.node.field_image
     - node.type.client
   module:
@@ -97,7 +98,7 @@ display:
         type: some
         options:
           offset: 0
-          items_per_page: 5
+          items_per_page: 50
       exposed_form:
         type: basic
         options:
@@ -272,7 +273,10 @@ display:
       style:
         type: default
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: latestcasestudies
       query:
         type: views_query
         options:

@@ -1,0 +1,22 @@
+uuid: 84a0bbe4-0d43-4441-8067-d2abbdd8bda8
+langcode: en
+status: true
+dependencies:
+  theme:
+    - biomass
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: biomass_primary_local_tasks
+theme: biomass
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

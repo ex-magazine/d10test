@@ -1,0 +1,30 @@
+display:
+  default:
+    display_title: 'Mặc định'
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Tên
+  page:
+    display_options:
+      fields:
+        edit_media:
+          text: Sửa
+        delete_media:
+          text: Xóa
+  widget:
+    display_options:
+      filters:
+        name:
+          expose:
+            label: Tên
+  widget_table:
+    display_options:
+      fields:
+        name:
+          label: Tên
+      filters:
+        name:
+          expose:
+            label: Tên

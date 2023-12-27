@@ -1,0 +1,22 @@
+uuid: 5ccb50d7-1120-4652-be8b-f87c6538cd20
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wind
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: wind_breadcrumbs
+theme: wind
+region: navigation
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

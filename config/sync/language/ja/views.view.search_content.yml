@@ -1,0 +1,26 @@
+display:
+  default:
+    display_title: マスター
+    display_options:
+      exposed_form:
+        options:
+          submit_button: 検索
+          reset_button_label: リセット
+          exposed_sorts_label: 並び替え基準
+          sort_asc_label: 昇順
+          sort_desc_label: 降順
+      pager:
+        options:
+          tags:
+            previous: '‹ 前へ'
+            next: '次へ ›'
+          expose:
+            items_per_page_label: ページ毎の件数
+            items_per_page_options_all_label: '- 全て -'
+            offset_label: オフセット
+      filters:
+        search_api_fulltext:
+          expose:
+            label: 検索
+  page_1:
+    display_title: ページ

@@ -1,0 +1,60 @@
+uuid: 212d65e3-5206-400d-aed0-65378ec08b40
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.hero
+    - field.field.node.landingpage.body
+    - field.field.node.landingpage.field_clients
+    - field.field.node.landingpage.field_domain_access
+    - field.field.node.landingpage.field_domain_all_affiliates
+    - field.field.node.landingpage.field_format
+    - field.field.node.landingpage.field_image
+    - field.field.node.landingpage.field_ldbackground
+    - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_titlesecond
+    - field.field.node.landingpage.field_viewreference
+    - node.type.landingpage
+  module:
+    - image
+    - user
+id: node.landingpage.hero
+targetEntityType: node
+bundle: landingpage
+mode: hero
+content:
+  field_clients:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_format: true
+  field_ldbackground: true
+  field_paragraphs: true
+  field_titlesecond: true
+  field_viewreference: true
+  langcode: true

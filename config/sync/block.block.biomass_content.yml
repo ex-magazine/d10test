@@ -1,0 +1,22 @@
+uuid: 2cf61ad7-cd23-4188-bc26-53daca69413d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - biomass
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: biomass_content
+theme: biomass
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

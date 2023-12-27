@@ -2,7 +2,7 @@ uuid: b794b00c-7427-4fed-bb7b-7734fa5c247b
 langcode: en
 status: true
 dependencies: {  }
-name: 'Project Category'
+name: Industries
 vid: projectcategory
-description: 'Project Category'
+description: Industries
 weight: 0

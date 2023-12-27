@@ -1,0 +1,15 @@
+display:
+  default:
+    display_title: 默认
+    display_options:
+      fields:
+        bundle:
+          label: 类型
+        status:
+          label: 状态
+        operations:
+          label: 操作
+      filters:
+        bundle:
+          expose:
+            label: 类型

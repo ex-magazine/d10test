@@ -29,6 +29,15 @@ settings:
     -
       value: contact
       label: Contact
+    -
+      value: faq
+      label: 'Solar FAQs'
+    -
+      value: makeappointment
+      label: 'Make An Appointment'
+    -
+      value: thanks
+      label: Thanks
   allowed_values_function: ''
 module: options
 locked: false

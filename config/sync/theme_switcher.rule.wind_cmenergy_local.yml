@@ -1,0 +1,20 @@
+uuid: 94ed8254-d0b4-4c45-aec3-9c8777947ebe
+langcode: en
+status: true
+dependencies:
+  module:
+    - domain
+id: wind_cmenergy_local
+label: wind.cmenergy.local
+weight: 0
+theme: wind
+admin_theme: wind
+conjunction: and
+visibility:
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      wind_cmenergy_local: wind_cmenergy_local

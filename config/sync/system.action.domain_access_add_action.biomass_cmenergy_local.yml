@@ -1,0 +1,14 @@
+uuid: 4489a774-1326-4d42-838e-c65f8bbc844c
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_add_action.biomass_cmenergy_local
+label: 'Add selected content to the biomass.cmenergy.local domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: biomass_cmenergy_local

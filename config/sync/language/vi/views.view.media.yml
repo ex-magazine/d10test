@@ -1,0 +1,15 @@
+display:
+  default:
+    display_title: 'Mặc định'
+    display_options:
+      fields:
+        bundle:
+          label: Kiểu
+        status:
+          label: 'Trạng thái'
+        operations:
+          label: 'Thao tác'
+      filters:
+        bundle:
+          expose:
+            label: Kiểu

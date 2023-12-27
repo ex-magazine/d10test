@@ -1,0 +1,22 @@
+uuid: 69e84f36-e5d6-4f0b-b5a6-d5759f36cb13
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - biomass
+_core:
+  default_config_hash: BZ5tpW7H8X4PVGRm3MImTIHd2tN0eF7zOtp4SpRYUA0
+id: biomass_messages
+theme: biomass
+region: highlighted
+weight: -5
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

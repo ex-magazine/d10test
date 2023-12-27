@@ -11,9 +11,12 @@ dependencies:
     - field.field.node.project_details.field_clients
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
+    - field.field.node.project_details.field_growth
     - field.field.node.project_details.field_image
+    - field.field.node.project_details.field_multi_images
     - field.field.node.project_details.field_pcategory
     - field.field.node.project_details.field_the_challenge_of_project
+    - field.field.node.project_details.field_youtube
     - image.style.wide
     - node.type.project_details
   module:
@@ -45,6 +48,14 @@ content:
     label: above
     settings:
       link_to_entity: false
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
     third_party_settings: {  }
     weight: 5
     region: content
@@ -81,7 +92,7 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 7
     region: content
   links:
     settings: {  }
@@ -90,8 +101,11 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_category: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_growth: true
+  field_multi_images: true
   field_pcategory: true
+  field_youtube: true
   langcode: true
+  search_api_excerpt: true

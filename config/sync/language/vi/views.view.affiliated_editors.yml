@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      fields:
+        user_bulk_form:
+          label: 'Cập nhật hàng loạt'
+        status:
+          label: 'Trạng thái'
+        roles_target_id:
+          label: 'Vai trò'
+        operations:
+          label: 'Thao tác'
+      filters:
+        status:
+          group_info:
+            label: 'Trạng thái'
+  page_2:
+    display_options:
+      filters:
+        status:
+          group_info:
+            label: 'Trạng thái'

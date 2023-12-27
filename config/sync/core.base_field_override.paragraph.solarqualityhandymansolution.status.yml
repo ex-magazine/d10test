@@ -1,0 +1,22 @@
+uuid: 486e27ed-1aa3-4f14-8b05-04437375bdb7
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarqualityhandymansolution
+id: paragraph.solarqualityhandymansolution.status
+field_name: status
+entity_type: paragraph
+bundle: solarqualityhandymansolution
+label: Published
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

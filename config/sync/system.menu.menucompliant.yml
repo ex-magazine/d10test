@@ -1,0 +1,8 @@
+uuid: e10f4b1b-a511-4b76-891f-378d51ffdab8
+langcode: en
+status: true
+dependencies: {  }
+id: menucompliant
+label: 'Menu Compliant'
+description: 'Menu Compliant'
+locked: false

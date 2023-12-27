@@ -1,0 +1,18 @@
+uuid: e8f1e502-f5aa-4047-963d-9a15266d8777
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solar_content_item
+id: paragraph.solar_content_item.created
+field_name: created
+entity_type: paragraph
+bundle: solar_content_item
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

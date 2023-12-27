@@ -1,0 +1,14 @@
+uuid: 20bcaafd-d29e-47a9-b2e2-ee8a81ff7fbf
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.wind_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.wind_cmenergy_local
+label: 'Remove editors from the wind.cmenergy.local domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: wind_cmenergy_local

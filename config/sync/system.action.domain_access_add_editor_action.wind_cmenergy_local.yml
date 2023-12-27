@@ -1,0 +1,14 @@
+uuid: 5356c6ed-d687-4ee6-9475-4b2b468948b5
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.wind_cmenergy_local
+  module:
+    - domain_access
+id: domain_access_add_editor_action.wind_cmenergy_local
+label: 'Add editors to the wind.cmenergy.local domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: wind_cmenergy_local

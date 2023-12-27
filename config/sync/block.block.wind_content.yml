@@ -1,0 +1,22 @@
+uuid: 73450063-086c-41e2-bb89-c55f89b2b4d2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - wind
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: wind_content
+theme: wind
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }
