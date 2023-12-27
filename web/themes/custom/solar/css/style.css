@@ -483,7 +483,7 @@ ul li a {
   color: var(--color-gray);
 }
 ul li a:hover {
-  color: var(--color-primary);
+  color: #4AAB3D;
 }
 ul ul {
   margin-bottom: 0;
@@ -23595,7 +23595,7 @@ p {
 }
 .footer-contact-wrapper-2 .info-content .title a:hover,
 .footer-contact-wrapper-2 .info-content a:hover .title {
-  color: var(--color-primary);
+  color: #4AAB3D;
 }
 .footer-contact-wrapper-2 .info-content span {
   font-weight: 400;
