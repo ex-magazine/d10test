@@ -21074,10 +21074,7 @@ p {
   margin-bottom: 5px;
 }
 
-.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-categoryv2 .field__item,
-.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-clients .field__item,
-.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-category .field__item,
-.big-bg-porduct-details .project-info .info-body .single-info .info-details .field--name-field-address .field__item{
+.big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
   color: var(--color-heading-1);
   font-size: 18px;
   margin-bottom: 0;
