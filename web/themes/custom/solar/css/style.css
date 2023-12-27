@@ -24748,7 +24748,13 @@ p {
   }
 }
 .faq-area-start-one .accordion .accordion-item .accordion-body .inner .thumb-area {
-  flex-basis: 70%;
+  /* flex-basis: 70%; */
+  width: 34%;
+}
+
+.faq-area-start-one .accordion .accordion-item .accordion-body .inner .content{
+  /* flex-basis: 70%; */
+  width: 60%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .faq-area-start-one .accordion .accordion-item .accordion-body .inner .thumb-area {
@@ -24756,6 +24762,7 @@ p {
   }
 }
 @media only screen and (max-width: 1199px) {
+  .faq-area-start-one .accordion .accordion-item .accordion-body .inner .content,
   .faq-area-start-one .accordion .accordion-item .accordion-body .inner .thumb-area {
     width: 100%;
   }
