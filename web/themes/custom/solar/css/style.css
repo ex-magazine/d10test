@@ -46,7 +46,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
-  --color-primary: #4AAB3D;
+  --color-primary: #00308F;
   --color-secondary: #1F1F25;
   --color-body: #6E777D;
   --color-heading-1: #1f1f25;
@@ -9815,7 +9815,7 @@ input[type=radio] ~ label::after {
 input[type=submit] {
   width: auto;
   padding: 0 30px;
-  border-radius: 500px;
+  border-radius: 4px;
   display: inline-block;
   font-weight: 500;
   transition: 0.3s;
@@ -9830,8 +9830,9 @@ input[type=submit] {
   transition: var(--transition);
 }
 input[type=submit]:hover {
-  background: transparent;
-  color: var(--color-primary);
+  background-color: #4AAB3D;
+  border: 2px solid #4AAB3D;
+  color: #fff;
   transform: translateY(-5px);
 }
 
@@ -14702,7 +14703,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--color-primary);
+  background-color: #4AAB3D;
 }
 @media only screen and (max-width: 1199px) {
   .header-two-solari.header-top {
@@ -14714,7 +14715,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--color-primary);
+  background-color: #4AAB3D;
 }
 .header-two-solari.header-top .header-top-m .field--name-body p{
   margin-bottom: 0;
@@ -15567,13 +15568,13 @@ header.header-three .sub-dropdown .submenu.third-lvl.base {
 }
 .rts-btn.btn-primary {
   color: #fff;
-  background: #1f1f25;
+  background: #4AAB3D;
 }
 .rts-btn.btn-primary::before {
   background: var(--color-primary);
 }
 .rts-btn.btn-primary:hover {
-  background: #1f1f25;
+  background: #4AAB3D;
   color: #fff;
 }
 .rts-btn.btn-primary:hover::before {
@@ -26060,6 +26061,29 @@ form.appoinment-form .input-half-wrapper .single-input input {
 }
 .contact-page-form .name-email-wraper input:focus {
   border: 1px solid var(--color-primary);
+}
+.view-ourproject .views-exposed-form {
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.view-ourproject .views-exposed-form .js-form-item label{
+  margin-left: 20px;
+}
+.view-ourproject .views-exposed-form .js-form-item {
+  flex-basis: 25%;
+}
+.view-ourproject .views-exposed-form .js-form-item select {
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01);
+  border-radius: 100px;
+  height: 50px;
+  padding: 5px 15px;
+  background-position: right 1.75rem center;
+  font-size: 14px;
+  box-shadow: 4px 4px #ccc;
 }
 .contact-page-form input {
   background: #FFFFFF;
