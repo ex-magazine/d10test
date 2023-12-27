@@ -14703,7 +14703,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #4AAB3D;
+  background-color: var(--color-primary);
 }
 @media only screen and (max-width: 1199px) {
   .header-two-solari.header-top {
@@ -14714,8 +14714,8 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   height: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #4AAB3D;
+  justify-content: space-between;  
+  background: var(--color-primary);
 }
 .header-two-solari.header-top .header-top-m .field--name-body p{
   margin-bottom: 0;
