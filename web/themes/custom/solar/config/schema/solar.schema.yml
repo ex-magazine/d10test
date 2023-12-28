@@ -1,4 +1,4 @@
-# Schema for the configuration files of the january theme.
+# Schema for the configuration files of the solar theme.
 
 solar.settings:
   type: theme_settings

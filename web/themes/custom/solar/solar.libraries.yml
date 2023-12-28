@@ -139,7 +139,7 @@ drupal.message:
   js:
     js/message.theme.js: {}
   dependencies:
-    - january/messages
+    - solar/messages
 
 drupal.node.preview:
   version: VERSION
@@ -171,7 +171,7 @@ layout_builder_fourcol_section:
     layout:
       css/layout/layout-builder-fourcol-section.css: {}
   dependencies:
-    - january/layout_discovery_section
+    - solar/layout_discovery_section
 
 layout_builder_threecol_section:
   version: VERSION
@@ -179,7 +179,7 @@ layout_builder_threecol_section:
     layout:
       css/layout/layout-builder-threecol-section.css: {}
   dependencies:
-    - january/layout_discovery_section
+    - solar/layout_discovery_section
 
 layout_builder_twocol_section:
   version: VERSION
@@ -187,7 +187,7 @@ layout_builder_twocol_section:
     layout:
       css/layout/layout-builder-twocol-section.css: {}
   dependencies:
-    - january/layout_discovery_section
+    - solar/layout_discovery_section
 
 layout_discovery_section:
   version: VERSION
