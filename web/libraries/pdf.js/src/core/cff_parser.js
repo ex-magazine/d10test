@@ -546,19 +546,17 @@ class CFFParser {
         stackSize++;
       } else if (value === 19 || value === 20) {
         state.hints += stackSize >> 1;
-        if (state.hints === 0) {
-          // Not a valid value (see bug 1529502): just remove it.
-          data.copyWithin(j - 1, j, -1);
-          j -= 1;
-          length -= 1;
-          continue;
-        }
         // skipping right amount of hints flag data
         j += (state.hints + 7) >> 3;
         stackSize %= 2;
         validationCommand = CharstringValidationData[value];
       } else if (value === 10 || value === 29) {
-        const subrsIndex = value === 10 ? localSubrIndex : globalSubrIndex;
+        let subrsIndex;
+        if (value === 10) {
+          subrsIndex = localSubrIndex;
+        } else {
+          subrsIndex = globalSubrIndex;
+        }
         if (!subrsIndex) {
           validationCommand = CharstringValidationData[value];
           warn("Missing subrsIndex for " + validationCommand.id);
@@ -1385,14 +1383,7 @@ class CFFCompiler {
       data: [],
       length: 0,
       add(data) {
-        try {
-          // It's possible to exceed the call stack maximum size when trying
-          // to push too much elements.
-          // In case of failure, we fallback to the `concat` method.
-          this.data.push(...data);
-        } catch {
-          this.data = this.data.concat(data);
-        }
+        this.data = this.data.concat(data);
         this.length = this.data.length;
       },
     };
@@ -1431,7 +1422,7 @@ class CFFCompiler {
     }
 
     const xuid = cff.topDict.getByName("XUID");
-    if (xuid?.length > 16) {
+    if (xuid && xuid.length > 16) {
       // Length of XUID array must not be greater than 16 (issue #12399).
       cff.topDict.removeByName("XUID");
     }
@@ -1745,6 +1736,11 @@ class CFFCompiler {
     return this.compileIndex(stringIndex);
   }
 
+  compileGlobalSubrIndex() {
+    const globalSubrIndex = this.cff.globalSubrIndex;
+    this.out.writeByteArray(this.compileIndex(globalSubrIndex));
+  }
+
   compileCharStrings(charStrings) {
     const charStringsIndex = new CFFIndex();
     for (let i = 0; i < charStrings.count; i++) {
@@ -1848,7 +1844,11 @@ class CFFCompiler {
   }
 
   compileTypedArray(data) {
-    return Array.from(data);
+    const out = [];
+    for (let i = 0, ii = data.length; i < ii; ++i) {
+      out[i] = data[i];
+    }
+    return out;
   }
 
   compileIndex(index, trackers = []) {

@@ -13,11 +13,8 @@
  * limitations under the License.
  */
 
-import {
-  isNodeJS,
-  setVerbosityLevel,
-  VerbosityLevel,
-} from "../../src/shared/util.js";
+import { setVerbosityLevel, VerbosityLevel } from "../../src/shared/util.js";
+import { isNodeJS } from "../../src/shared/is_node.js";
 
 // Sets longer timeout, similar to `jasmine-boot.js`.
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 30000;

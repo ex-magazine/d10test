@@ -36,10 +36,12 @@ import {
   $removeChild,
   $setValue,
   $text,
-} from "./symbol_utils.js";
+  XFAAttribute,
+  XFAObjectArray,
+  XmlObject,
+} from "./xfa_object.js";
 import { BindItems, Field, Items, SetProperty, Text } from "./template.js";
 import { createDataNode, searchNode } from "./som.js";
-import { XFAAttribute, XFAObjectArray, XmlObject } from "./xfa_object.js";
 import { NamespaceIds } from "./namespaces.js";
 import { warn } from "../../shared/util.js";
 
@@ -55,8 +57,11 @@ class Binder {
   constructor(root) {
     this.root = root;
     this.datasets = root.datasets;
-    this.data =
-      root.datasets?.data || new XmlObject(NamespaceIds.datasets.id, "data");
+    if (root.datasets && root.datasets.data) {
+      this.data = root.datasets.data;
+    } else {
+      this.data = new XmlObject(NamespaceIds.datasets.id, "data");
+    }
     this.emptyMerge = this.data[$getChildren]().length === 0;
 
     this.root.form = this.form = root.template[$clone]();
@@ -93,7 +98,9 @@ class Binder {
         formNode[$setValue](createText(value));
       } else if (
         formNode instanceof Field &&
-        formNode.ui?.choiceList?.open === "multiSelect"
+        formNode.ui &&
+        formNode.ui.choiceList &&
+        formNode.ui.choiceList.open === "multiSelect"
       ) {
         const value = data[$getChildren]()
           .map(child => child[$content].trim())
@@ -165,7 +172,7 @@ class Binder {
     // Thirdly, try to find it in attributes.
     generator = this.data[$getAttributeIt](name, /* skipConsumed = */ true);
     match = generator.next().value;
-    if (match?.[$isDataValue]()) {
+    if (match && match[$isDataValue]()) {
       return match;
     }
 

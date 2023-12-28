@@ -13,8 +13,15 @@
  * limitations under the License.
  */
 
-import { FormatError, info, unreachable, Util } from "../shared/util.js";
+import {
+  FormatError,
+  info,
+  shadow,
+  unreachable,
+  Util,
+} from "../shared/util.js";
 import { getCurrentTransform } from "./display_utils.js";
+import { isNodeJS } from "../shared/is_node.js";
 
 const PathType = {
   FILL: "Fill",
@@ -23,7 +30,7 @@ const PathType = {
 };
 
 function applyBoundingBox(ctx, bbox) {
-  if (!bbox) {
+  if (!bbox || isNodeJS) {
     return;
   }
   const width = bbox[2] - bbox[0];
@@ -200,7 +207,12 @@ function drawTriangle(data, context, p1, p2, p3, c1, c2, c3) {
   let xb, cbr, cbg, cbb;
   for (let y = minY; y <= maxY; y++) {
     if (y < y2) {
-      const k = y < y1 ? 0 : (y1 - y) / (y1 - y2);
+      let k;
+      if (y < y1) {
+        k = 0;
+      } else {
+        k = (y1 - y) / (y1 - y2);
+      }
       xa = x1 - (x1 - x2) * k;
       car = c1r - (c1r - c2r) * k;
       cag = c1g - (c1g - c2g) * k;
@@ -451,7 +463,9 @@ const PaintType = {
 
 class TilingPattern {
   // 10in @ 300dpi shall be enough.
-  static MAX_PATTERN_SIZE = 3000;
+  static get MAX_PATTERN_SIZE() {
+    return shadow(this, "MAX_PATTERN_SIZE", 3000);
+  }
 
   constructor(IR, color, ctx, canvasGraphicsFactory, baseTransform) {
     this.operatorList = IR[2];

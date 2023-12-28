@@ -77,12 +77,18 @@ a {
 
 #imagepane {
   position: fixed;
-  inset: 10px 0 0 340px;
+  left: 340px;
+  right: 0;
+  top: 10px;
+  bottom: 0;
 }
 
 #images {
   position: absolute;
-  inset: 22px 0 0;
+  left: 0;
+  right: 0;
+  top: 22px;
+  bottom: 0;
   overflow: auto;
 }
 

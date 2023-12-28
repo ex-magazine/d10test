@@ -147,11 +147,7 @@ function bidi(str, startLevel = -1, vertical = false) {
       if (!charType) {
         warn("Bidi: invalid Unicode character " + charCode.toString(16));
       }
-    } else if (
-      (0x0700 <= charCode && charCode <= 0x08ac) ||
-      (0xfb50 <= charCode && charCode <= 0xfdff) ||
-      (0xfe70 <= charCode && charCode <= 0xfeff)
-    ) {
+    } else if (0x0700 <= charCode && charCode <= 0x08ac) {
       charType = "AL";
     }
     if (charType === "R" || charType === "AL" || charType === "AN") {
@@ -353,8 +349,11 @@ function bidi(str, startLevel = -1, vertical = false) {
       } else if (t === "AN" || t === "EN") {
         levels[i] += 2;
       }
-    } else if (/* isOdd && */ t === "L" || t === "AN" || t === "EN") {
-      levels[i] += 1;
+    } else {
+      // isOdd
+      if (t === "L" || t === "AN" || t === "EN") {
+        levels[i] += 1;
+      }
     }
   }
 

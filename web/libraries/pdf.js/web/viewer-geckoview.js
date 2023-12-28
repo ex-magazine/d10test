@@ -13,8 +13,6 @@
  * limitations under the License.
  */
 
-import "web-com";
-import "web-print_service";
 import { RenderingStates, ScrollMode, SpreadMode } from "./ui_utils.js";
 import { AppOptions } from "./app_options.js";
 import { LinkTarget } from "./pdf_link_service.js";
@@ -36,18 +34,15 @@ window.PDFViewerApplication = PDFViewerApplication;
 window.PDFViewerApplicationConstants = AppConstants;
 window.PDFViewerApplicationOptions = AppOptions;
 
+if (typeof PDFJSDev !== "undefined" && PDFJSDev.test("MOZCENTRAL")) {
+  require("./firefoxcom.js");
+}
+
 function getViewerConfiguration() {
-  const mainContainer = document.getElementById("viewerContainer");
   return {
     appContainer: document.body,
-    mainContainer,
+    mainContainer: document.getElementById("viewerContainer"),
     viewerContainer: document.getElementById("viewer"),
-    toolbar: {
-      mainContainer,
-      container: document.getElementById("floatingToolbar"),
-      download: document.getElementById("download"),
-      openInApp: document.getElementById("openInApp"),
-    },
 
     passwordOverlay: {
       dialog: document.getElementById("passwordDialog"),
@@ -56,7 +51,6 @@ function getViewerConfiguration() {
       submitButton: document.getElementById("passwordSubmit"),
       cancelButton: document.getElementById("passwordCancel"),
     },
-    printContainer: document.getElementById("printContainer"),
     openFileInput:
       typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")
         ? document.getElementById("fileInput")
@@ -66,11 +60,21 @@ function getViewerConfiguration() {
 
 function webViewerLoad() {
   const config = getViewerConfiguration();
+  if (typeof PDFJSDev === "undefined" || !PDFJSDev.test("PRODUCTION")) {
+    if (window.chrome) {
+      const link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.href = "../build/dev-css/viewer.css";
 
-  if (typeof PDFJSDev === "undefined") {
-    window.isGECKOVIEW = true;
+      document.head.append(link);
+    }
+
+    import("pdfjs-web/genericcom.js").then(function (genericCom) {
+      PDFViewerApplication.run(config);
+    });
+  } else {
+    PDFViewerApplication.run(config);
   }
-  PDFViewerApplication.run(config);
 }
 
 // Block the "load" event until all pages are loaded, to ensure that printing

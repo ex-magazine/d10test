@@ -53,7 +53,7 @@ class DatasetReader {
       const parser = new DatasetXMLParser({ hasAttributes: true });
       try {
         parser.parseFromString(data["xdp:xdp"]);
-      } catch {}
+      } catch (_) {}
       this.node = parser.node;
     }
   }
@@ -69,7 +69,7 @@ class DatasetReader {
     }
 
     const first = node.firstChild;
-    if (first?.nodeName === "value") {
+    if (first && first.nodeName === "value") {
       return node.children.map(child => decodeString(child.textContent));
     }
 

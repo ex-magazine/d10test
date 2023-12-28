@@ -65,7 +65,7 @@ class Util extends PDFObject {
     const ZERO = 4;
     const HASH = 8;
     let i = 0;
-    return args[0].replaceAll(
+    return args[0].replace(
       pattern,
       function (match, nDecSep, cFlags, nWidth, nPrecision, cConvChar) {
         // cConvChar must be one of d, f, s, x
@@ -148,10 +148,11 @@ class Util extends PDFObject {
 
         let decPart = "";
         if (cConvChar === "f") {
-          decPart =
-            nPrecision !== undefined
-              ? Math.abs(arg - intPart).toFixed(nPrecision)
-              : Math.abs(arg - intPart).toString();
+          if (nPrecision !== undefined) {
+            decPart = Math.abs(arg - intPart).toFixed(nPrecision);
+          } else {
+            decPart = Math.abs(arg - intPart).toString();
+          }
           if (decPart.length > 2) {
             decPart = `${decimalSep}${decPart.substring(2)}`;
           } else {
@@ -286,7 +287,7 @@ class Util extends PDFObject {
 
     const patterns =
       /(mmmm|mmm|mm|m|dddd|ddd|dd|d|yyyy|yy|HH|H|hh|h|MM|M|ss|s|tt|t|\\.)/g;
-    return cFormat.replaceAll(patterns, function (match, pattern) {
+    return cFormat.replace(patterns, function (match, pattern) {
       if (pattern in handlers) {
         return handlers[pattern](data);
       }
@@ -522,12 +523,12 @@ class Util extends PDFObject {
       };
 
       // escape the string
-      const escapedFormat = cFormat.replaceAll(/[.*+\-?^${}()|[\]\\]/g, "\\$&");
+      const escapedFormat = cFormat.replace(/[.*+\-?^${}()|[\]\\]/g, "\\$&");
       const patterns =
         /(mmmm|mmm|mm|m|dddd|ddd|dd|d|yyyy|yy|HH|H|hh|h|MM|M|ss|s|tt|t)/g;
       const actions = [];
 
-      const re = escapedFormat.replaceAll(
+      const re = escapedFormat.replace(
         patterns,
         function (match, patternElement) {
           const { pattern, action } = handlers[patternElement];

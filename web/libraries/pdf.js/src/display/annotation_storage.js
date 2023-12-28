@@ -17,12 +17,6 @@ import { objectFromMap, unreachable } from "../shared/util.js";
 import { AnnotationEditor } from "./editor/editor.js";
 import { MurmurHash3_64 } from "../shared/murmurhash3.js";
 
-const SerializableEmpty = Object.freeze({
-  map: null,
-  hash: "",
-  transfer: undefined,
-});
-
 /**
  * Key/value storage for annotation data in forms.
  */
@@ -126,20 +120,8 @@ class AnnotationStorage {
     return this.#storage.has(key);
   }
 
-  /**
-   * @returns {Object | null}
-   */
   getAll() {
     return this.#storage.size > 0 ? objectFromMap(this.#storage) : null;
-  }
-
-  /**
-   * @param {Object} obj
-   */
-  setAll(obj) {
-    for (const [key, val] of Object.entries(obj)) {
-      this.setValue(key, val);
-    }
   }
 
   get size() {
@@ -177,40 +159,34 @@ class AnnotationStorage {
    */
   get serializable() {
     if (this.#storage.size === 0) {
-      return SerializableEmpty;
+      return null;
     }
-    const map = new Map(),
-      hash = new MurmurHash3_64(),
-      transfer = [];
-    const context = Object.create(null);
-    let hasBitmap = false;
+    const clone = new Map();
 
     for (const [key, val] of this.#storage) {
       const serialized =
-        val instanceof AnnotationEditor
-          ? val.serialize(/* isForCopying = */ false, context)
-          : val;
+        val instanceof AnnotationEditor ? val.serialize() : val;
       if (serialized) {
-        map.set(key, serialized);
-
-        hash.update(`${key}:${JSON.stringify(serialized)}`);
-        hasBitmap ||= !!serialized.bitmap;
+        clone.set(key, serialized);
       }
     }
+    return clone;
+  }
 
-    if (hasBitmap) {
-      // We must transfer the bitmap data separately, since it can be changed
-      // during serialization with SVG images.
-      for (const value of map.values()) {
-        if (value.bitmap) {
-          transfer.push(value.bitmap);
-        }
-      }
+  /**
+   * PLEASE NOTE: Only intended for usage within the API itself.
+   * @ignore
+   */
+  static getHash(map) {
+    if (!map) {
+      return "";
     }
+    const hash = new MurmurHash3_64();
 
-    return map.size > 0
-      ? { map, hash: hash.hexdigest(), transfer }
-      : SerializableEmpty;
+    for (const [key, val] of map) {
+      hash.update(`${key}:${JSON.stringify(val)}`);
+    }
+    return hash.hexdigest();
   }
 }
 
@@ -220,15 +196,12 @@ class AnnotationStorage {
  * contents. (Necessary since printing is triggered synchronously in browsers.)
  */
 class PrintAnnotationStorage extends AnnotationStorage {
-  #serializable;
+  #serializable = null;
 
   constructor(parent) {
     super();
-    const { map, hash, transfer } = parent.serializable;
     // Create a *copy* of the data, since Objects are passed by reference in JS.
-    const clone = structuredClone(map, transfer ? { transfer } : null);
-
-    this.#serializable = { map: clone, hash, transfer };
+    this.#serializable = structuredClone(parent.serializable);
   }
 
   /**
@@ -248,4 +221,4 @@ class PrintAnnotationStorage extends AnnotationStorage {
   }
 }
 
-export { AnnotationStorage, PrintAnnotationStorage, SerializableEmpty };
+export { AnnotationStorage, PrintAnnotationStorage };

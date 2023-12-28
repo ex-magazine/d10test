@@ -13,7 +13,6 @@
  * limitations under the License.
  */
 
-import { bytesToString, isNodeJS } from "../../src/shared/util.js";
 import {
   DOMCanvasFactory,
   DOMSVGFactory,
@@ -22,6 +21,8 @@ import {
   isValidFetchUrl,
   PDFDateString,
 } from "../../src/display/display_utils.js";
+import { bytesToString } from "../../src/shared/util.js";
+import { isNodeJS } from "../../src/shared/is_node.js";
 
 describe("display_utils", function () {
   describe("DOMCanvasFactory", function () {

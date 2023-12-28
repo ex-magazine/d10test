@@ -224,9 +224,12 @@ function getXfaFontWidths(name) {
   }
 
   const { baseWidths, baseMapping, factors } = info;
-  const rescaledBaseWidths = !factors
-    ? baseWidths
-    : baseWidths.map((w, i) => w * factors[i]);
+  let rescaledBaseWidths;
+  if (!factors) {
+    rescaledBaseWidths = baseWidths;
+  } else {
+    rescaledBaseWidths = baseWidths.map((w, i) => w * factors[i]);
+  }
 
   let currentCode = -2;
   let currentArray;

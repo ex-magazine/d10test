@@ -18,11 +18,11 @@
 
 import {
   AbortException,
+  createPromiseCapability,
   FeatureTest,
-  PromiseCapability,
   Util,
 } from "../shared/util.js";
-import { setLayerDimensions } from "./display_utils.js";
+import { deprecated, setLayerDimensions } from "./display_utils.js";
 
 /**
  * Text layer render parameters.
@@ -172,12 +172,9 @@ function appendText(task, geom, styles) {
   if (style.vertical) {
     angle += Math.PI / 2;
   }
-
-  const fontFamily =
-    (task._fontInspectorEnabled && style.fontSubstitution) || style.fontFamily;
   const fontHeight = Math.hypot(tx[2], tx[3]);
   const fontAscent =
-    fontHeight * getAscent(fontFamily, task._isOffscreenCanvasSupported);
+    fontHeight * getAscent(style.fontFamily, task._isOffscreenCanvasSupported);
 
   let left, top;
   if (angle === 0) {
@@ -201,7 +198,7 @@ function appendText(task, geom, styles) {
     divStyle.top = `${scaleFactorStr}${top.toFixed(2)}px)`;
   }
   divStyle.fontSize = `${scaleFactorStr}${fontHeight.toFixed(2)}px)`;
-  divStyle.fontFamily = fontFamily;
+  divStyle.fontFamily = style.fontFamily;
 
   textDivProperties.fontSize = fontHeight;
 
@@ -215,8 +212,7 @@ function appendText(task, geom, styles) {
   // `fontName` is only used by the FontInspector, and we only use `dataset`
   // here to make the font name available in the debugger.
   if (task._fontInspectorEnabled) {
-    textDiv.dataset.fontName =
-      style.fontSubstitutionLoadedName || geom.fontName;
+    textDiv.dataset.fontName = geom.fontName;
   }
   if (angle !== 0) {
     textDivProperties.angle = angle * (180 / Math.PI);
@@ -315,13 +311,12 @@ class TextLayerRenderTask {
     this._container = this._rootContainer = container;
     this._textDivs = textDivs || [];
     this._textContentItemsStr = textContentItemsStr || [];
-    this._isOffscreenCanvasSupported = isOffscreenCanvasSupported;
     this._fontInspectorEnabled = !!globalThis.FontInspector?.enabled;
 
     this._reader = null;
     this._textDivProperties = textDivProperties || new WeakMap();
     this._canceled = false;
-    this._capability = new PromiseCapability();
+    this._capability = createPromiseCapability();
     this._layoutTextParams = {
       prevFontSize: null,
       prevFontFamily: null,
@@ -421,7 +416,7 @@ class TextLayerRenderTask {
    * @private
    */
   _render() {
-    const capability = new PromiseCapability();
+    const capability = createPromiseCapability();
     let styleCache = Object.create(null);
 
     if (this._isReadableStream) {
@@ -460,6 +455,17 @@ class TextLayerRenderTask {
  * @returns {TextLayerRenderTask}
  */
 function renderTextLayer(params) {
+  if (
+    (typeof PDFJSDev === "undefined" || PDFJSDev.test("GENERIC")) &&
+    !params.textContentSource &&
+    (params.textContent || params.textContentStream)
+  ) {
+    deprecated(
+      "The TextLayerRender `textContent`/`textContentStream` parameters " +
+        "will be removed in the future, please use `textContentSource` instead."
+    );
+    params.textContentSource = params.textContent || params.textContentStream;
+  }
   const task = new TextLayerRenderTask(params);
   task._render();
   return task;

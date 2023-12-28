@@ -13,10 +13,9 @@
  * limitations under the License.
  */
 
+import { isEmptyObj } from "./test_utils.js";
 import { Metadata } from "../../src/display/metadata.js";
 import { MetadataParser } from "../../src/core/metadata_parser.js";
-
-const emptyObj = Object.create(null);
 
 function createMetadata(data) {
   const metadataParser = new MetadataParser(data);
@@ -137,7 +136,7 @@ describe("metadata", function () {
       '<?xpacket end="w"?>';
     const metadata = createMetadata(data);
 
-    expect(metadata.getAll()).toEqual(emptyObj);
+    expect(isEmptyObj(metadata.getAll())).toEqual(true);
   });
 
   it('should gracefully handle "junk" before the actual metadata (issue 10395)', function () {
@@ -229,7 +228,7 @@ describe("metadata", function () {
       '</rdf:RDF></x:xmpmeta><?xpacket end="w"?>';
     const metadata = createMetadata(data);
 
-    expect(metadata.getAll()).toEqual(emptyObj);
+    expect(isEmptyObj(metadata.getAll())).toEqual(true);
   });
 
   it("should not be vulnerable to the billion laughs attack", function () {

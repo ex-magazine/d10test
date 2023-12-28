@@ -72,7 +72,7 @@ class PDFFunctionFactory {
     } else if (cacheKey instanceof Dict) {
       fnRef = cacheKey.objId;
     } else if (cacheKey instanceof BaseStream) {
-      fnRef = cacheKey.dict?.objId;
+      fnRef = cacheKey.dict && cacheKey.dict.objId;
     }
     if (fnRef) {
       const localFunction = this._localFunctionCache.getByRef(fnRef);
@@ -98,7 +98,7 @@ class PDFFunctionFactory {
     } else if (cacheKey instanceof Dict) {
       fnRef = cacheKey.objId;
     } else if (cacheKey instanceof BaseStream) {
-      fnRef = cacheKey.dict?.objId;
+      fnRef = cacheKey.dict && cacheKey.dict.objId;
     }
     if (fnRef) {
       this._localFunctionCache.set(/* name = */ null, fnRef, parsedFunction);
@@ -247,7 +247,11 @@ class PDFFunction {
     }
 
     let decode = toNumberArray(dict.getArray("Decode"));
-    decode = !decode ? range : toMultiArray(decode);
+    if (!decode) {
+      decode = range;
+    } else {
+      decode = toMultiArray(decode);
+    }
 
     const samples = this.getSampleArray(size, outputSize, bps, fn);
     // const mask = 2 ** bps - 1;
@@ -498,7 +502,9 @@ class PDFFunction {
 
 function isPDFFunction(v) {
   let fnDict;
-  if (v instanceof Dict) {
+  if (typeof v !== "object") {
+    return false;
+  } else if (v instanceof Dict) {
     fnDict = v;
   } else if (v instanceof BaseStream) {
     fnDict = v.dict;
@@ -509,7 +515,9 @@ function isPDFFunction(v) {
 }
 
 class PostScriptStack {
-  static MAX_STACK_SIZE = 100;
+  static get MAX_STACK_SIZE() {
+    return shadow(this, "MAX_STACK_SIZE", 100);
+  }
 
   constructor(initialStack) {
     this.stack = initialStack ? Array.from(initialStack) : [];
@@ -620,13 +628,8 @@ class PostScriptEvaluator {
           }
           break;
         case "atan":
-          b = stack.pop();
           a = stack.pop();
-          a = (Math.atan2(a, b) / Math.PI) * 180;
-          if (a < 0) {
-            a += 360;
-          }
-          stack.push(a);
+          stack.push(Math.atan(a));
           break;
         case "bitshift":
           b = stack.pop();
@@ -647,7 +650,7 @@ class PostScriptEvaluator {
           break;
         case "cos":
           a = stack.pop();
-          stack.push(Math.cos(((a % 360) / 180) * Math.PI));
+          stack.push(Math.cos(a));
           break;
         case "cvi":
           a = stack.pop() | 0;
@@ -714,7 +717,7 @@ class PostScriptEvaluator {
           break;
         case "log":
           a = stack.pop();
-          stack.push(Math.log10(a));
+          stack.push(Math.log(a) / Math.LN10);
           break;
         case "lt":
           b = stack.pop();
@@ -771,7 +774,7 @@ class PostScriptEvaluator {
           break;
         case "sin":
           a = stack.pop();
-          stack.push(Math.sin(((a % 360) / 180) * Math.PI));
+          stack.push(Math.sin(a));
           break;
         case "sqrt":
           a = stack.pop();

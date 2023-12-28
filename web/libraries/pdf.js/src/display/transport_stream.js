@@ -13,12 +13,7 @@
  * limitations under the License.
  */
 
-/** @typedef {import("../interfaces").IPDFStream} IPDFStream */
-/** @typedef {import("../interfaces").IPDFStreamReader} IPDFStreamReader */
-// eslint-disable-next-line max-len
-/** @typedef {import("../interfaces").IPDFStreamRangeReader} IPDFStreamRangeReader */
-
-import { assert, PromiseCapability } from "../shared/util.js";
+import { assert, createPromiseCapability } from "../shared/util.js";
 import { isPdfFile } from "./display_utils.js";
 
 /** @implements {IPDFStream} */
@@ -240,7 +235,7 @@ class PDFDataTransportStreamReader {
     if (this._done) {
       return { value: undefined, done: true };
     }
-    const requestCapability = new PromiseCapability();
+    const requestCapability = createPromiseCapability();
     this._requests.push(requestCapability);
     return requestCapability.promise;
   }
@@ -305,7 +300,7 @@ class PDFDataTransportStreamRangeReader {
     if (this._done) {
       return { value: undefined, done: true };
     }
-    const requestCapability = new PromiseCapability();
+    const requestCapability = createPromiseCapability();
     this._requests.push(requestCapability);
     return requestCapability.promise;
   }

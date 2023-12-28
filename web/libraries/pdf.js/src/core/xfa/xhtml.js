@@ -27,7 +27,8 @@ import {
   $pushGlyphs,
   $text,
   $toHTML,
-} from "./symbol_utils.js";
+  XmlObject,
+} from "./xfa_object.js";
 import { $buildXFAObject, NamespaceIds } from "./namespaces.js";
 import {
   fixTextIndent,
@@ -36,7 +37,6 @@ import {
   setFontFamily,
 } from "./html_utils.js";
 import { getMeasurement, HTMLResult, stripQuotes } from "./utils.js";
-import { XmlObject } from "./xfa_object.js";
 
 const XHTML_NS_ID = NamespaceIds.xhtml.id;
 const $richText = Symbol();
@@ -127,13 +127,18 @@ function mapStyle(styleStr, node, richText) {
     }
     let newValue = value;
     if (mapping) {
-      newValue =
-        typeof mapping === "string" ? mapping : mapping(value, original);
+      if (typeof mapping === "string") {
+        newValue = mapping;
+      } else {
+        newValue = mapping(value, original);
+      }
     }
     if (key.endsWith("scale")) {
-      style.transform = style.transform
-        ? `${style[key]} ${newValue}`
-        : newValue;
+      if (style.transform) {
+        style.transform = `${style[key]} ${newValue}`;
+      } else {
+        style.transform = newValue;
+      }
     } else {
       style[key.replaceAll(/-([a-zA-Z])/g, (_, x) => x.toUpperCase())] =
         newValue;
@@ -226,9 +231,9 @@ class XhtmlObject extends XmlObject {
 
   [$onText](str, richText = false) {
     if (!richText) {
-      str = str.replaceAll(crlfRegExp, "");
+      str = str.replace(crlfRegExp, "");
       if (!this.style.includes("xfa-spacerun:yes")) {
-        str = str.replaceAll(spacesRegExp, " ");
+        str = str.replace(spacesRegExp, " ");
       }
     } else {
       this[$richText] = true;
@@ -346,7 +351,7 @@ class XhtmlObject extends XmlObject {
     let value;
     if (this[$richText]) {
       value = this[$content]
-        ? this[$content].replaceAll(crlfForRichTextRegExp, "\n")
+        ? this[$content].replace(crlfForRichTextRegExp, "\n")
         : undefined;
     } else {
       value = this[$content] || undefined;
@@ -445,7 +450,7 @@ class Html extends XhtmlObject {
 
     if (children.length === 1) {
       const child = children[0];
-      if (child.attributes?.class.includes("xfaRich")) {
+      if (child.attributes && child.attributes.class.includes("xfaRich")) {
         return HTMLResult.success(child);
       }
     }

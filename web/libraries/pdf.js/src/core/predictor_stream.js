@@ -33,7 +33,11 @@ class PredictorStream extends DecodeStream {
       throw new FormatError(`Unsupported predictor: ${predictor}`);
     }
 
-    this.readBlock = predictor === 2 ? this.readBlockTiff : this.readBlockPng;
+    if (predictor === 2) {
+      this.readBlock = this.readBlockTiff;
+    } else {
+      this.readBlock = this.readBlockPng;
+    }
 
     this.str = str;
     this.dict = str.dict;

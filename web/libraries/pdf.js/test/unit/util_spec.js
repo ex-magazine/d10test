@@ -15,10 +15,10 @@
 
 import {
   bytesToString,
+  createPromiseCapability,
   createValidAbsoluteUrl,
   getModificationDate,
   isArrayBuffer,
-  PromiseCapability,
   string32,
   stringToBytes,
   stringToPDFString,
@@ -212,9 +212,9 @@ describe("util", function () {
     });
   });
 
-  describe("PromiseCapability", function () {
+  describe("createPromiseCapability", function () {
     it("should resolve with correct data", async function () {
-      const promiseCapability = new PromiseCapability();
+      const promiseCapability = createPromiseCapability();
       expect(promiseCapability.settled).toEqual(false);
 
       promiseCapability.resolve({ test: "abc" });
@@ -225,7 +225,7 @@ describe("util", function () {
     });
 
     it("should reject with correct reason", async function () {
-      const promiseCapability = new PromiseCapability();
+      const promiseCapability = createPromiseCapability();
       expect(promiseCapability.settled).toEqual(false);
 
       promiseCapability.reject(new Error("reason"));

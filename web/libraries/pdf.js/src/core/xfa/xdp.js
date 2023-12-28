@@ -14,8 +14,13 @@
  */
 
 import { $buildXFAObject, NamespaceIds } from "./namespaces.js";
-import { $namespaceId, $nodeName, $onChildCheck } from "./symbol_utils.js";
-import { XFAObject, XFAObjectArray } from "./xfa_object.js";
+import {
+  $namespaceId,
+  $nodeName,
+  $onChildCheck,
+  XFAObject,
+  XFAObjectArray,
+} from "./xfa_object.js";
 
 const XDP_NS_ID = NamespaceIds.xdp.id;
 

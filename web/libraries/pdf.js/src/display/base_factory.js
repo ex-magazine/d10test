@@ -15,28 +15,6 @@
 
 import { CMapCompressionType, unreachable } from "../shared/util.js";
 
-class BaseFilterFactory {
-  constructor() {
-    if (this.constructor === BaseFilterFactory) {
-      unreachable("Cannot initialize BaseFilterFactory.");
-    }
-  }
-
-  addFilter(maps) {
-    return "none";
-  }
-
-  addHCMFilter(fgColor, bgColor) {
-    return "none";
-  }
-
-  addHighlightHCMFilter(fgColor, bgColor, newFgColor, newBgColor) {
-    return "none";
-  }
-
-  destroy(keepHCM = false) {}
-}
-
 class BaseCanvasFactory {
   constructor() {
     if (this.constructor === BaseCanvasFactory) {
@@ -87,7 +65,7 @@ class BaseCanvasFactory {
 }
 
 class BaseCMapReaderFactory {
-  constructor({ baseUrl = null, isCompressed = true }) {
+  constructor({ baseUrl = null, isCompressed = false }) {
     if (this.constructor === BaseCMapReaderFactory) {
       unreachable("Cannot initialize BaseCMapReaderFactory.");
     }
@@ -201,7 +179,6 @@ class BaseSVGFactory {
 export {
   BaseCanvasFactory,
   BaseCMapReaderFactory,
-  BaseFilterFactory,
   BaseStandardFontDataFactory,
   BaseSVGFactory,
 };

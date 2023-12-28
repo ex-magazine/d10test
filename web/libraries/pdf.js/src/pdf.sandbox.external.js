@@ -16,7 +16,7 @@
 // In mozilla-central, this file is loaded as non-module script,
 // so it mustn't have any dependencies.
 
-export class SandboxSupportBase {
+class SandboxSupportBase {
   /**
    * @param {DOMWindow} - win
    */
@@ -180,4 +180,11 @@ export class SandboxSupportBase {
       }
     };
   }
+}
+
+if (typeof PDFJSDev === "undefined" || !PDFJSDev.test("MOZCENTRAL")) {
+  exports.SandboxSupportBase = SandboxSupportBase;
+} else {
+  /* eslint-disable-next-line no-unused-vars, no-var */
+  var EXPORTED_SYMBOLS = ["SandboxSupportBase"];
 }

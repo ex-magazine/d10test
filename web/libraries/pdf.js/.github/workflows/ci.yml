@@ -8,30 +8,20 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
 
-    strategy:
-      fail-fast: false
-      matrix:
-        node-version: [18, lts/*, latest]
-
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
+        uses: actions/checkout@v3
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4
+      - name: Use Node.js 18 LTS
+        uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: '18'
 
       - name: Install Gulp
         run: npm install -g gulp-cli
 
       - name: Install other dependencies
-        run: npm install
+        run: npm install -f
 
-      - name: Run external tests
-        run: gulp externaltest
-
-      - name: Run CLI unit tests
-        run: gulp unittestcli
+      - name: Run tests
+        run: gulp ci-test

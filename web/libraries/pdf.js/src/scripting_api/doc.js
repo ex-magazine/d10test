@@ -16,7 +16,6 @@
 import { createActionsMap } from "./common.js";
 import { PDFObject } from "./pdf_object.js";
 import { PrintParams } from "./print_params.js";
-import { serializeError } from "./app_utils.js";
 import { ZoomType } from "./constants.js";
 
 const DOC_EXTERNAL = false;
@@ -127,29 +126,20 @@ class Doc extends PDFObject {
   }
 
   _dispatchDocEvent(name) {
-    switch (name) {
-      case "Open":
-        this._disableSaving = true;
-        this._runActions("OpenAction");
-        this._disableSaving = false;
-        break;
-      case "WillPrint":
-        this._disablePrinting = true;
-        try {
-          this._runActions(name);
-        } catch (error) {
-          this._send(serializeError(error));
-        }
-        this._send({ command: "WillPrintFinished" });
-        this._disablePrinting = false;
-        break;
-      case "WillSave":
-        this._disableSaving = true;
-        this._runActions(name);
-        this._disableSaving = false;
-        break;
-      default:
-        this._runActions(name);
+    if (name === "Open") {
+      this._disableSaving = true;
+      this._runActions("OpenAction");
+      this._disableSaving = false;
+    } else if (name === "WillPrint") {
+      this._disablePrinting = true;
+      this._runActions(name);
+      this._disablePrinting = false;
+    } else if (name === "WillSave") {
+      this._disableSaving = true;
+      this._runActions(name);
+      this._disableSaving = false;
+    } else {
+      this._runActions(name);
     }
   }
 
@@ -1136,9 +1126,17 @@ class Doc extends PDFObject {
       nEnd = printParams.lastPage;
     }
 
-    nStart = typeof nStart === "number" ? Math.max(0, Math.trunc(nStart)) : 0;
+    if (typeof nStart === "number") {
+      nStart = Math.max(0, Math.trunc(nStart));
+    } else {
+      nStart = 0;
+    }
 
-    nEnd = typeof nEnd === "number" ? Math.max(0, Math.trunc(nEnd)) : -1;
+    if (typeof nEnd === "number") {
+      nEnd = Math.max(0, Math.trunc(nEnd));
+    } else {
+      nEnd = -1;
+    }
 
     this._send({ command: "print", start: nStart, end: nEnd });
   }
@@ -1185,7 +1183,7 @@ class Doc extends PDFObject {
 
   resetForm(aFields = null) {
     // Handle the case resetForm({ aFields: ... })
-    if (aFields && typeof aFields === "object" && !Array.isArray(aFields)) {
+    if (aFields && typeof aFields === "object") {
       aFields = aFields.aFields;
     }
 

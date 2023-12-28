@@ -477,7 +477,11 @@ class CCITTFaxDecoder {
     this.byteAlign = options.EncodedByteAlign || false;
     this.columns = options.Columns || 1728;
     this.rows = options.Rows || 0;
-    this.eoblock = options.EndOfBlock ?? true;
+    let eoblock = options.EndOfBlock;
+    if (eoblock === null || eoblock === undefined) {
+      eoblock = true;
+    }
+    this.eoblock = eoblock;
     this.black = options.BlackIs1 || false;
 
     this.codingLine = new Uint32Array(this.columns + 1);
@@ -786,10 +790,11 @@ class CCITTFaxDecoder {
         }
       }
 
-      this.outputBits =
-        codingLine[0] > 0
-          ? codingLine[(this.codingPos = 0)]
-          : codingLine[(this.codingPos = 1)];
+      if (codingLine[0] > 0) {
+        this.outputBits = codingLine[(this.codingPos = 0)];
+      } else {
+        this.outputBits = codingLine[(this.codingPos = 1)];
+      }
       this.row++;
     }
 
@@ -937,7 +942,7 @@ class CCITTFaxDecoder {
     if (this.eoblock) {
       code = this._lookBits(7);
       p = twoDimTable[code];
-      if (p?.[0] > 0) {
+      if (p && p[0] > 0) {
         this._eatBits(p[0]);
         return p[1];
       }
@@ -963,7 +968,11 @@ class CCITTFaxDecoder {
         return 1;
       }
 
-      p = code >> 5 === 0 ? whiteTable1[code] : whiteTable2[code >> 3];
+      if (code >> 5 === 0) {
+        p = whiteTable1[code];
+      } else {
+        p = whiteTable2[code >> 3];
+      }
 
       if (p[0] > 0) {
         this._eatBits(p[0]);

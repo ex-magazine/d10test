@@ -13,10 +13,9 @@
  * limitations under the License.
  */
 
-import {
-  USERACTIVATION_CALLBACKID,
-  USERACTIVATION_MAXTIME_VALIDITY,
-} from "./app_utils.js";
+import { USERACTIVATION_CALLBACKID } from "./doc.js";
+
+const USERACTIVATION_MAXTIME_VALIDITY = 5000;
 
 class Event {
   constructor(data) {
@@ -99,9 +98,8 @@ class EventDispatcher {
           // errors in the case where a formatter is using one of those named
           // actions (see #15818).
           this._document.obj._initActions();
-          // Before running the Open event, we run the format callbacks but
-          // without changing the value of the fields.
-          // Acrobat does the same thing.
+          // Before running the Open event, we format all the fields
+          // (see bug 1766987).
           this.formatAll();
         }
         if (
@@ -234,7 +232,13 @@ class EventDispatcher {
     const event = (globalThis.event = new Event({}));
     for (const source of Object.values(this._objects)) {
       event.value = source.obj.value;
-      this.runActions(source, source, event, "Format");
+      if (this.runActions(source, source, event, "Format")) {
+        source.obj._send({
+          id: source.obj._id,
+          siblings: source.obj._siblings,
+          formattedValue: event.value?.toString?.(),
+        });
+      }
     }
   }
 
@@ -245,8 +249,7 @@ class EventDispatcher {
 
       this.runCalculate(source, event);
 
-      const savedValue = source.obj._getValue();
-      event.value = source.obj.value;
+      const savedValue = (event.value = source.obj.value);
       let formattedValue = null;
 
       if (this.runActions(source, source, event, "Format")) {

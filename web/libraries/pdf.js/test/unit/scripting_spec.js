@@ -13,7 +13,9 @@
  * limitations under the License.
  */
 
-const sandboxBundleSrc = "../../build/generic/build/pdf.sandbox.mjs";
+import { loadScript } from "../../src/display/display_utils.js";
+
+const sandboxBundleSrc = "../../build/generic/build/pdf.sandbox.js";
 
 describe("Scripting", function () {
   let sandbox, send_queue, test_id, ref, windowAlert;
@@ -51,9 +53,8 @@ describe("Scripting", function () {
       const command = "alert";
       send_queue.set(command, { command, value });
     };
-    // eslint-disable-next-line no-unsanitized/method
-    const promise = import(sandboxBundleSrc).then(pdfjsSandbox => {
-      return pdfjsSandbox.QuickJSSandbox();
+    const promise = loadScript(sandboxBundleSrc).then(() => {
+      return window.pdfjsSandbox.QuickJSSandbox();
     });
     sandbox = {
       createSandbox(data) {
@@ -345,7 +346,7 @@ describe("Scripting", function () {
       expect(send_queue.has(refId)).toEqual(true);
       expect(send_queue.get(refId)).toEqual({
         id: refId,
-        value: "123",
+        value: 123,
       });
     });
 
@@ -825,7 +826,7 @@ describe("Scripting", function () {
         expect(send_queue.get(refId)).toEqual({
           id: refId,
           siblings: null,
-          value: "123456.789",
+          value: 123456.789,
           formattedValue: null,
         });
       });
@@ -1005,7 +1006,7 @@ describe("Scripting", function () {
         expect(send_queue.get(refId)).toEqual({
           id: refId,
           siblings: null,
-          value: "321",
+          value: 321,
           formattedValue: null,
         });
       });

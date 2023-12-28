@@ -15,7 +15,7 @@
 
 import {
   AbortException,
-  PromiseCapability,
+  createPromiseCapability,
   UnknownErrorException,
 } from "../../src/shared/util.js";
 import { LoopbackPort } from "../../src/display/api.js";
@@ -338,7 +338,7 @@ describe("message_handler", function () {
     it("should ignore any pull after close is called", async function () {
       let log = "";
       const port = new LoopbackPort();
-      const capability = new PromiseCapability();
+      const capability = createPromiseCapability();
       const messageHandler2 = new MessageHandler("worker", "main", port);
       messageHandler2.on("fakeHandler", (data, sink) => {
         sink.onPull = function () {

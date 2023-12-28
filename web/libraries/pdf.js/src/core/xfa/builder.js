@@ -23,12 +23,12 @@ import {
   $onChild,
   $resolvePrototypes,
   $root,
-} from "./symbol_utils.js";
+  XFAObject,
+} from "./xfa_object.js";
 import { NamespaceSetUp } from "./setup.js";
 import { Template } from "./template.js";
 import { UnknownNamespace } from "./unknown.js";
 import { warn } from "../../shared/util.js";
-import { XFAObject } from "./xfa_object.js";
 
 class Root extends XFAObject {
   constructor(ids) {
@@ -118,7 +118,8 @@ class Builder {
 
     const namespaceToUse = this._getNamespaceToUse(nsPrefix);
     const node =
-      namespaceToUse?.[$buildXFAObject](name, attributes) || new Empty();
+      (namespaceToUse && namespaceToUse[$buildXFAObject](name, attributes)) ||
+      new Empty();
 
     if (node[$isNsAgnostic]()) {
       this._nsAgnosticLevel++;
@@ -180,7 +181,7 @@ class Builder {
       return this._currentNamespace;
     }
     const prefixStack = this._namespacePrefixes.get(prefix);
-    if (prefixStack?.length > 0) {
+    if (prefixStack && prefixStack.length > 0) {
       return prefixStack.at(-1);
     }
 

@@ -55,12 +55,12 @@ class Sandbox {
   }
 
   create(data) {
-    if (PDFJSDev.test("TESTING")) {
+    if (PDFJSDev.test("!PRODUCTION || TESTING")) {
       this._module.ccall("nukeSandbox", null, []);
     }
     const code = [PDFJSDev.eval("PDF_SCRIPTING_JS_SOURCE")];
 
-    if (PDFJSDev.test("TESTING")) {
+    if (PDFJSDev.test("!PRODUCTION || TESTING")) {
       code.push(
         `globalThis.sendResultForTesting = callExternalFunction.bind(null, "send");`
       );
@@ -107,7 +107,9 @@ class Sandbox {
   }
 
   dumpMemoryUse() {
-    this._module?.ccall("dumpMemoryUse", null, []);
+    if (this._module) {
+      this._module.ccall("dumpMemoryUse", null, []);
+    }
   }
 
   nukeSandbox() {
@@ -120,7 +122,7 @@ class Sandbox {
   }
 
   evalForTesting(code, key) {
-    if (PDFJSDev.test("TESTING")) {
+    if (PDFJSDev.test("!PRODUCTION || TESTING")) {
       this._module.ccall(
         "evalInSandbox",
         null,

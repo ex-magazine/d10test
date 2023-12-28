@@ -63,7 +63,7 @@ class ProxyHandler {
         typeof old !== "function"
       ) {
         const data = { id: obj._id };
-        data[prop] = prop === "value" ? obj._getValue() : obj[prop];
+        data[prop] = obj[prop];
 
         // send the updated value to the other side
         if (!obj._siblings) {
