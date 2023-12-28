@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Name":"T\u00ean","Edit":"S\u1eeda","Delete":"X\u00f3a","Date":"Ng\u00e0y th\u00e1ng","Cancel":"H\u1ee7y b\u1ecf","Enabled":"B\u1eadt","Disabled":"T\u1eaft","Add":"Th\u00eam"}},"pluralFormula":{"default":0}};
