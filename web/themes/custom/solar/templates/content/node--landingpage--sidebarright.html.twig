@@ -114,6 +114,9 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-xl-8 col-md-12 col-sm-12 col-12">
+                     {% if content.body is not empty %}
+                        {{ content.body }} 
+                    {% endif %}
                     {% if content.field_paragraphs is not empty %}
                         {{ content.field_paragraphs }}
                     {% endif %}
