@@ -114,14 +114,19 @@
         <div class="container">
             <div class="row g-5">
                 <div class="col-xl-8 col-md-12 col-sm-12 col-12">
-                    {{ content.field_paragraphs }}
-                    {{ content.field_viewreference }}  
-
-                    {{ content.field_pdf }} 
+                    {% if content.field_myfield is not empty %}
+                        {{ content.field_paragraphs }}
+                    {% endif %}
+                    {% if content.field_myfield is not empty %}
+                        {{ content.field_viewreference }}  
+                    {% endif %}
+                    {% if content.field_myfield is not empty %}
+                        {{ content.field_pdf }} 
+                    {% endif %}
+                    
                 
                 </div>
-                <div class="col-xl-4 col-md-12 col-sm-12 col-12">                   
-                 
+                <div class="col-xl-4 col-md-12 col-sm-12 col-12">  
                     {{ drupal_region('sidebar', 'solar') }}
                 </div>
             </div>
