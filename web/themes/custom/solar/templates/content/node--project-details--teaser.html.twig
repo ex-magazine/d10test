@@ -73,7 +73,7 @@
   set classes = [
     'node',
     'node--type-' ~ node.bundle|clean_class,
-    'blog-single-one text-center',
+    'project-one-wrapper',
     layout ? 'grid-full',
     layout ? 'ie11-autorow',
     node.isPromoted() ? 'node--promoted',
@@ -83,24 +83,17 @@
   ]
 %}
 <div{{ attributes.addClass(classes) }}>    
-    <a href="{{ url }}" class="thumbnail">
-        <div class="inner">
-            {{ content.field_image }}
-        </div>
-    </a>
-    <div class="head">
-        <div class="date-area single-info">
-            <i class="fa-light fa-calendar-days"></i>
-            <p><time>{{ node.published_at.getString|date("d M Y") }}</time></p>
-        </div>      
+    <div class="shape">
+        <img src="/themes/custom/solar/images/shap-01.png" alt="shape">
     </div>
-    <div class="body text-start">
-        <a href="{{ url }}">
+    <a href="{{ url }}" class="thumbnail">
+        {{ content.field_image }}
+    </a>
+    <div class="content">
+        <div class="pre">{{ content.field_categoryv2 }}</div>
+        <a href="{{ url }}" rel="bookmark">
             <h5 class="title">{{ node.label }}</h5>
         </a>
-        <a href="{{ url }}" class="rts-btn btn-border radious-0">
-            {{ 'Read Details'|t }}
-            <i class="fa-regular fa-arrow-up-right"></i>
-        </a>
+        <img src="/themes/custom/solar/images/shap-02.png" alt="CME Solar">
     </div>
 </div>
