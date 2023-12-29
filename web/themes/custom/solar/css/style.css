@@ -14842,9 +14842,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   border-style: solid;
   border-color: transparent transparent #e7e3da transparent;
 }
-#block-solar-languagedropdownswitcher {
-  margin-right: 40px;
-}
+
 #block-solar-languagedropdownswitcher  .ldsSkin ul{
   text-align: left !important;
 }
@@ -20947,7 +20945,7 @@ p {
   transition: 0.3s;
 }
 .project-one-wrapper .content .title:hover {
-  color: var(--color-primary);
+  color: #4AAB3D;
 }
 .project-one-wrapper:hover::after {
   opacity: 1;
@@ -26298,8 +26296,12 @@ form.appoinment-form .input-half-wrapper .single-input input {
 .title-shop-main-center {
   text-align: center;
 }
-
+form.lang-dropdown-form.lang_dropdown_form.language_interface{
+  width: 70px;  
+  clear: both;
+}
 #elevate-load {
+  display: none !important;
   position: fixed;
   top: 0;
   left: 0;
