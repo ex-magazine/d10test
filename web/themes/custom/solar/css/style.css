@@ -20943,6 +20943,7 @@ p {
   margin-bottom: 30px;
   color: #fff;
   transition: 0.3s;
+  max-width: 270px;
 }
 .project-one-wrapper .content .title:hover {
   color: #4AAB3D;
