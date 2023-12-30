@@ -115,28 +115,8 @@
         {{ content.field_paragraphs }}
     {% endif %}
 
-    <div class="rts-Product-area rts-section-gap">
-        <div class="container"> 
-            <div class="row mb--70">
-                <div class="col-lg-12">
-                    <!-- project title btn main wrapper -->
-                    <div class="project-soalr-wrapper">
-                        <div class="title-area">
-                            <div class="title-area-left">
-                                <p class="pre">
-                                    <span>Our</span> Projects
-                                </p>
-                                <h2 class="title">
-                                    Our Latest Projects
-                                </h2>
-                            </div>
-                        </div>
-                        <a href="#" class="rts-btn btn-primary">View All Projects</a>
-                    </div>
-                    <!-- project title btn main wrapper end -->
-                </div>
-            </div>
-        </div>
+    <div class="rts-Product-area rts-section-gap">        
+        {{ content.body }} 
         {% if content.field_viewreference is not empty %}
             {{ content.field_viewreference }}  
         {% endif %}
