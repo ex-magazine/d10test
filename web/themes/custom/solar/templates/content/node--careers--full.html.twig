@@ -113,14 +113,14 @@
         {{ content.body }}
         
         <div class="row  align-items-center">
-            <div class="col-lg-8 col-md-12">
+            <div class="col-lg-4 col-md-12">
                 <!-- tags details -->
                 <div class="details-tag">
                     {{ content.field_tags }}                  
                 </div>
                 <!-- tags details End -->
             </div>
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-8 col-md-12">
                 <div class="details-share">
                     {{ content|without('comment','body', 'field_tags', 'field_time_to_read', 'field_expiration_date', 'field_image', 'field_webform') }}
                                         
