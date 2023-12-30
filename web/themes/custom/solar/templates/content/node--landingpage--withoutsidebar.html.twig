@@ -110,35 +110,15 @@
         </div>
     </div>
     <!-- rts breadcrumb area end -->
-    <div class="rts-blog-list-area rts-section-gap">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-xl-8 col-md-12 col-sm-12 col-12">
-                     {% if content.body is not empty %}
-                        {{ content.body }} 
-                    {% endif %}
-                    {% if content.field_paragraphs is not empty %}
-                        {{ content.field_paragraphs }}
-                    {% endif %}
-                    {% if content.field_viewreference is not empty %}
-                        {{ content.field_viewreference }}  
-                    {% endif %}
-                    {% if content.field_pdf is not empty %}
-                        {{ content.field_pdf }} 
-                    {% endif %}
-                    
-                
-                </div>
-                <div class="col-xl-4 col-md-12 col-sm-12 col-12">  
-                    {{ drupal_region('sidebar', 'solar') }}
-                </div>
-            </div>
-        </div>
-    </div>
+   
+    {% if content.field_paragraphs is not empty %}
+        {{ content.field_paragraphs }}
+    {% endif %}
     
     <div class="rts-secvice-area-solaric-banner-bottom start rts-section-gapBottom">     
         {{ drupal_region('content_below', 'solar') }}
     </div> 
+
     <div class="container">    
         <div class="process--desktop">
             <div class="section__process section__process__row">
