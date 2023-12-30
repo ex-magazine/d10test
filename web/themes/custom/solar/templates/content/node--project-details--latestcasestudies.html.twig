@@ -90,7 +90,7 @@
       <div class="inner">
           <div class="pre">{{ content.field_category }}</div>
           <a href="{{ url }}" rel="bookmark">
-              <h2 class="title">{{ label }}</h2>
+              <h2 class="title">{{ content.field_category|render|striptags|trim }}</h2>
           </a>
       </div>
   </div>

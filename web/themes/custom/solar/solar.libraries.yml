@@ -63,7 +63,7 @@ global-styling:
     # js/checkbox.js: {}
     # js/navigation-utils.js: {}
     # js/all.min.js: {}
-    # js/wow.min.js: {}
+    js/wow.min.js: {}
     # js/slick.min.js: {}
     # js/bootstrap.bundle.js: {}
     # js/custom.js: {}

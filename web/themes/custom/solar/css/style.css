@@ -28659,3 +28659,114 @@ edit .quantity-edit button {
 .path-frontpage  .title.page-title{
   display: none;
 }
+
+.section__process {  
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__process__row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.process--desktop .p-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.process--desktop .section__process__row--right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.process--desktop .section__process__box__item{
+  width: 58.3rem;
+}
+.process--desktop .section__process__box__title {
+  background: #003556;
+  border-radius: 3rem;
+  padding: 4rem 2rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.section__process__box__item {
+  display: flex;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  border-radius: 2.4rem;
+  padding: 2rem; 
+  width: auto;
+  align-items: center;
+  gap: 20px;
+}
+.indicator--center {
+  text-align: center;
+  margin: auto;
+}
+.section__process__week__box {
+  background: #003556;
+  border-radius: 1.6rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.3rem;
+  padding: 1.3rem;
+  width: 15.3rem;
+  height: fit-content;
+}
+.process--mobile {
+  display: none;
+}
+.process--desktop{
+  display: block;
+}
+.process--desktop .p-right,
+.process--desktop .p-left {
+  flex-basis: 40%;
+}
+.process--desktop .p-center{
+  flex-basis: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .process--desktop{
+    display: none;
+  }
+  .process--mobile {
+    display: block;
+    margin: auto;  
+  }
+  .section__process__box__title {
+    background: #003556;
+    border-radius: 3rem;
+    padding: 4rem 2rem;   
+    text-align: center;
+  }
+  .section__process__box__title {
+    margin: auto;
+    margin-bottom: 5.6rem;
+    padding: 4rem;
+    width: auto !important;   
+  }
+  .section__process__col {
+    padding-bottom: 3.6rem;
+  }
+  .process--mobile .section__process__box__item {
+    width: auto !important;
+  }
+  .process--mobile .p-arrow {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+ 
+
+} 
