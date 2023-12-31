@@ -28743,28 +28743,31 @@ edit .quantity-edit button {
 .process--desktop .p-center{
   flex-basis: 20%;
 }
-.process--desktop-inner {
+.process--desktop .process--desktop-inner {
   display: flex;
 }
-.process--desktop-inner .wrt-process-right,
-.process--desktop-inner .wrt-process-left {
+.process--desktop .process--desktop-inner .wrt-process-right,
+.process--desktop .process--desktop-inner .wrt-process-left {
   flex-basis: 25%;
 }
-.process--desktop-inner .wrt-process-center {
+.process--desktop .process--desktop-inner .wrt-process-center {
   flex-basis: 50%;
 }
-.process--desktop-inner .s-des{
+.process--desktop .process--desktop-inner .s-des{
   margin-left: 150px;
+}
+.process--mobile .wrt-six{
+  margin-bottom: 50px;
 }
 .process--desktop-inner .s-des p{
   margin-bottom: 10px;
 }
-.s-icon p.step span.item-01{
+.s-icon .step .item-01{
   color: #74787C !important;
-  margin-left: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 16px !important;  
-  border-bottom: 1px solid #eeeeee;
-  padding-bottom: 10px;
+  border-bottom: 1px solid #eeeeee;  
 }
 .process--desktop-inner .wrt-two,
 .process--desktop-inner .wrt-three,
@@ -28773,28 +28776,51 @@ edit .quantity-edit button {
 .process--desktop-inner .wrt-seven,
 .process--desktop-inner .wrt-eight,
 .process--desktop-inner .wrt-one {
-    border: 1px solid #eeeeee;
+    border: 2px solid #eeeeee;
     box-sizing: border-box;
     border-radius: 4px;    
     width: auto;
     box-shadow: 0px 6px 39px #0000000a;
     background: #fff;
     margin-bottom: 50px;
-    padding: 5px 0px 10px 20px;
+    padding: 5px 0px 10px 5px;
 }
 .process--desktop-inner .item-02{
-  margin: 35px 15px 0px 0;
+  margin: 10px 10px 0px 10px;
 }
-.s-icon p.step {
+ .s-icon .step {
   position: relative;
   color: #fff;
   z-index: 1;
-  margin-right: 40px;
   font-weight: 700;
   font-size: 20px;
-  line-height: 28px;  
+  line-height: 28px;    
+  display: flex;
+  align-items: center;
+  margin-top: -10px;
+  margin-left: -20px;
+} 
+.s-icon .step p {
+  margin: 0;
 }
-.s-icon p.step::before {
+.s-icon .step .num-01 { 
+  background: var(--color-primary);
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  z-index: 1;
+  margin-right: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;   
+  border-radius: 50%;
+}
+/*
+.s-icon .step .num-01::before {
   position: absolute;
   content: "";
   left: 3%;
@@ -28805,8 +28831,9 @@ edit .quantity-edit button {
   transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 50%;
-}
-.s-icon p.step::after {
+} 
+
+.s-icon p.step .num-01::after {
   position: absolute;
   content: "";
   left: 3%;
@@ -28817,8 +28844,14 @@ edit .quantity-edit button {
   transform: translate(-50%, -50%);
   z-index: -1;
   border-radius: 50%;
-}
+}*/
 @media only screen and (max-width: 768px) {
+  .process--mobile .process--desktop-inner {
+    margin: 0 20px 50px 20px;
+  }
+  .process--mobile p.step{
+    margin-right: 0 !important;
+  }
   .process--desktop{
     display: none;
   }
