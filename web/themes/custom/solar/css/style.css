@@ -28689,21 +28689,30 @@ edit .quantity-edit button {
 }
 .process--desktop .section__process__box__title {
   background: #003556;
-  border-radius: 3rem;
+  border-radius: 4px;
   padding: 4rem 2rem;
   justify-content: center;
   align-items: center;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 700;
   text-align: center;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 6px 39px #0000000a;
 }
 .section__process__box__item {
   display: flex;
-  border: 1px solid #000000;
+  border: 1px solid #eeeeee;
   box-sizing: border-box;
-  border-radius: 2.4rem;
+  border-radius: 4px;
   padding: 2rem; 
   width: auto;
   align-items: center;
   gap: 20px;
+  box-shadow: 0px 6px 39px #0000000a;
+}
+.section__process__box__item p{
+  font-size: 20px;
 }
 .indicator--center {
   text-align: center;
@@ -28734,7 +28743,81 @@ edit .quantity-edit button {
 .process--desktop .p-center{
   flex-basis: 20%;
 }
-
+.process--desktop-inner {
+  display: flex;
+}
+.process--desktop-inner .wrt-process-right,
+.process--desktop-inner .wrt-process-left {
+  flex-basis: 25%;
+}
+.process--desktop-inner .wrt-process-center {
+  flex-basis: 50%;
+}
+.process--desktop-inner .s-des{
+  margin-left: 150px;
+}
+.process--desktop-inner .s-des p{
+  margin-bottom: 10px;
+}
+.s-icon p.step span.item-01{
+  color: #74787C !important;
+  margin-left: 40px;
+  font-size: 16px !important;  
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 10px;
+}
+.process--desktop-inner .wrt-two,
+.process--desktop-inner .wrt-three,
+.process--desktop-inner .wrt-four,
+.process--desktop-inner .wrt-nine,
+.process--desktop-inner .wrt-seven,
+.process--desktop-inner .wrt-eight,
+.process--desktop-inner .wrt-one {
+    border: 1px solid #eeeeee;
+    box-sizing: border-box;
+    border-radius: 4px;    
+    width: auto;
+    box-shadow: 0px 6px 39px #0000000a;
+    background: #fff;
+    margin-bottom: 50px;
+    padding: 5px 0px 10px 20px;
+}
+.process--desktop-inner .item-02{
+  margin: 35px 15px 0px 0;
+}
+.s-icon p.step {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+  margin-right: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;  
+}
+.s-icon p.step::before {
+  position: absolute;
+  content: "";
+  left: 3%;
+  top: 40%;
+  background: rgba(74, 171, 61, 0.05);
+  height: 90px;
+  width: 90px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
+}
+.s-icon p.step::after {
+  position: absolute;
+  content: "";
+  left: 3%;
+  top: 40%;
+  background: var(--color-primary);
+  height: 60px;
+  width: 60px;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 50%;
+}
 @media only screen and (max-width: 768px) {
   .process--desktop{
     display: none;

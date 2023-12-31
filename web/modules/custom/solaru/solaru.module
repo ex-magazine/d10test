@@ -46,6 +46,7 @@ function solaru_node_view(array &$build, $entity, $display, $view_mode) {
     ($entity->bundle() == 'faq') ||
     ($entity->bundle() == 'customerfeedbacks') ||
     ($entity->bundle() == 'client') ||
+    ($entity->bundle() == 'careers') ||
     ($entity->bundle() == 'article') ||
     ($entity->bundle() == 'page') ||
     ($entity->bundle() == 'banner')) {
