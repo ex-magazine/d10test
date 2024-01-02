@@ -22787,11 +22787,13 @@ p {
   border-bottom: 1px solid #E6E9F0;
 }
 .blog-single-post-listing.details .ref-area {
-  margin-top: 44px;
+  margin-top: 20px;
   display: flex;
-  align-items: center;
-  padding: 40px 0;
+  align-items: center;  
   gap: 20px;
+}
+.blog-single-post-listing.details .title-ref{
+  margin-top: 40px;
 }
 .blog-single-post-listing.details .ref-area .thumbnail{
   flex-basis: 30%;
