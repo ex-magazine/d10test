@@ -26322,8 +26322,7 @@ form.lang-dropdown-form.lang_dropdown_form.language_interface{
   width: 70px;  
   clear: both;
 }
-#elevate-load {
-  display: none !important;
+#elevate-load {  
   position: fixed;
   top: 0;
   left: 0;
