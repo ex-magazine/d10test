@@ -91,7 +91,7 @@
         <div class="header-story">
             <div class="single">
                 <i class="fa-solid fa-calendar-days"></i>
-                <p><time>{{ node.published_at.getString|date("d M Y") }}</time></p>
+                <p><time>{{ node.created.value|date("d M, Y") }}</time></p>
             </div>
             <div class="single">
                 <i class="fa-regular fa-tags"></i>

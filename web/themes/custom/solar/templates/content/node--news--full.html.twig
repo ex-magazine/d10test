@@ -101,7 +101,10 @@
             <!-- single info -->
             <div class="single">
                 <i class="far fa-clock"></i>
-                <span><time>{{ node.published_at.getString|date("d M Y") }}</time></span>
+                <span><time>{{ node.created.value|date("d M, Y") }}</time></span>
+                {# {{ node.changed.value|date("l, j F, Y, H:i") }}
+                {{ node.created.value|date("l, j F, Y, H:i") }}
+                {{ now|date("l, j F, Y") }} #}
             </div>
             <!-- single infoe end -->
             <!-- single info -->

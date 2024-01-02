@@ -91,7 +91,7 @@
       <div class="head">
           <div class="single">
               <i class="fa-regular fa-clock"></i>
-              <span>{{ node.published_at.getString|date("d M Y") }}</span>
+              <span>{{ node.created.value|date("d M, Y") }}</span>
           </div>
           <div class="single">
               <i class="fa-regular fa-user"></i>
