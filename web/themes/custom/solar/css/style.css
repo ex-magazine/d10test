@@ -22778,6 +22778,9 @@ p {
   margin-bottom: 0;
   margin-right: 15px;
 }
+.node--type-project-details .field--name-field-projectlogo {
+  margin-top: 40px;
+}
 .blog-single-post-listing.details .author-area {
   margin-top: 44px;
   display: flex;

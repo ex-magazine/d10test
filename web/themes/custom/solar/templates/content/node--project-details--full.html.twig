@@ -167,19 +167,20 @@
                             'field_time_to_read', 'field_the_challenge_of_project', 'field_image', 
                             'field_address', 'field_category', 'field_co2emissions', 
                             'field_growth', 'field_commercialdate', 'field_categoryv2', 
+                            'field_projectname', 'field_projectlogo',
                             'field_multi_images', 'field_youtube', 'field_pcategory',
                             'field_clients') }}
                                                 
                         </div>                        
-                    </div>
-                    
+                    </div>                   
                    
                                                      
                     <h1{{ title_attributes.addClass('title animated fadeIn') }}>
                         <a href="{{ url }}" rel="bookmark">{{ node.label }}</a>
                     </h1>
                 </div>               
-                {{ content.body }}
+                {{ content.body }}             
+                {{ content.field_projectlogo }}
                 {{ content.field_the_challenge_of_project }}
             </div>
         </div>
@@ -191,6 +192,16 @@
                     </div>
                     <div class="info-body">
                         <!-- single info -->
+                        <div class="single-info">
+                            <div class="info-ico">
+                                <i class="fas fa-project-diagram"></i>
+                            </div>
+                            <div class="info-details">
+                                {{ content.field_projectname }}                                 
+                            </div>
+                        </div>
+                        <!-- end single info -->
+                          <!-- single info -->
                         <div class="single-info">
                             <div class="info-ico">
                                 <i class="fas fa-chart-bar"></i>
