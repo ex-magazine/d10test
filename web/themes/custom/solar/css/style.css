@@ -22795,6 +22795,9 @@ p {
 .blog-single-post-listing.details .title-ref{
   margin-top: 40px;
 }
+.blog-single-post-listing.details .title-ref .field__item a{
+  font-style: italic;
+}
 .blog-single-post-listing.details .ref-area .thumbnail{
   flex-basis: 30%;
 }
