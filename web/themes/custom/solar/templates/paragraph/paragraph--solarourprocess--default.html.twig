@@ -1,7 +1,6 @@
 {%
   set classes = [
-    'paragraph',
-    'rts-contact-info-area rts-section-gap',
+    'paragraph', 
     'paragraph--type--' ~ paragraph.bundle|clean_class,
     view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
     not paragraph.isPublished() ? 'paragraph--unpublished'
@@ -9,142 +8,140 @@
 %}
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
-    {% block content %}  
-        <div class="container">
-            <div class="process--desktop">
-                <div class="section__process section__process__row">
-                    <div class="p-left section__process__box__item section__process__box__title wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0s">
-                        <span>{{ paragraph.field_ourprocess.0.entity.bp_card_title.value|raw  }}</span>
-                    </div>
-                    <div class="p-center">                  
-                    </div>
-                    <div class="p-right section__process__box__item wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".5s">                       
-                        <img src="{{ file_url(paragraph.field_ourprocess.1.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.1.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                </div>
-                <div class="section__process__row">
-                    <div class="p-left">                   
-                    </div>
-                    <div class="p-center">                   
-                    </div>
-                    <div class="p-right section__process__row--right pull-right wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                        <div class="section__process__week__box">{{ paragraph.field_ourprocess.2.entity.bp_card_title.value|raw  }}</div>
-                        <div class="section__process__indicator">
-                            <img src="{{ file_url(paragraph.field_ourprocess.2.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.2.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.2.entity.bp_image_field.alt }}">
-                        </div>
-                    </div>                
-                </div>
-                <div class="section__process__row section__process__row--pair">
-                    <div class="p-left section__process__box__item  wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="3.6s">                        
-                        <img src="{{ file_url(paragraph.field_ourprocess.3.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.3.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                    <div class="p-center wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="3s">
-                        <img src="{{ file_url(paragraph.field_ourprocess.4.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.4.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.4.entity.bp_image_field.alt }}">
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.4.entity.bp_card_title.value|raw  }}
-                        </div>
-                    </div>
-                    <div class="p-right section__process__box__item  wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="2.3s">
-                        <img src="{{ file_url(paragraph.field_ourprocess.5.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.5.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                </div>
-                <div class="section__process__row wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="4.5s">                           
-                    <div class="p-left section__process__row--right">
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.6.entity.bp_card_title.value|raw  }}
-                        </div>
-                        <div class="section__process__indicator">
-                            <img src="{{ file_url(paragraph.field_ourprocess.6.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.6.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.6.entity.bp_image_field.alt }}">
-                        </div>                    
-                    </div>
-                    <div class="p-center">                   
-                    </div>   
-                    <div class="p-right">                   
-                    </div>
-                </div>
-                <div class="section__process__row section__process__row--pair">
-                    <div class="p-left section__process__box__item  wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="5s">
-                        <img src="{{ file_url(paragraph.field_ourprocess.7.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}">
-                        <p> {{ paragraph.field_ourprocess.7.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                    <div class="p-center wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="6s">
-                        <div class="section__process__indicator">
-                            <img src="{{ file_url(paragraph.field_ourprocess.8.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.8.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.8.entity.bp_image_field.alt }}">
-                        </div>      
-                        
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.8.entity.bp_card_title.value|raw  }}
-                        </div>
-                    </div>
-                    <div class="p-right section__process__box__item  wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="7s">
-                        <img src="{{ file_url(paragraph.field_ourprocess.9.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}">
-                        <p> {{ paragraph.field_ourprocess.9.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                </div>
-            </div> 
-            <div class="process--mobile">
-                <div class="section__process__box__title">
+    {% block content %}         
+        <div class="process--desktop">
+            <div class="section__process section__process__row">
+                <div class="p-left section__process__box__item section__process__box__title wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0s">
                     <span>{{ paragraph.field_ourprocess.0.entity.bp_card_title.value|raw  }}</span>
                 </div>
-                <div class="section__process__col">
-                    <div class="section__process__box__item">
-                        <img src="{{ file_url(paragraph.field_ourprocess.1.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.1.entity.bp_card_title.value|raw  }}</p>
+                <div class="p-center">                  
+                </div>
+                <div class="p-right section__process__box__item wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".5s">                       
+                    <img src="{{ file_url(paragraph.field_ourprocess.1.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.1.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
+            <div class="section__process__row">
+                <div class="p-left">                   
+                </div>
+                <div class="p-center">                   
+                </div>
+                <div class="p-right section__process__row--right pull-right wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
+                    <div class="section__process__week__box">{{ paragraph.field_ourprocess.2.entity.bp_card_title.value|raw  }}</div>
+                    <div class="section__process__indicator">
+                        <img src="{{ file_url(paragraph.field_ourprocess.2.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.2.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.2.entity.bp_image_field.alt }}">
                     </div>
-                    <div class="p-arrow">                    
-                        <div class="section__process__indicator">
-                            <img src="/themes/custom/solar/images/arrow-1.png">
-                        </div>
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.2.entity.bp_card_title.value|raw  }}
-                        </div>
-                    </div>
-                    <div class="section__process__box__item">
-                        <img src="{{ file_url(paragraph.field_ourprocess.3.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.3.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                    <div class="p-arrow">                    
-                        <div class="section__process__indicator">
-                            <img src="/themes/custom/solar/images/arrow-1.png">
-                        </div>
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.4.entity.bp_card_title.value|raw  }}
-                        </div>
-                    </div>
-                    <div class="section__process__box__item">
-                        <img src="{{ file_url(paragraph.field_ourprocess.5.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.5.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                    <div class="p-arrow">                    
-                        <div class="section__process__indicator">
-                            <img src="/themes/custom/solar/images/arrow-1.png">
-                        </div>
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.6.entity.bp_card_title.value|raw  }}
-                        </div>
-                    </div>
-                    
-                    <div class="section__process__box__item">
-                        <img src="{{ file_url(paragraph.field_ourprocess.7.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.7.entity.bp_card_title.value|raw  }}</p>
-                    </div>
-                    <div class="p-arrow">                   
-                        <div class="section__process__indicator">
-                            <img src="/themes/custom/solar/images/arrow-1.png">
-                        </div>
-                        <div class="section__process__week__box">
-                            {{ paragraph.field_ourprocess.8.entity.bp_card_title.value|raw  }}
-                        </div>
-                    </div>
-                    <div class="section__process__box__item">
-                        <img src="{{ file_url(paragraph.field_ourprocess.9.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}">
-                        <p>{{ paragraph.field_ourprocess.9.entity.bp_card_title.value|raw  }}</p>
+                </div>                
+            </div>
+            <div class="section__process__row section__process__row--pair">
+                <div class="p-left section__process__box__item  wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="3.6s">                        
+                    <img src="{{ file_url(paragraph.field_ourprocess.3.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.3.entity.bp_card_title.value|raw  }}</p>
+                </div>
+                <div class="p-center wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="3s">
+                    <img src="{{ file_url(paragraph.field_ourprocess.4.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.4.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.4.entity.bp_image_field.alt }}">
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.4.entity.bp_card_title.value|raw  }}
                     </div>
                 </div>
-            </div>           
+                <div class="p-right section__process__box__item  wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="2.3s">
+                    <img src="{{ file_url(paragraph.field_ourprocess.5.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.5.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
+            <div class="section__process__row wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="4.5s">                           
+                <div class="p-left section__process__row--right">
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.6.entity.bp_card_title.value|raw  }}
+                    </div>
+                    <div class="section__process__indicator">
+                        <img src="{{ file_url(paragraph.field_ourprocess.6.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.6.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.6.entity.bp_image_field.alt }}">
+                    </div>                    
+                </div>
+                <div class="p-center">                   
+                </div>   
+                <div class="p-right">                   
+                </div>
+            </div>
+            <div class="section__process__row section__process__row--pair">
+                <div class="p-left section__process__box__item  wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="5s">
+                    <img src="{{ file_url(paragraph.field_ourprocess.7.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}">
+                    <p> {{ paragraph.field_ourprocess.7.entity.bp_card_title.value|raw  }}</p>
+                </div>
+                <div class="p-center wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="6s">
+                    <div class="section__process__indicator">
+                        <img src="{{ file_url(paragraph.field_ourprocess.8.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.8.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.8.entity.bp_image_field.alt }}">
+                    </div>      
+                    
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.8.entity.bp_card_title.value|raw  }}
+                    </div>
+                </div>
+                <div class="p-right section__process__box__item  wow fadeInLeft" data-wow-duration="1.5s" data-wow-delay="7s">
+                    <img src="{{ file_url(paragraph.field_ourprocess.9.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}">
+                    <p> {{ paragraph.field_ourprocess.9.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
+        </div> 
+        <div class="process--mobile">
+            <div class="section__process__box__title">
+                <span>{{ paragraph.field_ourprocess.0.entity.bp_card_title.value|raw  }}</span>
+            </div>
+            <div class="section__process__col">
+                <div class="section__process__box__item">
+                    <img src="{{ file_url(paragraph.field_ourprocess.1.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.1.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.1.entity.bp_card_title.value|raw  }}</p>
+                </div>
+                <div class="p-arrow">                    
+                    <div class="section__process__indicator">
+                        <img src="/themes/custom/solar/images/arrow-1.png">
+                    </div>
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.2.entity.bp_card_title.value|raw  }}
+                    </div>
+                </div>
+                <div class="section__process__box__item">
+                    <img src="{{ file_url(paragraph.field_ourprocess.3.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.3.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.3.entity.bp_card_title.value|raw  }}</p>
+                </div>
+                <div class="p-arrow">                    
+                    <div class="section__process__indicator">
+                        <img src="/themes/custom/solar/images/arrow-1.png">
+                    </div>
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.4.entity.bp_card_title.value|raw  }}
+                    </div>
+                </div>
+                <div class="section__process__box__item">
+                    <img src="{{ file_url(paragraph.field_ourprocess.5.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.5.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.5.entity.bp_card_title.value|raw  }}</p>
+                </div>
+                <div class="p-arrow">                    
+                    <div class="section__process__indicator">
+                        <img src="/themes/custom/solar/images/arrow-1.png">
+                    </div>
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.6.entity.bp_card_title.value|raw  }}
+                    </div>
+                </div>
+                
+                <div class="section__process__box__item">
+                    <img src="{{ file_url(paragraph.field_ourprocess.7.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.7.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.7.entity.bp_card_title.value|raw  }}</p>
+                </div>
+                <div class="p-arrow">                   
+                    <div class="section__process__indicator">
+                        <img src="/themes/custom/solar/images/arrow-1.png">
+                    </div>
+                    <div class="section__process__week__box">
+                        {{ paragraph.field_ourprocess.8.entity.bp_card_title.value|raw  }}
+                    </div>
+                </div>
+                <div class="section__process__box__item">
+                    <img src="{{ file_url(paragraph.field_ourprocess.9.entity.bp_image_field.entity.fileuri) }}" alt="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}" title="{{ paragraph.field_ourprocess.9.entity.bp_image_field.alt }}">
+                    <p>{{ paragraph.field_ourprocess.9.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
         </div>
     {% endblock %}
     </div>

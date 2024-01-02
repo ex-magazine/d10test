@@ -110,10 +110,12 @@
         </div>
     </div>
     <!-- rts breadcrumb area end -->
-   
-    {% if content.field_paragraphs is not empty %}
-        {{ content.field_paragraphs }}
-    {% endif %}
+    
+    <div class="container pb--160">
+        {% if content.field_paragraphs is not empty %}
+            {{ content.field_paragraphs }}
+        {% endif %}
+    </div>
     
     <div class="rts-secvice-area-solaric-banner-bottom start rts-section-gapBottom">     
         {{ drupal_region('content_below', 'solar') }}
