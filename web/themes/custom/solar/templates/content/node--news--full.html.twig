@@ -130,7 +130,9 @@
             </div>
             <div class="col-lg-4 col-md-12">
                 <div class="details-share">
-                    {{ content|without('comment','body', 'field_tags', 'field_time_to_read', 'field_subjects', 'field_image', 'field_abstract') }}
+                    {{ content|without('comment','body', 'field_tags', 
+                    'field_ldbackground', 'field_lean_more',
+                    'field_time_to_read', 'field_subjects', 'field_image', 'field_abstract') }}
                                         
                 </div>
             </div>
@@ -145,10 +147,18 @@
                 <p class="disc title-g">{{ node.uid.entity.field_des.0.value }}</p>
             </div>
         </div>
-                            
-        <div class="replay-area-details">
-            {{ content.comment }}  
-        </div>
+
+        {% if content.field_abstract|render|striptags|trim  is not empty %}
+            <div class="ref-area reveal">
+                <div class="thumbnail details mb_sm--15">                
+                    {{ content.field_ldbackground }}
+                </div>
+                <div class="author-details team">
+                    <span class="title-g">{{ content.field_lean_more|raw }}</span>               
+                    <p class="disc title-g">{{ content.field_abstract|raw }}</p>
+                </div>
+            </div>
+        {% endif %}
 
     
     </div>
