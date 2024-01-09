@@ -22779,7 +22779,7 @@ p {
   margin-bottom: 0;
   margin-right: 15px;
 }
-.node--type-project-details .field--name-field-projectlogo {
+.node--view-mode-full.node--type-project-details .field--name-field-projectlogo {
   margin-top: 40px;
   padding-top: 20px;
   border-top: 1px solid #ccc;
