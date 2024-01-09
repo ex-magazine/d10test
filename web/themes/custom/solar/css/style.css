@@ -26137,7 +26137,15 @@ form.appoinment-form .input-half-wrapper .single-input input {
   font-size: 14px;
   box-shadow: 4px 4px #ccc;
 }
-.webform-submission-teammember-form .form-item-subject input,
+.webform-submission-teammember-form .form-item-subject input {
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01);
+  border-radius: 100px;
+  height: 60px;
+  padding: 5px 15px;
+  margin-top: 20px;
+}
 .contact-page-form input {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
