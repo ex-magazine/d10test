@@ -147,38 +147,11 @@
         <div class="row align-items-center g-0 bg-appoinment ptb--50">              
             <div class="col-lg-8 offset-lg-2">
                 <!-- appoinment inner content area start -->
-                <div class="appoinment-inner-content-wrapper">
-                    
+                <div class="appoinment-inner-content-wrapper">                    
                     <h3 class="title animated fadeIn text-center">
                         {{ content.field_webform['#title'] }}
                     </h3>
-                    {{ content.field_webform }} 
-                    <form action="#" class="appoinment-form mt--40">
-                        <div class="input-half-wrapper">
-                            <div class="single-input">
-                                <input type="text" placeholder="Your Name" required="">
-                            </div>
-                            <div class="single-input">
-                                <input type="email" placeholder="Email Address" required="">
-                            </div>
-                        </div>
-                        <select>
-                            <option data-display="Select">Select an option</option>
-                            <option value="1">Some option</option>
-                            <option value="2">Another option</option>
-                            <option value="3" disabled="">A disabled option</option>
-                            <option value="4">Potato</option>
-                        </select>
-                        <div class="input-half-wrapper mt--25 mb--30">
-                            <div class="single-input">
-                                <input placeholder="Select your date" type="text" name="checkIn" id="datepicker" value="" class="calendar hasDatepicker">
-                            </div>
-                            <div class="single-input">
-                                <input type="text" id="timepicker" placeholder="Select Time" class="ui-timepicker-input" autocomplete="off">
-                            </div>
-                        </div>
-                        <button type="submit" class="rts-btn btn-primary">SUBMIT MESSAGE</button>
-                    </form>
+                    {{ content.field_webform }}                     
                 </div>
                 <!-- appoinment inner content area end -->
             </div>

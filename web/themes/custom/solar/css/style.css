@@ -26137,6 +26137,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
   font-size: 14px;
   box-shadow: 4px 4px #ccc;
 }
+.webform-submission-teammember-form .form-item-subject input,
 .contact-page-form input {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -26145,6 +26146,7 @@ form.appoinment-form .input-half-wrapper .single-input input {
   height: 60px;
   padding: 5px 15px;
 }
+.webform-submission-teammember-form .form-item-message textarea,
 .contact-page-form textarea {
   border: 1px solid #EAEAEA;
   box-shadow: 0px 4px 47px rgba(0, 0, 0, 0.01);
