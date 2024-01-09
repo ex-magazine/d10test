@@ -106,6 +106,7 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
             'Psr\\Cache\\' => 10,
             'PhpParser\\' => 10,
             'Peast\\' => 6,
+            'PHPMailer\\PHPMailer\\' => 20,
         ),
         'O' => 
         array (
@@ -405,6 +406,10 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         'Peast\\' => 
         array (
             0 => __DIR__ . '/..' . '/mck89/peast/lib/Peast',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'OpenIDConnectServer\\' => 
         array (

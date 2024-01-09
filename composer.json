@@ -130,6 +130,7 @@
         "drupal/smart_content": "^3.1",
         "drupal/smart_content_a_b": "^3.1@beta",
         "drupal/smart_content_utm": "^1.1",
+        "drupal/smtp": "^1.2",
         "drupal/subrequests": "^3.0",
         "drupal/switch_page_theme": "^4.0",
         "drupal/theme_switcher": "^2.0",
