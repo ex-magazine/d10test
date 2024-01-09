@@ -15959,6 +15959,16 @@ nav ul li a {
 .bg-breadcrumb-team {
   background-image: url(../images/page-title-06.jpg);
 }
+.bg-breadcrumb-careers {
+  background-image: url(../images/page-title-04.webp);
+}
+.node--view-mode-full .field--name-field-expiration-date{
+  display: flex;
+}
+.node--view-mode-full .field--name-field-expiration-date div:first-child{
+  font-weight: bold;
+  margin-right: 10px;
+}
 .node--type-project-details h1.title,
 .blog-listing-content h1.title{
   font-size: var(--h3);
