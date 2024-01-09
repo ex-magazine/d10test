@@ -22779,6 +22779,7 @@ p {
   margin-bottom: 0;
   margin-right: 15px;
 }
+.blog-single-post-listing.details .title-ref,
 .node--view-mode-full.node--type-project-details .field--name-field-projectlogo {
   margin-top: 40px;
   padding-top: 20px;
@@ -22788,9 +22789,8 @@ p {
   margin-top: 44px;
   display: flex;
   align-items: center;
-  padding: 40px 0;
-  border-top: 1px solid #E6E9F0;
-  border-bottom: 1px solid #E6E9F0;
+  padding: 40px 0 0 0;
+  border-top: 1px solid #E6E9F0; 
 }
 .blog-single-post-listing.details .ref-area {
   margin-top: 20px;
@@ -24765,9 +24765,7 @@ p {
     top: 7px;
   }
 }
-.view-suggestedblogs .sug-header {
-  padding-top: 20px;
-}
+.view-suggestedblogs .sug-header,
 .view-suggestedgreenprojects .sug-header{
   border-top: 1px solid #ccc;
   padding-top: 20px;
