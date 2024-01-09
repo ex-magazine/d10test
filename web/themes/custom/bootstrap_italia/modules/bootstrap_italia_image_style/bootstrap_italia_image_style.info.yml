@@ -1,0 +1,20 @@
+name: "Bootstrap Italia Image Styles"
+description: This module adds different image styles in Admin -> Configurations -> Media -> Image Styles.
+package: "Bootstrap Italia"
+
+type: module
+core_version_requirement: ^9 || ^10
+dependencies:
+  - drupal:responsive_image
+  - focal_point:focal_point
+
+components:
+  namespaces:
+    # Components library 2.0
+    bi-bcl:
+      - ../../components/components-2
+
+# Information added by Drupal.org packaging script on 2023-10-27
+version: '2.7.1'
+project: 'bootstrap_italia'
+datestamp: 1698384563
