@@ -24764,7 +24764,7 @@ p {
     top: 7px;
   }
 }
-
+.view-suggestedblogs .sug-header,
 .view-suggestedgreenprojects .sug-header{
   border-top: 1px solid #ccc;
   padding-top: 20px;

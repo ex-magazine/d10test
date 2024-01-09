@@ -163,7 +163,9 @@
             </div>
         {% endif %}
 
-    
+        {% if drupal_view_result('suggestedblogs', 'block_1') is not empty %}
+            {{ drupal_view('suggestedblogs', 'block_1') }}                    
+        {% endif %}       
     </div>
 
                     
