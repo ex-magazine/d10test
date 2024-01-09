@@ -149,8 +149,7 @@
     <div class="row">
         <div class="col-lg-8 pr--30">
             <div class="portfolio-disc-content">
-                <div class="title-area">
-                    
+                <div class="title-area">                    
                      <div class="pr-align-items-center mb--30">                        
                         <!-- tags details -->                     
                         <div class="details-tag">
@@ -169,12 +168,9 @@
                             'field_growth', 'field_commercialdate', 'field_categoryv2', 
                             'field_projectname', 'field_projectlogo',
                             'field_multi_images', 'field_youtube', 'field_pcategory',
-                            'field_clients') }}
-                                                
+                            'field_clients') }}                                                
                         </div>                        
-                    </div>                   
-                   
-                                                     
+                    </div>                                                           
                     <h1{{ title_attributes.addClass('title animated fadeIn') }}>
                         <a href="{{ url }}" rel="bookmark">{{ node.label }}</a>
                     </h1>
@@ -182,6 +178,7 @@
                 {{ content.body }}             
                 {{ content.field_projectlogo }}
                 {{ content.field_the_challenge_of_project }}
+                {{ drupal_region('content_below', 'solar') }}
             </div>
         </div>
         <div class="col-lg-4">

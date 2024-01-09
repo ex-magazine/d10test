@@ -22780,6 +22780,8 @@ p {
 }
 .node--type-project-details .field--name-field-projectlogo {
   margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
 }
 .blog-single-post-listing.details .author-area {
   margin-top: 44px;
@@ -24761,6 +24763,12 @@ p {
     font-size: 14px;
     top: 7px;
   }
+}
+
+.block-views .sug-header{
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 40px;
 }
 .faq-area-start-one .accordion .accordion-item .accordion-body {
   margin-top: 20px;
