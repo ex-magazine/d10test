@@ -23987,7 +23987,7 @@ p {
   }
 }
 
-.personal-info-team p.disc {
+.personal-info-team div.disc p{
   color: #6E777D;
   font-weight: 400;
   font-size: 16px;
@@ -24765,14 +24765,7 @@ p {
     top: 7px;
   }
 }
-.node--view-mode-full .field--name-field-position div:first-child{
-  font-weight: bold;
-}
-.node--view-mode-full .field--name-field-position{
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-}
+
 .view-suggestedblogs .sug-header,
 .view-suggestedgreenprojects .sug-header{
   border-top: 1px solid #ccc;
