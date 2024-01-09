@@ -15956,6 +15956,9 @@ nav ul li a {
 .bg-breadcrumb-news {
   background-image: url(/sites/default/files/2023-12/title-bg_news.jpg);
 }
+.bg-breadcrumb-team {
+  background-image: url(../images/page-title-06.jpg);
+}
 .node--type-project-details h1.title,
 .blog-listing-content h1.title{
   font-size: var(--h3);
