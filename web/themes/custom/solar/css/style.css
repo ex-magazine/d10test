@@ -23986,7 +23986,9 @@ p {
     line-height: 54px;
   }
 }
-
+.personal-info-team div.disc{
+  height: 90px;
+}
 .personal-info-team div.disc p{
   color: #6E777D;
   font-weight: 400;
