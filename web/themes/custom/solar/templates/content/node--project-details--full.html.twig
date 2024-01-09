@@ -178,7 +178,9 @@
                 {{ content.body }}             
                 {{ content.field_projectlogo }}
                 {{ content.field_the_challenge_of_project }}
-                {{ drupal_region('content_below', 'solar') }}
+                {% if drupal_view_result('suggestedgreenprojects', 'block_1') is not empty %}
+                    {{ drupal_view('suggestedgreenprojects', 'block_1') }}                    
+                {% endif %}                
             </div>
         </div>
         <div class="col-lg-4">
