@@ -15963,7 +15963,10 @@ nav ul li a {
   background-image: url(../images/page-title-04.webp);
 }
 .bg-breadcrumb-green-projects{
-  background-image: url(../images/page-title-08.jpg);
+  background-image: url(../images/page-title-10.jpg);
+}
+.bg-breadcrumb-subjects{
+  background-image: url(../images/page-title-12.jpg);
 }
 .node--view-mode-full .field--name-field-expiration-date{
   display: flex;
