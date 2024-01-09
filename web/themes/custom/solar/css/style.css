@@ -23923,7 +23923,7 @@ p {
   transition: 0.3s;
 }
 .rts-single-team-one .inner-content .title:hover {
-  color: var(--color-primary);
+  color: #4AAB3D;
 }
 .rts-single-team-one .inner-content span {
   font-weight: 500;
