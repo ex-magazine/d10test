@@ -15975,6 +15975,10 @@ nav ul li a {
   font-weight: bold;
   margin-right: 10px;
 }
+.view-taxonomy-term .field--name-description h1{
+  font-size: var(--h2);
+  line-height: 60px;
+}
 .node--type-project-details h1.title,
 .blog-listing-content h1.title{
   font-size: var(--h3);
