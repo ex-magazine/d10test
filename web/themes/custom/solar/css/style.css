@@ -22189,6 +22189,15 @@ p {
     padding: 15px;
   }
 }
+.node--view-mode-ournewsleft .body h2.title span,
+.node--view-mode-ournewsright .body h2.title span{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 68px;
+}
 .blog-single-one .body a .title {
   font-weight: 700;
   font-size: 24px;
