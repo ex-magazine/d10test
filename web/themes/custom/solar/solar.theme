@@ -46,7 +46,7 @@ function solar_preprocess_html(&$variables) {
     $vid = $term->bundle();
     //$vocabulary = \Drupal::entityTypeManager()->getStorage('taxonomy_vocabulary')->load($vid);
     //$vocabulary_label = $vocabulary->label();        
-    $term = array('subjects', 'news_types', 'projectcategory');
+    $term = array('subjects', 'news_types', 'projectcategory', 'tags');
     if (in_array($vid, $term)){
       $variables['attributes']['class'][] = 'index-two';
     }    

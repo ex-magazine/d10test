@@ -22817,6 +22817,9 @@ p {
   padding-top: 20px;
   border-top: 1px solid #ccc;
 }
+.node--view-mode-full.node--type-project-details .field--name-field-projectlogo .field__item img{
+  max-width: 300px;
+}
 .blog-single-post-listing.details .author-area {
   margin-top: 44px;
   display: flex;
