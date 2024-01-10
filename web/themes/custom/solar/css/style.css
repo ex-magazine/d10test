@@ -23597,10 +23597,12 @@ p {
   text-align: center;
 }
 
-.footer-bg-two {
-  background: #1F1F25;
+.footer-bg-two { 
+  background-repeat: no-repeat;
   position: relative;
   z-index: 1;
+  background-image: url(../images/footer-bg3.png);
+  background-color: #1F1F25;
 }
 .footer-bg-two .shape-image-f-2 {
   position: absolute;
@@ -23610,7 +23612,7 @@ p {
 }
 
 .border-top-copyright {
-  border-top: 1px solid #24242D;
+  border-top: 1px solid #ccc;
 }
 .rts-footer-one.footer-bg-two .copyright-area-two .solar-sumary{
   display: flex;
