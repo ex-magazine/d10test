@@ -12,10 +12,45 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Template\Attribute;
 use Drupal\Core\Render\Element;
 use Drupal\user\UserInterface;
+use Drupal\taxonomy\Entity\Term;
+
+use Drupal\Core\Menu\MenuTreeParameters;
+use Drupal\Core\Render\Markup;
+use Drupal\Core\Url;
+use Symfony\Component\HttpFoundation\Request;
+use Drupal\file\Entity\File; 
+use Drupal\media\Entity\Media;
+use Drupal\node\Entity\Node;
+use Drupal\node\NodeInterface;
+use Drupal\paragraphs\Entity\Paragraph;
+use Drupal\profile\Entity\Profile;
+use Drupal\views\Entity\View;
+use Drupal\views\ViewExecutable;
+use Drupal\user\Entity\User;
+use Drupal\user\RoleInterface;
+use Symfony\Cmf\Component\Routing\RouteObjectInterface;
+use Symfony\Component\HttpFoundation\RedirectResponse;
+use Drupal\webform\Entity\WebformOptions;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\image\Entity\ImageStyle;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
+use Drupal\taxonomy\Entity\Vocabulary;
+use \Drupal\path_alias\AliasManager;
 
 
 function solar_preprocess_html(&$variables) {  
   $node = \Drupal::routeMatch()->getParameter('node');
+  $parameters = \Drupal::routeMatch()->getParameters()->all();
+  if (isset($parameters['taxonomy_term'])) {
+    $term = $parameters['taxonomy_term'];  
+    $vid = $term->bundle();
+    //$vocabulary = \Drupal::entityTypeManager()->getStorage('taxonomy_vocabulary')->load($vid);
+    //$vocabulary_label = $vocabulary->label();        
+    $term = array('subjects', 'news_types', 'projectcategory');
+    if (in_array($vid, $term)){
+      $variables['attributes']['class'][] = 'index-two';
+    }    
+  }
   if($node) {
     if($node->hasField('field_domain_access')){        
       if($node->get('field_domain_access')->target_id == 'cmesolar_cmenergy_local') {
@@ -23,7 +58,7 @@ function solar_preprocess_html(&$variables) {
       }  
     }      
     $variables['attributes']['class'][] = 'node-' . $node->id();
-  }
+  }   
   $variables['attributes']['class'][] = 'language_' . \Drupal::languageManager()->getCurrentLanguage()->getId();
 }
 
