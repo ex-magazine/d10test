@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.careers.field_domain_all_affiliates
     - field.field.node.careers.field_expiration_date
     - field.field.node.careers.field_image
+    - field.field.node.careers.field_time_to_read
     - field.field.node.careers.field_webform
     - image.style.thumbnail
     - node.type.careers
@@ -51,6 +52,13 @@ content:
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_time_to_read:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_webform:
     type: webform_entity_reference_select

@@ -1,0 +1,54 @@
+uuid: 0fa706ac-ec95-4dba-b77d-0fd6b65ee76a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.whyrooftopsolaritems.bp_card_image
+    - field.field.paragraph.whyrooftopsolaritems.bp_statistic_header
+    - field.field.paragraph.whyrooftopsolaritems.bp_tab_section_title
+    - field.field.paragraph.whyrooftopsolaritems.bp_unrestricted
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.whyrooftopsolaritems
+  module:
+    - image
+    - text
+id: paragraph.whyrooftopsolaritems.default
+targetEntityType: paragraph
+bundle: whyrooftopsolaritems
+mode: default
+content:
+  bp_card_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  bp_statistic_header:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_tab_section_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_unrestricted:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

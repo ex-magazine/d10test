@@ -1,0 +1,24 @@
+uuid: af72bd53-75eb-4a2d-96ea-5ca4c1a07b18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_unrestricted
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.wcuagpitems
+  module:
+    - text
+id: paragraph.wcuagpitems.bp_unrestricted
+field_name: bp_unrestricted
+entity_type: paragraph
+bundle: wcuagpitems
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

@@ -5,8 +5,16 @@ display:
       fields:
         operations:
           label: 操作
+      filters:
+        langcode:
+          expose:
+            label: 语言
   page_unapproved:
     display_options:
       fields:
         operations:
           label: 操作
+      filters:
+        langcode:
+          expose:
+            label: 语言

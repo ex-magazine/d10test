@@ -1,0 +1,19 @@
+uuid: de925299-e028-4ecb-98f7-84920a744700
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_commercialdate
+    - node.type.project_details
+id: node.project_details.field_commercialdate
+field_name: field_commercialdate
+entity_type: node
+bundle: project_details
+label: 'Commercial  Date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

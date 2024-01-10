@@ -13,3 +13,6 @@ display:
         bundle:
           expose:
             label: 类型
+        langcode:
+          expose:
+            label: 语言

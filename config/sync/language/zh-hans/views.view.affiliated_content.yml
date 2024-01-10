@@ -18,6 +18,9 @@ display:
         title:
           expose:
             label: 标题
+        langcode:
+          expose:
+            label: 语言
   page_1:
     display_options:
       filters:
@@ -30,6 +33,9 @@ display:
         title:
           expose:
             label: 标题
+        langcode:
+          expose:
+            label: 语言
   page_2:
     display_options:
       filters:
@@ -42,3 +48,6 @@ display:
         title:
           expose:
             label: 标题
+        langcode:
+          expose:
+            label: 语言

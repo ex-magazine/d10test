@@ -8,13 +8,18 @@ dependencies:
     - field.field.node.project_details.field_category
     - field.field.node.project_details.field_categoryv2
     - field.field.node.project_details.field_clients
+    - field.field.node.project_details.field_co2emissions
+    - field.field.node.project_details.field_commercialdate
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
     - field.field.node.project_details.field_growth
     - field.field.node.project_details.field_image
     - field.field.node.project_details.field_multi_images
     - field.field.node.project_details.field_pcategory
+    - field.field.node.project_details.field_projectlogo
+    - field.field.node.project_details.field_projectname
     - field.field.node.project_details.field_the_challenge_of_project
+    - field.field.node.project_details.field_time_to_read
     - field.field.node.project_details.field_youtube
     - image.style.thumbnail
     - node.type.project_details
@@ -30,7 +35,7 @@ mode: default
 content:
   body:
     type: text_textarea_with_summary
-    weight: 10
+    weight: 12
     region: content
     settings:
       rows: 9
@@ -40,13 +45,13 @@ content:
     third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 4
+    weight: 5
     region: content
     settings: {  }
     third_party_settings: {  }
   field_address:
     type: string_textfield
-    weight: 15
+    weight: 19
     region: content
     settings:
       size: 60
@@ -54,19 +59,35 @@ content:
     third_party_settings: {  }
   field_category:
     type: options_select
-    weight: 17
+    weight: 22
     region: content
     settings: {  }
     third_party_settings: {  }
   field_categoryv2:
     type: options_select
-    weight: 18
+    weight: 23
     region: content
     settings: {  }
     third_party_settings: {  }
   field_clients:
     type: string_textfield
-    weight: 14
+    weight: 18
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_co2emissions:
+    type: string_textfield
+    weight: 20
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_commercialdate:
+    type: string_textfield
+    weight: 21
     region: content
     settings:
       size: 60
@@ -74,26 +95,26 @@ content:
     third_party_settings: {  }
   field_domain_access:
     type: options_buttons
-    weight: 11
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_domain_all_affiliates:
     type: boolean_checkbox
-    weight: 13
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   field_growth:
     type: options_select
-    weight: 19
+    weight: 24
     region: content
     settings: {  }
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 2
+    weight: 3
     region: content
     settings:
       progress_indicator: throbber
@@ -101,7 +122,7 @@ content:
     third_party_settings: {  }
   field_multi_images:
     type: image_image
-    weight: 22
+    weight: 27
     region: content
     settings:
       progress_indicator: throbber
@@ -109,9 +130,25 @@ content:
     third_party_settings: {  }
   field_pcategory:
     type: options_select
-    weight: 20
+    weight: 25
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_projectlogo:
+    type: image_image
+    weight: 17
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_projectname:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   field_the_challenge_of_project:
     type: paragraphs
@@ -131,9 +168,16 @@ content:
         collapse_edit_all: collapse_edit_all
         duplicate: duplicate
     third_party_settings: {  }
+  field_time_to_read:
+    type: number
+    weight: 6
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_youtube:
     type: string_textfield
-    weight: 21
+    weight: 26
     region: content
     settings:
       size: 60
@@ -141,39 +185,39 @@ content:
     third_party_settings: {  }
   langcode:
     type: language_select
-    weight: 1
+    weight: 2
     region: content
     settings:
       include_locked: true
     third_party_settings: {  }
   path:
     type: path
-    weight: 8
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 6
+    weight: 8
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   simple_sitemap:
-    weight: 5
+    weight: 7
     region: content
     settings: {  }
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 9
+    weight: 11
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 7
+    weight: 9
     region: content
     settings:
       display_label: true
@@ -187,13 +231,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 12
+    weight: 14
     region: content
     settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 3
+    weight: 4
     region: content
     settings:
       match_operator: CONTAINS

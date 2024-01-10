@@ -1,0 +1,34 @@
+uuid: 58c6c93c-9100-429e-8b50-65aff4019e67
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: subjects
+label: Subjects
+type: 'canonical_entities:taxonomy_term'
+pattern: 'blog/[term:name]'
+selection_criteria:
+  07c187fa-e77c-4bea-87ea-421643feaf0a:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 07c187fa-e77c-4bea-87ea-421643feaf0a
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      subjects: subjects
+  48080168-e57f-439e-bb83-63666cb93a7b:
+    id: language
+    negate: false
+    uuid: 48080168-e57f-439e-bb83-63666cb93a7b
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

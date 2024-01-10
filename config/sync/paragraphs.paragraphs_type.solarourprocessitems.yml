@@ -1,0 +1,10 @@
+uuid: 4ddddbe0-e870-4317-be6c-9c9fc0c0d153
+langcode: en
+status: true
+dependencies: {  }
+id: solarourprocessitems
+label: 'Solar Our Process items'
+icon_uuid: null
+icon_default: null
+description: 'Solar Our Process items'
+behavior_plugins: {  }

@@ -16,3 +16,6 @@ display:
         status:
           expose:
             label: 'Trạng thái'
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'

@@ -1,0 +1,37 @@
+uuid: 458ff12a-60b3-4b31-9bf9-2b2dbc91fc37
+langcode: vi
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: team_member
+label: 'Team member'
+type: 'canonical_entities:node'
+pattern: 'team/[node:title].html'
+selection_criteria:
+  e00eed90-1b0a-4262-968b-9805cf47a280:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: e00eed90-1b0a-4262-968b-9805cf47a280
+    context_mapping:
+      node: node
+    bundles:
+      teammember: teammember
+  f90595ae-4732-4612-ba59-52bf9e847706:
+    id: language
+    negate: false
+    uuid: f90595ae-4732-4612-ba59-52bf9e847706
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: 'Ngôn ngữ'

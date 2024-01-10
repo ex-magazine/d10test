@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.landingpage.field_image
     - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_pdf
     - field.field.node.landingpage.field_titlesecond
     - field.field.node.landingpage.field_viewreference
     - node.type.landingpage
@@ -19,6 +20,7 @@ dependencies:
     - layout_builder
     - layout_paragraphs
     - options
+    - pdf
     - text
     - user
     - viewsreference
@@ -88,6 +90,20 @@ content:
     third_party_settings: {  }
     weight: 103
     region: content
+  field_pdf:
+    type: pdf_default
+    label: hidden
+    settings:
+      keep_pdfjs: '1'
+      width: 100%
+      height: '650'
+      page: ''
+      zoom: ''
+      custom_zoom: ''
+      pagemode: ''
+    third_party_settings: {  }
+    weight: 108
+    region: content
   field_titlesecond:
     type: string
     label: hidden
@@ -116,3 +132,4 @@ hidden:
   field_domain_all_affiliates: true
   langcode: true
   layout_builder__layout: true
+  search_api_excerpt: true

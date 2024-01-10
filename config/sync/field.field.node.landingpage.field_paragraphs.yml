@@ -19,10 +19,13 @@ dependencies:
     - paragraphs.paragraphs_type.solar_contact
     - paragraphs.paragraphs_type.solaramazingfeedback
     - paragraphs.paragraphs_type.solarcontactus
+    - paragraphs.paragraphs_type.solarourprocess
     - paragraphs.paragraphs_type.solarqualityhandymansolution
     - paragraphs.paragraphs_type.solarwebform
     - paragraphs.paragraphs_type.timeline
+    - paragraphs.paragraphs_type.wcuagp
     - paragraphs.paragraphs_type.webform
+    - paragraphs.paragraphs_type.whyrooftopsolar
   module:
     - entity_reference_revisions
 id: node.landingpage.field_paragraphs
@@ -56,7 +59,10 @@ settings:
       solaramazingfeedback: solaramazingfeedback
       solar_contact: solar_contact
       solarcontactus: solarcontactus
+      solarourprocess: solarourprocess
       solarwebform: solarwebform
+      whyrooftopsolar: whyrooftopsolar
+      wcuagp: wcuagp
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -206,6 +212,12 @@ settings:
       solarcontactusitem:
         weight: 101
         enabled: false
+      solarourprocess:
+        weight: 104
+        enabled: true
+      solarourprocessitems:
+        weight: 105
+        enabled: false
       solarourservicecols:
         weight: 97
         enabled: false
@@ -224,7 +236,19 @@ settings:
       timeline_item:
         weight: 35
         enabled: false
+      wcuagp:
+        weight: 120
+        enabled: true
+      wcuagpitems:
+        weight: 121
+        enabled: false
       webform:
         weight: 36
         enabled: true
+      whyrooftopsolar:
+        weight: 119
+        enabled: true
+      whyrooftopsolaritems:
+        weight: 120
+        enabled: false
 field_type: entity_reference_revisions

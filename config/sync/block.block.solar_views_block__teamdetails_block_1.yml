@@ -1,0 +1,33 @@
+uuid: bd390b5b-ec5f-4528-91c4-c3ec1c0b49f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.teamdetails
+  module:
+    - node
+    - views
+  theme:
+    - solar
+id: solar_views_block__teamdetails_block_1
+theme: solar
+region: content_above
+weight: 0
+provider: null
+plugin: 'views_block:teamdetails-block_1'
+settings:
+  id: 'views_block:teamdetails-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      teammember: teammember

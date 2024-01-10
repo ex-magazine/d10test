@@ -9,13 +9,18 @@ dependencies:
     - field.field.node.project_details.field_category
     - field.field.node.project_details.field_categoryv2
     - field.field.node.project_details.field_clients
+    - field.field.node.project_details.field_co2emissions
+    - field.field.node.project_details.field_commercialdate
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
     - field.field.node.project_details.field_growth
     - field.field.node.project_details.field_image
     - field.field.node.project_details.field_multi_images
     - field.field.node.project_details.field_pcategory
+    - field.field.node.project_details.field_projectlogo
+    - field.field.node.project_details.field_projectname
     - field.field.node.project_details.field_the_challenge_of_project
+    - field.field.node.project_details.field_time_to_read
     - field.field.node.project_details.field_youtube
     - image.style.casestudies
     - node.type.project_details
@@ -40,13 +45,21 @@ content:
     third_party_settings: {  }
     weight: 2
     region: content
+  field_category:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_clients:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 3
+    weight: 4
     region: content
   field_image:
     type: image
@@ -59,6 +72,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_projectname:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 5
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -67,14 +88,17 @@ content:
 hidden:
   addtoany: true
   field_address: true
-  field_category: true
   field_categoryv2: true
+  field_co2emissions: true
+  field_commercialdate: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_growth: true
   field_multi_images: true
   field_pcategory: true
+  field_projectlogo: true
   field_the_challenge_of_project: true
+  field_time_to_read: true
   field_youtube: true
   langcode: true
   search_api_excerpt: true

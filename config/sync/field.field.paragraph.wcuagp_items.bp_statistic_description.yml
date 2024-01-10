@@ -1,0 +1,19 @@
+uuid: e2c17957-88d6-4703-8b58-07a259a78a23
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_statistic_description
+    - paragraphs.paragraphs_type.wcuagp_items
+id: paragraph.wcuagp_items.bp_statistic_description
+field_name: bp_statistic_description
+entity_type: paragraph
+bundle: wcuagp_items
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

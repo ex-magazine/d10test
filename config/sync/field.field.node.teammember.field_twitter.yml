@@ -9,7 +9,7 @@ id: node.teammember.field_twitter
 field_name: field_twitter
 entity_type: node
 bundle: teammember
-label: Twitter
+label: 'Office Location'
 description: ''
 required: false
 translatable: false

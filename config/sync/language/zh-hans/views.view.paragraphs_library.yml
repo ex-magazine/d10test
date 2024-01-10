@@ -6,6 +6,8 @@ display:
           label: 标签
         type:
           label: 类型
+        langcode:
+          label: 语言
         id:
           label: ID
         operations:

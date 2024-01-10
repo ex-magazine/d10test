@@ -1,0 +1,40 @@
+uuid: 6f45bb31-245f-425e-8171-af7c36341d8c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wcuagp_items.bp_statistic_description
+    - field.field.paragraph.wcuagp_items.field_background_image
+    - image.style.medium
+    - paragraphs.paragraphs_type.wcuagp_items
+  module:
+    - focal_point
+    - imce
+id: paragraph.wcuagp_items.default
+targetEntityType: paragraph
+bundle: wcuagp_items
+mode: default
+content:
+  bp_statistic_description:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_background_image:
+    type: image_focal_point
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: bar
+      preview_image_style: medium
+      preview_link: true
+      offsets: '50,50'
+    third_party_settings:
+      imce:
+        enabled: true
+hidden:
+  created: true
+  status: true

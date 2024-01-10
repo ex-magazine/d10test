@@ -1,0 +1,10 @@
+uuid: 1cf796ea-786a-4590-803d-042ed092c9e5
+langcode: en
+status: true
+dependencies: {  }
+id: wcuagpitems
+label: 'Why choose us as green partner item'
+icon_uuid: null
+icon_default: null
+description: 'Why choose us as green partner item'
+behavior_plugins: {  }

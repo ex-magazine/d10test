@@ -10,13 +10,16 @@ dependencies:
     - field.field.node.teammember.field_domain_all_affiliates
     - field.field.node.teammember.field_image
     - field.field.node.teammember.field_position
+    - field.field.node.teammember.field_time_to_read
     - field.field.node.teammember.field_twitter
+    - field.field.node.teammember.field_webform
     - image.style.thumbnail
     - node.type.teammember
   module:
     - image
     - path
     - text
+    - webform
 id: node.teammember.default
 targetEntityType: node
 bundle: teammember
@@ -83,6 +86,13 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_time_to_read:
+    type: number
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
   field_twitter:
     type: string_textfield
     weight: 29
@@ -90,6 +100,14 @@ content:
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_webform:
+    type: webform_entity_reference_select
+    weight: 122
+    region: content
+    settings:
+      default_data: true
+      webforms: {  }
     third_party_settings: {  }
   langcode:
     type: language_select

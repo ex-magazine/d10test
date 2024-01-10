@@ -1,0 +1,64 @@
+uuid: 326a59de-02db-4c99-b1d1-7ef102450fa5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wcuagpitems.bp_card_image
+    - field.field.paragraph.wcuagpitems.bp_tab_section_title
+    - field.field.paragraph.wcuagpitems.bp_unrestricted
+    - field.field.paragraph.wcuagpitems.field_citation
+    - field.field.paragraph.wcuagpitems.field_wcuagpitems
+    - paragraphs.paragraphs_type.wcuagpitems
+  module:
+    - entity_reference_revisions
+    - image
+    - text
+id: paragraph.wcuagpitems.default
+targetEntityType: paragraph
+bundle: wcuagpitems
+mode: default
+content:
+  bp_card_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  bp_tab_section_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  bp_unrestricted:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_citation:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_wcuagpitems:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  search_api_excerpt: true

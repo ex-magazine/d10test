@@ -18,6 +18,9 @@ display:
         title:
           expose:
             label: 'Tiêu đề'
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'
   page_1:
     display_options:
       filters:
@@ -30,6 +33,9 @@ display:
         title:
           expose:
             label: 'Tiêu đề'
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'
   page_2:
     display_options:
       filters:
@@ -42,3 +48,6 @@ display:
         title:
           expose:
             label: 'Tiêu đề'
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'

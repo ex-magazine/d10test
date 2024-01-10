@@ -1,0 +1,25 @@
+uuid: df20a730-6f1f-4299-9558-a7c4f48c2831
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solarourprocess.field_ourprocess
+    - paragraphs.paragraphs_type.solarourprocess
+  module:
+    - entity_reference_revisions
+id: paragraph.solarourprocess.default
+targetEntityType: paragraph
+bundle: solarourprocess
+mode: default
+content:
+  field_ourprocess:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

@@ -12,6 +12,7 @@ dependencies:
     - field.field.node.landingpage.field_image
     - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
+    - field.field.node.landingpage.field_pdf
     - field.field.node.landingpage.field_titlesecond
     - field.field.node.landingpage.field_viewreference
     - image.style.medium
@@ -52,6 +53,7 @@ hidden:
   field_format: true
   field_ldbackground: true
   field_paragraphs: true
+  field_pdf: true
   field_titlesecond: true
   field_viewreference: true
   langcode: true

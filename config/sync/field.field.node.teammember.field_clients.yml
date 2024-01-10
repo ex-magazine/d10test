@@ -9,7 +9,7 @@ id: node.teammember.field_clients
 field_name: field_clients
 entity_type: node
 bundle: teammember
-label: Skype
+label: 'Phone Number'
 description: ''
 required: false
 translatable: false

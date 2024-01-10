@@ -11,6 +11,8 @@ dependencies:
     - field.field.node.news.field_domain_all_affiliates
     - field.field.node.news.field_expiration_date
     - field.field.node.news.field_image
+    - field.field.node.news.field_ldbackground
+    - field.field.node.news.field_lean_more
     - field.field.node.news.field_news_type
     - field.field.node.news.field_paragraph
     - field.field.node.news.field_subjects
@@ -52,6 +54,8 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   field_expiration_date: true
+  field_ldbackground: true
+  field_lean_more: true
   field_news_type: true
   field_paragraph: true
   field_subjects: true
@@ -59,4 +63,5 @@ hidden:
   field_time_to_read: true
   field_tip: true
   langcode: true
+  search_api_excerpt: true
   toc_js: true

@@ -6,6 +6,8 @@ display:
           label: Nhãn
         type:
           label: Kiểu
+        langcode:
+          label: 'Ngôn ngữ'
         id:
           label: Mã
         operations:

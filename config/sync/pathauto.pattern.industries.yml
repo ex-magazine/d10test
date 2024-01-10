@@ -1,0 +1,34 @@
+uuid: bfbbb13e-f79d-4433-959c-b8bb67a05dd9
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: industries
+label: Industries
+type: 'canonical_entities:taxonomy_term'
+pattern: 'project/[term:name]'
+selection_criteria:
+  7fa87288-b4b2-40ab-8d85-13b57e6456ca:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: 7fa87288-b4b2-40ab-8d85-13b57e6456ca
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      projectcategory: projectcategory
+  e6edbf8f-03d5-4838-9b17-31e00e2c03c7:
+    id: language
+    negate: false
+    uuid: e6edbf8f-03d5-4838-9b17-31e00e2c03c7
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

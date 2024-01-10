@@ -5,6 +5,8 @@ display:
       fields:
         user_bulk_form:
           label: 批量更新
+        name:
+          label: 用户名
         status:
           label: 状态
         roles_target_id:

@@ -8,13 +8,18 @@ dependencies:
     - field.field.node.project_details.field_category
     - field.field.node.project_details.field_categoryv2
     - field.field.node.project_details.field_clients
+    - field.field.node.project_details.field_co2emissions
+    - field.field.node.project_details.field_commercialdate
     - field.field.node.project_details.field_domain_access
     - field.field.node.project_details.field_domain_all_affiliates
     - field.field.node.project_details.field_growth
     - field.field.node.project_details.field_image
     - field.field.node.project_details.field_multi_images
     - field.field.node.project_details.field_pcategory
+    - field.field.node.project_details.field_projectlogo
+    - field.field.node.project_details.field_projectname
     - field.field.node.project_details.field_the_challenge_of_project
+    - field.field.node.project_details.field_time_to_read
     - field.field.node.project_details.field_youtube
     - node.type.project_details
   module:
@@ -28,12 +33,17 @@ targetEntityType: node
 bundle: project_details
 mode: default
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 14
+    region: content
   body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 2
     region: content
   field_address:
     type: string
@@ -41,7 +51,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 104
+    weight: 4
     region: content
   field_category:
     type: entity_reference_label
@@ -49,14 +59,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
-    weight: 111
+    weight: 11
     region: content
   field_categoryv2:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 106
+    weight: 6
     region: content
   field_clients:
     type: string
@@ -64,27 +74,61 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 102
+    weight: 3
+    region: content
+  field_co2emissions:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 12
+    region: content
+  field_commercialdate:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 13
     region: content
   field_growth:
     type: list_default
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 108
+    weight: 8
     region: content
   field_image:
     type: image
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: project1320x720
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_multi_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: project1320x720
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 10
+    region: content
+  field_pcategory:
+    type: list_key
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_projectlogo:
     type: image
     label: above
     settings:
@@ -93,14 +137,15 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 110
+    weight: 16
     region: content
-  field_pcategory:
-    type: list_key
-    label: hidden
-    settings: {  }
+  field_projectname:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
-    weight: 107
+    weight: 15
     region: content
   field_the_challenge_of_project:
     type: entity_reference_revisions_entity_view
@@ -109,7 +154,16 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 105
+    weight: 5
+    region: content
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_youtube:
     type: string
@@ -117,15 +171,14 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 109
+    weight: 9
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 1
     region: content
 hidden:
-  addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
   langcode: true

@@ -1,0 +1,19 @@
+uuid: f634c241-a9c4-477a-9421-41d237e04c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_card_title
+    - paragraphs.paragraphs_type.solarourprocessitems
+id: paragraph.solarourprocessitems.bp_card_title
+field_name: bp_card_title
+entity_type: paragraph
+bundle: solarourprocessitems
+label: 'Card Title'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,25 @@
+uuid: 20440324-12a4-4fa3-885f-3f2ffdc53601
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time_to_read
+    - node.type.project_details
+id: node.project_details.field_time_to_read
+field_name: field_time_to_read
+entity_type: node
+bundle: project_details
+label: 'Time to read'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 4
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ' min Read'
+field_type: integer

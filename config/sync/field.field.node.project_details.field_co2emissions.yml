@@ -1,0 +1,19 @@
+uuid: d64e469e-decf-4337-b8e1-c03d2f72faab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_co2emissions
+    - node.type.project_details
+id: node.project_details.field_co2emissions
+field_name: field_co2emissions
+entity_type: node
+bundle: project_details
+label: 'CO2 emissions (Tons per year)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

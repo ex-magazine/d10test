@@ -6,6 +6,9 @@ display:
         name:
           expose:
             label: Tên
+        langcode:
+          expose:
+            label: 'Ngôn ngữ'
   page:
     display_options:
       fields:

@@ -9,7 +9,7 @@ id: node.project_details.field_clients
 field_name: field_clients
 entity_type: node
 bundle: project_details
-label: Clients
+label: 'Capacity (MWp)'
 description: ''
 required: false
 translatable: true

@@ -1,0 +1,25 @@
+uuid: 619efc6c-7a49-40bd-bd45-9455d8bb1a6e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wcuagp.field_wcuagp
+    - paragraphs.paragraphs_type.wcuagp
+  module:
+    - entity_reference_revisions
+id: paragraph.wcuagp.default
+targetEntityType: paragraph
+bundle: wcuagp
+mode: default
+content:
+  field_wcuagp:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

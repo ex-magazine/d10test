@@ -38,6 +38,18 @@ settings:
     -
       value: thanks
       label: Thanks
+    -
+      value: sidebarright
+      label: 'Sidebar Right'
+    -
+      value: withoutsidebar
+      label: 'Without Sidebar'
+    -
+      value: fullwidth120
+      label: Fullwidth
+    -
+      value: careers
+      label: Careers
   allowed_values_function: ''
 module: options
 locked: false

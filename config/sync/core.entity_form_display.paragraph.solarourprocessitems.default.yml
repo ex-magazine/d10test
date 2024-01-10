@@ -1,0 +1,35 @@
+uuid: 6ebe1d44-4956-4f7a-8136-31f7122097bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.solarourprocessitems.bp_card_title
+    - field.field.paragraph.solarourprocessitems.bp_image_field
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.solarourprocessitems
+  module:
+    - image
+id: paragraph.solarourprocessitems.default
+targetEntityType: paragraph
+bundle: solarourprocessitems
+mode: default
+content:
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_image_field:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

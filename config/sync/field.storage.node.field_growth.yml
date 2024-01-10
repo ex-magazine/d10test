@@ -74,6 +74,9 @@ settings:
     -
       value: '20'
       label: 'Binh Phuoc'
+    -
+      value: '21'
+      label: 'Phnom Penh'
   allowed_values_function: ''
 module: options
 locked: false

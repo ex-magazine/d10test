@@ -1,0 +1,15 @@
+uuid: 2dc0797d-4cbf-4b58-b554-04c644fc073b
+langcode: en
+status: true
+dependencies: {  }
+name: team560x585
+label: team560x585
+effects:
+  b961044b-154c-463a-a6b7-32d65f229588:
+    uuid: b961044b-154c-463a-a6b7-32d65f229588
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 560
+      height: 615
+      anchor: center-top

@@ -1,0 +1,10 @@
+uuid: 56e9f108-f662-4db4-8def-06872a7d02e3
+langcode: en
+status: true
+dependencies: {  }
+id: wcuagp_items
+label: 'Wcuagp items'
+icon_uuid: null
+icon_default: null
+description: 'Wcuagp items'
+behavior_plugins: {  }

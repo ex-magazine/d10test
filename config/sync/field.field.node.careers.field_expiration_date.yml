@@ -11,7 +11,7 @@ id: node.careers.field_expiration_date
 field_name: field_expiration_date
 entity_type: node
 bundle: careers
-label: 'Expiration date'
+label: Expiration
 description: ''
 required: false
 translatable: false

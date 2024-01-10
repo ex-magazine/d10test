@@ -1,0 +1,15 @@
+uuid: ffe91f4a-2aee-4f30-ab84-7e003cee7d11
+langcode: en
+status: true
+dependencies: {  }
+name: project424x513
+label: project424x513
+effects:
+  57f711f7-f8bb-41f0-afaa-5dfc7a03db05:
+    uuid: 57f711f7-f8bb-41f0-afaa-5dfc7a03db05
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 424
+      height: 513
+      anchor: center-center

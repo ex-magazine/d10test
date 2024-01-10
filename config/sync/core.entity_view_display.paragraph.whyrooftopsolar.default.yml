@@ -1,0 +1,25 @@
+uuid: eda900e9-bdbb-41d0-9dfa-4e1688d1f04f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.whyrooftopsolar.field_whyrooftopsolar
+    - paragraphs.paragraphs_type.whyrooftopsolar
+  module:
+    - entity_reference_revisions
+id: paragraph.whyrooftopsolar.default
+targetEntityType: paragraph
+bundle: whyrooftopsolar
+mode: default
+content:
+  field_whyrooftopsolar:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

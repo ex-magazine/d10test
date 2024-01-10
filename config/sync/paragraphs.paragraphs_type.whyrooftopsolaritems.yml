@@ -1,0 +1,10 @@
+uuid: 51a8fe15-3d95-4b69-b756-1d3c34ace215
+langcode: en
+status: true
+dependencies: {  }
+id: whyrooftopsolaritems
+label: 'Why rooftop solar items'
+icon_uuid: null
+icon_default: null
+description: 'Why rooftop solar items'
+behavior_plugins: {  }

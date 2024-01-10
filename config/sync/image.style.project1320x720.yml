@@ -1,0 +1,15 @@
+uuid: b7a5e9cd-01c1-4cd1-88e0-bc56f22e6ac5
+langcode: en
+status: true
+dependencies: {  }
+name: project1320x720
+label: project1320x720
+effects:
+  92df63f8-6b05-4682-812d-a5d39dcc1220:
+    uuid: 92df63f8-6b05-4682-812d-a5d39dcc1220
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1320
+      height: 700
+      anchor: center-center

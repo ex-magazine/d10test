@@ -2,6 +2,8 @@ display:
   default:
     display_options:
       fields:
+        user_name:
+          label: 用户名
         operations:
           label: 操作
       filters:

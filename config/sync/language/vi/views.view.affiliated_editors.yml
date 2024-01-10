@@ -4,6 +4,8 @@ display:
       fields:
         user_bulk_form:
           label: 'Cập nhật hàng loạt'
+        name:
+          label: 'Tên người dùng'
         status:
           label: 'Trạng thái'
         roles_target_id:

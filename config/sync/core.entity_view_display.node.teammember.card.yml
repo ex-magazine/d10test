@@ -11,7 +11,9 @@ dependencies:
     - field.field.node.teammember.field_domain_all_affiliates
     - field.field.node.teammember.field_image
     - field.field.node.teammember.field_position
+    - field.field.node.teammember.field_time_to_read
     - field.field.node.teammember.field_twitter
+    - field.field.node.teammember.field_webform
     - node.type.teammember
   module:
     - image
@@ -74,4 +76,7 @@ hidden:
   body: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_time_to_read: true
+  field_webform: true
   langcode: true
+  search_api_excerpt: true

@@ -10,13 +10,16 @@ dependencies:
     - field.field.node.teammember.field_domain_all_affiliates
     - field.field.node.teammember.field_image
     - field.field.node.teammember.field_position
+    - field.field.node.teammember.field_time_to_read
     - field.field.node.teammember.field_twitter
-    - image.style.wide
+    - field.field.node.teammember.field_webform
+    - image.style.team560x585
     - node.type.teammember
   module:
     - image
     - text
     - user
+    - webform
 id: node.teammember.default
 targetEntityType: node
 bundle: teammember
@@ -31,7 +34,7 @@ content:
     region: content
   field_address:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -39,7 +42,7 @@ content:
     region: content
   field_clients:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
@@ -50,7 +53,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: team560x585
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -58,19 +61,37 @@ content:
     region: content
   field_position:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 103
     region: content
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_twitter:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_webform:
+    type: webform_entity_reference_entity_view
+    label: hidden
+    settings:
+      source_entity: true
+      lazy: false
+    third_party_settings: {  }
+    weight: 5
     region: content
   links:
     settings: {  }
@@ -82,3 +103,4 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   langcode: true
+  search_api_excerpt: true

@@ -9,7 +9,7 @@ id: node.project_details.field_address
 field_name: field_address
 entity_type: node
 bundle: project_details
-label: Address
+label: 'Generating per year (MWh)'
 description: ''
 required: false
 translatable: true

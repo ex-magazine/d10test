@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.careers.field_domain_all_affiliates
     - field.field.node.careers.field_expiration_date
     - field.field.node.careers.field_image
+    - field.field.node.careers.field_time_to_read
     - field.field.node.careers.field_webform
     - image.style.wide
     - node.type.careers
@@ -22,21 +23,26 @@ targetEntityType: node
 bundle: careers
 mode: default
 content:
+  addtoany:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
   body:
     type: text_default
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 3
     region: content
   field_expiration_date:
-    type: datetime_default
+    type: datetime_custom
     label: inline
     settings:
       timezone_override: ''
-      format_type: medium
+      date_format: Y-m-d
     third_party_settings: {  }
-    weight: 5
+    weight: 1
     region: content
   field_image:
     type: image
@@ -47,7 +53,16 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
+    region: content
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
     region: content
   field_webform:
     type: webform_entity_reference_entity_view
@@ -56,15 +71,14 @@ content:
       source_entity: true
       lazy: false
     third_party_settings: {  }
-    weight: 102
+    weight: 5
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 2
     region: content
 hidden:
-  addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
   langcode: true

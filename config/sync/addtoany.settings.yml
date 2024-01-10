@@ -1,7 +1,7 @@
 _core:
   default_config_hash: fMTQlRT4MXb9WtflmxsvPI0VnKTQNjOnlx9oCWO3vYo
 buttons_size: 32
-additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_mastodon\"></a>\r\n<a class=\"a2a_button_email\"></a>\r\n"
+additional_html: "<a class=\"a2a_button_facebook\"></a>\r\n<a class=\"a2a_button_linkedin\"></a>\r\n<a class=\"a2a_button_x\"></a>\r\n"
 additional_css: ''
 additional_js: ''
 universal_button: custom
@@ -24,3 +24,4 @@ entities:
   user: 0
   webform_submission: 0
   paragraph: 0
+  search_api_task: 0

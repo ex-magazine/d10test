@@ -6,6 +6,9 @@ display:
         name:
           expose:
             label: 名称
+        langcode:
+          expose:
+            label: 语言
   page:
     display_options:
       fields:

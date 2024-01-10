@@ -1,0 +1,34 @@
+uuid: 38f0bec4-4358-4db3-9d37-2ea0105b49cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.categoryindustries
+  module:
+    - block_classes
+    - taxonomy
+    - views
+  theme:
+    - solar
+id: solar_views_block__categoryindustries_block_1
+theme: solar
+region: content_above
+weight: 0
+provider: null
+plugin: 'views_block:categoryindustries-block_1'
+settings:
+  id: 'views_block:categoryindustries-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:taxonomy_term':
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    context_mapping:
+      taxonomy_term: '@taxonomy_term.taxonomy_term_route_context:taxonomy_term'
+    bundles:
+      projectcategory: projectcategory

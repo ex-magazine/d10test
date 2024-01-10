@@ -1,0 +1,10 @@
+uuid: d3d32dbe-5ffc-46a2-bd30-44e67a0c4878
+langcode: en
+status: true
+dependencies: {  }
+id: wcuagp
+label: 'Why choose us as green partner?'
+icon_uuid: null
+icon_default: null
+description: 'Why choose us as green partner?'
+behavior_plugins: {  }
