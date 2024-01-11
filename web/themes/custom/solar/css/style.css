@@ -45,6 +45,8 @@
 /* Default  */
 @import url("https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Albert+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=vietnamese");
+
 :root {
   --color-primary: #00308F;
   --color-secondary: #1F1F25;
@@ -81,6 +83,7 @@
   --transition: 0.3s;
   --font-primary: "Exo", sans-serif;
   --font-secondary: "Albert Sans", sans-serif;
+  --font-vietnamese: "Montserrat", sans-serif;
   --font-size-b1: 16px;
   --font-size-b2: 16px;
   --font-size-b3: 22px;
@@ -108,7 +111,51 @@ html {
   scroll-behavior: auto !important;
 }
 
-body {
+body.language_en {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Albert Sans", sans-serif;
+  color: var(--color-body);
+  font-weight: var(--p-regular);
+  position: relative;
+  overflow-x: hidden;
+}
+body.language_vi {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
+  color: var(--color-body);
+  font-weight: var(--p-regular);
+  position: relative;
+  overflow-x: hidden;
+}
+body.language_zh-hans {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Albert Sans", sans-serif;
+  color: var(--color-body);
+  font-weight: var(--p-regular);
+  position: relative;
+  overflow-x: hidden;
+}
+body.language_ja {
+  font-size: var(--font-size-b1);
+  line-height: var(--line-height-b1);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Albert Sans", sans-serif;
+  color: var(--color-body);
+  font-weight: var(--p-regular);
+  position: relative;
+  overflow-x: hidden;
+}
+body.language_ko {
   font-size: var(--font-size-b1);
   line-height: var(--line-height-b1);
   -webkit-font-smoothing: antialiased;
@@ -170,18 +217,86 @@ hr {
   margin-bottom: 20px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
+body.language_en h1,
+body.language_en h2,
+body.language_en h3,
+body.language_en h4,
+body.language_en h5,
+body.language_en h6,
+body.language_en .h1,
+body.language_en .h2,
+body.language_en .h3,
+body.language_en .h4,
+body.language_en .h5,
+body.language_en .h6 {
+  word-break: break-word;
+  font-family: "Exo", sans-serif;
+  line-height: 1.4074;
+  color: var(--color-heading-1);
+}
+body.language_vi h1,
+body.language_vi h2,
+body.language_vi h3,
+body.language_vi h4,
+body.language_vi h5,
+body.language_vi h6,
+body.language_vi .h1,
+body.language_vi .h2,
+body.language_vi .h3,
+body.language_vi .h4,
+body.language_vi .h5,
+body.language_vi .h6 {
+  word-break: break-word;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.4074;
+  color: var(--color-heading-1);
+}
+body.language_zh-hans h1,
+body.language_zh-hans h2,
+body.language_zh-hans h3,
+body.language_zh-hans h4,
+body.language_zh-hans h5,
+body.language_zh-hans h6,
+body.language_zh-hans .h1,
+body.language_zh-hans .h2,
+body.language_zh-hans .h3,
+body.language_zh-hans .h4,
+body.language_zh-hans .h5,
+body.language_zh-hans .h6 {
+  word-break: break-word;
+  font-family: "Exo", sans-serif;
+  line-height: 1.4074;
+  color: var(--color-heading-1);
+}
+body.language_ja h1,
+body.language_ja h2,
+body.language_ja h3,
+body.language_ja h4,
+body.language_ja h5,
+body.language_ja h6,
+body.language_ja .h1,
+body.language_ja .h2,
+body.language_ja .h3,
+body.language_ja .h4,
+body.language_ja .h5,
+body.language_ja .h6 {
+  word-break: break-word;
+  font-family: "Exo", sans-serif;
+  line-height: 1.4074;
+  color: var(--color-heading-1);
+}
+body.language_ko h1,
+body.language_ko h2,
+body.language_ko h3,
+body.language_ko h4,
+body.language_ko h5,
+body.language_ko h6,
+body.language_ko .h1,
+body.language_ko .h2,
+body.language_ko .h3,
+body.language_ko .h4,
+body.language_ko .h5,
+body.language_ko .h6 {
   word-break: break-word;
   font-family: "Exo", sans-serif;
   line-height: 1.4074;
@@ -15902,14 +16017,30 @@ nav ul li a {
   position: relative;
 }
 
+body.language_ja .banner-main-wrapper-one .pre-title p{
+  font-family: var(--font-primary);
+}
+body.language_ko .banner-main-wrapper-one .pre-title p{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .banner-main-wrapper-one .pre-title p{
+  font-family: var(--font-primary);
+} 
+body.language_vi .banner-main-wrapper-one .pre-title p{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .banner-main-wrapper-one .pre-title p{
+  font-family: var(--font-primary);
+}
+
+
 .banner-main-wrapper-one .pre-title p {
   font-size: 15px;
   line-height: 20px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #FFFFFF;
-  font-weight: 600;
-  font-family: var(--font-primary);
+  font-weight: 600; 
   margin-bottom: 25px;
 }
 .banner-main-wrapper-one .pre-title p span {
@@ -16265,6 +16396,24 @@ nav ul li a {
 .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .video-play-button::before {
   border: 2px solid #ffffff3a;
 }
+
+body.language_ja .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .text {
+  font-family: var(--font-primary);
+}
+body.language_ko .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .text {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .text {
+  font-family: var(--font-primary);
+}
+body.language_vi .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .text {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .text {
+  font-family: var(--font-primary);
+}
+
+
 .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone .text {
   min-width: max-content;
   color: #fff;
@@ -16272,8 +16421,7 @@ nav ul li a {
   margin-left: 60px;
   font-weight: 500;
   font-size: 22px;
-  line-height: 29px;
-  font-family: var(--font-primary);
+  line-height: 29px;  
 }
 
 .solar-energy-home {
@@ -16458,6 +16606,22 @@ nav ul li a {
   position: relative;
   z-index: 1;
 }
+body.language_ja .banner-two-main-wrapper-solaric .water-text {
+  font-family: var(--font-primary);
+}
+body.language_ko .banner-two-main-wrapper-solaric .water-text {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .banner-two-main-wrapper-solaric .water-text {
+  font-family: var(--font-primary);
+}
+body.language_vi .banner-two-main-wrapper-solaric .water-text {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .banner-two-main-wrapper-solaric .water-text {
+  font-family: var(--font-primary);
+}
+
 .banner-two-main-wrapper-solaric .water-text {
   position: absolute;
   left: 10%;
@@ -16471,8 +16635,7 @@ nav ul li a {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(255, 255, 255, 0.1);
   font-size: 200px;
-  font-weight: 700;
-  font-family: var(--font-primary);
+  font-weight: 700;  
   margin-bottom: -30px;
 }
 @media only screen and (max-width: 767px) {
@@ -16664,6 +16827,22 @@ nav ul li a {
   flex-wrap: nowrap;
   height: 235px;
 }
+body.language_ja .marquee .marquee__item .banner-marque-bottom p{
+  font-family: var(--font-primary);
+}
+body.language_ko .marquee .marquee__item .banner-marque-bottom p{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .marquee .marquee__item .banner-marque-bottom p{
+  font-family: var(--font-primary);
+}
+body.language_vi .marquee .marquee__item .banner-marque-bottom p{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .marquee .marquee__item .banner-marque-bottom p{
+  font-family: var(--font-primary);
+}
+
 .marquee .marquee__item .banner-marque-bottom p {
   display: block;
   margin: 0;
@@ -16675,9 +16854,7 @@ nav ul li a {
   -webkit-text-stroke-color: #E6E6E6;
   font-weight: 700;
   font-size: 200px;
-  line-height: 100px;
-  font-family: var(--font-primary);
-  font-family: var(--font-primary);
+  line-height: 100px; 
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .marquee .marquee__item .banner-marque-bottom p {
@@ -17161,10 +17338,24 @@ nav ul li a {
     margin-top: 12px;
   }
 }
+body.language_ja .banner-shop-content-wrapper .title span.ita {
+  font-family: var(--font-secondary);
+}
+body.language_ko .banner-shop-content-wrapper .title span.ita {
+  font-family: var(--font-secondary);
+}
+body.language_zh-hans .banner-shop-content-wrapper .title span.ita {
+  font-family: var(--font-secondary);
+}
+body.language_vi .banner-shop-content-wrapper .title span.ita {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .banner-shop-content-wrapper .title span.ita {
+  font-family: var(--font-secondary);
+}
 .banner-shop-content-wrapper .title span.ita {
   font-style: italic;
-  font-weight: 500 !important;
-  font-family: var(--font-secondary);
+  font-weight: 500 !important;  
   text-transform: capitalize;
 }
 
@@ -17518,16 +17709,46 @@ nav ul li a {
     font-weight: 500;
   }
 }
+body.language_ja .single-fun-facts .inner-content span {
+  font-family: var(--font-primary);
+}
+body.language_ko .single-fun-facts .inner-content span {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .single-fun-facts .inner-content span {
+  font-family: var(--font-primary);
+}
+body.language_vi .single-fun-facts .inner-content span {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .single-fun-facts .inner-content span {
+  font-family: var(--font-primary);
+}
 .single-fun-facts .inner-content span {
   font-weight: 500;
   font-size: 16px;
   line-height: 21px;
   display: block;
-  font-family: var(--font-primary);
+  
 }
 
 .single-counter-up-start-solari {
   position: relative;
+}
+body.language_ja .single-counter-up-start-solari .bg-text{
+  font-family: var(--font-primary);
+}
+body.language_ko .single-counter-up-start-solari .bg-text{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .single-counter-up-start-solari .bg-text{
+  font-family: var(--font-primary);
+}
+body.language_vi .single-counter-up-start-solari .bg-text{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .single-counter-up-start-solari .bg-text{
+  font-family: var(--font-primary);
 }
 .single-counter-up-start-solari .bg-text {
   text-transform: uppercase;
@@ -17541,8 +17762,7 @@ nav ul li a {
   font-weight: 700;
   font-weight: 700;
   font-size: 120px;
-  line-height: 120px;
-  font-family: var(--font-primary);
+  line-height: 120px;  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -17554,10 +17774,25 @@ nav ul li a {
   line-height: 44px;
   margin-bottom: -5px;
 }
+body.language_ja .single-counter-up-start-solari .main-content p {
+  font-family: var(--font-primary);
+}
+body.language_ko .single-counter-up-start-solari .main-content p {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .single-counter-up-start-solari .main-content p {
+  font-family: var(--font-primary);
+}
+body.language_vi .single-counter-up-start-solari .main-content p {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .single-counter-up-start-solari .main-content p {
+  font-family: var(--font-primary);
+}
+
 .single-counter-up-start-solari .main-content p {
   font-weight: 600;
-  font-size: 24px;
-  font-family: var(--font-primary);
+  font-size: 24px;  
   line-height: 58px;
   color: #1F1F25;
   margin-bottom: 0;
@@ -17625,18 +17860,46 @@ nav ul li a {
     height: 60px;
   }
 }
-.cta-main-wrapper-one .info-area span {
-  color: var(--color-primary);
+body.language_ja .cta-main-wrapper-one .info-area span {
   font-family: var(--font-secondary);
+}
+body.language_ko .cta-main-wrapper-one .info-area span {
+  font-family: var(--font-secondary);
+}
+body.language_zh-hans .cta-main-wrapper-one .info-area span {
+  font-family: var(--font-secondary);
+}
+body.language_vi .cta-main-wrapper-one .info-area span {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .cta-main-wrapper-one .info-area span {
+  font-family: var(--font-secondary);
+}
+.cta-main-wrapper-one .info-area span {
+  color: var(--color-primary);  
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
 }
+body.language_ja .cta-main-wrapper-one .info-area h4.title {
+  font-family: "Exo", sans-serif;
+}
+body.language_ko .cta-main-wrapper-one .info-area h4.title {
+  font-family: "Exo", sans-serif;
+}
+body.language_zh-hans .cta-main-wrapper-one .info-area h4.title {
+  font-family: "Exo", sans-serif;
+}
+body.language_vi .cta-main-wrapper-one .info-area h4.title {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .cta-main-wrapper-one .info-area h4.title {
+  font-family: "Exo", sans-serif;
+}
 .cta-main-wrapper-one .info-area h4.title {
   font-weight: 700;
   font-size: 30px;
-  line-height: 40px;
-  font-family: "Exo", sans-serif;
+  line-height: 40px; 
   color: #fff;
   margin-top: 7px;
   margin-bottom: 8px;
@@ -18733,13 +18996,27 @@ nav ul li a {
   font-size: 24px;
   line-height: 32px;
 }
+body.language_ja .about-area-solari-3-right .inner-content .importanc-wrapper .single p {
+  font-family: var(--font-primary);
+}
+body.language_ko .about-area-solari-3-right .inner-content .importanc-wrapper .single p {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .about-area-solari-3-right .inner-content .importanc-wrapper .single p {
+  font-family: var(--font-primary);
+}
+body.language_vi .about-area-solari-3-right .inner-content .importanc-wrapper .single p {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .about-area-solari-3-right .inner-content .importanc-wrapper .single p {
+  font-family: var(--font-primary);
+}
 .about-area-solari-3-right .inner-content .importanc-wrapper .single p {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 26px;
-  color: #1F1F25;
-  font-family: var(--font-primary);
+  color: #1F1F25;  
 }
 .about-area-solari-3-right .inner-content .author-button-area {
   display: flex;
@@ -18902,10 +19179,24 @@ nav ul li a {
     font-size: 80px;
   }
 }
+body.language_ja .counter-main-wrapper-h4 .single-counter-up .title {
+  font-family: Exo;
+}
+body.language_ko .counter-main-wrapper-h4 .single-counter-up .title {
+  font-family: Exo;
+}
+body.language_zh-hans .counter-main-wrapper-h4 .single-counter-up .title {
+  font-family: Exo;
+}
+body.language_vi .counter-main-wrapper-h4 .single-counter-up .title {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .counter-main-wrapper-h4 .single-counter-up .title {
+  font-family: Exo;
+}
 .counter-main-wrapper-h4 .single-counter-up .title {
   color: #1F1F25;
-  font-size: 34px;
-  font-family: Exo;
+  font-size: 34px;  
   font-weight: 600;
   line-height: 44px;
   margin-bottom: -10px;
@@ -19196,14 +19487,44 @@ nav ul li a {
 .title-area-left p.pre {
   margin-bottom: 40px;
 }
+body.language_ja .title-area-left .field--name-field-title-first{
+  font-family: var(--font-primary);
+}
+body.language_ko .title-area-left .field--name-field-title-first{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .title-area-left .field--name-field-title-first{
+  font-family: var(--font-primary);
+}
+body.language_vi .title-area-left .field--name-field-title-first{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .title-area-left .field--name-field-title-first{
+  font-family: var(--font-primary);
+}
+
+body.language_ja .title-area-left p.pre{
+  font-family: var(--font-primary);
+}
+body.language_ko .title-area-left p.pre{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .title-area-left p.pre{
+  font-family: var(--font-primary);
+}
+body.language_vi .title-area-left p.pre{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .title-area-left p.pre{
+  font-family: var(--font-primary);
+}
 .title-area-left .field--name-field-title-first,
 .title-area-left p.pre {
   color: var(--color-primary);
   letter-spacing: 0.04em;
   font-weight: 600;
   text-transform: uppercase;
-  font-size: 15px;
-  font-family: var(--font-primary);
+  font-size: 15px;  
   display: block !important;
 }
 .title-area-left .field--name-field-title-first span,
@@ -19251,12 +19572,28 @@ nav ul li a {
 .title-area-center {
   text-align: center;
 }
+body.language_ja .title-area-center p.pre {
+  font-family: var(--font-primary);
+}
+body.language_ko .title-area-center p.pre{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .title-area-center p.pre{
+  font-family: var(--font-primary);
+}
+body.language_vi .title-area-center p.pre{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .title-area-center p.pre{
+  font-family: var(--font-primary);
+}
+
 .title-area-center p.pre {
   color: var(--color-primary);
   letter-spacing: 0.04em;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: var(--font-primary);
+  
 }
 @media only screen and (max-width: 575px) {
   .title-area-center p.pre {
@@ -20108,13 +20445,29 @@ p {
 .solar-left-inner-area-cta .button-area .call-btn .info span {
   display: block;
 }
+
+body.language_ja .solar-left-inner-area-cta .button-area .call-btn .info a {
+  font-family: var(--font-primary);
+}
+body.language_ko .solar-left-inner-area-cta .button-area .call-btn .info a {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .solar-left-inner-area-cta .button-area .call-btn .info a {
+  font-family: var(--font-primary);
+}
+body.language_vi .solar-left-inner-area-cta .button-area .call-btn .info a {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
+  font-family: var(--font-primary);
+}
+
 .solar-left-inner-area-cta .button-area .call-btn .info a {
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
   color: #1F1F25;
-  transition: 0.3s;
-  font-family: var(--font-primary);
+  transition: 0.3s; 
 }
 .solar-left-inner-area-cta .button-area .call-btn .info a:hover {
   color: var(--color-primary);
@@ -20413,7 +20766,21 @@ p {
   border-radius: 10px;
   transition: 0.5s;
 }
-
+body.language_ja .stok-bg{
+  font-family: var(--font-primary);
+}
+body.language_ko .stok-bg{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .stok-bg{
+  font-family: var(--font-primary);
+}
+body.language_vi .stok-bg{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .stok-bg{
+  font-family: var(--font-primary);
+}
 .stok-bg {
   text-transform: uppercase;
   text-align: center;
@@ -20424,8 +20791,7 @@ p {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(217, 217, 217, 0.267);
   font-size: 100px;
-  font-weight: 700;
-  font-family: var(--font-primary);
+  font-weight: 700; 
   margin-bottom: -30px;
   margin-right: 10%;
   z-index: -1;
@@ -20555,13 +20921,27 @@ p {
 .tab-area-service-solari-3 ul li .nav-link svg path {
   transition: 0.3s;
 }
+body.language_ja .tab-area-service-solari-3 ul li .nav-link p{
+  font-family: var(--font-primary);
+}
+body.language_ko .tab-area-service-solari-3 ul li .nav-link p{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .tab-area-service-solari-3 ul li .nav-link p{
+  font-family: var(--font-primary);
+}
+body.language_vi .tab-area-service-solari-3 ul li .nav-link p{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .tab-area-service-solari-3 ul li .nav-link p{
+  font-family: var(--font-primary);
+}
 .tab-area-service-solari-3 ul li .nav-link p {
   font-weight: 600;
   font-size: 18px;
   line-height: 28px;
   transition: 0.3s;
-  color: #1F1F25;
-  font-family: var(--font-primary);
+  color: #1F1F25; 
 }
 .tab-area-service-solari-3 ul li .nav-link.active {
   background: var(--color-primary);
@@ -20614,12 +20994,26 @@ p {
 .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service img {
   margin-right: 13px;
 }
+body.language_ja .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service p {
+  font-family: var(--font-primary);
+}
+body.language_ko .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service p {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service p {
+  font-family: var(--font-primary);
+}
+body.language_vi .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service p {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service p {
+  font-family: var(--font-primary);
+}
 .tab-content-solari-service-m .service-singlew-main-wrapper-sm .single-service p {
   color: #1F1F25;
   font-weight: 500;
   font-size: 16px;
-  line-height: 28px;
-  font-family: var(--font-primary);
+  line-height: 28px; 
   font-size: 15px;
 }
 .tab-content-solari-service-m a.rts-btn {
@@ -21111,16 +21505,47 @@ p {
 .big-bg-porduct-details .project-info .info-body .single-info .info-details span {
   margin-bottom: 5px;
 }
+body.language_ja .portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item{
+  font-family: "Exo", sans-serif;
+}
+body.language_ko .portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item{
+  font-family: "Exo", sans-serif;
+}
+body.language_zh-hans .portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item{
+  font-family: "Exo", sans-serif;
+}
+body.language_vi .portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item{
+  font-family: "Exo", sans-serif;
+}
+
+body.language_ja .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
+  font-family: "Exo", sans-serif;
+}
+body.language_ko .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
+  font-family: "Exo", sans-serif;
+}
+body.language_zh-hans .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
+  font-family: "Exo", sans-serif;
+}
+body.language_vi .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
+  font-family: "Exo", sans-serif;
+}
+
+
 .portfolio-disc-content .pr-align-items-center .field--name-field-growth .field__item,
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .field .field__item{
   color: var(--color-heading-1);
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 3px;
-  word-break: break-word;
-  font-family: "Exo", sans-serif;
+  word-break: break-word;  
   font-weight: var(--s-bold);
-
 }
 .big-bg-porduct-details .project-info .info-body .single-info .info-details .name {
   font-size: 18px;
@@ -21589,13 +22014,28 @@ p {
   align-items: center;
   border-radius: 4px;
 }
+body.language_ja .single-progress-area-h4 .progress-top p {
+  font-family: var(--font-primary);
+}
+body.language_ko .single-progress-area-h4 .progress-top p {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .single-progress-area-h4 .progress-top p {
+  font-family: var(--font-primary);
+}
+body.language_vi .single-progress-area-h4 .progress-top p {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .single-progress-area-h4 .progress-top p {
+  font-family: var(--font-primary);
+}
+
 .single-progress-area-h4 .progress-top p {
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
   color: #1F1F25;
-  margin-bottom: 0;
-  font-family: var(--font-primary);
+  margin-bottom: 0; 
 }
 .single-progress-area-h4 .progress-top span.parcent {
   font-weight: 700;
@@ -23066,10 +23506,25 @@ p {
   margin-right: auto;
   margin-left: 15px;
 }
+body.language_ja .rts-single-wized.download .single-download-area .mid .title {
+  font-family: var(--font-primary);
+}
+body.language_ko .rts-single-wized.download .single-download-area .mid .title {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .rts-single-wized.download .single-download-area .mid .title {
+  font-family: var(--font-primary);
+}
+body.language_vi .rts-single-wized.download .single-download-area .mid .title {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .rts-single-wized.download .single-download-area .mid .title {
+  font-family: var(--font-primary);
+}
+
 .rts-single-wized.download .single-download-area .mid .title {
   margin-bottom: 0;
-  font-size: 18px;
-  font-family: var(--font-primary);
+  font-size: 18px;  
 }
 .rts-single-wized.download .single-download-area .mid span {
   font-weight: 400;
@@ -23418,13 +23873,29 @@ p {
   line-height: 19px;
   margin-bottom: 7px;
 }
+
+body.language_ja .bg-cta-footer-one .single-cta-area .contact-info a {
+  font-family: var(--font-primary);
+}
+body.language_ko .bg-cta-footer-one .single-cta-area .contact-info a {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .bg-cta-footer-one .single-cta-area .contact-info a {
+  font-family: var(--font-primary);
+}
+body.language_vi .bg-cta-footer-one .single-cta-area .contact-info a {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
+  font-family: var(--font-primary);
+}
+
 .bg-cta-footer-one .single-cta-area .contact-info a {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #fff;
-  transition: 0.3s;
-  font-family: var(--font-primary);
+  transition: 0.3s; 
 }
 @media only screen and (max-width: 1199px) {
   .bg-cta-footer-one .single-cta-area .contact-info a {
@@ -24069,14 +24540,28 @@ p {
   font-size: 20px;
   line-height: 20px;
 }
+body.language_ja .personal-info-team .single-info .info span{
+  font-family: var(--font-primary);
+}
+body.language_ko .personal-info-team .single-info .info span{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .personal-info-team .single-info .info span{
+  font-family: var(--font-primary);
+}
+body.language_vi .personal-info-team .single-info .info span{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .personal-info-team .single-info .info span{
+  font-family: var(--font-primary);
+}
 
 .personal-info-team .single-info .info span {
   display: block;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #6E777D;
-  font-family: var(--font-primary);
+  color: #6E777D; 
   transition: 0.3s;
 }
 
@@ -24178,11 +24663,26 @@ p {
   background: #fff;
   border-radius: 10px;
 }
+body.language_ja .rts-single-condition-team .inner-content a{
+  font-family: var(--font-primary);
+}
+body.language_ko .rts-single-condition-team .inner-content a{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .rts-single-condition-team .inner-content a{
+  font-family: var(--font-primary);
+}
+body.language_vi .rts-single-condition-team .inner-content a{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .rts-single-condition-team .inner-content a{
+  font-family: var(--font-primary);
+}
+
 .rts-single-condition-team .inner-content a {
   font-weight: 700;
   font-size: 22px;
   line-height: 29px;
-  font-family: var(--font-primary);
   color: #1F1F25;
   margin-bottom: 7px;
   display: block;
@@ -24191,13 +24691,27 @@ p {
 .rts-single-condition-team .inner-content a:hover {
   color: var(--color-primary);
 }
+body.language_ja .rts-single-condition-team .inner-content span{
+  font-family: var(--font-primary);
+}
+body.language_ko .rts-single-condition-team .inner-content span{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .rts-single-condition-team .inner-content span{
+  font-family: var(--font-primary);
+}
+body.language_vi .rts-single-condition-team .inner-content span{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .rts-single-condition-team .inner-content span{
+  font-family: var(--font-primary);
+}
 .rts-single-condition-team .inner-content span {
   display: block;
   color: #74787C;
   font-weight: 500;
   font-size: 14px;
-  line-height: 19px;
-  font-family: var(--font-primary);
+  line-height: 19px;  
 }
 
 .team-sc-main-swiper-wrapper {
@@ -24542,12 +25056,27 @@ p {
   border: none;
   border-radius: 0;
 }
+body.language_ja .thumbnail-img-testimonials-right .inner-content p.disc{
+  font-family: var(--font-primary);
+}
+body.language_ko .thumbnail-img-testimonials-right .inner-content p.disc{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .thumbnail-img-testimonials-right .inner-content p.disc{
+  font-family: var(--font-primary);
+}
+body.language_vi .thumbnail-img-testimonials-right .inner-content p.disc{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .thumbnail-img-testimonials-right .inner-content p.disc{
+  font-family: var(--font-primary);
+}
+
 .thumbnail-img-testimonials-right .inner-content p.disc {
   font-weight: 500;
   margin-top: 30px;
   font-size: 22px;
-  line-height: 30px;
-  font-family: var(--font-primary);
+  line-height: 30px;  
   color: #fff;
   margin-bottom: 0;
 }
@@ -26103,12 +26632,28 @@ form.appoinment-form .input-half-wrapper .single-input input {
 .con-tent-main .title {
   margin-top: 10px;
 }
+body.language_ja .con-tent-main .title a{
+  font-family: var(--font-primary);
+}
+body.language_ko .con-tent-main .title a{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .con-tent-main .title a{
+  font-family: var(--font-primary);
+}
+body.language_vi .con-tent-main .title a{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .con-tent-main .title a{
+  font-family: var(--font-primary);
+}
+
 .con-tent-main .title a {
   font-weight: 700;
   font-size: 60px;
   line-height: 80px;
   color: #fff;
-  font-family: var(--font-primary);
+  
 }
 @media only screen and (max-width: 767px) {
   .con-tent-main .title a {
@@ -26270,14 +26815,29 @@ form.appoinment-form .input-half-wrapper .single-input input {
   position: relative;
   z-index: 0;
 }
+body.language_ja .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
+  font-family: var(--font-primary);
+}
+body.language_ko .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
+  font-family: var(--font-primary);
+}
+body.language_vi .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
+  font-family: var(--font-vietnamese);
+}
+body.language_en .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
+  font-family: var(--font-primary);
+}
+
 .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
   font-size: 200px;
   color: white;
   -webkit-text-fill-color: #8d8a8a00;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(189, 189, 189, 0.36);
-  font-weight: 700;
-  font-family: var(--font-primary);
+  font-weight: 700; 
   position: absolute;
   left: 50%;
   top: 50%;
@@ -27949,15 +28509,31 @@ form.lang-dropdown-form.lang_dropdown_form.language_interface{
 }
 .single-service-four .content-area a.rts-btn i {
   font-size: 14px;
+} 
+
+body.language_ja .single-service-four .content-area span{
+  font-family: var(--font-primary);
 }
+body.language_ko .single-service-four .content-area span{
+  font-family: var(--font-primary);
+}
+body.language_zh-hans .single-service-four .content-area span{
+  font-family: var(--font-primary);
+}
+body.language_vi .single-service-four .content-area span{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .single-service-four .content-area span{
+  font-family: var(--font-primary);
+}
+
 .single-service-four .content-area span {
   font-weight: 600;
   font-size: 13px;
   line-height: 20px;
   color: #424242;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
-  font-family: var(--font-primary);
+  text-transform: uppercase; 
 }
 .single-service-four .content-area a .title {
   color: #fff;
@@ -28364,11 +28940,26 @@ edit .quantity-edit button {
   border-bottom: 1px solid #E7E7E7;
 }
 
+body.language_ja .cart-bar .cart-header .cart-heading{
+  font-family: var(--font-secondary);
+}
+body.language_ko .cart-bar .cart-header .cart-heading{
+  font-family: var(--font-secondary);
+}
+body.language_zh-hans .cart-bar .cart-header .cart-heading{
+  font-family: var(--font-secondary);
+}
+body.language_vi .cart-bar .cart-header .cart-heading{
+  font-family: var(--font-vietnamese);
+}
+body.language_en .cart-bar .cart-header .cart-heading{
+  font-family: var(--font-secondary);
+}
+
 .cart-bar .cart-header .cart-heading {
   font-size: 17px;
   font-weight: 600;
-  color: #000000;
-  font-family: var(--font-secondary);
+  color: #000000;  
 }
 
 .close-cart {
