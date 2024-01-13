@@ -23355,6 +23355,23 @@ body.language_en .single-progress-area-h4 .progress-top p {
 .blog-single-post-listing .replay-area-details {
   margin-top: 40px;
 }
+.node--type-careers .field--type-webform {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 40px;
+}
+.node--type-careers .field--type-webform .js-form-type-email{
+  margin-top: 20px;
+}
+.blog-single-post-listing .replay-area-details form input.form-file {
+  background: none;
+  border: none;
+  height: auto;
+}
+.blog-single-post-listing .replay-area-details form input.button--primary{
+  background-color: var(--color-primary) !important;
+  margin-top: 20px;
+}
 .blog-single-post-listing .replay-area-details form input {
   height: 55px;
   border-radius: 15px;
@@ -29568,7 +29585,7 @@ edit .quantity-edit button {
 } 
 .node .field--name-body h3, 
 .node .field--name-body .h3 {
-  font-size: var(--h5);
+  font-size: var(--h6);
   line-height: 1.23;
 }
 .node .field--name-body h2, 
