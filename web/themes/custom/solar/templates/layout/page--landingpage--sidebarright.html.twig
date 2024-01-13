@@ -349,12 +349,14 @@
 
 <div class="search-input-area">
     <div class="container">
-        <div class="search-input-inner">
-            <div class="input-div">
-                <input id="searchInput1" class="search-input" type="text" placeholder="{{ 'Search by keyword or'|t }} #">
-                <button><i class="far fa-search"></i></button>
+      <form action="/solar-search" method="get" class="search-form-wrapper">
+            <div class="search-input-inner">
+            <div class="input-div">            
+                <input id="searchInput1" class="search-input" type="text" name="keyword" placeholder="{{ 'Search by keyword or'|t }} #">
+                <button><i class="far fa-search"></i></button>            
             </div>
-        </div>
+            </div>
+        </form>
     </div>
     <div id="close" class="search-close-icon"><i class="far fa-times"></i></div>
 </div>
