@@ -121,6 +121,9 @@
                     <div class="video-overlay">
                         <a class="video-overlay-close">×</a>
                     </div>
+                    <div class="d-none" id="youtube-embed">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ content.field_youtube|render|striptags|trim }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="experiencea-area images">
                     <h3 class="title">{{ content.field_years_experience|raw }}</h3>

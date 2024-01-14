@@ -749,8 +749,9 @@
         vedioActivation: function (e) {
           $('#play-video, .play-video').on('click', function (e) {
               e.preventDefault();
+              let youtube_code = document.querySelector('#youtube-embed');
               $('.video-overlay').addClass('open');
-              $(".video-overlay").append('<iframe width="560" height="315" src="https://www.youtube.com/embed/cXvVdIA_jTM&t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+              $(".video-overlay").append(youtube_code.innerHTML);
           });
 
           $('.video-overlay, .video-overlay-close').on('click', function (e) {
