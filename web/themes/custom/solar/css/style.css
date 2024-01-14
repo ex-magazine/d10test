@@ -26726,11 +26726,12 @@ body.language_en .con-tent-main .title a{
 .solar-search .views-exposed-form .js-form-type-textfield{
   width: 60%;
 }
-.solar-search .views-exposed-form input#edit-fulltext {
+.solar-search .views-exposed-form input#edit-keyword {
   background: #F7F7F7;
   border-radius: 5px;
   height: 48px;
   border: 1px solid transparent;
+  box-shadow: 4px 4px #ccc;
 }
 .solar-search .views-exposed-form,
 .view-ourproject .views-exposed-form {

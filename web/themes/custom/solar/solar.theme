@@ -41,6 +41,7 @@ use \Drupal\path_alias\AliasManager;
 function solar_preprocess_html(&$variables) {  
   $node = \Drupal::routeMatch()->getParameter('node');
   $parameters = \Drupal::routeMatch()->getParameters()->all();
+
   if (isset($parameters['taxonomy_term'])) {
     $term = $parameters['taxonomy_term'];  
     $vid = $term->bundle();
@@ -48,6 +49,11 @@ function solar_preprocess_html(&$variables) {
     //$vocabulary_label = $vocabulary->label();        
     $term = array('subjects', 'news_types', 'projectcategory', 'tags');
     if (in_array($vid, $term)){
+      $variables['attributes']['class'][] = 'index-two';
+    }    
+  }
+  if (isset($parameters['view_id']) && isset($parameters['display_id'])) {      
+    if ($parameters['view_id'] == 'solarsearch' && $parameters['display_id'] == 'page_1'){      
       $variables['attributes']['class'][] = 'index-two';
     }    
   }
