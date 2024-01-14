@@ -17878,8 +17878,10 @@ body.language_vi .cta-main-wrapper-one .info-area span {
 body.language_en .cta-main-wrapper-one .info-area span {
   font-family: var(--font-secondary);
 }
-.cta-main-wrapper-one .info-area span {
-  color: var(--color-primary);  
+.node--view-mode-full .cta-main-wrapper-one .info-area span {
+  color: var(--color-white);  
+}
+.cta-main-wrapper-one .info-area span {  
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -22632,6 +22634,7 @@ body.language_en .single-progress-area-h4 .progress-top p {
     padding: 15px;
   }
 }
+.node--type-news.node--view-mode-card h5.title,
 .node--view-mode-ournewsleft .body h2.title span,
 .node--view-mode-ournewsright .body h2.title span{
   text-overflow: ellipsis;
