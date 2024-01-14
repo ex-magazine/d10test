@@ -16096,6 +16096,9 @@ body.language_en .banner-main-wrapper-one .pre-title p{
 .bg-breadcrumb-green-projects{
   background-image: url(../images/page-title-10.jpg);
 }
+.bg-breadcrumb-solar-search{
+  background-image: url(../images/page-title-05.jpg);
+}
 .bg-breadcrumb-subjects{
   background-image: url(../images/page-title-12.jpg);
 }
@@ -26725,6 +26728,7 @@ body.language_en .con-tent-main .title a{
 }
 .solar-search .views-exposed-form .js-form-type-textfield{
   width: 60%;
+  margin-bottom: 2px;
 }
 .solar-search .views-exposed-form input#edit-keyword {
   background: #F7F7F7;
