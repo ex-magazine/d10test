@@ -20530,7 +20530,7 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   background-size: cover;
   z-index: 2;
   position: relative;
-  height: 100%;
+  min-height: 325px;
 }
 .single-service-solari.two {
   background-image: url(../images/26.png);
@@ -20593,7 +20593,7 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   max-width: max-content;
 }
 .single-service-solari .title:hover {
-  color: var(--color-primary);
+  color: #4AAB3D;
 }
 .single-service-solari .disc .field--name-body{
   font-weight: 500;
