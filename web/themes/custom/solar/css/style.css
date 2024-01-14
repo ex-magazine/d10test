@@ -22747,6 +22747,7 @@ body.language_en .single-progress-area-h4 .progress-top p {
   transition: 0.3s;
   border-radius: 10px;
 }
+
 .view-breaking-news-right .inner-content-solari-blog .head{
   display: flex;
   align-items: center;
@@ -26722,6 +26723,16 @@ body.language_en .con-tent-main .title a{
 .contact-page-form .name-email-wraper input:focus {
   border: 1px solid var(--color-primary);
 }
+.solar-search .views-exposed-form .js-form-type-textfield{
+  width: 60%;
+}
+.solar-search .views-exposed-form input#edit-fulltext {
+  background: #F7F7F7;
+  border-radius: 5px;
+  height: 48px;
+  border: 1px solid transparent;
+}
+.solar-search .views-exposed-form,
 .view-ourproject .views-exposed-form {
   display: flex;
   gap: 20px;
