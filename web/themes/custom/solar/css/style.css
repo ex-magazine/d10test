@@ -16102,6 +16102,9 @@ body.language_en .banner-main-wrapper-one .pre-title p{
 .bg-breadcrumb-subjects{
   background-image: url(../images/page-title-12.jpg);
 }
+.bg-breadcrumb-service{
+  background-image: url(../images/page-title-08.jpg);
+}
 .node--view-mode-full .field--name-field-expiration-date{
   display: flex;
 }
