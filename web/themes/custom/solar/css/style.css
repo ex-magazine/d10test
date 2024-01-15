@@ -14978,8 +14978,8 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   transition: 0.3s;
 }
 .social-header-top-h2 ul li a:hover i {
-  color: #1f1f25;
-}
+  color: #4AAB3D;
+} 
 .region--header,
 .main-haeder-wrapper-h2 {
   display: flex;
@@ -17878,6 +17878,7 @@ body.language_vi .cta-main-wrapper-one .info-area span {
 body.language_en .cta-main-wrapper-one .info-area span {
   font-family: var(--font-secondary);
 }
+.node--view-mode-full .cta-main-wrapper-one .info-area p,
 .node--view-mode-full .cta-main-wrapper-one .info-area span {
   color: var(--color-white);  
 }
@@ -17932,7 +17933,6 @@ body.language_en .cta-main-wrapper-one .info-area h4.title {
 }
 
 .cta-main-wrapper-one .info-area p {
-  color: #676767;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
@@ -20708,7 +20708,7 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   color: #1F1F25;
 }
 .single-solari-service-start .title:hover {
-  color: var(--color-primary);
+  color: #4AAB3D;
 }
 .single-solari-service-start div.disc .field--name-body{
   color: #74787C;

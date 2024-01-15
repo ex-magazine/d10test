@@ -104,11 +104,7 @@
                 <span><time>{{ node.published_at.getString|date("d M Y") }}</time></span>
             </div>
             <!-- single infoe end -->
-            <!-- single info -->
-            <div class="single">
-                <i class="far fa-tags"></i>
-                {{ content.field_subjects }}
-            </div>
+            <!-- single info -->         
             <div class="single">
               <i class="fa-light fa-phone-office"></i>
               {{ content.field_time_to_read }}
@@ -128,7 +124,9 @@
             </div>
             <div class="col-lg-6 col-md-12">
                 <div class="details-share">
-                    {{ content|without('comment','body', 'field_tags', 'field_time_to_read', 'field_subjects', 'field_image', 'field_abstract') }}
+                    {{ content|without('comment','body', 'field_tags', 'field_time_to_read', 
+                    'field_subjects', 'field_image', 'field_abstract',
+                    'field_servicecategory', 'field_icon_svg', 'field_svg', 'field_paragraph') }}
                                         
                 </div>
             </div>
