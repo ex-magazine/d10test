@@ -20702,6 +20702,15 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
     margin-bottom: 40px;
   }
 }
+.single-solari-service-start .title  span{
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  height: 68px;
+}
+
 .single-solari-service-start .title {
   color: #1F1F25;
   transition: 0.3s;
@@ -20714,11 +20723,16 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   color: #4AAB3D;
 }
 .single-solari-service-start div.disc .field--name-body{
-  color: #74787C;
+  height: 130px;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   margin-bottom: 40px;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 .single-solari-service-start p.disc {
   color: #74787C;
