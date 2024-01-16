@@ -20697,6 +20697,12 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   justify-content: center;
   border: 1px solid var(--color-primary);
 }
+.field--name-body .sde-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
 .field--name-body .sde-item,
 .field--name-body .sb-item {
   border-bottom: 1px solid var(--color-primary);
