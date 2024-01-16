@@ -20697,6 +20697,15 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   justify-content: center;
   border: 1px solid var(--color-primary);
 }
+.field--name-body .sde-item,
+.field--name-body .sb-item {
+  border-bottom: 1px solid var(--color-primary);
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+.field--name-body .sb-item:last-child{
+  border-bottom: 0px !important;
+}
 @media only screen and (max-width: 479px) {
   .single-solari-service-start .icon-area {
     margin-bottom: 40px;
