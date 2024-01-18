@@ -1,1 +1,0 @@
-window.drupalTranslations = {"strings":{"":{"Name":"\u540d\u79f0","Edit":"\u7f16\u8f91","Delete":"\u5220\u9664","Date":"\u65e5\u671f","Cancel":"\u53d6\u6d88","You have unsaved changes.":"\u4f60\u6709\u672a\u4fdd\u5b58\u7684\u66f4\u6539\u3002","Enabled":"\u542f\u7528","Disabled":"\u7981\u7528","Add":"\u6dfb\u52a0"}},"pluralFormula":{"1":0,"default":1}};
