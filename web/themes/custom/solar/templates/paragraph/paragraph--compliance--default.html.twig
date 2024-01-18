@@ -1,0 +1,62 @@
+{%
+  set classes = [
+    'paragraph',  
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}         
+        <div class="wcu-item">
+            <div class="s-icon">
+                <div class="step">
+                    <p class="num-01">01</p>
+                    <p class="item-01">{{ paragraph.field_compliance.0.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
+            {% for i in 0..2  %}  
+                <div class="po-item">
+                    <h3>{{ paragraph.field_compliance.0.entity.bp_modal_title[i].value|raw }}</h3>
+                    <div class="pdf-item">
+                        {{ paragraph.field_compliance.0.entity.field_pdf[i]|view   }}                
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="wcu-item">
+            <div class="s-icon">
+                <div class="step">
+                    <p class="num-01">02</p>
+                    <p class="item-01">{{ paragraph.field_compliance.1.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
+            <div class="po-item">
+                <div class="ps">
+                    {{ paragraph.field_compliance.1.entity.bp_card_image|view  }}
+                </div>
+                <div class="item-02">{{ paragraph.field_compliance.1.entity.field_section_content.value|raw  }}</div>
+            </div>
+        </div>
+        <div class="wcu-item">
+            <div class="s-icon">
+                <div class="step">
+                    <p class="num-01">03</p>
+                    <p class="item-01">{{ paragraph.field_compliance.2.entity.bp_card_title.value|raw  }}</p>
+                </div>
+            </div>
+             <div class="po-item">
+                <div class="esd">
+                    {{ paragraph.field_compliance.2.entity.bp_card_image[0]|view  }}
+                    {{ paragraph.field_compliance.2.entity.bp_card_image[1]|view  }}
+                </div>
+                <div class="item-02">{{ paragraph.field_compliance.2.entity.field_section_content.value|raw  }}</div>
+            </div>            
+        </div>
+
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
+
+
