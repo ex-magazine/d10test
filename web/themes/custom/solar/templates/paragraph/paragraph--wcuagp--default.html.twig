@@ -45,38 +45,38 @@
             </div>
             <p class="item-02">{{ paragraph.field_wcuagp.3.entity.bp_unrestricted.value|raw  }}</p>
         </div>
-        <div class="wcu-item">
-            <div class="s-icon">
-                <div class="step">
-                    <p class="num-01">05</p>
-                    <p class="item-01">{{ paragraph.field_wcuagp.4.entity.bp_tab_section_title.value|raw  }}</p>
+        {% if paragraph.field_wcuagp.4.entity.bp_tab_section_title.value is not empty %}
+            <div class="wcu-item">
+                <div class="s-icon">
+                    <div class="step">
+                        <p class="num-01">05</p>
+                        <p class="item-01">{{ paragraph.field_wcuagp.4.entity.bp_tab_section_title.value|raw  }}</p>
+                    </div>
                 </div>
-            </div>
-            <p class="item-02">{{ paragraph.field_wcuagp.4.entity.bp_unrestricted.value|raw  }}</p>           
-            {% set bonus = paragraph.field_wcuagp.4.entity.field_wcuagpitems|length - 1 %}
-            <div class="swiper mySwiper-about-feedback">
-                <div class="swiper-wrapper">
-                    {% for i in 0..bonus  %}  
-                        <div class="swiper-slide">
-                            <div class="feedback-about-swiper-wrapper">
-                                <div class="single-feedback-about">
-                                    <div class="head">                                                                            
-                                        <img src="{{ file_url(paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.field_background_image.entity.fileuri|image_style('project1320x720') ) }}" 
-                                        alt="{{ paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.field_background_image.alt }}" 
-                                        title="{{ paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.field_background_image.alt }}">
-                                    </div>
-                                    <div class="body">
-                                        <h5 class="title">{{ paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.bp_statistic_description.value|raw  }}</h5>
+                <p class="item-02">{{ paragraph.field_wcuagp.4.entity.bp_unrestricted.value|raw  }}</p>           
+                {% set bonus = paragraph.field_wcuagp.4.entity.field_wcuagpitems|length - 1 %}
+                <div class="swiper mySwiper-about-feedback">
+                    <div class="swiper-wrapper">
+                        {% for i in 0..bonus  %}  
+                            <div class="swiper-slide">
+                                <div class="feedback-about-swiper-wrapper">
+                                    <div class="single-feedback-about">
+                                        <div class="head">                                                                            
+                                            <img src="{{ file_url(paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.field_background_image.entity.fileuri|image_style('project1320x720') ) }}" 
+                                            alt="{{ paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.field_background_image.alt }}" 
+                                            title="{{ paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.field_background_image.alt }}">
+                                        </div>
+                                        <div class="body">
+                                            <h5 class="title">{{ paragraph.field_wcuagp.4.entity.field_wcuagpitems[i].entity.bp_statistic_description.value|raw  }}</h5>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>                       
-                     {% endfor %}
-                </div>
-            </div>             
-        </div>
-        
-        
+                            </div>                       
+                        {% endfor %}
+                    </div>
+                </div>             
+            </div>
+        {% endif %}      
 
     {% endblock %}
     </div>
