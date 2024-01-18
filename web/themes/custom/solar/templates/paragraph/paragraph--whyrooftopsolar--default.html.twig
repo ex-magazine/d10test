@@ -18,8 +18,15 @@
                                     <p class="num-01">01</p>
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.0.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
-                            </div>                            
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                            </div>        
+                            {% if paragraph.field_whyrooftopsolar.0.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.0.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}
                         </div>
 
                         <div class="wrt-two wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
@@ -29,7 +36,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.1.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.1.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.1.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                            
                         </div>
 
                         <div class="wrt-three wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="2.2s">
@@ -39,7 +53,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.2.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.2.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.2.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}
                         </div>
                         <div class="wrt-four wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="3.2s">
                             <div class="s-icon">
@@ -48,7 +69,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.3.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                             {% if paragraph.field_whyrooftopsolar.3.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.3.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}
                         </div>
                     </div>
                     <div class="wrt-process-center">                   
@@ -68,7 +96,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.5.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.5.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.5.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                           
                         </div>
 
                         <div class="wrt-eight wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="6.2s">
@@ -78,7 +113,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.6.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.6.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.6.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                           
                         </div>
 
                         <div class="wrt-nine wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="7.2s">
@@ -88,7 +130,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.7.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.7.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.7.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                              
                         </div>                   
                     </div>     
                 </div>           
@@ -111,8 +160,15 @@
                                     <p class="num-01">01</p>
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.0.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
-                            </div>                            
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                            </div>    
+                            {% if paragraph.field_whyrooftopsolar.0.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.0.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}   
                         </div>
 
                         <div class="wrt-two">
@@ -122,7 +178,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.1.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.1.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.1.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                            
                         </div>
 
                         <div class="wrt-three">
@@ -132,7 +195,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.2.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.2.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.2.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                        
                         </div>
                         <div class="wrt-four">
                             <div class="s-icon">
@@ -141,7 +211,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.3.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.3.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.3.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                           
                         </div>
                     </div>                 
                     <div class="wrt-process-right">
@@ -152,7 +229,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.5.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                            {% if paragraph.field_whyrooftopsolar.5.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.5.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                            
                         </div>
 
                         <div class="wrt-eight">
@@ -162,7 +246,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.6.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                             {% if paragraph.field_whyrooftopsolar.6.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.6.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                            
                         </div>
 
                         <div class="wrt-nine">
@@ -172,7 +263,14 @@
                                     <p class="item-01">{{ paragraph.field_whyrooftopsolar.7.entity.bp_tab_section_title.value|raw  }}</p>
                                 </div>
                             </div>
-                            <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                             {% if paragraph.field_whyrooftopsolar.7.entity.bp_card_image.entity.fileuri is not empty %}
+                                <div class="item-02-ov"> 
+                                    {{ paragraph.field_whyrooftopsolar.7.entity.bp_card_image|view  }}                   
+                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                                </div>
+                            {% else %}
+                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                            {% endif %}                           
                         </div>                   
                     </div>     
                 </div>

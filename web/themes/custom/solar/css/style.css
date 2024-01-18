@@ -23807,11 +23807,19 @@ body.language_en .rts-single-wized.download .single-download-area .mid .title {
   }
   .paragraph .s-icon .step .item-01{
     width: 70%;
-  }
-  
+    margin-top: 10px;
+  }  
 }
 .paragraph .po-item{
   margin: 20px 0;
+}
+.process--desktop-inner .item-02-ov .field--name-bp-card-image{
+  min-width: 40px;
+  margin-left: 7px;
+}
+.process--desktop-inner .item-02-ov{
+  display: flex;
+  align-items: center;
 }
 .paragraph .po-item .esd img{
   width: auto;
