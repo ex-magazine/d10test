@@ -1,0 +1,26 @@
+# Vietnamese translation of WebP (8.x-1.0-rc1)
+# Copyright (c) 2023 by the Vietnamese translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: WebP (8.x-1.0-rc1)\n"
+"POT-Creation-Date: 2023-08-15 18:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Vietnamese\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "Other"
+msgstr "Khác"
+msgid "About"
+msgstr "Giới thiệu"
+msgid "Image generation in progress. Try again shortly."
+msgstr ""
+"Đang thực hiện quá trình tạo ảnh. Xin vui lòng thử "
+"lại."
+msgid "Error generating image."
+msgstr "Gặp lỗi khi tạo ảnh."
+msgid "Unable to generate the derived image located at %path."
+msgstr "Không thể tạo bản sao sửa đổi của ảnh, tại %path."
