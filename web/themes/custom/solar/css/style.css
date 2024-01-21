@@ -25262,6 +25262,10 @@ body.language_en .thumbnail-img-testimonials-right .inner-content p.disc{
 .testimonials-review-main-wrapper {
   text-align: center;
 }
+.testimonials-review-main-wrapper .single-review-area-soalri .disc {
+  text-align: left;
+  margin-top: 20px;
+}
 .testimonials-review-main-wrapper .single-review-area-soalri {
   max-width: 820px;
   margin: auto;
@@ -25355,7 +25359,7 @@ body.language_en .thumbnail-img-testimonials-right .inner-content p.disc{
 
 .mySwiper-testimonials-solari {
   position: relative;
-  padding-bottom: 93px;
+  padding-bottom: 40px;
 }
 .mySwiper-testimonials-solari .swiper-pagination {
   display: flex;
