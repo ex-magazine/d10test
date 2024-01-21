@@ -25032,14 +25032,14 @@ body.language_en .rts-single-condition-team .inner-content span{
     padding: 15px;
   }
 }
-.rts-single-testimonials-one p.disc {
+.rts-single-testimonials-one .disc {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   margin-top: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #F1F1F1;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  border-top: 1px solid #F1F1F1;
+  margin-bottom: 0px;
 }
 .rts-single-testimonials-one .awener-area {
   display: flex;
