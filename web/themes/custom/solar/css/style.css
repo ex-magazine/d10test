@@ -27054,6 +27054,7 @@ body.language_en .rts-bread-crumb-area .con-tent-main .wrapper .bg-text-stok {
 form.lang-dropdown-form.lang_dropdown_form.language_interface{
   width: 70px;  
   clear: both;
+  margin-right: 25px;
 }
 #elevate-load {  
   position: fixed;
