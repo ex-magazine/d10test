@@ -22816,6 +22816,10 @@ body.language_en .single-progress-area-h4 .progress-top p {
   .inner-content-solari-blog .head {
     gap: 0;
   }
+  .rts-elevate-pagination ul li a {
+    width: 25px;
+    height: 25px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .inner-content-solari-blog .head .single span {
