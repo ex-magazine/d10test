@@ -23674,6 +23674,14 @@ body.language_en .rts-single-wized.download .single-download-area .mid .title {
 .rts-single-wized .single-categories:last-child {
   margin-bottom: 0;
 }
+.rts-single-wized .single-categories li.menu__item--active-trail a i{
+  color: var(--color-white);
+}
+.rts-single-wized .single-categories li.menu__item--active-trail a{
+  background: var(--color-primary);
+  transform: translateY(-5px) scale(1.03);
+  color: var(--color-white);
+}
 .rts-single-wized .single-categories li {
   list-style: none;
 }
@@ -23687,6 +23695,7 @@ body.language_en .rts-single-wized.download .single-download-area .mid .title {
   font-weight: 500;
   transition: 0.3s;
   border-radius: 100px;
+  text-align: left;
 }
 .rts-single-wized .single-categories li a i {
   color: var(--color-primary);
@@ -23820,6 +23829,9 @@ body.language_en .rts-single-wized.download .single-download-area .mid .title {
 .process--desktop-inner .item-02-ov{
   display: flex;
   align-items: center;
+}
+.process--desktop .p-left span{
+  line-height: 60px;
 }
 .paragraph .po-item .esd img{
   width: auto;
@@ -29677,3 +29689,229 @@ figure.caption figcaption{
   line-height: 22px;
   margin-bottom: 20px;
 }
+
+.day-columns .co-02 .gray,
+.day-columns .co-02 .green,
+.day-columns .co-02 .turquoise,
+.day-columns .co-02 .navy{   
+    height: 82px;
+}
+ .day-columns .co-02 .blue{
+    height: 108px;
+ }
+.day-columns .co-02 .purple,    
+.day-columns .co-02 .yellow{
+    height: 56px;
+}
+.day-columns .day-column.co-02.co-14{
+    z-index: 1;
+}
+.day-columns .day-column.co-02.co-13{
+    z-index: 2;
+}
+.day-columns .day-column.co-02.co-12{
+    z-index: 3;
+}
+.day-columns .day-column.co-02.co-11{
+    z-index: 4;
+}
+.day-columns .day-column.co-02.co-10{
+    z-index: 5;
+}
+.day-columns .day-column.co-02.co-09{
+    z-index: 6;
+}
+.day-columns .day-column.co-02.co-08{
+    z-index: 7;
+}
+.day-columns .day-column.co-02.co-07{
+    z-index: 8;
+}
+.day-columns .day-column.co-02.co-06{
+    z-index: 9;
+}
+.day-columns .day-column.co-02.co-05{
+    z-index: 10;
+}
+.day-columns .day-column.co-02.co-04{
+    z-index: 11;
+}
+.day-columns .day-column.co-02.co-03{
+    z-index: 12;
+}
+.day-columns .event.bg-none{
+    background: none !important;
+}
+
+
+
+
+.day-columns .day-column.co-03 .event.gray{
+  width: 160px;          
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #7f8c8d, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 13s linear infinite;
+}
+.day-columns .day-column.co-03 .event.green{
+  width: 180px;
+  margin-left: 8px;
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #2ecc71, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 14s ease infinite;
+}
+.day-columns .day-column.co-04 .event.turquoise{
+  width: 160px;
+  margin-left: 30px;
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #1abc9c, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s linear infinite;
+}
+.day-columns .day-column.co-04 .event.navy{
+  width: 160px;
+  margin-left: 80px;
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #34495e, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 16s ease infinite;
+}
+.day-columns .day-column.co-03 .event.blue{
+  width: 690px;
+  margin-left: 30px;
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #3498db, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 17s ease infinite;
+}
+.day-columns .day-column.co-07 .event.purple{
+  width: 710px;
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #9b59b6, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 18s linear infinite;
+}
+.day-columns .day-column.co-13 .event.yellow{
+  width: 165px;
+  margin-left: 30px;
+  justify-content: flex-end;
+  background: linear-gradient(-45deg, #f1c40f, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 19s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.green { background-color: #2ecc71; }
+.turquoise { background-color: #1abc9c; }
+.navy { background-color: #34495e; }
+.blue { background-color: #3498db; }
+.purple { background-color: #9b59b6; }
+.grey { background-color: #bdc3c7; color: #202020; }
+.gray { background-color: #7f8c8d; }
+.red { background-color: #e74c3c; }
+.orange { background-color: #f39c12; }
+.yellow { background-color: #f1c40f; color: #303030; }
+.event .rank-12{        
+    height: 20px;
+    width: 40px;
+}
+ .event .rank-30102{        
+    height: 20px;
+    width: 40px;
+ }
+.event .rank-1012{        
+    height: 20px;
+    width: 40px;
+}
+.event .rank-40507{       
+    height: 20px;
+    width: 40px;
+}
+.event .rank-53045{      
+    height: 20px;
+    width: 40px;
+}
+.event .rank-63540{        
+    height: 20px;
+    width: 40px;
+}
+.event .rank-70407{        
+    height: 20px;
+    width: 40px;
+} 
+.day-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+.day-columns .day-column {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 632px;        
+    border: 1px solid #ebedf2;
+    border-left: none;
+}
+.day-columns .day-column.co-01 {
+    min-width: 170px;
+}
+.day-columns .day-column.co-02 {
+    min-width: 100px;
+}
+.day-columns  .day-column:first-child {
+    border-left: 1px solid #ebedf2;
+}
+.day-columns  .day-column .day-header {
+    border-bottom: 1px solid #ebedf2;
+    text-align: center;
+    padding: 5px;
+    color: #898b96;
+    height: 37px;
+}
+.day-columns  .day-column .day-content {
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+    /* overflow-y: auto; */
+}
+.day-columns .day-column .event {
+    display: flex;
+    align-items: center;       
+    margin-bottom: 5px;
+    border-radius: 5px;
+    padding: 3px;
+    color: white;
+    padding: 5px;
+    box-shadow: 0px 1px 15px 1px rgba(81, 77, 92, 0.08);
+    position: relative;
+}
+.day-columns .day-column .title {
+    font-size: 20px;
+    padding: 10px;
+}
+.day-columns .day-column footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 11px;
+}
+.day-columns  .day-column .day-footer {
+    border-top: 1px solid #ebedf2;
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    color: #898b96;
+}
+    

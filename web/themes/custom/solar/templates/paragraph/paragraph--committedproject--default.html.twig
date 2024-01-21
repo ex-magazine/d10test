@@ -1,0 +1,401 @@
+{%
+  set classes = [
+    'paragraph',
+    'rts-clients-feedback rts-section-gapBottom bg-feedback-about bg_image',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+
+
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="pb--40">
+            {{ content.field_section_content }}      
+            </div>                
+        </div>
+    </div>
+    <div class="row g-5">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="day-columns">
+                <div class="day-column co-01">
+                    <div class="day-header"></div>
+                    <div class="day-content">
+                        <div class="event gray">
+                            <span class="title">{{ paragraph.field_committedproject.0.entity.bp_accordion_section_title.value|raw  }}</span>                        
+                        </div>
+                        <div class="event green">
+                            <span class="title">{{ paragraph.field_committedproject.1.entity.bp_accordion_section_title.value|raw  }}</span>                     
+                        </div>
+                        <div class="event turquoise">
+                            <span class="title">{{ paragraph.field_committedproject.2.entity.bp_accordion_section_title.value|raw  }}</span>                       
+                        </div>
+                        <div class="event navy">
+                            <span class="title">{{ paragraph.field_committedproject.3.entity.bp_accordion_section_title.value|raw  }}</span>                     
+                        </div>
+                        <div class="event blue">
+                            <span class="title">{{ paragraph.field_committedproject.4.entity.bp_accordion_section_title.value|raw  }}</span>                       
+                        </div>
+                        <div class="event purple">
+                            <span class="title">{{ paragraph.field_committedproject.5.entity.bp_accordion_section_title.value|raw  }}</span>                        
+                        </div>
+                        <div class="event yellow">
+                            <span class="title">{{ paragraph.field_committedproject.6.entity.bp_accordion_section_title.value|raw  }}</span>                       
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="day-column co-02 co-03">
+                    <div class="day-header">{{ content.bp_modal_title.0|raw }}</div>
+                    <div class="day-content">
+                        <div class="event gray">
+                            <span class="rank-12"></span>         
+                            <span class="title">{{ paragraph.field_committedproject.0.entity.bp_card_title.value|raw  }}</span>                                      
+                        </div>
+                        <div class="event green">
+                            <span class="rank-1012"></span>
+                            <span class="title">{{ paragraph.field_committedproject.1.entity.bp_card_title.value|raw  }}</span>                                               
+                        </div>
+                        <div class="event turquoise bg-none">
+                            <span class="title"></span>                      
+                        </div>
+                        <div class="event navy bg-none">
+                            <span class="title"></span>                       
+                        </div>
+                        <div class="event blue">
+                            <span class="rank-53045"></span>
+                            <span class="title">{{ paragraph.field_committedproject.4.entity.bp_card_title.value|raw  }}</span>                     
+                        </div>
+                        <div class="event purple bg-none">
+                            <span class="title"></span>                       
+                        </div>
+                        <div class="event yellow bg-none">
+                            <span class="title"></span>                       
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="day-column co-02 co-04">
+                    <div class="day-header">{{ content.bp_modal_title.1|raw }}</div>
+                    <div class="day-content">
+                    <div class="event gray bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    
+                    <div class="event green bg-none">
+                        <span class="title"></span>                                
+                    </div>
+                        <div class="event turquoise">
+                            <span class="rank-30102"></span>    
+                            <span class="title">{{ paragraph.field_committedproject.2.entity.bp_card_title.value|raw  }}</span>                                          
+                        </div>
+                        <div class="event navy">
+                            <span class="rank-40507"></span>   
+                            <span class="title">{{ paragraph.field_committedproject.3.entity.bp_card_title.value|raw  }}</span>                          
+                        </div>
+                        <div class="event blue bg-none">
+                            <span class="title"></span>                      
+                        </div>
+                        <div class="event purple bg-none">
+                            <span class="title"></span>                       
+                        </div>
+                        <div class="event yellow bg-none">
+                            <span class="title"></span>                       
+                        </div>
+                    </div>
+                  
+                </div>
+                <div class="day-column co-02 co-05">
+                    <div class="day-header">{{ content.bp_modal_title.2|raw }}</div>
+                    <div class="day-content">
+                    <div class="event gray bg-none">
+                        <span class="title"></span>                 
+                    </div>
+                    <div class="event green bg-none">
+                        <span class="title"></span>                 
+                    </div>
+                    <div class="event turquoise bg-none">
+                        <span class="title"></span>            
+                    </div>
+                    <div class="event navy bg-none">                        
+                        <span class="title"></span>                                 
+                    </div>
+                    <div class="event blue bg-none">
+                        <span class="title"></span>                      
+                    </div>
+                    <div class="event purple bg-none">
+                        <span class="title"></span>                       
+                    </div>
+                    <div class="event yellow bg-none">
+                        <span class="title"></span>                       
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="day-column co-02 co-06">
+                    <div class="day-header">{{ content.bp_modal_title.3|raw }}</div>
+                    <div class="day-content">
+                    <div class="event gray bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    <div class="event green bg-none">
+                        <span class="title"></span>            
+                    </div>
+                    <div class="event turquoise bg-none">
+                        <span class="title"></span>                
+                    </div>
+                    <div class="event navy bg-none">
+                        <span class="title"></span>                 
+                    </div>
+                    <div class="event blue bg-none">
+                        <span class="title"></span>              
+                    </div>
+                    <div class="event purple bg-none">
+                        <span class="title"></span>                       
+                    </div>
+                    <div class="event yellow bg-none">
+                        <span class="title"></span>                       
+                    </div>
+                    </div>
+                   
+                </div>
+                <div class="day-column co-02 co-07">
+                    <div class="day-header">{{ content.bp_modal_title.4|raw }}</div>
+                    <div class="day-content">
+                    <div class="event gray bg-none">
+                        <span class="title"></span>              
+                    </div>
+                    <div class="event green bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    <div class="event turquoise bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    <div class="event navy bg-none">
+                        <span class="title"></span>              
+                    </div>
+                    <div class="event blue bg-none">
+                        <span class="title"></span>              
+                    </div>
+                    <div class="event purple">
+                        <span class="rank-63540"></span>     
+                        <span class="title">{{ paragraph.field_committedproject.5.entity.bp_card_title.value|raw  }}</span>             
+                    </div>
+                    <div class="event yellow bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="day-column co-02 co-08">
+                    <div class="day-header">{{ content.bp_modal_title.5|raw }}</div>
+                    <div class="day-content">
+                    <div class="event gray bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    <div class="event green bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    <div class="event turquoise bg-none">
+                        <span class="title"></span>                
+                    </div>
+                    <div class="event navy bg-none">
+                        <span class="title"></span>              
+                    </div>
+                    <div class="event blue bg-none">
+                        <span class="title"></span>                                                   
+                    </div>
+                    <div class="event purple bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    <div class="event yellow bg-none">
+                        <span class="title"></span>               
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="day-column co-02 co-09">
+                <div class="day-header">{{ content.bp_modal_title.6|raw }}</div>
+                    <div class="day-content">
+                        <div class="event gray bg-none">
+                            <span class="title"></span>                               
+                        </div>
+                        <div class="event green bg-none">
+                            <span class="title"></span>                             
+                        </div>
+                        <div class="event turquoise bg-none">
+                            <span class="title"></span>                
+                        </div>
+                        <div class="event navy bg-none">
+                            <span class="title"></span>              
+                        </div>
+                        <div class="event blue bg-none">
+                            <span class="title"></span>                           
+                        </div>
+                        <div class="event purple bg-none">
+                            <span class="title"></span>               
+                        </div>
+                        <div class="event yellow bg-none">
+                            <span class="title"></span>               
+                        </div>
+                    </div>
+                    
+                </div>
+               
+
+
+                <div class="day-column co-02 co-10">
+                    <div class="day-header">{{ content.bp_modal_title.7|raw }}</div>
+                        <div class="day-content">
+                            <div class="event gray bg-none">
+                                <span class="title"></span>                              
+                            </div>
+                            <div class="event green bg-none">
+                                <span class="title"></span>                              
+                            </div>
+                            <div class="event turquoise bg-none">
+                                <span class="title"></span>                
+                            </div>
+                            <div class="event navy bg-none">
+                                <span class="title"></span>              
+                            </div>
+                            <div class="event blue bg-none">
+                                <span class="title"></span>                               
+                            </div>
+                            <div class="event purple bg-none">
+                                <span class="title"></span>               
+                            </div>
+                            <div class="event yellow bg-none">
+                                <span class="title"></span>               
+                            </div>
+
+                        </div>
+                          
+                </div>
+
+                <div class="day-column co-02 co-11">
+                    <div class="day-header">{{ content.bp_modal_title.8|raw }}</div>
+                        <div class="day-content">
+                            <div class="event gray bg-none">
+                                <span class="title"></span>                                
+                            </div>
+                            <div class="event green bg-none">
+                                <span class="title"></span>                               
+                            </div>
+                            <div class="event turquoise bg-none">
+                                <span class="title bg-none"></span>                
+                            </div>
+                            <div class="event navy bg-none">
+                                <span class="title"></span>              
+                            </div>
+                            <div class="event blue bg-none">
+                                <span class="title"></span>                               
+                            </div>
+                            <div class="event purple bg-none">
+                                <span class="title"></span>               
+                            </div>
+                            <div class="event yellow bg-none">
+                                <span class="title"></span>               
+                            </div>
+                        </div>
+                             
+                </div>
+
+
+                <div class="day-column co-02 co-12">
+                    <div class="day-header">{{ content.bp_modal_title.9|raw }}</div>
+                        <div class="day-content">
+                            <div class="event gray bg-none">
+                                <span class="title"></span>                           
+                            </div>
+                            <div class="event green bg-none">
+                                <span class="title"></span>                             
+                            </div>
+                            <div class="event turquoise bg-none">
+                                <span class="title"></span>                              
+                            </div>
+                            <div class="event navy bg-none">
+                                <span class="title"></span>                           
+                            </div>
+                            <div class="event blue bg-none">
+                                <span class="title"></span>                        
+                            </div>
+                            <div class="event purple bg-none">                                
+                                <span class="title"></span>                                                        
+                            </div>
+                            <div class="event yellow bg-none">
+                                <span class="title"></span>               
+                            </div>
+                        </div>
+                     
+                </div>
+
+
+                <div class="day-column co-02 co-13">
+                    <div class="day-header">{{ content.bp_modal_title.10|raw }}</div>
+                        <div class="day-content">
+                            <div class="event gray bg-none">
+                                <span class="title"></span>                              
+                            </div>
+                            <div class="event green bg-none">
+                                <span class="title"></span>                              
+                            </div>
+                            <div class="event turquoise bg-none">
+                                <span class="title"></span>                           
+                            </div>
+                            <div class="event navy bg-none">
+                                <span class="title"></span>                               
+                            </div>
+                            <div class="event blue bg-none">
+                                <span class="title"></span>                             
+                            </div>
+                            <div class="event purple bg-none">
+                                <span class="title"></span>                                                              
+                            </div>
+                            <div class="event yellow">
+                                <span class="rank-70407"></span>   
+                                <span class="title">{{ paragraph.field_committedproject.6.entity.bp_card_title.value|raw  }}</span>                                                       
+                            </div>
+                        </div>
+                        
+                </div>
+
+                <div class="day-column co-02 co-14">
+                    <div class="day-header">{{ content.bp_modal_title.11|raw }}</div>
+                        <div class="day-content">
+                            <div class="event gray bg-none">
+                                <span class="title"></span>                             
+                            </div>
+                            <div class="event green bg-none">
+                                <span class="title"></span>                             
+                            </div>
+                             <div class="event turquoise bg-none">
+                                <span class="title"></span>                           
+                            </div>
+                            <div class="event navy bg-none">
+                                <span class="title"></span>                         
+                            </div>
+                             <div class="event blue bg-none">
+                                <span class="title"></span>                             
+                            </div>
+                            <div class="event purple bg-none">
+                                <span class="title"></span>                            
+                            </div>
+                             <div class="event yellow bg-none">
+                                <span class="title"></span>                  
+                            </div>
+                        </div>                     
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
