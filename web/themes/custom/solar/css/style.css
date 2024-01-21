@@ -23589,7 +23589,9 @@ body.language_vi .rts-single-wized.download .single-download-area .mid .title {
 body.language_en .rts-single-wized.download .single-download-area .mid .title {
   font-family: var(--font-primary);
 }
-
+body.language_vi #block-solar-callforhelp{
+  display: none;
+}
 .rts-single-wized.download .single-download-area .mid .title {
   margin-bottom: 0;
   font-size: 18px;  
