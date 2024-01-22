@@ -115,7 +115,33 @@
         {% if content.field_paragraphs is not empty %}
             {{ content.field_paragraphs }}
         {% endif %}
+
+        {% if content.field_webform is not empty %}
+            {{ content.field_webform }}
+        {% endif %}
+
+        <div id="efficiency">
+            <h3>Congratulations!</h3>
+            <p>You have done the first step towards saving your electricity bill and our environment</p>
+            <p>Based on the estimation of your roof space area, the installed capacity and generated electricity are below:</p>
+            <div class="efficiency-result">
+                <div class="capacity">
+                <h4>Capacity (kWp)</h4>
+                <h2>9999</h2>
+                </div>
+                <div class="generation">
+                <h4>Generation (kWh/year)</h4>
+                <h2>9999</h2>
+                </div>
+                <div class="emission">
+                <h4>CO2 Emission (Tons/year) </h4>
+                <h2>9999</h2>
+                </div>
+            </div>
+            <p>Disclaimer: Electricity generation in each province will vary, and this calculation will be based on the average electricity production from both the south and north regions of Vietnam.</p>
+        </div>
     </div>
+   
     
     <div class="rts-secvice-area-solaric-banner-bottom start rts-section-gapBottom">     
         {{ drupal_region('content_below', 'solar') }}
