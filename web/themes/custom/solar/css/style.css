@@ -26852,6 +26852,92 @@ body.language_en .con-tent-main .title a{
   padding: 5px 15px;
   margin-top: 20px;
 }
+.webform-submission-efficiency-form .webform-type-radios{
+  margin: 20px 0 40px 0;
+}
+.webform-submission-efficiency-form .webform-type-radios .js-webform-radios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.webform-submission-efficiency-form .webform-type-radios input[type=radio] ~ label::after {
+  width: 15px;
+  height: 15px;
+  left: 3px;
+  background: #fff;
+  border-radius: 50%;
+}
+.webform-submission-efficiency-form .webform-type-radios input[type=radio] ~ label::before {
+  content: " ";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: 25px;
+  height: 25px;
+  background-color: #5d5d7e;
+  border-radius: 2px;
+  transition: all 0.3s;
+  border-radius: 50%;
+}
+.webform-submission-efficiency-form .form-actions.js-form-wrapper.form-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.webform-submission-efficiency-form .js-form-type-radio .form-item__label{
+  font-size: 15px;
+}
+.col-sm-offset-2 {
+  margin: 0 auto;
+}
+.webform-submission-efficiency-form .webform-button--previous{
+  display: none !important;
+}
+.col-sm-offset-2 .js-form-item {
+  margin: 20px 0;
+}
+.webform-submission-efficiency-form input.button{
+  background: var(--color-primary);
+  transform: scaleX(0);
+  padding: 19px 40px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 600;
+  font-family: var(--font-secondary);
+  border-radius: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  min-width: 130px;
+}
+.webform-submission-efficiency-form input.button:hover {
+  background: #1f1f25;
+  color: #fff;
+}
+.webform-submission-efficiency-form .radios--wrapper .fieldset__legend .fieldset__label,
+.webform-submission-efficiency-form .js-form-type-number .form-item__label {
+  margin-left: 20px;
+  font-size: 17px;
+}
+.webform-submission-efficiency-form input[type=radio] ~ label{
+  line-height: 19px;  
+  font-size: 12px;
+  line-height: 17px;
+  color: var(--color-body);
+  font-weight: 400;
+  padding-left: 34px;
+  cursor: pointer;
+  padding-top: 4px;
+}
+.webform-submission-efficiency-form input,
 .contact-page-form input {
   background: #FFFFFF;
   border: 1px solid #EAEAEA;
@@ -29925,4 +30011,16 @@ figure.caption figcaption{
     font-size: 13px;
     color: #898b96;
 }
-    
+#efficiency h3.title{
+  text-align: center;
+}
+#efficiency p{
+  text-align: center;
+}
+.efficiency-result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  text-align: center;
+}

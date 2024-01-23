@@ -64,9 +64,7 @@ libraries-override:
   layout_builder/twocol_section: solar/layout_builder_twocol_section
   layout_builder/threecol_section: solar/layout_builder_threecol_section
   layout_builder/fourcol_section: solar/layout_builder_fourcol_section
-libraries-extend:
-  core/drupal.message:
-    - solar/drupal.message
+libraries-extend:  
   core/drupal.collapse:
     - solar/details
   core/drupal.dialog:
