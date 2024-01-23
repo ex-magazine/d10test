@@ -80,17 +80,18 @@
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
-%}
+%} 
 <article{{ attributes.addClass(classes) }}>
   <div class="single-service-solari" style="background-image: url('{{ file_url(node.field_image.entity.fileuri) }}');">
       <div class="icon-area">
         {{ content.field_icon_svg|raw }}
       </div>
-      <a href="{{ url }}" rel="bookmark">
+      <a href="{{ content.field_linkto.0['#url'] }}" rel="bookmark">
           <h2 class="title">{{ label }}</h2>
-      </a>
+      </a>      
       <div class="disc">
         {{ content.body|raw }}
       </div>     
   </div>
 </article>
+ {# href="{{ node.field_story_spotlight.entity.field_para_section_slider[i].entity.field_link_to_video_360.uri|raw }}"> #}

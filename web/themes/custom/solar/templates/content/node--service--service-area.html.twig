@@ -86,12 +86,12 @@
       <div class="icon-area">
         {{ content.field_svg|raw }}
       </div>
-      <a href="{{ url }}" rel="bookmark">
+      <a href="{{ content.field_linkto.0['#url'] }}" rel="bookmark">
           <h2 class="title">{{ label }}</h2>
       </a>
       <div class="disc">
         {{ content.body|raw }}
       </div>
-      <a href="{{ url }}" rel="bookmark" class="read-more-btn">{{ 'Read More'|t }}<i class="fa-regular fa-arrow-right"></i></a>
+      <a href="{{ content.field_linkto.0['#url'] }}" rel="bookmark" class="read-more-btn">{{ 'Read More'|t }}<i class="fa-regular fa-arrow-right"></i></a>
   </div>
 </article>

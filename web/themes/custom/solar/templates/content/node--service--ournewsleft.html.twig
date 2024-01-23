@@ -84,7 +84,7 @@
 %}
 <div{{ attributes.addClass(classes) }}>
     <div class="image-area">
-        <a href="{{ url }}" class="thumbnail">
+        <a href="{{ content.field_linkto.0['#url'] }}" class="thumbnail">
             {{ content.field_image }}
         </a>
         <div class="icon">
@@ -92,12 +92,12 @@
         </div>
     </div>
     <div class="inner-content">
-        <a href="{{ url }}">
+        <a href="{{ content.field_linkto.0['#url'] }}">
             <h5 class="title">{{ node.label }}</h5>
         </a>
         <p class="disc">
             {{ content.body|render|striptags|trim }}
         </p>
-        <a href="{{ url }}" class="rts-btn btn-primary">{{ 'Read More'|t }} <i class="fa-regular fa-arrow-right"></i></a>
+        <a href="{{ content.field_linkto.0['#url'] }}" class="rts-btn btn-primary">{{ 'Read More'|t }} <i class="fa-regular fa-arrow-right"></i></a>
     </div>
 </div>
