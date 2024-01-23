@@ -15023,6 +15023,30 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
     display: none;
   }
 }
+@media only screen and (max-width: 1366px) {
+  #block-solar-callforhelp{
+    display: none;
+  }
+  body.language_vi .main-nav-one ul li.menu__item a.menu__link--level-1 {
+    font-size: 13px;
+  }
+  body.language_vi .main-nav-one ul li.has-dropdown{
+    margin-right: 5px !important;
+  }
+}
+@media only screen and (min-width: 1367px) {
+  body.language_ja .main-nav-one ul li.menu__item a.menu__link--level-1 {
+    font-size: 13px;
+  } 
+}
+.logo-area-footer img{
+  background-color: #fff;
+  border-radius: 10px;
+}
+.main-nav-one ul li.has-dropdown a.nav-link {
+  padding: 19px 14px !important;
+  color: #1F1F25;
+}
 .main-haeder-wrapper-h2 .actions-area .menu-btn {
   cursor: pointer;
   margin-left: 30px;
@@ -15948,10 +15972,7 @@ nav ul li a {
 .main-nav-one ul li.has-dropdown a {
   position: relative;
 }
-.main-nav-one ul li.has-dropdown a.nav-link {
-  padding: 19px 15px !important;
-  color: #1F1F25;
-}
+
 .main-nav-one ul li.has-dropdown a::before {
   content: "\f078" !important;
   position: absolute !important;
@@ -23589,6 +23610,7 @@ body.language_vi .rts-single-wized.download .single-download-area .mid .title {
 body.language_en .rts-single-wized.download .single-download-area .mid .title {
   font-family: var(--font-primary);
 }
+body.language_zh-hans #block-solar-callforhelp,
 body.language_vi #block-solar-callforhelp{
   display: none;
 }
