@@ -14992,7 +14992,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   }
 }
 .main-haeder-wrapper-h2 a.logo-area {
-  padding: 23px 0;
+  padding: 16px 0;
   display: block;
 }
 @media only screen and (max-width: 767px) {
@@ -30024,4 +30024,7 @@ figure.caption figcaption{
   justify-content: center;
   gap: 30px;
   text-align: center;
+}
+.site-branding__logo.logo-area img{
+  height: 40px;
 }
