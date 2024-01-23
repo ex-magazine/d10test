@@ -20623,6 +20623,7 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   transition: 0.3s;
   color: #1F1F25;
   max-width: max-content;
+  height: 55px;
 }
 .single-service-solari .title:hover {
   color: #4AAB3D;
