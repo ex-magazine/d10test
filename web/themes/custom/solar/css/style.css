@@ -26892,6 +26892,7 @@ body.language_en .con-tent-main .title a{
 .col-sm-offset-2 {
   margin: 0 auto;
 }
+.webform-submission-efficiency-form .js-hide.js-webform-computed-submit.button.js-form-submit.form-submit,
 .webform-submission-efficiency-form .webform-button--previous{
   display: none !important;
 }
