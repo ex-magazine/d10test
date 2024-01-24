@@ -24184,11 +24184,13 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
 .pages-footer ul.menu li a{
   line-height: 23px;
 }
+.pages-footer ul li a p{
+  line-height: 40px;
+}
 .pages-footer ul.menu li a,
 .pages-footer ul li a p {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 40px;
+  font-size: 16px;  
   transition: 0.3s;
   margin-bottom: 0;
 }
