@@ -67,7 +67,7 @@
  */
 #}
 
-<div class="full-content case-single-content">
+<article class="full-content case-single-content">
     {% if content.field_media_image %}
     <div class="case-image">
         <img src="{{ file_url(content.field_media_image[0]['#media'].field_media_image.entity.uri.value) }}" alt="Case Image">
@@ -87,4 +87,4 @@
         {{ content.addtoany }}
     </div>    
     {% endif %}
-</div>
+</article>

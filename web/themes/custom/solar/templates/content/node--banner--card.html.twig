@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }} style="background-image: url('{{ file_url(node.field_image.entity.fileuri) }}');">
+<article {{ attributes.addClass(classes) }} style="background-image: url('{{ file_url(node.field_image.entity.fileuri) }}');">
 
   <span class="water-text images"> {{ content.field_position|raw }}</span>
   <div class="container">
@@ -115,7 +115,7 @@
           </div>
       </div>
   </div>
-</div>
+</article>
 
 
 

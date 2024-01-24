@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>   
+<article{{ attributes.addClass(classes) }}>   
     <div class="awener-area">        
         <div class="main">         
             <a href="{{ url }}" rel="bookmark">
@@ -93,4 +93,4 @@
     <div class="disc">
         {{ content.body|render|striptags|trim }}
     </div>
-</div>
+</article>

@@ -66,7 +66,7 @@
  * @see template_preprocess_node()
  */
 #}
-<div class="inner-wrapper">
+<article class="inner-wrapper">
     {% if content.field_media_image %}
     <div class="img-wrapper">
         <a href="{{ url }}" rel="bookmark"><img src="{{ file_url(content.field_media_image[0]['#media'].field_media_image.entity.uri.value) }}"></a>
@@ -86,4 +86,4 @@
             <a class="icon-button small" href="{{ url }}"><i class="icon"><i class="fa-solid fa-arrow-right"></i></i> View more</a>
         </div>
     </div>
-</div>
+</article>
