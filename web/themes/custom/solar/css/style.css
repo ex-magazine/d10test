@@ -24181,6 +24181,9 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
   font-size: 16px;
   line-height: 40px;
 }
+.pages-footer ul.menu li a{
+  line-height: 23px;
+}
 .pages-footer ul.menu li a,
 .pages-footer ul li a p {
   font-weight: 400;
