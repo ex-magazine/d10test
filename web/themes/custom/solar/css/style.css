@@ -19933,6 +19933,7 @@ p {
 .service-single-s-main a .title {
   color: #fff;
   margin-bottom: 8px;
+  height: 67px;
 }
 .service-single-s-main p.disc {
   margin-bottom: 17px;
@@ -19953,8 +19954,9 @@ p {
 .service-single-s-main.yellow-bg .icon svg path {
   fill: var(--color-primary);
 }
-.service-single-s-main.yellow-bg p.disc {
+.service-single-s-main p.disc {
   color: #fff;
+  height: 110px;
 }
 
 .short-service-style-one {
@@ -20435,9 +20437,11 @@ p {
 }
 .single-service-start .inner-content .title {
   margin-bottom: 9px;
+  height: 65px;
 }
 .single-service-start .inner-content p.disc {
   margin-bottom: 50px;
+  height: 135px;
 }
 .single-service-start .inner-content a.rts-btn {
   margin-left: auto;

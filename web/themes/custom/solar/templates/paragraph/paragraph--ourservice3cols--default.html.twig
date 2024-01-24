@@ -16,17 +16,32 @@
                     <div class="service-single-s-main">
                         <div class="icon">                          
                             {{ paragraph.field_ourservice3cols.0.entity.bp_unrestricted.value|raw  }}
-                        </div>
-                        <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.uri }}">
-                            <h5 class="title">
-                                {{ paragraph.field_ourservice3cols.0.entity.field_title.value|raw  }}                                
-                            </h5>
-                        </a>
+                        </div>                       
+                        {% if paragraph.field_ourservice3cols.0.entity.bp_card_link.0.url.external %}
+                            <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                <h5 class="title">
+                                    {{ paragraph.field_ourservice3cols.0.entity.field_title.value|raw  }}                                
+                                </h5>
+                            </a>                                      
+                        {% else %}         
+                            <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                <h5 class="title">
+                                    {{ paragraph.field_ourservice3cols.0.entity.field_title.value|raw  }}                                
+                                </h5>
+                            </a>
+                        {% endif %}                             
                         <p class="disc">
                             {{ paragraph.field_ourservice3cols.0.entity.bp_card_text.value|raw  }}                          
                         </p>
-                        <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
-                        {{ paragraph.field_ourservice3cols.0.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i></a>                        
+                        {% if paragraph.field_ourservice3cols.0.entity.bp_card_link.0.url.external %}
+                            <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                {{ paragraph.field_ourservice3cols.0.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i>
+                            </a>                                      
+                        {% else %}         
+                            <a href="{{ paragraph.field_ourservice3cols.0.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                {{ paragraph.field_ourservice3cols.0.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i>
+                            </a>
+                        {% endif %}                       
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
@@ -34,16 +49,31 @@
                         <div class="icon">                          
                             {{ paragraph.field_ourservice3cols.1.entity.bp_unrestricted.value|raw  }}
                         </div>
-                        <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.uri }}">
-                            <h5 class="title">
-                                {{ paragraph.field_ourservice3cols.1.entity.field_title.value|raw  }}                                
-                            </h5>
-                        </a>
+                        {% if paragraph.field_ourservice3cols.1.entity.bp_card_link.0.url.external %}
+                            <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                <h5 class="title">
+                                    {{ paragraph.field_ourservice3cols.1.entity.field_title.value|raw  }}                                
+                                </h5>
+                            </a>                                      
+                        {% else %}         
+                            <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                <h5 class="title">
+                                    {{ paragraph.field_ourservice3cols.1.entity.field_title.value|raw  }}                                
+                                </h5>
+                            </a>
+                        {% endif %} 
                         <p class="disc">
                             {{ paragraph.field_ourservice3cols.1.entity.bp_card_text.value|raw  }} 
                         </p>
-                        <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
-                        {{ paragraph.field_ourservice3cols.1.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i></a>             
+                        {% if paragraph.field_ourservice3cols.1.entity.bp_card_link.0.url.external %}
+                            <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                {{ paragraph.field_ourservice3cols.1.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i>
+                            </a>                                      
+                        {% else %}         
+                            <a href="{{ paragraph.field_ourservice3cols.1.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                {{ paragraph.field_ourservice3cols.1.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i>
+                            </a>
+                        {% endif %}             
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-12 col-12">
@@ -51,16 +81,31 @@
                         <div class="icon">                          
                             {{ paragraph.field_ourservice3cols.2.entity.bp_unrestricted.value|raw  }}
                         </div>
-                        <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.uri }}">
-                            <h5 class="title">
-                                {{ paragraph.field_ourservice3cols.2.entity.field_title.value|raw  }}                                
-                            </h5>
-                        </a>
+                        {% if paragraph.field_ourservice3cols.2.entity.bp_card_link.0.url.external %}
+                            <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                <h5 class="title">
+                                    {{ paragraph.field_ourservice3cols.2.entity.field_title.value|raw  }}                                
+                                </h5>
+                            </a>                                      
+                        {% else %}         
+                            <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                <h5 class="title">
+                                    {{ paragraph.field_ourservice3cols.2.entity.field_title.value|raw  }}                                
+                                </h5>
+                            </a>
+                        {% endif %} 
                         <p class="disc">
                             {{ paragraph.field_ourservice3cols.2.entity.bp_card_text.value|raw  }} 
                         </p>
-                        <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
-                        {{ paragraph.field_ourservice3cols.2.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i></a> 
+                        {% if paragraph.field_ourservice3cols.2.entity.bp_card_link.0.url.external %}
+                            <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                {{ paragraph.field_ourservice3cols.2.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i>
+                            </a>                                      
+                        {% else %}         
+                            <a href="{{ paragraph.field_ourservice3cols.2.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                {{ paragraph.field_ourservice3cols.2.entity.bp_card_link.title }}&nbsp<i class="fa-regular fa-arrow-right"></i>
+                            </a>
+                        {% endif %} 
                     </div>
                 </div>
             </div>
