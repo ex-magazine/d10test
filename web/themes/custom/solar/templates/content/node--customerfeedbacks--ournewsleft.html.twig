@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<article{{ attributes.addClass(classes) }}>
     
     <div class="logo">
          {{ content.field_icon }}
@@ -101,4 +101,4 @@
             <span>{{ content.field_position|render|striptags|trim }}</span>
         </div>
     </div>
-</div>
+</article>
