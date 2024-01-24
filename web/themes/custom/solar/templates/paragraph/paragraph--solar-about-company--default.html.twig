@@ -173,14 +173,14 @@
                                     </div>
                                     <!-- vedio area start -->
                                     <div class="vedio-area-start">
-                                         {% if paragraph.field_tabs.0.entity.bp_card_link.0.url.external %}
-                                            <a href="{{ paragraph.field_tabs.0.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
-                                                {{ paragraph.field_tabs.0.entity.bp_card_link.title }}
+                                         {% if paragraph.field_tabs.1.entity.bp_card_link.0.url.external %}
+                                            <a href="{{ paragraph.field_tabs.1.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                                {{ paragraph.field_tabs.1.entity.bp_card_link.title }}
                                                 <i class="fa-regular fa-arrow-right"></i>
                                             </a>                                      
                                         {% else %}         
-                                            <a href="{{ paragraph.field_tabs.0.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
-                                                {{ paragraph.field_tabs.0.entity.bp_card_link.title }}
+                                            <a href="{{ paragraph.field_tabs.1.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                                {{ paragraph.field_tabs.1.entity.bp_card_link.title }}
                                                 <i class="fa-regular fa-arrow-right"></i>
                                             </a>
                                         {% endif %}   
@@ -248,8 +248,17 @@
                                     </div>
                                     <!-- vedio area start -->
                                     <div class="vedio-area-start">
-                                        <a href="{{ paragraph.field_tabs.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">{{ paragraph.field_tabs.2.entity.bp_card_link.title }}
-                                        <i class="fa-regular fa-arrow-right"></i></a>
+                                        {% if paragraph.field_tabs.2.entity.bp_card_link.0.url.external %}
+                                            <a href="{{ paragraph.field_tabs.2.entity.bp_card_link.uri }}" class="rts-btn btn-primary">
+                                                {{ paragraph.field_tabs.2.entity.bp_card_link.title }}
+                                                <i class="fa-regular fa-arrow-right"></i>
+                                            </a>                                      
+                                        {% else %}         
+                                            <a href="{{ paragraph.field_tabs.2.entity.bp_card_link.0.url }}" class="rts-btn btn-primary">
+                                                {{ paragraph.field_tabs.2.entity.bp_card_link.title }}
+                                                <i class="fa-regular fa-arrow-right"></i>
+                                            </a>
+                                        {% endif %}
                                         <div class="vedio-icone">
                                             <a class=" play-video video-play-button" href="#">
                                                 <span></span>
