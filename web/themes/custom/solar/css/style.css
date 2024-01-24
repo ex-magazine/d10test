@@ -23623,6 +23623,7 @@ body.language_vi .rts-single-wized.download .single-download-area .mid .title {
 body.language_en .rts-single-wized.download .single-download-area .mid .title {
   font-family: var(--font-primary);
 }
+body.language_ko #block-solar-callforhelp,
 body.language_zh-hans #block-solar-callforhelp,
 body.language_vi #block-solar-callforhelp{
   display: none;
