@@ -109,7 +109,9 @@
                                                 <i class="fa-regular fa-arrow-right"></i>
                                             </a>
                                         {% endif %}                                        
-                                      
+                                        <div class="d-none" id="youtube-embed">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ paragraph.field_tabs.0.entity.bp_card_title.value|render|striptags|trim }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
                                         <div class="vedio-icone">
                                             <a class=" play-video video-play-button" href="#"> 
                                                 <span></span>
@@ -184,8 +186,11 @@
                                                 <i class="fa-regular fa-arrow-right"></i>
                                             </a>
                                         {% endif %}   
+                                        <div class="d-none" id="youtube-embed-tab-second">
+                                            <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ paragraph.field_tabs.1.entity.bp_card_title.value|render|striptags|trim }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                        </div>
                                         <div class="vedio-icone">
-                                            <a class=" play-video video-play-button" href="#">
+                                            <a class=" play-video-second video-play-button" href="#">
                                                 <span></span>
                                                 <p class="text">
                                                    {{ paragraph.field_tabs.1.entity.bp_accordion_section_title.value|raw  }}  
@@ -259,6 +264,7 @@
                                                 <i class="fa-regular fa-arrow-right"></i>
                                             </a>
                                         {% endif %}
+                                        
                                         <div class="vedio-icone">
                                             <a class=" play-video video-play-button" href="#">
                                                 <span></span>

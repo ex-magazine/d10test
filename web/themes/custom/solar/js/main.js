@@ -753,7 +753,12 @@
               $('.video-overlay').addClass('open');
               $(".video-overlay").append(youtube_code.innerHTML);
           });
-
+          $('.play-video-second').on('click', function (e) {
+            e.preventDefault();
+            let youtube_code = document.querySelector('#youtube-embed-tab-second');
+            $('.video-overlay').addClass('open');
+            $(".video-overlay").append(youtube_code.innerHTML);
+         });
           $('.video-overlay, .video-overlay-close').on('click', function (e) {
               e.preventDefault();
               close_video();

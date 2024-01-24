@@ -18661,6 +18661,7 @@ body.language_en .cta-main-wrapper-one .info-area h4.title {
     padding: 20px 10px;
   }
 }
+.vedio-area-start .vedio-icone .play-video-second .text,
 .vedio-area-start .vedio-icone .play-video .text {
   max-width: max-content;
   min-width: max-content;
@@ -18673,10 +18674,12 @@ body.language_en .cta-main-wrapper-one .info-area h4.title {
   position: relative;
 }
 @media only screen and (max-width: 575px) {
+  .vedio-area-start .vedio-icone .play-video-second .text ,
   .vedio-area-start .vedio-icone .play-video .text {
     display: none;
   }
 }
+.vedio-area-start .vedio-icone .play-video-second .text::after,
 .vedio-area-start .vedio-icone .play-video .text::after {
   position: absolute;
   content: "";
