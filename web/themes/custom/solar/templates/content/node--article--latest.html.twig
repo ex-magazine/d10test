@@ -4,12 +4,12 @@
 </a>
 {% endif %}
 {% if label or date %}
-<div class="blog-details">
+<article class="blog-details">
   {% if label %}
   <h4><a href="{{ url }}">{{ label }}</a></h4>
   {% endif %}
   {% if date %}
   <div class="date"><i class="fa-regular fa-calendar"></i> {{ date|date("d-m-Y") }}</div>
   {% endif %}
-</div>
+</article>
 {% endif %}

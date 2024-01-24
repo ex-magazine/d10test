@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>    
+<article {{ attributes.addClass(classes) }}>    
     <a href="{{ url }}" class="thumbnail">        
         {{ content.field_image }}        
     </a>
@@ -92,7 +92,7 @@
         </a>
         {{ content.field_expiration_date }}  
     </div>
-</div>
+</article>
 
 
                 
