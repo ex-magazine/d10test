@@ -18711,7 +18711,10 @@ body.language_en .cta-main-wrapper-one .info-area h4.title {
   margin-right: auto;
   margin-left: 0;
 }
-
+.messages__wrapper .messages__container{
+  display: flex;
+  align-items: center;  
+}
 .vedio-icone .video-play-button {
   position: absolute;
   z-index: 2;
