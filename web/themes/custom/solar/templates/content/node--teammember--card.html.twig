@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>
+<article{{ attributes.addClass(classes) }}>
     <div class="thumbnail">        
         {{ content.field_image }}
         <div class="share-team-h1">
@@ -102,4 +102,4 @@
         </a>
         <span>{{ content.field_position|render|striptags|trim }}</span>
     </div>
-</div>
+</article>

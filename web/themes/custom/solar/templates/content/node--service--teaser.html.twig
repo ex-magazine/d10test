@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>    
+<article {{ attributes.addClass(classes) }}>    
     <a href="{{ content.field_linkto.0['#url'] }}" class="thumbnail">
         <div class="inner">
             {{ content.field_image }}
@@ -103,4 +103,4 @@
             <i class="fa-regular fa-arrow-up-right"></i>
         </a>
     </div>
-</div>
+</article>

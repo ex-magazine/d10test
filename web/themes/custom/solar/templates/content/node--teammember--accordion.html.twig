@@ -82,7 +82,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
-<div{{ attributes.addClass(classes) }}>    
+<article{{ attributes.addClass(classes) }}>    
     <a href="{{ url }}" class="thumbnail">
         <div class="inner">
             {{ content.field_image }}
@@ -115,4 +115,4 @@
             <i class="fa-sharp fa-regular fa-share-nodes"></i>
         </div>
     </div>
-</div>
+</article>
