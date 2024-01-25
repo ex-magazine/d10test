@@ -24101,7 +24101,7 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
 }
 @media only screen and (max-width: 767px) {
   .single-footer-one-wrapper .single-footer-component.first {
-    flex-basis: 100%;
+    flex-basis: 100% !important;
   }
 }
 .single-footer-one-wrapper .single-footer-component.last {
@@ -24730,7 +24730,7 @@ body.language_en .personal-info-team .single-info .info span{
 @media only screen and (max-width: 479px) {
   .personal-info-team .single-info .info a.mail {
     font-size: 18px;
-  }
+  }  
 }
 .personal-info-team .single-info .info a.mail:hover {
   color: var(--color-primary);
@@ -24747,6 +24747,13 @@ body.language_en .personal-info-team .single-info .info span{
 .rts-single-team-one .share-icon .share-icons-wrapper {
   position: absolute;
   top: -170px;
+}
+.progress-marker::after{
+  top: 20px;
+}
+.progress-marker::before{
+  width: 40px;
+  height: 40px;
 }
 .rts-single-team-one .share-icon .share-icons-wrapper ul {
   padding: 0;
