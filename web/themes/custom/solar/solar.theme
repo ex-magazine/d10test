@@ -199,6 +199,11 @@ function solar_preprocess_node(&$variables) {
   }
 
   $variables['solar_path'] = \Drupal::request()->getBasePath() . '/' . \Drupal::service('extension.list.theme')->getPath('solar');
+ 
+  $variables['solar_social_link_facebook'] = theme_get_setting('facebook'); 
+  $variables['solar_social_link_youtube'] = theme_get_setting('youtube');
+  $variables['solar_social_link_linkedin'] = theme_get_setting('linkedin');
+
 }
 
 
