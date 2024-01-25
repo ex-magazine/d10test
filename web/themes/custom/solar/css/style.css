@@ -14181,6 +14181,10 @@ Copyright (c) 2015 Daniel Eden
     font-size: 4.4rem;
     font-weight: 300;
   }
+  .node--view-mode-ournewsright  .thumbnail img {
+    height: 210px;
+    width: auto;
+  }
 }
 @media only screen and (min-width: 1170px) {
   .cd-headline {
@@ -15033,9 +15037,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   body.language_vi .main-nav-one ul li.has-dropdown{
     margin-right: 5px !important;
   }
-  .node--view-mode-ournewsright  .thumbnail img {
-    height: 210px;
-  }
+ 
   .node--view-mode-ournewsright .body h2.title span{
     height: 50px !important;
   }
