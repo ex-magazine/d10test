@@ -23857,6 +23857,11 @@ body.language_vi #block-solar-callforhelp{
   .mySwiper-h-2-cl .swiper-wrapper {    
     gap: 0px !important;
   }
+  .webform-submission-efficiency-form .js-webform-computed{
+    margin-top: 30px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
 }
 @media only screen and (max-width: 479px) {
   .rts-single-wized .gallery-inner .single-row a img {
