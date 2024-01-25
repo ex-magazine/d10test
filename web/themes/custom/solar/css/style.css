@@ -15054,6 +15054,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
 .main-nav-one ul li.has-dropdown a.nav-link {
   padding: 19px 14px !important;
   color: #1F1F25;
+  font-size: 15px;
 }
 .main-haeder-wrapper-h2 .actions-area .menu-btn {
   cursor: pointer;
