@@ -451,14 +451,16 @@
                   slidesPerView: 3,
                 },
                 767: {
-                  slidesPerView: 1,
-                  spaceBetween: 30,
+                  slidesPerView: 3,
+                  spaceBetween: 0,
                 },
                 575: {
                   slidesPerView: 1,
+                  spaceBetween: 24,                  
                 },
                 0: {
                   slidesPerView: 1,
+                  spaceBetween: 0,
                 }
               },
             });
