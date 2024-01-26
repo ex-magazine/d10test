@@ -23371,6 +23371,10 @@ body.language_en .single-progress-area-h4 .progress-top p {
 .blog-single-post-listing.details .ref-area .thumbnail{
   flex-basis: 30%;
 }
+.cta-solari-wrapper .right-area fieldset{
+  margin: 20px 0 0 0 !important;
+  padding: 0 !important;
+}
 .blog-single-post-listing.details .ref-area .author-details{
   flex-basis: 70%;
 }
