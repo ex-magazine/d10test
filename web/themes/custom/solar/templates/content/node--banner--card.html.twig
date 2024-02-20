@@ -84,13 +84,12 @@
 %}
 {% if node.field_video.entity.uri.value is not empty %}
 <article {{ attributes.addClass(classes) }} data-slide-type="vdo">
-  
     <video
     id="my-player"
     class="video-js"   
       controls
       preload="auto"    
-      muted     
+      muted         
       data-setup='{}'>
       <source src="{{ file_url(node.field_video.entity.uri.value) }}" type="video/mp4"></source>  
     </video>   

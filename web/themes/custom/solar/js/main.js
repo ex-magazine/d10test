@@ -557,6 +557,8 @@
             var waiting = 8000;
             var swiper = new Swiper(
               '.mySwiper-banner-2', {
+              effect: 'slide',
+              
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -588,7 +590,7 @@
                   runNext()
                   break;
                 case 'vdo':
-                  player.currentTime(0)
+                  player.currentTime(0)                
                   player.play()
                   videoPlayStatus = VIDEO_PLAYING_STATE.PLAYING
                   break;
