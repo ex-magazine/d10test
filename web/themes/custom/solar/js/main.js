@@ -554,7 +554,7 @@
             };
             var videoPlayStatus = VIDEO_PLAYING_STATE.PAUSE;
             var timeout = null;
-            var waiting = 3000;
+            var waiting = 8000;
             var swiper = new Swiper(
               '.mySwiper-banner-2', {
               navigation: {
