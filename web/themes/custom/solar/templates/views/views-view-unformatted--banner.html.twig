@@ -22,15 +22,8 @@
 {% endif %}
 <div class="swiper mySwiper-banner-2">
   <div class="swiper-wrapper">          
-              {% for row in rows %}
-                {%
-                  set row_classes = [
-                    default_row_class ? 'views-row swiper-slide',
-                  ]
-                %}
-                <div{{ row.attributes.addClass(row_classes) }}>
-                  {{- row.content -}}
-                </div>
+              {% for row in rows %}                         
+                  {{- row.content -}}           
               {% endfor %}
   </div>      
   <div class="swiper-pagination-b2"></div>

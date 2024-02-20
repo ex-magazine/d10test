@@ -16,6 +16,7 @@ global-styling:
       css/metismenu.css: {}
       css/animate.css: {}
       css/bootstrap.min.css: {}
+      css/video-js.min.css: {}      
       css/style.css: {}
       # css/components/breadcrumb.css: {}
       # css/components/embedded-media.css: {}
@@ -47,6 +48,7 @@ global-styling:
       # css/custom/responsive.css: {}
   js:
     js/jqueryui.js: {}
+    js/video.js: {}
     js/counter-up.js: {}
     js/swiper.js: {}
     js/metismenu.js: {}
