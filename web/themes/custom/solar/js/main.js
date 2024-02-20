@@ -554,14 +554,24 @@
             };
             var videoPlayStatus = VIDEO_PLAYING_STATE.PAUSE;
             var timeout = null;
-            var waiting = 8000;
+            var waiting = 10000;
             var swiper = new Swiper(
               '.mySwiper-banner-2', {
-              effect: 'slide',
-              
+              pagination: {
+                el: ".swiper-pagination-b2",
+                clickable: true
+              },
+              effect: 'slide',   
               navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
+              },
+              on: {
+                init: function () {
+                  console.log('swiper initialized', this.realIndex);
+                  var currentVideo =  $("[data-slide-type=vdo]").find("video");
+                  currentVideo.trigger('play');
+                },
               },
             });
 
@@ -572,6 +582,7 @@
               swiper.slideNext();  
             })
             // swiper object
+           
             swiper.on('slideChangeTransitionEnd', function () {
               
               var index = swiper.activeIndex

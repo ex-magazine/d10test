@@ -15,7 +15,7 @@ global-styling:
       css/unicons.css: {}
       css/metismenu.css: {}
       css/animate.css: {}
-      css/bootstrap.min.css: {}         
+      css/bootstrap.min.css: {}      
       css/style.css: {}
       # css/components/breadcrumb.css: {}
       # css/components/embedded-media.css: {}
