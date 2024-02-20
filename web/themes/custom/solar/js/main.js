@@ -612,8 +612,8 @@
               }, waiting)
             }
             unmuteButton.addEventListener('click', function() {
-              video.muted = false;
-            
+              var video=document.getElementById("my-player");
+              video.muted = false;            
             });
             runNext();
 
