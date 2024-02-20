@@ -93,8 +93,7 @@
       muted     
       data-setup='{}'>
       <source src="{{ file_url(node.field_video.entity.uri.value) }}" type="video/mp4"></source>  
-    </video>
-    <button id="unmuteButton"></button>
+    </video>   
 </article>
 {% else %}
   <article {{ attributes.addClass(classes) }} data-slide-type="img" style="background-image: url('{{ file_url(node.field_image.entity.fileuri) }}');">

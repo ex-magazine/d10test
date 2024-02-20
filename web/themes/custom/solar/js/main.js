@@ -611,10 +611,14 @@
                 next()
               }, waiting)
             }
-            unmuteButton.addEventListener('click', function() {
-              var video=document.getElementById("my-player");
-              video.muted = false;            
-            });
+         
+            // $('.video-overlay').click(function() {
+            //   if (player.paused())
+            //     player.play();
+            //   else
+            //     player.pause();
+            // });
+    
             runNext();
 
 
