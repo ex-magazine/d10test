@@ -42,6 +42,16 @@
     <js-placeholder token="{{ placeholder_token }}">
     {# {% include '@solar/includes/preload.twig' with { solar_path: solar_path } only %} #}
     {{ noscript_styles }}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-78163298-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-78163298-1');
+    </script>
+
   </head>
   <body{{ attributes.addClass(body_classes) }}>
     {#
