@@ -30105,10 +30105,4 @@ figure.caption figcaption{
 .site-branding__logo.logo-area img{
   height: 45px;
 }
-.node--view-mode-card video{
-  outline: none !important;
-  overflow: hidden;
-  position: relative;
-  top: -10px;
-  left: -10px;
-}
+

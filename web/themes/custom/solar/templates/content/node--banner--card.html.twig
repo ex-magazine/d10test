@@ -82,6 +82,18 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
   ]
 %}
+<style>
+  .node--view-mode-card video{
+    outline: none !important;
+    overflow: hidden;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 100% !important;
+    height: 100% !important;
+  }
+</style>
+
 {% if node.field_video.entity.uri.value is not empty %}
 <article {{ attributes.addClass(classes) }} data-slide-type="vdo">
     <video
