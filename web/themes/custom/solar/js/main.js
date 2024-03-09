@@ -1088,15 +1088,13 @@
 
         preloader:function(){
           var preload = $("#elevate-load");
-          // function bannerStop() {
-          //   if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {      
-          //     
-          //   } 
-          //      
-          // }          
-          
-          // const bannerStopTimeout = setTimeout(bannerStop, 3000);
-          // clearTimeout(bannerStopTimeout);
+          function bannerStop() {
+            if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {      
+              document.querySelector(".block_content_banner").classList.add("d-none");
+            }                
+          }          
+          const bannerStopTimeout = setTimeout(bannerStop, 3000);
+          clearTimeout(bannerStopTimeout);
           if (preload.length){                               
             window.addEventListener('load',function(){
               document.querySelector('#elevate-load').classList.add("loaded");
