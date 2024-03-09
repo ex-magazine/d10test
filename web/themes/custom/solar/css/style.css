@@ -30117,3 +30117,6 @@ figure.caption figcaption{
 #block-solar-mainnavigation ul.menu.menu--level-1 li.menu__item--level-1:first-child{
   margin-left: 10px;
 }
+.menu__link--active-trail.is-active{
+  color: #4AAB3D;
+}
