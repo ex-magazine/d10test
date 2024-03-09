@@ -30061,6 +30061,15 @@ figure.caption figcaption{
     padding: 5px;
     /* overflow-y: auto; */
 }
+.day-columns .day-column .event.blue{
+  min-height: 108px 
+}
+.day-columns .day-column .event.gray,
+.day-columns .day-column .event.green,
+.day-columns .day-column .event.turquoise,
+.day-columns .day-column .event.navy{
+  min-height: 81px; 
+}
 .day-columns .day-column .event {
     display: flex;
     align-items: center;       
