@@ -51,7 +51,7 @@
             drJs.progressAvtivation(); 
             drJs.gsapTextanim(); 
             drJs.smoothScroll(); 
-            drJs.preloader(); 
+            drJs.preloader();           
             drJs.cartNumberIncDec(); 
             drJs.cartBarshow(); 
 
@@ -1084,13 +1084,23 @@
           });
         },
 
-        preloader:function(){
+       
 
+        preloader:function(){
           var preload = $("#elevate-load");
-  
-          if (preload.length){
+          // function bannerStop() {
+          //   if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {      
+          //     
+          //   } 
+          //      
+          // }          
+          
+          // const bannerStopTimeout = setTimeout(bannerStop, 3000);
+          // clearTimeout(bannerStopTimeout);
+          if (preload.length){                               
             window.addEventListener('load',function(){
-              document.querySelector('#elevate-load').classList.add("loaded")  ;
+              document.querySelector('#elevate-load').classList.add("loaded");
+              document.querySelector(".block_content_banner").classList.remove("d-none");
             }); 
           };
   

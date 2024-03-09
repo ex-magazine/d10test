@@ -30105,6 +30105,6 @@ figure.caption figcaption{
 .site-branding__logo.logo-area img{
   height: 45px;
 }
-ul.menu.menu--level-1 li.menu__item--level-1:first-child{
+#block-solar-mainnavigation ul.menu.menu--level-1 li.menu__item--level-1:first-child{
   margin-left: 10px;
 }
