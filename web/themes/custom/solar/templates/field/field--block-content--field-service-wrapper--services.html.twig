@@ -45,7 +45,7 @@
           {% else %}
             <li class="tab-nav-item" data-id="{{ item.content["#paragraph"].field_service_name.value|replace({' ':'_'})|lower }}">
           {% endif %}        
-              <span class="icon"><img src="{{ file_url(item.content["#paragraph"].field_service_icon.entity.field_media_image.entity.fileuri) }}" alt="icon"></span>
+              <span class="icon"><img src="{{ file_url(item.content["#paragraph"].field_service_icon.entity.field_media_image.entity.fileuri) }}" alt="CME Solar" /></span>
               <span class="name">{{ item.content["#paragraph"].field_service_name.value }}</span>
             </li>
       {% endfor %}
@@ -54,13 +54,13 @@
     {% for item in items %}
       {% if loop.first %}
       <h4 class="tab-nav-item active" data-id="{{ item.content["#paragraph"].field_service_name.value|replace({' ':'_'})|lower }}">
-          <span class="icon"><img src="{{ file_url(item.content["#paragraph"].field_service_icon.entity.field_media_image.entity.fileuri) }}" alt="icon"></span>
+          <span class="icon"><img src="{{ file_url(item.content["#paragraph"].field_service_icon.entity.field_media_image.entity.fileuri) }}" alt="CME Solar" /></span>
           <span class="name">{{ item.content["#paragraph"].field_service_name.value }}</span>
         </h4>
       <div class="tab-content active" data-id="{{ item.content["#paragraph"].field_service_name.value|replace({' ':'_'})|lower }}">
       {% else %}
        <h4 class="tab-nav-item" data-id="{{ item.content["#paragraph"].field_service_name.value|replace({' ':'_'})|lower }}">
-          <span class="icon"><img src="{{ file_url(item.content["#paragraph"].field_service_icon.entity.field_media_image.entity.fileuri) }}" alt="icon"></span>
+          <span class="icon"><img src="{{ file_url(item.content["#paragraph"].field_service_icon.entity.field_media_image.entity.fileuri) }}" alt="CME Solar" /></span>
           <span class="name">{{ item.content["#paragraph"].field_service_name.value }}</span>
         </h4>
       <div class="tab-content" data-id="{{ item.content["#paragraph"].field_service_name.value|replace({' ':'_'})|lower }}">       
@@ -72,7 +72,7 @@
           </div>
           <div class="col-lg-6">
             <div class="img-wrapper">
-              <img src="{{ file_url(item.content["#paragraph"].field_service_image.entity.field_media_image.entity.fileuri) }}">
+              <img src="{{ file_url(item.content["#paragraph"].field_service_image.entity.field_media_image.entity.fileuri) }}" alt="CME Solar" />
             </div>
           </div>
         </div>
