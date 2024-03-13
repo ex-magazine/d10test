@@ -140,16 +140,19 @@
                 </div>
             </div>
         </div>
-        <div class="author-area reveal">
-            <div class="thumbnail details mb_sm--15">                
+        {{ drupal_view('author', 'block_1') }}        
+            
+            {#
+                <div class="author-area reveal">
+           <div class="thumbnail details mb_sm--15">                
                 <img src="{{ file_url(node.Owner.user_picture.0.entity.fileuri|image_style('large')) }}" alt="{{ node.uid.entity.field_fullname.0.value }}" />
             </div>
-            <div class="author-details team">
+            <div class="author-details team">                
                 <span class="title-g">{{ node.uid.entity.field_position.0.value }}</span>
-                <h5 class="title-g">{{ node.uid.entity.field_fullname.0.value }}</h5>
-                <p class="disc title-g">{{ node.uid.entity.field_des.0.value }}</p>
-            </div>
-        </div>
+                <h5 class="title-g">{{ node.uid.entity.field_fullname.0.value }}</h5>               
+                <p class="disc title-g">{{ node.uid.entity.field_des.value }}</p>
+            </div> </div> #}
+       
 
         {% if content.field_abstract|render|striptags|trim  is not empty %}
             <div class="title-ref">{{ content.field_lean_more|raw }}</div>      
