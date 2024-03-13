@@ -110,6 +110,7 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
             'Psr\\Container\\' => 14,
             'Psr\\Clock\\' => 10,
             'Psr\\Cache\\' => 10,
+            'Predis\\' => 7,
             'PhpParser\\' => 10,
             'Peast\\' => 6,
             'PHPMailer\\PHPMailer\\' => 20,
@@ -412,6 +413,10 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
+        ),
+        'Predis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/predis/predis/src',
         ),
         'PhpParser\\' => 
         array (

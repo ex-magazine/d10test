@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2.0",
+        "cweagans/composer-patches": "^1.7",
         "drupal/addtoany": "^2.0",
         "drupal/admin_toolbar": "^3.4",
         "drupal/allowed_formats": "^3.0",
@@ -157,7 +158,8 @@
         "drupal/webform": "^6.2",
         "drupal/webp": "^1.0@RC",
         "drupal/webp_extras": "^2.0@beta",
-        "drush/drush": "^12.4"
+        "drush/drush": "^12.4",
+        "predis/predis": "^2.2"
     },
     "conflict": {
         "drupal/drupal": "*"
