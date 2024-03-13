@@ -74,7 +74,7 @@ function solar_preprocess_html(&$variables) {
  * Adds body classes if certain regions have content.
  */
 function solar_preprocess_page(&$variables) {
-
+  $variables['searchprefix'] = \Drupal::languageManager()->getCurrentLanguage()->getId();
   // So fonts can be preloaded from base theme in the event solar is used as a subtheme.
   $variables['solar_path'] = \Drupal::request()->getBasePath() . '/' . \Drupal::service('extension.list.theme')->getPath('solar');
   $variables['solar_social_link_twitter'] = theme_get_setting('twitter');
