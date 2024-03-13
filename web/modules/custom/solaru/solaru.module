@@ -57,5 +57,15 @@ function solaru_node_view(array &$build, $entity, $display, $view_mode) {
         die();
       }     
     }
+    if ($entity->field_linkto[0]->uri != null && isset($entity->field_linkto[0]->uri)) {
+      $node_id = $entity->field_linkto[0]->uri; 
+      $node_id = explode('/', $node_id);
+      if ($view_mode == 'full') {              
+        $response = new RedirectResponse(Url::fromUri('http://solar.adn.id.vn/node/'. $node_id[1] )
+        ->toString(), 301);
+        $response->send();
+        die();
+      }     
+    }
   } 
 }
