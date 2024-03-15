@@ -1,7 +1,0 @@
-condition.browser:
-  header: true
-  version: 1.x
-  js:
-    js/condition.browser.js: { }
-  dependencies:
-    - smart_content/condition_type.standard

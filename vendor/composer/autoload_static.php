@@ -108,16 +108,11 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
             'Psr\\Http\\Client\\' => 16,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
-            'Psr\\Clock\\' => 10,
             'Psr\\Cache\\' => 10,
             'Predis\\' => 7,
             'PhpParser\\' => 10,
             'Peast\\' => 6,
             'PHPMailer\\PHPMailer\\' => 20,
-        ),
-        'O' => 
-        array (
-            'OpenIDConnectServer\\' => 20,
         ),
         'M' => 
         array (
@@ -125,12 +120,7 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         ),
         'L' => 
         array (
-            'League\\Uri\\' => 11,
-            'League\\OAuth2\\Server\\' => 21,
-            'League\\Event\\' => 13,
             'League\\Container\\' => 17,
-            'Lcobucci\\JWT\\' => 13,
-            'Lcobucci\\Clock\\' => 15,
         ),
         'J' => 
         array (
@@ -157,7 +147,6 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         'D' => 
         array (
             'Drush\\' => 6,
-            'Drupal\\ui_patterns_settings_settings\\' => 37,
             'Drupal\\redis\\' => 13,
             'Drupal\\rat\\' => 11,
             'Drupal\\bootstrap\\' => 17,
@@ -175,7 +164,6 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
             'Doctrine\\Common\\Annotations\\' => 28,
             'Doctrine\\Common\\' => 16,
             'Dflydev\\DotAccessData\\' => 22,
-            'Defuse\\Crypto\\' => 14,
         ),
         'C' => 
         array (
@@ -406,10 +394,6 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
-        'Psr\\Clock\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/psr/clock/src',
-        ),
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
@@ -430,38 +414,13 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
-        'OpenIDConnectServer\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/steverhoades/oauth2-openid-connect-server/src',
-        ),
         'Masterminds\\' => 
         array (
             0 => __DIR__ . '/..' . '/masterminds/html5/src',
         ),
-        'League\\Uri\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/uri',
-            1 => __DIR__ . '/..' . '/league/uri-interfaces',
-        ),
-        'League\\OAuth2\\Server\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/oauth2-server/src',
-        ),
-        'League\\Event\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/league/event/src',
-        ),
         'League\\Container\\' => 
         array (
             0 => __DIR__ . '/..' . '/league/container/src',
-        ),
-        'Lcobucci\\JWT\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
-        ),
-        'Lcobucci\\Clock\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/lcobucci/clock/src',
         ),
         'JsonPath\\' => 
         array (
@@ -506,10 +465,6 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         'Drush\\' => 
         array (
             0 => __DIR__ . '/..' . '/drush/drush/src',
-        ),
-        'Drupal\\ui_patterns_settings_settings\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/web/modules/contrib/ui_patterns_settings/src',
         ),
         'Drupal\\redis\\' => 
         array (
@@ -579,10 +534,6 @@ class ComposerStaticInitefb9407dc77d9cf0351b2765447cd87f
         'Dflydev\\DotAccessData\\' => 
         array (
             0 => __DIR__ . '/..' . '/dflydev/dot-access-data/src',
-        ),
-        'Defuse\\Crypto\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/defuse/php-encryption/src',
         ),
         'Consolidation\\SiteProcess\\' => 
         array (
