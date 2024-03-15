@@ -280,18 +280,18 @@ the default one:
     // Make CACHE_PERMANENT items being permanent once again
     // 0 is a special value usable for all bins to explicitely tell the
     // cache items will not be volatile in Redis.
-    $conf['redis_perm_ttl'] = 0;
+    $settings['redis.settings']['perm_ttl'] = 0;
 
     // Make them being volatile with a default lifetime of 1 year.
-    $conf['redis_perm_ttl'] = "1 year";
+    $settings['redis.settings']['perm_ttl'] = "1 year";
 
     // You can override on a per-bin basis;
     // For example make cached field values live only 3 monthes:
-    $conf['redis_perm_ttl_cache_field'] = "3 months";
+    $settings['redis.settings']['perm_ttl_cache_field'] = "3 months";
 
     // But you can also put a timestamp in there; In this case the
     // value must be a STRICTLY TYPED integer:
-    $conf['redis_perm_ttl_cache_field'] = 2592000; // 30 days.
+    $settings['redis.settings']['perm_ttl_cache_field'] = 2592000; // 30 days.
 
 Time interval string will be parsed using DateInterval::createFromDateString
 please refer to its documentation:
