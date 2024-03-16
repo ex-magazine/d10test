@@ -29687,6 +29687,8 @@ edit .quantity-edit button {
   font-size: 18px !important;  
   font-weight: 700;
   border-bottom: 1px solid #eeeeee;  
+  max-width: 171px;
+  margin-top: 12px;
 }
 .process--desktop-inner .wrt-two,
 .process--desktop-inner .wrt-three,
