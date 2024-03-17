@@ -834,24 +834,7 @@ ol ul {
     padding-top: 70px;
   }
 }
-@media only screen and (max-width: 767px) {
-  .rts-section-gap3Top {
-    padding-top: 60px;
-  }
-  .solar-search .views-exposed-form,
-  .view-ourproject .views-exposed-form{
-    display: block;
-  }
-  .solar-search .views-exposed-form .form-actions.js-form-wrapper.form-wrapper,
-  .view-ourproject .views-exposed-form .form-actions.js-form-wrapper.form-wrapper{
-    text-align: center;
-  }
 
-  .solar-search .views-exposed-form .js-form-item,
-  .view-ourproject .views-exposed-form .js-form-item{
-    margin: 20px 0;
-  }
-}
 
 .pl--0 {
   padding-left: 0 !important;
@@ -29178,6 +29161,22 @@ edit .quantity-edit button {
   .cart-bar {
     width: 310px;
   }
+  .rts-section-gap3Top {
+    padding-top: 60px;
+  }
+  .solar-search .views-exposed-form,
+  .view-ourproject .views-exposed-form{
+    display: block;
+  }
+  .solar-search .views-exposed-form .form-actions.js-form-wrapper.form-wrapper,
+  .view-ourproject .views-exposed-form .form-actions.js-form-wrapper.form-wrapper{
+    text-align: center;
+  }
+
+  .solar-search .views-exposed-form .js-form-item,
+  .view-ourproject .views-exposed-form .js-form-item{
+    margin: 20px 0;
+  }
 }
 
 .cart-bar.show {
@@ -30097,3 +30096,4 @@ figure.caption figcaption{
 #block-solar-aboutus .thumbnail-solari-about .video-play-button p.text{
   display: none;
 }
+
