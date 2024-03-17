@@ -838,6 +838,19 @@ ol ul {
   .rts-section-gap3Top {
     padding-top: 60px;
   }
+  .solar-search .views-exposed-form,
+  .view-ourproject .views-exposed-form{
+    display: block;
+  }
+  .solar-search .views-exposed-form .form-actions.js-form-wrapper.form-wrapper,
+  .view-ourproject .views-exposed-form .form-actions.js-form-wrapper.form-wrapper{
+    text-align: center;
+  }
+
+  .solar-search .views-exposed-form .js-form-item,
+  .view-ourproject .views-exposed-form .js-form-item{
+    margin: 20px 0;
+  }
 }
 
 .pl--0 {
