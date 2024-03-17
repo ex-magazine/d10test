@@ -29177,6 +29177,9 @@ edit .quantity-edit button {
   .view-ourproject .views-exposed-form .js-form-item{
     margin: 20px 0;
   }
+  .solar-search .views-exposed-form .js-form-type-textfield{
+    width: 100%;
+  }
 }
 
 .cart-bar.show {
