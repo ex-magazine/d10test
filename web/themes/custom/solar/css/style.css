@@ -16451,25 +16451,58 @@ body.language_en .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone
   padding: 2px 7px;
   border-radius: 2px;
 }
+.mySwiper-banner-2 .field--name-field-title-second {
+  color: #000;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 50px;
+}
+ .mySwiper-banner-2 .video-text .ptb--200{
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  max-width: 600px;
+} 
+.mySwiper-banner-2 .disc h3{
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 50px;
+  margin: 0;
+}
+.mySwiper-banner-2 .disc .field--name-body {
+  margin-top: 20px;
+}
+.mySwiper-banner-2 .disc .field--name-body ul {
+  margin: 0 0 20px 0;
+  padding: 0;
+}
+.mySwiper-banner-2 .disc .field--name-body ul li{
+  color: #fff;
+  list-style: none;
+  margin: 5px 0;
+}
 .banner-solari-2-content .banner-title,
 .banner-solari-2-content .banner-title span{
   font-weight: 700;
   font-size: 50px;
   line-height: 70px;
-  color: #fff;
+  color: #000;
   margin-top: 25px;
+  margin-bottom: 0;
 }
 @media only screen and (max-width: 767px) {
   .banner-solari-2-content .banner-title span{
     font-size: 44px;
     line-height: 55px;
   }
+ 
 }
 @media only screen and (max-width: 575px) {
   .banner-solari-2-content .banner-title span{
     font-size: 36px;
     line-height: 45px;
-  }
+  } 
 }
 .banner-solari-2-content .disc p{
   margin-top: 25px;
@@ -16509,12 +16542,12 @@ body.language_en .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .banner-two-swiper-start .mySwiper-banner-2 .swiper-pagination-b2 {
     display: none;
-  }
+  } 
 }
 @media only screen and (max-width: 1199px) {
   .banner-two-swiper-start .mySwiper-banner-2 .swiper-pagination-b2 {
     display: none;
-  }
+  }  
 }
 .banner-two-swiper-start .mySwiper-banner-2 .swiper-pagination-b2 .swiper-pagination-bullet {
   background: #fff;
@@ -16562,8 +16595,9 @@ body.language_en .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .button-solari-banner-area .vedio-icone .video-play-button {
     left: 39%;
-  }
+  }  
 }
+
 @media only screen and (max-width: 1199px) {
   .button-solari-banner-area .vedio-icone .video-play-button {
     left: 51%;
