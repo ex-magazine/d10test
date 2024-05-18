@@ -1,0 +1,68 @@
+{%
+  set classes = [
+    'paragraph',  
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+    not paragraph.isPublished() ? 'paragraph--unpublished'
+  ]
+%}
+<style>
+   
+      
+      
+      
+
+</style>
+
+
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}         
+    {% set count = content.field_milestone['#items']|length %}      
+    <div class="container">   
+      <div class="pres-timeline" id="this-timeline">        
+        <div class="periods-container">
+          {% for key, item in content.field_milestone['#items']  %}        
+          <section class="period-single" period="period{{key + 1 }}">
+            <h4 class="year">{{ item.entity.bp_card_title.value|raw }}</h4>           
+          </section>                   
+          {% endfor %}
+          <div class="btn-back"></div>
+          <div class="btn-next"></div>
+        </div>
+        <div class="timeline-container">      
+          <div class="timeline"></div>      
+          <div class="btn-back"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h30v30H0z"/><path fill="#D8D8D8" fill-rule="evenodd" d="M11.828 15l7.89-7.89-2.83-2.828L6.283 14.89l.11.11-.11.11L16.89 25.72l2.828-2.83"/></svg></div>
+          <div class="btn-next"><svg width="30" height="30" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h30v30H0z"/><path fill="#D8D8D8" fill-rule="evenodd" d="M18.172 14.718l-7.89-7.89L13.112 4l10.606 10.607-.11.11.11.11-10.608 10.61-2.828-2.83 7.89-7.89"/></svg></div>
+        </div>
+        <div class="cards-container">
+          {% for key, item in content.field_milestone['#items']  %}      
+          {% if (key == 0) %}     
+            <section class="card-single active" period="period{{key + 1}}">
+          {% else %}
+            <section class="card-single" period="period{{key + 1}}">
+          {% endif %}  
+              <div class="content">
+                <div class='mil-left'>
+                <img src="{{ file_url(item.entity.bp_image_field.entity.fileuri) }}" 
+                alt="{{ item.entity.bp_image_field.entity.bp_image_field.alt }}" 
+                title="{{ item.entity.bp_image_field.entity.bp_image_field.alt }}" /> 
+                </div>
+                <div class='mil-right'>
+                  <h2 class="title">{{ item.entity.bp_header.value|raw }}</h2>
+                  {{ item.entity.field_more_text.value|raw }}
+                </div>
+              </div>
+            </section>         
+          {% endfor %}
+        </div>
+
+      </div>
+    </div>
+        
+
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
+
+
