@@ -29724,7 +29724,15 @@ edit .quantity-edit button {
   flex-basis: 50%;
 }
 .process--desktop .process--desktop-inner .s-des{
-  margin-left: 150px;
+  margin-left: 10%;
+}
+.s-des .item-03 .fa-solid{  
+  color: #3290cb;
+  font-size: 21px;
+}
+.s-des .item-04 .fa-solid{  
+  color: #cb3936;
+  font-size: 21px;
 }
 .process--mobile .wrt-six{
   margin-bottom: 50px;

@@ -1,286 +1,286 @@
 {%
-  set classes = [
-    'paragraph',  
-    'paragraph--type--' ~ paragraph.bundle|clean_class,
-    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
-    not paragraph.isPublished() ? 'paragraph--unpublished'
-  ]
-%}
-{% block paragraph %}
-    <div{{ attributes.addClass(classes) }}>
-    {% block content %}         
-            <div class="process--desktop">
-                <div class="process--desktop-inner">
-                    <div class="wrt-process-left">
-                        <div class="wrt-one wow fadeIn" data-wow-duration="1.5s" data-wow-delay="0.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">01</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.0.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>        
-                            {% if paragraph.field_whyrooftopsolar.0.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.0.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}
-                        </div>
-
-                        <div class="wrt-two wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">02</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.1.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.1.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.1.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                            
-                        </div>
-
-                        <div class="wrt-three wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="2.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">03</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.2.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.2.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.2.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}
-                        </div>
-                        <div class="wrt-four wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="3.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">04</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.3.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                             {% if paragraph.field_whyrooftopsolar.3.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.3.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}
-                        </div>
-                    </div>
-                    <div class="wrt-process-center">                   
-                        <div class="wrt-six wow fadeInDown" data-wow-duration="1.5s" data-wow-delay=".6s">
-                            <img src="{{ file_url(paragraph.field_whyrooftopsolar.4.entity.bp_card_image.entity.fileuri) }}" alt="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" title="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" />
-                            <div class="s-des">
-                                <p class="item-03"><i class="far fa-check-circle"></i> {{ paragraph.field_whyrooftopsolar.4.entity.bp_tab_section_title.value|raw  }}</p>
-                                <p class="item-04"><i class="far fa-check-circle"></i> {{ paragraph.field_whyrooftopsolar.4.entity.bp_statistic_header.value|raw  }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrt-process-right">
-                        <div class="wrt-seven wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="5.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">05</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.5.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.5.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.5.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                           
-                        </div>
-
-                        <div class="wrt-eight wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="6.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">06</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.6.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.6.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.6.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                           
-                        </div>
-
-                        <div class="wrt-nine wow fadeInDown" data-wow-duration="1.5s" data-wow-delay="7.2s">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">07</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.7.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.7.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.7.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                              
-                        </div>                   
-                    </div>     
-                </div>           
-            </div> 
-            <div class="process--mobile">
+    set classes = [
+      'paragraph',  
+      'paragraph--type--' ~ paragraph.bundle|clean_class,
+      view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+      not paragraph.isPublished() ? 'paragraph--unpublished'
+    ]
+  %}
+  {% block paragraph %}
+      <div{{ attributes.addClass(classes) }}>
+      {% block content %}         
+              <div class="process--desktop">
                   <div class="process--desktop-inner">
-                    <div class="wrt-process-center">                   
-                        <div class="wrt-six">
-                            <img src="{{ file_url(paragraph.field_whyrooftopsolar.4.entity.bp_card_image.entity.fileuri) }}" alt="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" title="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" />
-                            <div class="s-des">
-                                <p class="item-03"><i class="far fa-check-circle"></i> {{ paragraph.field_whyrooftopsolar.4.entity.bp_tab_section_title.value|raw  }}</p>
-                                <p class="item-04"><i class="far fa-check-circle"></i> {{ paragraph.field_whyrooftopsolar.4.entity.bp_statistic_header.value|raw  }}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrt-process-left">
-                        <div class="wrt-one">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">01</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.0.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>    
-                            {% if paragraph.field_whyrooftopsolar.0.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.0.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}   
-                        </div>
-
-                        <div class="wrt-two">
-                            <div class="s-icon">
-                               <div class="step">
-                                    <p class="num-01">02</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.1.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.1.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.1.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                            
-                        </div>
-
-                        <div class="wrt-three">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">03</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.2.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.2.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.2.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                        
-                        </div>
-                        <div class="wrt-four">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">04</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.3.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.3.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.3.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                           
-                        </div>
-                    </div>                 
-                    <div class="wrt-process-right">
-                        <div class="wrt-seven">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">05</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.5.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                            {% if paragraph.field_whyrooftopsolar.5.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.5.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                            
-                        </div>
-
-                        <div class="wrt-eight">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">06</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.6.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                             {% if paragraph.field_whyrooftopsolar.6.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.6.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                            
-                        </div>
-
-                        <div class="wrt-nine">
-                            <div class="s-icon">
-                                <div class="step">
-                                    <p class="num-01">07</p>
-                                    <p class="item-01">{{ paragraph.field_whyrooftopsolar.7.entity.bp_tab_section_title.value|raw  }}</p>
-                                </div>
-                            </div>
-                             {% if paragraph.field_whyrooftopsolar.7.entity.bp_card_image.entity.fileuri is not empty %}
-                                <div class="item-02-ov"> 
-                                    {{ paragraph.field_whyrooftopsolar.7.entity.bp_card_image|view  }}                   
-                                    <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
-                                </div>
-                            {% else %}
-                                <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
-                            {% endif %}                           
-                        </div>                   
-                    </div>     
-                </div>
-               
-            </div>           
-        
-    {% endblock %}
-    </div>
-{% endblock paragraph %}
-
-
-
-        
+                      <div class="wrt-process-left">
+                          <div class="wrt-one wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">01</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.0.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>        
+                              {% if paragraph.field_whyrooftopsolar.0.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.0.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}
+                          </div>
+  
+                          <div class="wrt-two wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">02</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.1.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.1.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.1.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                            
+                          </div>
+  
+                          <div class="wrt-three wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">03</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.2.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.2.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.2.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}
+                          </div>
+                          <div class="wrt-four wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">04</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.3.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                               {% if paragraph.field_whyrooftopsolar.3.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.3.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}
+                          </div>
+                      </div>
+                      <div class="wrt-process-center">                   
+                          <div class="wrt-six wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <img src="{{ file_url(paragraph.field_whyrooftopsolar.4.entity.bp_card_image.entity.fileuri) }}" alt="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" title="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" />
+                              <div class="s-des">
+                                  <p class="item-03"><i class="fa-solid fa-caret-right"></i>  {{ paragraph.field_whyrooftopsolar.4.entity.bp_tab_section_title.value|raw  }}</p>
+                                  <p class="item-04"><i class="fa-solid fa-caret-right"></i>  {{ paragraph.field_whyrooftopsolar.4.entity.bp_statistic_header.value|raw  }}</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="wrt-process-right">
+                          <div class="wrt-seven wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">05</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.5.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.5.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.5.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                           
+                          </div>
+  
+                          <div class="wrt-eight wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">06</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.6.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.6.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.6.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                           
+                          </div>
+  
+                          <div class="wrt-nine wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.2s">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">07</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.7.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.7.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.7.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                              
+                          </div>                   
+                      </div>     
+                  </div>           
+              </div> 
+              <div class="process--mobile">
+                    <div class="process--desktop-inner">
+                      <div class="wrt-process-center">                   
+                          <div class="wrt-six">
+                              <img src="{{ file_url(paragraph.field_whyrooftopsolar.4.entity.bp_card_image.entity.fileuri) }}" alt="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" title="{{ paragraph.field_whyrooftopsolar.4.entity.bp_card_image.alt }}" />
+                              <div class="s-des">
+                                  <p class="item-03"><i class="fa-solid fa-caret-right"></i> {{ paragraph.field_whyrooftopsolar.4.entity.bp_tab_section_title.value|raw  }}</p>
+                                  <p class="item-04"><i class="fa-solid fa-caret-right"></i> {{ paragraph.field_whyrooftopsolar.4.entity.bp_statistic_header.value|raw  }}</p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="wrt-process-left">
+                          <div class="wrt-one">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">01</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.0.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>    
+                              {% if paragraph.field_whyrooftopsolar.0.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.0.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.0.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}   
+                          </div>
+  
+                          <div class="wrt-two">
+                              <div class="s-icon">
+                                 <div class="step">
+                                      <p class="num-01">02</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.1.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.1.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.1.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.1.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                            
+                          </div>
+  
+                          <div class="wrt-three">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">03</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.2.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.2.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.2.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.2.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                        
+                          </div>
+                          <div class="wrt-four">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">04</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.3.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.3.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.3.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.3.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                           
+                          </div>
+                      </div>                 
+                      <div class="wrt-process-right">
+                          <div class="wrt-seven">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">05</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.5.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                              {% if paragraph.field_whyrooftopsolar.5.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.5.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.5.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                            
+                          </div>
+  
+                          <div class="wrt-eight">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">06</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.6.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                               {% if paragraph.field_whyrooftopsolar.6.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.6.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.6.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                            
+                          </div>
+  
+                          <div class="wrt-nine">
+                              <div class="s-icon">
+                                  <div class="step">
+                                      <p class="num-01">07</p>
+                                      <p class="item-01">{{ paragraph.field_whyrooftopsolar.7.entity.bp_tab_section_title.value|raw  }}</p>
+                                  </div>
+                              </div>
+                               {% if paragraph.field_whyrooftopsolar.7.entity.bp_card_image.entity.fileuri is not empty %}
+                                  <div class="item-02-ov"> 
+                                      {{ paragraph.field_whyrooftopsolar.7.entity.bp_card_image|view  }}                   
+                                      <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                                  </div>
+                              {% else %}
+                                  <p class="item-02">{{ paragraph.field_whyrooftopsolar.7.entity.bp_statistic_header.value|raw  }}</p>
+                              {% endif %}                           
+                          </div>                   
+                      </div>     
+                  </div>
+                 
+              </div>           
+          
+      {% endblock %}
+      </div>
+  {% endblock paragraph %}
+  
+  
+  
+          
