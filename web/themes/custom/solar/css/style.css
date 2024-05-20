@@ -24095,7 +24095,7 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
   }
 }
 .single-footer-one-wrapper .single-footer-component {
-  flex-basis: 23%;
+  flex-basis: 27%;
 }
 @media only screen and (max-width: 767px) {
   .single-footer-one-wrapper .single-footer-component {
@@ -24120,7 +24120,7 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
   }
 }
 .single-footer-one-wrapper .single-footer-component.last {
-  flex-basis: 24%;
+  flex-basis: 28%;
 }
 @media only screen and (max-width: 767px) {
   .single-footer-one-wrapper .single-footer-component.last {
@@ -25775,7 +25775,7 @@ body.language_en .thumbnail-img-testimonials-right .inner-content p.disc{
 }
 
 .single-footer-one-wrapper.two .single-footer-component.first {
-  flex-basis: 30%;
+  flex-basis: 45%;
 }
 
 .single-pricing-solari-area {
