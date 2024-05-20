@@ -1,0 +1,30 @@
+{%
+    set classes = [
+      'paragraph',  
+      'paragraph--type--' ~ paragraph.bundle|clean_class,
+      view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+      not paragraph.isPublished() ? 'paragraph--unpublished'
+    ]
+%}
+  
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}     
+    <div class="row g-24">   
+        {% for key, item in content.field_ataglance['#items']  %}       
+            <div class="col-lg-3 col-md-6 cols-md-12 col-12">              
+                <div class="single-service-solari gl{{key + 1 }}">
+                    <h2>{{ item.entity.bp_card_title.value|raw }}</h2>      
+                    <div class="disc">
+                        {{ item.entity.field_text.value|raw }}
+                    </div>     
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    {% endblock %}
+    </div>
+  {% endblock paragraph %}
+  
+  
+  
