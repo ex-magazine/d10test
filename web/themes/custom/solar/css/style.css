@@ -16452,7 +16452,7 @@ body.language_en .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone
   border-radius: 2px;
 }
 .mySwiper-banner-2 .field--name-field-title-second {
-  color: #000;
+  color: #fff;
   font-weight: 700;
   font-size: 35px;
   line-height: 50px;
@@ -16487,7 +16487,7 @@ body.language_en .banner-solar-energy-bg .banner-solar-energy-inner .vedio-icone
   font-weight: 700;
   font-size: 50px;
   line-height: 70px;
-  color: #000;
+  color: #fff;
   margin-top: 25px;
   margin-bottom: 0;
 }
@@ -20560,8 +20560,7 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   transition: 0.3s;
   overflow: hidden;
   display: block;
-  position: relative;
-  background-image: url(../images/19.png);
+  position: relative;  
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 2;
@@ -30452,6 +30451,71 @@ figure.caption figcaption{
   justify-content: start;
   align-items: center;
 }
-.paragraph--type--content.paragraph--view-mode--default{
+.paragraph--type--content.paragraph--view-mode--default .title-area{
   margin-top: 120px;
+}
+.paragraph--type--ataglance .single-service-solari{
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.paragraph--type--ataglance .single-service-solari.gl1::after {
+  background-color: #13549a;
+}
+.paragraph--type--ataglance .single-service-solari.gl2::after {
+  background-color: #d54d56;
+}
+.paragraph--type--ataglance .single-service-solari.gl3::after {
+  background-color: #b7bac2;
+}
+.paragraph--type--ataglance .single-service-solari.gl4::after {
+  background-color: #dddfe3;
+}
+.paragraph--type--ataglance .single-service-solari.gl1::before {
+  background-color: #ffffff;
+}
+.paragraph--type--ataglance .single-service-solari.gl2::before {
+  background-color: #ffffff;
+}
+.paragraph--type--ataglance .single-service-solari.gl3::before {
+  background-color: #ffffff;
+}
+.paragraph--type--ataglance .single-service-solari.gl4::before {
+  background-color: #ffffff;
+}
+
+.paragraph--type--ataglance .single-service-solari.gl1:hover h2,
+.paragraph--type--ataglance .single-service-solari.gl1:hover .disc p{
+  color: #000000;
+}
+.paragraph--type--ataglance .single-service-solari.gl2:hover h2,
+.paragraph--type--ataglance .single-service-solari.gl2:hover .disc p{
+  color: #000000;
+}
+.paragraph--type--ataglance .single-service-solari.gl3:hover h2,
+.paragraph--type--ataglance .single-service-solari.gl3:hover .disc p{
+  color: #000000;
+}
+.paragraph--type--ataglance .single-service-solari.gl4:hover h2,
+.paragraph--type--ataglance .single-service-solari.gl4:hover .disc p{
+  color: #000000;
+}
+
+.paragraph--type--ataglance .single-service-solari.gl1 h2,
+.paragraph--type--ataglance .single-service-solari.gl1 .disc p{
+  color: #ffffff;
+}
+.paragraph--type--ataglance .single-service-solari.gl2 h2,
+.paragraph--type--ataglance .single-service-solari.gl2 .disc p{
+  color: #fffdfe;
+}
+.paragraph--type--ataglance .single-service-solari.gl3 h2,
+.paragraph--type--ataglance .single-service-solari.gl3 .disc p{
+  color: #f1f1f3;
+}
+.paragraph--type--ataglance .single-service-solari.gl4 h2,
+.paragraph--type--ataglance .single-service-solari.gl4 .disc p{
+  color: #020202;
 }

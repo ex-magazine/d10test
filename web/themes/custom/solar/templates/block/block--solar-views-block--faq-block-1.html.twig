@@ -43,9 +43,7 @@
 
 <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
-  {% if label %}
-    <span{{ title_attributes.addClass('block__title stok-bg images-r left') }}>{{ label }}</span>
-  {% endif %}
+
   {{ title_suffix }}
   {% block content %}
     <div{{ content_attributes.addClass('container') }}>     
