@@ -21987,6 +21987,9 @@ body.language_en .big-bg-porduct-details .project-info .info-body .single-info .
   #overlay img {
     width: 50%;
   }
+  .single-footer-component .rts-social-style-one{
+    margin-left: 80px;
+  }
 }
 
 #nextButton {
@@ -24082,16 +24085,22 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .single-footer-one-wrapper {
     gap: 80px;
-  }
+  }  
 }
 @media only screen and (max-width: 1199px) {
   .single-footer-one-wrapper {
     flex-wrap: wrap;
   }
+  .single-footer-component .rts-social-style-one{
+    margin-left: 30px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .single-footer-one-wrapper {
     gap: 40px;
+  }
+  .single-footer-component .rts-social-style-one{
+    margin-left: 20px;
   }
 }
 .single-footer-one-wrapper .single-footer-component {
