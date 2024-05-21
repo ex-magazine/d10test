@@ -15003,7 +15003,7 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   } 
 }
 .logo-area-footer img{
-  background-color: #fff;
+  max-width: 300px;
   border-radius: 10px;
 }
 .main-nav-one ul li.has-dropdown a.nav-link {
@@ -23874,6 +23874,13 @@ body.language_vi #block-solar-callforhelp{
     width: 70%;
     margin-top: 10px;
   }  
+}
+.mySwiper-h-2-cl .views-row.swiper-slide .single-case-ac{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 130px;
 }
 .paragraph .po-item{
   margin: 20px 0;

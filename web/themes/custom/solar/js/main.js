@@ -427,7 +427,7 @@
         $(document).ready(function () {
           var swiper = new Swiper(".mySwiper-h-2-cl", {
             slidesPerView: 5,
-            spaceBetween: 24,
+            spaceBetween: 0,
             slidesPerGroup: 1,
             centeredSlides: true,            
             // effect: 'coverflow',
@@ -456,7 +456,7 @@
               },
               575: {
                 slidesPerView: 1,
-                spaceBetween: 24,                  
+                spaceBetween: 0,                  
               },
               0: {
                 slidesPerView: 1,
