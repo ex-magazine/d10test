@@ -30648,3 +30648,22 @@ figure.caption figcaption{
   justify-content: center;
   align-content: center;
 }
+.node--view-mode-servicemain.node--type-service .single-service-solari{
+  display: flex;
+  align-items: center;    
+}
+.node--view-mode-servicemain.node--type-service .single-service-solari h2{
+  margin: 0 !important;  
+}
+.node--view-mode-servicemain.node--type-service.cils .single-service-solari{
+ justify-content: center;
+ flex-direction: column;
+}
+.node--view-mode-servicemain.node--type-service.cils .single-service-solari .title{
+  height: auto !important;  
+  font-size: 40px;
+}
+.node--view-mode-servicemain.node--type-service.non-cils .single-service-solari .title{
+  font-size: 30px;
+  height: auto !important;  
+}
