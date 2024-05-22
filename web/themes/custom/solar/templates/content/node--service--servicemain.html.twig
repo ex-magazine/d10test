@@ -86,10 +86,13 @@
       view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     ]
   %} 
-  <article{{ attributes.addClass(classes) }}>
+  <article{{ attributes.addClass(classes) }}> 
     <div class="single-service-solari">
         {% if node.field_servicecategory[0].value == 2 %}      
           <h2 class="title"><span class="counter">{{ label }}</span>+</h2>
+          <div class="icon-area">
+            <img src="{{ file_url(node.field_icon.entity.fileuri) }}" alt="{{ node.field_icon.alt }}" />             
+          </div>          
         {% else %}
           <h2 class="title">{{ label }}</h2>
         {% endif %}

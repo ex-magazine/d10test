@@ -136,6 +136,14 @@ body.language_ko {
   body {
     overflow: hidden;
   }
+  .node--view-mode-servicemain.node--type-service.cils .single-service-solari .title{
+    height: auto !important;  
+    font-size: 40px;
+  }
+  .node--view-mode-servicemain.node--type-service.non-cils .single-service-solari .title{
+    font-size: 30px;
+    height: auto !important;  
+  }
 }
 body::before {
   content: "";
@@ -14980,6 +14988,14 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1366px)  {
+  .node--view-mode-servicemain.node--type-service.cils .single-service-solari .title{
+    height: auto !important;  
+    font-size: 40px;
+  }
+  .node--view-mode-servicemain.node--type-service.non-cils .single-service-solari .title{
+    font-size: 30px;
+    height: auto !important;  
+  }
   .view-ourproject .views-exposed-form .js-form-item{
     flex-basis: 23% !important;
   }
@@ -15004,6 +15020,15 @@ header.header-one .header--one-main .header-right-area .btn-area-header {
   }
 }
 @media only screen and (min-width: 1367px) {
+  .node--view-mode-servicemain.node--type-service.cils .single-service-solari .title{
+    height: auto !important;  
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .node--view-mode-servicemain.node--type-service.non-cils .single-service-solari .title{
+    font-size: 33px;
+    height: auto !important;  
+  }
   body.language_ja .main-nav-one ul li.menu__item a.menu__link--level-1 {
     font-size: 13px;
   } 
@@ -30652,6 +30677,7 @@ figure.caption figcaption{
   display: flex;
   align-items: center;    
 }
+.node--view-mode-servicemain.node--type-service.cils .single-service-solari .icon-area,
 .node--view-mode-servicemain.node--type-service .single-service-solari h2{
   margin: 0 !important;  
 }
@@ -30659,11 +30685,7 @@ figure.caption figcaption{
  justify-content: center;
  flex-direction: column;
 }
-.node--view-mode-servicemain.node--type-service.cils .single-service-solari .title{
-  height: auto !important;  
-  font-size: 40px;
-}
-.node--view-mode-servicemain.node--type-service.non-cils .single-service-solari .title{
-  font-size: 30px;
-  height: auto !important;  
+
+.node--view-mode-servicemain.node--type-service.cils .single-service-solari .icon-area img{
+  max-height: 120px;
 }
