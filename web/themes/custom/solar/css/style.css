@@ -30680,6 +30680,13 @@ figure.caption figcaption{
 .node--view-mode-servicemain.node--type-service.cils .single-service-solari .icon-area,
 .node--view-mode-servicemain.node--type-service .single-service-solari h2{
   margin: 0 !important;  
+  
+}
+.node--view-mode-servicemain.node--type-service.cils .single-service-solari h2{
+  color: #469345;
+}
+.node--view-mode-servicemain.node--type-service.cils .single-service-solari:hover h2{
+  color: #ffffff;
 }
 .node--view-mode-servicemain.node--type-service.cils .single-service-solari{
  justify-content: center;
