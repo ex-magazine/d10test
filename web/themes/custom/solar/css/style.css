@@ -23616,7 +23616,7 @@ body.language_en .single-progress-area-h4 .progress-top p {
     margin-top: 20px;
   }
 }
-
+.rts-project-page-project .view-filters .views-exposed-form,
 .rts-single-wized {
   background: #F6F6F6;
   border-radius: 7px;
@@ -24644,16 +24644,7 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
 .rts-single-team-one a.thumbnail:hover img {
   transform: scale(1.12);
 }
-.rts-single-team-one .inner-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 35px 40px;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(90deg, #1F1F25 0%, rgba(0, 0, 0, 0) 100%);
-}
+
 @media only screen and (max-width: 1199px) {
   .rts-single-team-one .inner-content {
     padding: 20px 15px;
@@ -24671,6 +24662,12 @@ body.language_en .bg-cta-footer-one .single-cta-area .contact-info a {
 }
 .rts-single-team-one .inner-content .title:hover {
   color: #4AAB3D;
+}
+.rts-single-team-one .inner-content div.t-des {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
 }
 .rts-single-team-one .inner-content span {
   font-weight: 500;
@@ -26965,11 +26962,15 @@ body.language_en .con-tent-main .title a{
   justify-content: center;
   margin-bottom: 50px;
 }
+.view-ourproject .views-exposed-form {
+  flex-direction: column;
+}
 .view-ourproject .views-exposed-form .js-form-item label{
   margin-left: 20px;
 }
 .view-ourproject .views-exposed-form .js-form-item {
-  flex-basis: 25%;
+  flex-basis: 100%;
+  min-width: 100%
 }
 .view-ourproject .views-exposed-form .js-form-item select {
   border: 1px solid #EAEAEA;
@@ -30963,4 +30964,111 @@ figure.caption figcaption{
 }
 .paragraph.paragraph--type--ataglance.paragraph--view-mode--default .row.g-24{
   margin-bottom: 24px;
+}
+
+
+/*
+.rts-single-team-one .inner-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 40px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(90deg, #1F1F25 0%, rgba(0, 0, 0, 0) 100%);
+} 
+*/
+.rts-single-team-one .tiles .tile {
+  display: inline-block;
+  margin: 10px;
+  text-align: left;
+  opacity: 0.99;
+  overflow: hidden;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
+}
+.rts-single-team-one .tiles .tile:before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 2;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+}
+.rts-single-team-one .tiles .tile img {
+  display: block;
+  max-width: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rts-single-team-one .tiles .tile .details {
+  font-size: 16px;
+  padding: 20px;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.rts-single-team-one .tiles .tile .details span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  transition-property: top, opacity;
+  transition-duration: 0.3s;
+  transition-delay: 0s;
+}
+.rts-single-team-one .tiles .tile .details .title {
+  line-height: 1;
+  font-weight: 600;  
+}
+.rts-single-team-one .tiles .tile .details span.title{
+  opacity: 1 !important;
+  height: 40px;
+}
+.rts-single-team-one .tiles .tile .details .t-des {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 13px;
+  min-height: 100px;
+}
+.rts-single-team-one .tiles .tile .details .info {
+  line-height: 1.2;
+  margin-top: 5px;
+  font-size: 15px;
+}
+.rts-single-team-one .tiles .tile:focus:before,
+.rts-single-team-one .tiles .tile:focus span, 
+.rts-single-team-one .tiles .tile:hover:before,
+.rts-single-team-one .tiles .tile:hover span {
+  opacity: 1;
+}
+.rts-single-team-one .tiles .tile:focus:before, 
+.rts-single-team-one .tiles .tile:hover:before {
+  top: 50%;
+}
+.rts-single-team-one .tiles .tile:focus span,
+.rts-single-team-one .tiles .tile:hover span {
+  top: 0;
+}
+.rts-single-team-one .tiles .tile:focus .title, 
+.rts-single-team-one .tiles .tile:hover .title {
+  transition-delay: 0.15s;
+}
+.rts-single-team-one .tiles .tile:focus .info, 
+.rts-single-team-one .tiles .tile:hover .info {
+  transition-delay: 0.25s;
+}
+.rts-single-team-one .tiles .tile:focus .t-des, 
+.rts-single-team-one .tiles .tile:hover .t-des {
+  transition-delay: 0.45s;
 }
