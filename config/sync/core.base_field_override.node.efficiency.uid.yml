@@ -1,0 +1,20 @@
+uuid: 57814476-d04d-45ac-a2ee-4323d85817f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+id: node.efficiency.uid
+field_name: uid
+entity_type: node
+bundle: efficiency
+label: 'Authored by'
+description: 'The username of the content author.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: 'Drupal\node\Entity\Node::getDefaultEntityOwner'
+settings:
+  handler: default
+  handler_settings: {  }
+field_type: entity_reference

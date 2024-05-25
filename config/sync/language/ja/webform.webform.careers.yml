@@ -1,0 +1,16 @@
+elements: |
+  your_name:
+    '#title': あなたの名前
+    '#placeholder': あなたの名前
+  your_email:
+    '#title': あなたのメールアドレス
+    '#placeholder': あなたのメールアドレス
+  message:
+    '#title': カバーレター
+    '#placeholder': カバーレター
+  your_cv:
+    '#title': あなたの履歴書
+    '#file_placeholder': '<p>あなたの履歴書</p>'
+  actions:
+    '#title': 履歴書を送ってください
+    '#submit__label': 履歴書を送ってください

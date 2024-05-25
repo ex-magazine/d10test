@@ -1,0 +1,37 @@
+uuid: 077ce033-f403-4310-a968-2dd0ab3c9bfa
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - taxonomy
+id: tags
+label: Tags
+type: 'canonical_entities:taxonomy_term'
+pattern: 'tags/[term:name].html'
+selection_criteria:
+  ad7b1445-4223-46a3-80b8-a488bb2f8a69:
+    id: 'entity_bundle:taxonomy_term'
+    negate: false
+    uuid: ad7b1445-4223-46a3-80b8-a488bb2f8a69
+    context_mapping:
+      taxonomy_term: taxonomy_term
+    bundles:
+      tags: tags
+  f0e5cb93-1281-4141-8477-c86c78f89625:
+    id: language
+    negate: false
+    uuid: f0e5cb93-1281-4141-8477-c86c78f89625
+    context_mapping:
+      language: 'taxonomy_term:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
+selection_logic: and
+weight: -10
+relationships:
+  'taxonomy_term:langcode:language':
+    label: Language

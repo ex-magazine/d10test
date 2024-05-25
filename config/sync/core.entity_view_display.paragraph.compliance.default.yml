@@ -1,0 +1,25 @@
+uuid: e215acc5-43a1-4435-85f0-9da874696100
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.compliance.field_compliance
+    - paragraphs.paragraphs_type.compliance
+  module:
+    - entity_reference_revisions
+id: paragraph.compliance.default
+targetEntityType: paragraph
+bundle: compliance
+mode: default
+content:
+  field_compliance:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

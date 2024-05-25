@@ -15,7 +15,7 @@ bundle: user
 label: 'Domain administrator'
 description: 'Select the domains this user may administer.'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

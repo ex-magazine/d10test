@@ -10,23 +10,26 @@ label: Industries
 type: 'canonical_entities:taxonomy_term'
 pattern: 'project/[term:name]'
 selection_criteria:
-  7fa87288-b4b2-40ab-8d85-13b57e6456ca:
+  da0d4598-d400-43a2-bbc1-b130a6c5b073:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 7fa87288-b4b2-40ab-8d85-13b57e6456ca
+    uuid: da0d4598-d400-43a2-bbc1-b130a6c5b073
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       projectcategory: projectcategory
-  e6edbf8f-03d5-4838-9b17-31e00e2c03c7:
+  d5cc7f29-9766-47cb-a2dd-44b458b30415:
     id: language
     negate: false
-    uuid: e6edbf8f-03d5-4838-9b17-31e00e2c03c7
+    uuid: d5cc7f29-9766-47cb-a2dd-44b458b30415
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:
       en: en
       vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
 selection_logic: and
 weight: -10
 relationships:

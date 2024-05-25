@@ -1,0 +1,26 @@
+title: 概算發出電能
+elements: |
+  your_info:
+    '#title': 输入您的屋顶（平方米）
+    '#prev_button_label': 以前的
+    '#next_button_label': 下一个
+  sqm:
+    '#title': 输入您的屋顶（平方米）
+    '#placeholder': 输入您的屋顶（平方米）
+  location:
+    '#title': 地点
+    '#options':
+      North: 北
+      South: 南
+  actions:
+    '#title': 提交按钮
+  result:
+    '#title': 结果
+  your_info2:
+    '#title': 您的信息
+  your_name:
+    '#title': 你的名字
+    '#placeholder': 你的名字
+  your_email:
+    '#title': 你的邮件
+    '#placeholder': 你的邮件

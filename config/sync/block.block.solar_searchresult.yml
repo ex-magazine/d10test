@@ -1,0 +1,31 @@
+uuid: 613b02b2-b653-4930-8dad-1048c7345036
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ac5dd50e-91a3-4e32-80f9-14eecf639808'
+  module:
+    - block_classes
+    - block_content
+    - system
+  theme:
+    - solar
+id: solar_searchresult
+theme: solar
+region: content_above
+weight: 0
+provider: null
+plugin: 'block_content:ac5dd50e-91a3-4e32-80f9-14eecf639808'
+settings:
+  id: 'block_content:ac5dd50e-91a3-4e32-80f9-14eecf639808'
+  label: 'Search result'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /solar-search

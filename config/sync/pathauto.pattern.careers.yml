@@ -1,0 +1,37 @@
+uuid: 56a67b63-9249-416f-a3db-f01668c99b01
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: careers
+label: Careers
+type: 'canonical_entities:node'
+pattern: 'careers/[node:title]-[node:nid].html'
+selection_criteria:
+  764b47dd-daee-4b2f-8368-abe72229f220:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 764b47dd-daee-4b2f-8368-abe72229f220
+    context_mapping:
+      node: node
+    bundles:
+      careers: careers
+  c0b2d7ba-33bf-46a7-be9c-33959e164d5c:
+    id: language
+    negate: false
+    uuid: c0b2d7ba-33bf-46a7-be9c-33959e164d5c
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

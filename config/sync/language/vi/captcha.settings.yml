@@ -1,0 +1,3 @@
+description: 'Câu hỏi này dùng để kiểm tra xem bạn là người hay là chương trình tự động.'
+title: CAPTCHA
+wrong_captcha_response_message: 'Bạn đã trả lời sai.'

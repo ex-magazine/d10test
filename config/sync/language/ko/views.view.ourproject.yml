@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: '<h2>결과가 비어 있습니다.</h2>'
+            format: full_html
+      filters:
+        field_categoryv2_value:
+          expose:
+            label: 국가
+        field_growth_value:
+          expose:
+            label: 위치
+        field_category_target_id:
+          expose:
+            label: 산업
+      exposed_form:
+        options:
+          submit_button: 적용하다
+          reset_button_label: 초기화

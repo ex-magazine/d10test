@@ -3,12 +3,27 @@ display:
     display_title: 'Mặc định'
     display_options:
       fields:
+        media_bulk_form:
+          action_title: 'Thao tác'
         bundle:
           label: Kiểu
         status:
           label: 'Trạng thái'
         operations:
           label: 'Thao tác'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Số mục trên một trang'
+            items_per_page_options_all_label: '- Tất cả -'
+            offset_label: 'Độ dịch'
+      exposed_form:
+        options:
+          submit_button: Lọc
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
       filters:
         bundle:
           expose:

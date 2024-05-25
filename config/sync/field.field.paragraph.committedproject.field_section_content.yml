@@ -1,0 +1,24 @@
+uuid: 0855a228-3d7e-41cb-b089-866be17a3b18
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.committedproject
+  module:
+    - text
+id: paragraph.committedproject.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: committedproject
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

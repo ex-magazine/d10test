@@ -1,0 +1,14 @@
+elements: |
+  your_name:
+    '#placeholder': あなたの名前
+  your_email:
+    '#placeholder': あなたのメールアドレス
+  select_subject:
+    '#placeholder': 主題
+  type_your_message:
+    '#placeholder': メッセージを入力してください
+  actions:
+    '#submit__label': メッセージを送る
+    '#update__label': メッセージを送る
+settings:
+  confirmation_url: /ja/cme-sora-fuitohatsukuwoojiseitatakiarikatoukosaimasu

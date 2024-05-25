@@ -1,0 +1,19 @@
+uuid: 8deec31e-63be-4a3c-aaee-21d9f55c60fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_modal_title
+    - paragraphs.paragraphs_type.committedproject
+id: paragraph.committedproject.bp_modal_title
+field_name: bp_modal_title
+entity_type: paragraph
+bundle: committedproject
+label: Weeks
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

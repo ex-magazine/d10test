@@ -1,0 +1,247 @@
+uuid: a7c247c7-3d21-4196-bd27-fd5864562204
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wmusditem
+    - paragraphs.paragraphs_type.whatmakesusdifferent
+    - paragraphs.paragraphs_type.wmusditem
+  module:
+    - entity_reference_revisions
+id: paragraph.whatmakesusdifferent.field_wmusditem
+field_name: field_wmusditem
+entity_type: paragraph
+bundle: whatmakesusdifferent
+label: 'What makes us different'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      wmusditem: wmusditem
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 74
+        enabled: false
+      accordion_item:
+        weight: 75
+        enabled: false
+      ataglance:
+        weight: 76
+        enabled: false
+      ataglanceitem:
+        weight: 77
+        enabled: false
+      attachments:
+        weight: 78
+        enabled: false
+      bp_accordion:
+        weight: 79
+        enabled: false
+      bp_accordion_section:
+        weight: 80
+        enabled: false
+      bp_blank:
+        weight: 81
+        enabled: false
+      bp_block:
+        weight: 82
+        enabled: false
+      bp_callout:
+        weight: 83
+        enabled: false
+      bp_card:
+        weight: 84
+        enabled: false
+      bp_carousel:
+        weight: 85
+        enabled: false
+      bp_column_wrapper:
+        weight: 89
+        enabled: false
+      bp_columns:
+        weight: 86
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 87
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 88
+        enabled: false
+      bp_contact:
+        weight: 90
+        enabled: false
+      bp_image:
+        weight: 91
+        enabled: false
+      bp_modal:
+        weight: 92
+        enabled: false
+      bp_quicklinks:
+        weight: 93
+        enabled: false
+      bp_simple:
+        weight: 94
+        enabled: false
+      bp_stat:
+        weight: 95
+        enabled: false
+      bp_statistics:
+        weight: 96
+        enabled: false
+      bp_tab_section:
+        weight: 98
+        enabled: false
+      bp_tabs:
+        weight: 97
+        enabled: false
+      bp_view:
+        weight: 99
+        enabled: false
+      bp_webform:
+        weight: 100
+        enabled: false
+      callout:
+        weight: 101
+        enabled: false
+      carousel:
+        weight: 102
+        enabled: false
+      challengeproject:
+        weight: 103
+        enabled: false
+      citation:
+        weight: 104
+        enabled: false
+      cmenergysection:
+        weight: 105
+        enabled: false
+      committedproject:
+        weight: 106
+        enabled: false
+      committedprojectitem:
+        weight: 107
+        enabled: false
+      compliance:
+        weight: 108
+        enabled: false
+      complianceitem:
+        weight: 109
+        enabled: false
+      content:
+        weight: 110
+        enabled: false
+      from_library:
+        weight: 111
+        enabled: false
+      gallery:
+        weight: 112
+        enabled: false
+      gallery_item:
+        weight: 113
+        enabled: false
+      hero:
+        weight: 114
+        enabled: false
+      map:
+        weight: 115
+        enabled: false
+      milestone:
+        weight: 116
+        enabled: false
+      milestoneitems:
+        weight: 117
+        enabled: false
+      node_reference:
+        weight: 118
+        enabled: false
+      ourservice3cols:
+        weight: 119
+        enabled: false
+      section:
+        weight: 120
+        enabled: false
+      settings:
+        weight: 121
+        enabled: false
+      slide:
+        weight: 122
+        enabled: false
+      solar_about_company:
+        weight: 133
+        enabled: false
+      solar_amazing_feedback_item:
+        weight: 134
+        enabled: false
+      solar_contact:
+        weight: 135
+        enabled: false
+      solar_content_item:
+        weight: 136
+        enabled: false
+      solaraboutcompanytab:
+        weight: 123
+        enabled: false
+      solaramazingfeedback:
+        weight: 124
+        enabled: false
+      solarcontactus:
+        weight: 125
+        enabled: false
+      solarcontactusitem:
+        weight: 126
+        enabled: false
+      solarourprocess:
+        weight: 127
+        enabled: false
+      solarourprocessitems:
+        weight: 128
+        enabled: false
+      solarourservicecols:
+        weight: 129
+        enabled: false
+      solarqualityhandymansolution:
+        weight: 130
+        enabled: false
+      solarqualityitem:
+        weight: 131
+        enabled: false
+      solarwebform:
+        weight: 132
+        enabled: false
+      timeline:
+        weight: 137
+        enabled: false
+      timeline_item:
+        weight: 138
+        enabled: false
+      wcuagp:
+        weight: 139
+        enabled: false
+      wcuagp_items:
+        weight: 141
+        enabled: false
+      wcuagpitems:
+        weight: 140
+        enabled: false
+      webform:
+        weight: 142
+        enabled: false
+      whatmakesusdifferent:
+        weight: 143
+        enabled: false
+      whyrooftopsolar:
+        weight: 144
+        enabled: false
+      whyrooftopsolaritems:
+        weight: 145
+        enabled: false
+      wmusditem:
+        weight: 146
+        enabled: true
+field_type: entity_reference_revisions

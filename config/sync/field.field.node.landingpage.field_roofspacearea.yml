@@ -1,0 +1,25 @@
+uuid: e9b3d0ec-aed8-48ee-8ad7-11299889e495
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_roofspacearea
+    - node.type.landingpage
+  module:
+    - webform
+id: node.landingpage.field_roofspacearea
+field_name: field_roofspacearea
+entity_type: node
+bundle: landingpage
+label: 'Enter Your Roof Space Area'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

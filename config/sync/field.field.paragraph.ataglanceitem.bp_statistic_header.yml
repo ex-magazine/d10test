@@ -1,0 +1,19 @@
+uuid: 4a3808fb-1f3c-4ae5-81a5-4f37b7698cfc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_statistic_header
+    - paragraphs.paragraphs_type.ataglanceitem
+id: paragraph.ataglanceitem.bp_statistic_header
+field_name: bp_statistic_header
+entity_type: paragraph
+bundle: ataglanceitem
+label: Suffix
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

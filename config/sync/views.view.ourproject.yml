@@ -95,7 +95,7 @@ display:
         type: full
         options:
           offset: 0
-          items_per_page: 9
+          items_per_page: 8
           total_pages: null
           id: 0
           tags:
@@ -184,48 +184,6 @@ display:
           operator: in
           value:
             cmesolar_cmenergy_local: cmesolar_cmenergy_local
-          group: 1
-          exposed: false
-          expose:
-            operator_id: ''
-            label: ''
-            description: ''
-            use_operator: false
-            operator: ''
-            operator_limit_selection: false
-            operator_list: {  }
-            identifier: ''
-            required: false
-            remember: false
-            multiple: false
-            remember_roles:
-              authenticated: authenticated
-            reduce: false
-          is_grouped: false
-          group_info:
-            label: ''
-            description: ''
-            identifier: ''
-            optional: true
-            widget: select
-            multiple: false
-            remember: false
-            default_group: All
-            default_group_multiple: {  }
-            group_items: {  }
-        type:
-          id: type
-          table: node_field_data
-          field: type
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          entity_field: type
-          plugin_id: bundle
-          operator: in
-          value:
-            project_details: project_details
           group: 1
           exposed: false
           expose:
@@ -389,20 +347,20 @@ display:
           hierarchy: false
           limit: true
           error_message: true
-        langcode:
-          id: langcode
+        type:
+          id: type
           table: node_field_data
-          field: langcode
+          field: type
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: langcode
-          plugin_id: language
+          entity_field: type
+          plugin_id: bundle
           operator: in
           value:
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
-          group: 1
+            project_details: project_details
+          group: 2
           exposed: false
           expose:
             operator_id: ''
@@ -431,6 +389,53 @@ display:
             default_group: All
             default_group_multiple: {  }
             group_items: {  }
+        langcode:
+          id: langcode
+          table: node_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: node
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 2
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+          2: AND
       style:
         type: default
       row:
@@ -443,7 +448,7 @@ display:
         options:
           query_comment: ''
           disable_sql_rewrite: false
-          distinct: false
+          distinct: true
           replica: false
           query_tags: {  }
       relationships: {  }
@@ -468,6 +473,7 @@ display:
     display_plugin: block
     position: 1
     display_options:
+      exposed_block: false
       display_extenders:
         metatag_display_extender:
           metatags: {  }

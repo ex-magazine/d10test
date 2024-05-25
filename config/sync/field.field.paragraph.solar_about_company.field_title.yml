@@ -12,7 +12,7 @@ bundle: solar_about_company
 label: 'Title second'
 description: 'Accordion item title'
 required: true
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings: {  }

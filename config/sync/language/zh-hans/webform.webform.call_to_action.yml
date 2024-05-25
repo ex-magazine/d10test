@@ -1,0 +1,9 @@
+elements: |
+  your_name:
+    '#placeholder': 你的名字
+  your_email:
+    '#placeholder': 你的邮件
+  processed_text:
+    '#text': "<span class=\"pre  skew-up\">\r\n                            <span>\r\n                            随意\r\n                            </span> 联系我们\r\n                        </span>\r\n                        <h4 class=\"title skew-up\">获得免费咨询</h4>"
+  actions:
+    '#submit__label': 提交

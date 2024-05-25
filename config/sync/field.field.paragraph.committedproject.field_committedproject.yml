@@ -1,0 +1,229 @@
+uuid: 2744f251-aa54-45a2-83d1-53531ffd631c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_committedproject
+    - paragraphs.paragraphs_type.committedproject
+    - paragraphs.paragraphs_type.committedprojectitem
+  module:
+    - entity_reference_revisions
+id: paragraph.committedproject.field_committedproject
+field_name: field_committedproject
+entity_type: paragraph
+bundle: committedproject
+label: 'Committed project'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      committedprojectitem: committedprojectitem
+    negate: 0
+    target_bundles_drag_drop:
+      accordion:
+        weight: 68
+        enabled: false
+      accordion_item:
+        weight: 69
+        enabled: false
+      attachments:
+        weight: 70
+        enabled: false
+      bp_accordion:
+        weight: 71
+        enabled: false
+      bp_accordion_section:
+        weight: 72
+        enabled: false
+      bp_blank:
+        weight: 73
+        enabled: false
+      bp_block:
+        weight: 74
+        enabled: false
+      bp_callout:
+        weight: 75
+        enabled: false
+      bp_card:
+        weight: 76
+        enabled: false
+      bp_carousel:
+        weight: 77
+        enabled: false
+      bp_column_wrapper:
+        weight: 81
+        enabled: false
+      bp_columns:
+        weight: 78
+        enabled: false
+      bp_columns_three_uneven:
+        weight: 79
+        enabled: false
+      bp_columns_two_uneven:
+        weight: 80
+        enabled: false
+      bp_contact:
+        weight: 82
+        enabled: false
+      bp_image:
+        weight: 83
+        enabled: false
+      bp_modal:
+        weight: 84
+        enabled: false
+      bp_quicklinks:
+        weight: 85
+        enabled: false
+      bp_simple:
+        weight: 86
+        enabled: false
+      bp_stat:
+        weight: 87
+        enabled: false
+      bp_statistics:
+        weight: 88
+        enabled: false
+      bp_tab_section:
+        weight: 90
+        enabled: false
+      bp_tabs:
+        weight: 89
+        enabled: false
+      bp_view:
+        weight: 91
+        enabled: false
+      bp_webform:
+        weight: 92
+        enabled: false
+      callout:
+        weight: 93
+        enabled: false
+      carousel:
+        weight: 94
+        enabled: false
+      challengeproject:
+        weight: 95
+        enabled: false
+      citation:
+        weight: 96
+        enabled: false
+      cmenergysection:
+        weight: 97
+        enabled: false
+      committedproject:
+        weight: 98
+        enabled: false
+      committedprojectitem:
+        weight: 99
+        enabled: true
+      compliance:
+        weight: 100
+        enabled: false
+      complianceitem:
+        weight: 101
+        enabled: false
+      content:
+        weight: 102
+        enabled: false
+      from_library:
+        weight: 103
+        enabled: false
+      gallery:
+        weight: 104
+        enabled: false
+      gallery_item:
+        weight: 105
+        enabled: false
+      hero:
+        weight: 106
+        enabled: false
+      map:
+        weight: 107
+        enabled: false
+      node_reference:
+        weight: 108
+        enabled: false
+      ourservice3cols:
+        weight: 109
+        enabled: false
+      section:
+        weight: 110
+        enabled: false
+      settings:
+        weight: 111
+        enabled: false
+      slide:
+        weight: 112
+        enabled: false
+      solar_about_company:
+        weight: 123
+        enabled: false
+      solar_amazing_feedback_item:
+        weight: 124
+        enabled: false
+      solar_contact:
+        weight: 125
+        enabled: false
+      solar_content_item:
+        weight: 126
+        enabled: false
+      solaraboutcompanytab:
+        weight: 113
+        enabled: false
+      solaramazingfeedback:
+        weight: 114
+        enabled: false
+      solarcontactus:
+        weight: 115
+        enabled: false
+      solarcontactusitem:
+        weight: 116
+        enabled: false
+      solarourprocess:
+        weight: 117
+        enabled: false
+      solarourprocessitems:
+        weight: 118
+        enabled: false
+      solarourservicecols:
+        weight: 119
+        enabled: false
+      solarqualityhandymansolution:
+        weight: 120
+        enabled: false
+      solarqualityitem:
+        weight: 121
+        enabled: false
+      solarwebform:
+        weight: 122
+        enabled: false
+      timeline:
+        weight: 127
+        enabled: false
+      timeline_item:
+        weight: 128
+        enabled: false
+      wcuagp:
+        weight: 129
+        enabled: false
+      wcuagp_items:
+        weight: 131
+        enabled: false
+      wcuagpitems:
+        weight: 130
+        enabled: false
+      webform:
+        weight: 132
+        enabled: false
+      whyrooftopsolar:
+        weight: 133
+        enabled: false
+      whyrooftopsolaritems:
+        weight: 134
+        enabled: false
+field_type: entity_reference_revisions

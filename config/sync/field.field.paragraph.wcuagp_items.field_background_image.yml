@@ -6,7 +6,14 @@ dependencies:
     - field.storage.paragraph.field_background_image
     - paragraphs.paragraphs_type.wcuagp_items
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: paragraph.wcuagp_items.field_background_image
 field_name: field_background_image
 entity_type: paragraph
@@ -14,7 +21,7 @@ bundle: wcuagp_items
 label: Image
 description: 'Wallpaper \ image. <b>Use the "public://wallpapers" folder.</b>'
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

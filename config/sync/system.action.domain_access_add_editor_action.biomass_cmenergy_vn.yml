@@ -1,0 +1,14 @@
+uuid: 57a7bcc2-f65d-497d-bdb7-eab36671c9c4
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_vn
+  module:
+    - domain_access
+id: domain_access_add_editor_action.biomass_cmenergy_vn
+label: 'Add editors to the CME - Biomass domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: biomass_cmenergy_vn

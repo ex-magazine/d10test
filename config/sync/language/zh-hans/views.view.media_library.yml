@@ -2,6 +2,24 @@ display:
   default:
     display_title: 默认
     display_options:
+      fields:
+        media_bulk_form:
+          action_title: 动作
+      pager:
+        options:
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page_label: 每页条目数
+            items_per_page_options_all_label: '- 全部 -'
+            offset_label: 偏移量
+      exposed_form:
+        options:
+          reset_button_label: 重置
+          exposed_sorts_label: 排序依据
+          sort_asc_label: 升序
+          sort_desc_label: 降序
       filters:
         name:
           expose:
@@ -10,14 +28,23 @@ display:
           expose:
             label: 语言
   page:
+    display_title: 页面
     display_options:
       fields:
+        media_bulk_form:
+          action_title: 动作
+        name:
+          separator: ', '
         edit_media:
           text: 编辑
         delete_media:
           text: 删除
   widget:
     display_options:
+      arguments:
+        bundle:
+          exception:
+            title: 全部
       filters:
         name:
           expose:
@@ -27,6 +54,10 @@ display:
       fields:
         name:
           label: 名称
+      arguments:
+        bundle:
+          exception:
+            title: 全部
       filters:
         name:
           expose:

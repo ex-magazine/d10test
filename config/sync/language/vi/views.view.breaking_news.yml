@@ -1,0 +1,8 @@
+display:
+  block_1:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="row"><div class="col-lg-12"><div class="title-area-center"><p class="pre skew-up"><span>Blog</span> của chúng tôi</p><h2 class="title skew-up">Cập nhật thông tin mới nhất</h2></div></div></div>'
+            format: full_html

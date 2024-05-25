@@ -10,10 +10,14 @@ dependencies:
     - field.field.node.banner.field_lean_more
     - field.field.node.banner.field_position
     - field.field.node.banner.field_svg
+    - field.field.node.banner.field_time_to_read
     - field.field.node.banner.field_title_second
+    - field.field.node.banner.field_video
+    - field.field.node.banner.field_youtube
     - image.style.wide
     - node.type.banner
   module:
+    - file
     - image
     - link
     - text
@@ -68,12 +72,37 @@ content:
     third_party_settings: {  }
     weight: 104
     region: content
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 6
+    region: content
   field_title_second:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
     weight: 105
+    region: content
+  field_video:
+    type: file_default
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_youtube:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 9
     region: content
   links:
     settings: {  }
@@ -85,3 +114,4 @@ hidden:
   field_domain_access: true
   field_domain_all_affiliates: true
   langcode: true
+  search_api_excerpt: true

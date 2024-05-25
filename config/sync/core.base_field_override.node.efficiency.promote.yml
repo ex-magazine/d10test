@@ -1,0 +1,22 @@
+uuid: 1c51fd8b-7270-4216-901c-1c0fd4409587
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+id: node.efficiency.promote
+field_name: promote
+entity_type: node
+bundle: efficiency
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

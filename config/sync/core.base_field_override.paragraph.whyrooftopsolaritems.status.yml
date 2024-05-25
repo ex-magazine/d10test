@@ -1,0 +1,22 @@
+uuid: 34f5fb29-e308-4af6-9bea-eac2b3862802
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.whyrooftopsolaritems
+id: paragraph.whyrooftopsolaritems.status
+field_name: status
+entity_type: paragraph
+bundle: whyrooftopsolaritems
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

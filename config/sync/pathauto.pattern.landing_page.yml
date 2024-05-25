@@ -10,23 +10,26 @@ label: 'Landing Page'
 type: 'canonical_entities:node'
 pattern: '[node:title]'
 selection_criteria:
-  fd8164ad-8fc3-4094-90fe-6229395f689c:
+  225855c0-d9c3-495e-ba27-6b582e2fae04:
     id: 'entity_bundle:node'
     negate: false
-    uuid: fd8164ad-8fc3-4094-90fe-6229395f689c
+    uuid: 225855c0-d9c3-495e-ba27-6b582e2fae04
     context_mapping:
       node: node
     bundles:
       landingpage: landingpage
-  8a8c2756-6b6d-4f2a-8f12-53a145c8f0f3:
+  acd58c32-11c9-46e1-acef-3e6dea3aa953:
     id: language
     negate: false
-    uuid: 8a8c2756-6b6d-4f2a-8f12-53a145c8f0f3
+    uuid: acd58c32-11c9-46e1-acef-3e6dea3aa953
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
       vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
 selection_logic: and
 weight: -10
 relationships:

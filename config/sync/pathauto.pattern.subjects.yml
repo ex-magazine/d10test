@@ -8,25 +8,28 @@ dependencies:
 id: subjects
 label: Subjects
 type: 'canonical_entities:taxonomy_term'
-pattern: 'blog/[term:name]'
+pattern: 'media/[term:name]'
 selection_criteria:
-  07c187fa-e77c-4bea-87ea-421643feaf0a:
+  ff66c343-ced2-47ff-a8cc-2d460a86e26e:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 07c187fa-e77c-4bea-87ea-421643feaf0a
+    uuid: ff66c343-ced2-47ff-a8cc-2d460a86e26e
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
       subjects: subjects
-  48080168-e57f-439e-bb83-63666cb93a7b:
+  8838d7f3-123f-47c1-96f2-0df3bcf10aa1:
     id: language
     negate: false
-    uuid: 48080168-e57f-439e-bb83-63666cb93a7b
+    uuid: 8838d7f3-123f-47c1-96f2-0df3bcf10aa1
     context_mapping:
       language: 'taxonomy_term:langcode:language'
     langcodes:
       en: en
       vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
 selection_logic: and
 weight: -10
 relationships:

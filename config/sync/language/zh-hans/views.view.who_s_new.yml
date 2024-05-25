@@ -1,3 +1,10 @@
 display:
   default:
     display_title: 默认
+    display_options:
+      exposed_form:
+        options:
+          reset_button_label: 重置
+          exposed_sorts_label: 排序依据
+          sort_asc_label: 升序
+          sort_desc_label: 降序

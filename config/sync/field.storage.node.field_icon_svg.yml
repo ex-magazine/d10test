@@ -1,0 +1,28 @@
+uuid: c308a37d-b28c-4e55-95a4-a17f9c6bfb96
+langcode: en
+status: true
+dependencies:
+  module:
+    - file
+    - node
+    - svg_image_field
+id: node.field_icon_svg
+field_name: field_icon_svg
+entity_type: node
+type: svg_image_field
+settings:
+  target_type: file
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+module: svg_image_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

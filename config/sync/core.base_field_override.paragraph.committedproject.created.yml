@@ -1,0 +1,18 @@
+uuid: 0db2a555-0843-4102-bd7d-ea8c1e3457d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.committedproject
+id: paragraph.committedproject.created
+field_name: created
+entity_type: paragraph
+bundle: committedproject
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

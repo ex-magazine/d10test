@@ -9,7 +9,7 @@ dependencies:
     - field.field.node.faq.field_domain_all_affiliates
     - field.field.node.faq.field_image
     - field.field.node.faq.field_time_to_read
-    - image.style.medium
+    - image.style.story424x310
     - node.type.faq
   module:
     - image
@@ -33,7 +33,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: story424x310
       image_loading:
         attribute: lazy
     third_party_settings: {  }

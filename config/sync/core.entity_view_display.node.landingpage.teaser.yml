@@ -13,9 +13,10 @@ dependencies:
     - field.field.node.landingpage.field_ldbackground
     - field.field.node.landingpage.field_paragraphs
     - field.field.node.landingpage.field_pdf
+    - field.field.node.landingpage.field_roofspacearea
     - field.field.node.landingpage.field_titlesecond
     - field.field.node.landingpage.field_viewreference
-    - image.style.medium
+    - image.style.story424x310
     - node.type.landingpage
   module:
     - image
@@ -39,7 +40,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: story424x310
       image_loading:
         attribute: lazy
     third_party_settings: {  }
@@ -54,6 +55,7 @@ hidden:
   field_ldbackground: true
   field_paragraphs: true
   field_pdf: true
+  field_roofspacearea: true
   field_titlesecond: true
   field_viewreference: true
   langcode: true

@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="container"><div class="row"><div class="col-lg-12"><div class="title-area-center"><p class="pre skew-up"><span>屋頂太</span>陽能項目</p><h2 class="title skew-up">太阳能的最新案例研究</h2></div></div></div></div>'
+            format: full_html

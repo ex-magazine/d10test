@@ -6,14 +6,7 @@ dependencies:
     - field.storage.node.field_icon
     - node.type.service
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: node.service.field_icon
 field_name: field_icon
 entity_type: node
@@ -21,14 +14,14 @@ bundle: service
 label: Icon
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
   handler: 'default:file'
   handler_settings: {  }
   file_directory: '[date:custom:Y]-[date:custom:m]'
-  file_extensions: 'png gif jpg jpeg svg'
+  file_extensions: 'svg png gif jpg jpeg'
   max_filesize: ''
   max_resolution: ''
   min_resolution: ''

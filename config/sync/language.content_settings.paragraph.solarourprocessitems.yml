@@ -1,0 +1,18 @@
+uuid: a73c4b31-31c3-41c4-af58-1d11b2473439
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarourprocessitems
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.solarourprocessitems
+target_entity_type_id: paragraph
+target_bundle: solarourprocessitems
+default_langcode: site_default
+language_alterable: true

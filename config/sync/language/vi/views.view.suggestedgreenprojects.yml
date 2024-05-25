@@ -1,0 +1,10 @@
+label: 'Dự án điện mặt trời áp mái liên quan'
+description: 'Dự án điện mặt trời áp mái liên quan'
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>Dự án điện mặt trời áp mái liên quan</h5></div>'
+            format: full_html

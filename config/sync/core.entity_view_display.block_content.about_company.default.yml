@@ -14,6 +14,7 @@ dependencies:
     - field.field.block_content.about_company.field_title
     - field.field.block_content.about_company.field_title_first
     - field.field.block_content.about_company.field_years_experience
+    - field.field.block_content.about_company.field_youtube
   module:
     - image
     - link
@@ -108,5 +109,14 @@ content:
     third_party_settings: {  }
     weight: 3
     region: content
+  field_youtube:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 11
+    region: content
 hidden:
   langcode: true
+  search_api_excerpt: true

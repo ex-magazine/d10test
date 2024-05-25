@@ -13,7 +13,25 @@ display:
           label: 'Vai trò'
         operations:
           label: 'Thao tác'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Số mục trên một trang'
+            items_per_page_options_all_label: '- Tất cả -'
+            offset_label: 'Độ dịch'
+      exposed_form:
+        options:
+          submit_button: Lọc
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
       filters:
         status:
           group_info:
             label: 'Trạng thái'
+        roles_target_id:
+          expose:
+            label: 'Vai trò'
+  page_1:
+    display_title: Trang

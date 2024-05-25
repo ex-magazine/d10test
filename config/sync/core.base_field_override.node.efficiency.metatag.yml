@@ -1,0 +1,18 @@
+uuid: 8b7717eb-6351-44e7-99e0-cc95edd0201c
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+id: node.efficiency.metatag
+field_name: metatag
+entity_type: node
+bundle: efficiency
+label: 'Metatags (Hidden field for JSON support)'
+description: 'The meta tags for the entity.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: map

@@ -1,0 +1,43 @@
+uuid: 04f374a1-54e5-4c41-8244-4828b11cc3de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.committedproject.bp_modal_title
+    - field.field.paragraph.committedproject.field_committedproject
+    - field.field.paragraph.committedproject.field_section_content
+    - paragraphs.paragraphs_type.committedproject
+  module:
+    - entity_reference_revisions
+    - text
+id: paragraph.committedproject.default
+targetEntityType: paragraph
+bundle: committedproject
+mode: default
+content:
+  bp_modal_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_committedproject:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_section_content:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

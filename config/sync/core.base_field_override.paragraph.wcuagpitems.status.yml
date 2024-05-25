@@ -1,0 +1,22 @@
+uuid: 2bfd0497-320f-424b-94a4-2f89e8b1706c
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.wcuagpitems
+id: paragraph.wcuagpitems.status
+field_name: status
+entity_type: paragraph
+bundle: wcuagpitems
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

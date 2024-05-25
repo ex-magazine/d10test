@@ -1,0 +1,19 @@
+uuid: 6f5c77ff-caa0-40e4-ae8d-7011196231e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_modal_title
+    - paragraphs.paragraphs_type.complianceitem
+id: paragraph.complianceitem.bp_modal_title
+field_name: bp_modal_title
+entity_type: paragraph
+bundle: complianceitem
+label: 'PDF title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

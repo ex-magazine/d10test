@@ -1,0 +1,18 @@
+uuid: 5060c33e-fd55-4e10-a41f-358f4a93464e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.wcuagpitems
+id: paragraph.wcuagpitems.created
+field_name: created
+entity_type: paragraph
+bundle: wcuagpitems
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

@@ -1,0 +1,37 @@
+uuid: f128aff0-912f-487e-b012-7bcb7723463f
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: service
+label: Service
+type: 'canonical_entities:node'
+pattern: 'service/[node:title].html'
+selection_criteria:
+  8cdfe0c2-ce41-4e2f-880d-d194dc6a28fd:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 8cdfe0c2-ce41-4e2f-880d-d194dc6a28fd
+    context_mapping:
+      node: node
+    bundles:
+      service: service
+  10065b9f-7c14-4bea-9379-5ce3997af993:
+    id: language
+    negate: false
+    uuid: 10065b9f-7c14-4bea-9379-5ce3997af993
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

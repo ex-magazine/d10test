@@ -1,0 +1,11 @@
+uuid: efeec6f7-1c50-43ce-a5e0-bf39e05ad58d
+langcode: en
+status: true
+dependencies: {  }
+id: cmenergy_vn
+domain_id: 11721025
+hostname: cmenergy.vn
+name: 'CME - Copper Mountain Energy'
+scheme: http
+weight: 6
+is_default: false

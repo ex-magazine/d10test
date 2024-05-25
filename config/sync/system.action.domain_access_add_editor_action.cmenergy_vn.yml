@@ -1,0 +1,14 @@
+uuid: 38002c67-5ab0-4018-8d82-a7c8db034781
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmenergy_vn
+  module:
+    - domain_access
+id: domain_access_add_editor_action.cmenergy_vn
+label: 'Add editors to the CME - Copper Mountain Energy domain'
+type: user
+plugin: domain_access_add_editor_action
+configuration:
+  domain_id: cmenergy_vn

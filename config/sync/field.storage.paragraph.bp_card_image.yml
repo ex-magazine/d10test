@@ -13,6 +13,9 @@ field_name: bp_card_image
 entity_type: paragraph
 type: image
 settings:
+  target_type: file
+  display_field: false
+  display_default: false
   uri_scheme: public
   default_image:
     uuid: ''
@@ -20,12 +23,9 @@ settings:
     title: ''
     width: null
     height: null
-  target_type: file
-  display_field: false
-  display_default: false
 module: image
 locked: false
-cardinality: 1
+cardinality: 2
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

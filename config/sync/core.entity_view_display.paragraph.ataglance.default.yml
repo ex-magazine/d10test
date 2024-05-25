@@ -1,0 +1,25 @@
+uuid: 90713b1c-9a4d-4118-ae0a-1d792bd26f80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ataglance.field_ataglance
+    - paragraphs.paragraphs_type.ataglance
+  module:
+    - entity_reference_revisions
+id: paragraph.ataglance.default
+targetEntityType: paragraph
+bundle: ataglance
+mode: default
+content:
+  field_ataglance:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

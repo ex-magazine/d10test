@@ -1,0 +1,26 @@
+title: 事業事例
+elements: |
+  your_info:
+    '#title': '屋根を入力してください (平方メートル)'
+    '#prev_button_label': 前の
+    '#next_button_label': 次
+  sqm:
+    '#title': '屋根を入力してください (平方メートル)'
+    '#placeholder': '屋根を入力してください (平方メートル)'
+  location:
+    '#title': 位置
+    '#options':
+      North: 北
+      South: 南
+  actions:
+    '#title': 送信ボタン
+  result:
+    '#title': 結果
+  your_info2:
+    '#title': あなたの情報
+  your_name:
+    '#title': あなたの名前
+    '#placeholder': あなたの名前
+  your_email:
+    '#title': あなたのメールアドレス
+    '#placeholder': あなたのメールアドレス

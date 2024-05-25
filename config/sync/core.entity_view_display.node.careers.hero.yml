@@ -11,7 +11,7 @@ dependencies:
     - field.field.node.careers.field_image
     - field.field.node.careers.field_time_to_read
     - field.field.node.careers.field_webform
-    - image.style.wide
+    - image.style.careers540620
     - node.type.careers
   module:
     - datetime
@@ -50,7 +50,7 @@ content:
     label: hidden
     settings:
       image_link: ''
-      image_style: wide
+      image_style: careers540620
       image_loading:
         attribute: lazy
     third_party_settings: {  }

@@ -41,6 +41,9 @@ elements: |-
     '#title_display': invisible
     '#placeholder': 'Type Your Message'
     '#required': true
+  captcha:
+    '#type': captcha
+    '#captcha_type': recaptcha/reCAPTCHA
   actions:
     '#type': webform_actions
     '#title': 'Submit button(s)'
@@ -233,5 +236,42 @@ access:
     roles: {  }
     users: {  }
     permissions: {  }
-handlers: {  }
+handlers:
+  email:
+    id: email
+    handler_id: email
+    label: Email
+    notes: ''
+    status: true
+    conditions: {  }
+    weight: 0
+    settings:
+      states:
+        - completed
+      to_mail: 'cme.marketing.event@gmail.com, thuy.tranthanh.bd@gmail.com'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: Info@cmenergy.vn
+      from_options: {  }
+      from_name: 'CME - Copper Mountain Energy'
+      reply_to: ''
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: _default
+      body: "<table width=\"100%\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n  <tr>\r\n    <td align=\"center\" valign=\"top\" bgcolor=\"#838383\" style=\"background-color:#838383;\"><br>\r\n    <br>\r\n    <table width=\"600\" border=\"0\" cellspacing=\"0\" cellpadding=\"0\">\r\n      <tr>\r\n        <td align=\"left\" valign=\"top\">\r\n          <img src=\"http://solar.adn.id.vn/themes/custom/solar/images/top.png\" width=\"600\" height=\"177\" style=\"display:block;\">\r\n        </td>\r\n      </tr>\r\n      <tr>\r\n        <td align=\"center\" valign=\"top\" bgcolor=\"#d3be6c\" style=\"background-color:#d3be6c; font-family:Arial, Helvetica, sans-serif; font-size:13px; color:#000000; padding:0px 15px 10px 15px;\">\r\n          <div><img src=\"http://solar.adn.id.vn/themes/custom/solar/images/divider.png\" width=\"517\" height=\"10\"></div>\r\n          <div style=\"font-size:48px; color:#838383;\"><b>Make An Appointment</b></div>\r\n          <div><img src=\"http://solar.adn.id.vn/themes/custom/solar/images/divider.png\" width=\"517\" height=\"10\"></div>\r\n          <div style=\"font-size:24px; color:#555100;\"><br>\r\n            Submitted on {{ webform_token('[webform_submission:created]', webform_submission, [], options) }} <br>\r\n           </div>\r\n          <div><br>\r\n            {{ webform_token('[webform_submission:values]', webform_submission, [], options) }}\r\n          <br>\r\n            <br>\r\n            <br>\r\n            <br>\r\n            <b>CME Groups</b><br>\r\n            Toà nhà M Building\r\n09 đường số 08, Khu A, Đô thị mới Nam Thành phố P, Quận 7, Thành phố Hồ Chí Minh<br>\r\nPhone: 02873002998 <br>\r\n<a href=\"http://solar.cmenergy.vn\" target=\"_blank\" style=\"color:#000000; text-decoration:none;\"> solar.cmenergy.vn</a></div></td>\r\n      </tr>\r\n      <tr>\r\n        <td align=\"left\" valign=\"top\"><img src=\"http://solar.adn.id.vn/themes/custom/solar/images/bot.png\" width=\"600\" height=\"18\" style=\"display:block;\"></td>\r\n      </tr>\r\n  </table>\r\n    <br>\r\n    <br></td>\r\n  </tr>\r\n</table>"
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: true
+      attachments: false
+      twig: true
+      theme_name: ''
+      parameters: {  }
+      debug: false
 variants: {  }

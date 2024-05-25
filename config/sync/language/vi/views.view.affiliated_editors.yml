@@ -1,6 +1,20 @@
 display:
   default:
+    display_title: Chính
     display_options:
+      exposed_form:
+        options:
+          submit_button: Lọc
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
+      pager:
+        options:
+          expose:
+            items_per_page_label: 'Số mục trên một trang'
+            items_per_page_options_all_label: '- Tất cả -'
+            offset_label: 'Độ dịch'
       fields:
         user_bulk_form:
           label: 'Cập nhật hàng loạt'
@@ -13,12 +27,24 @@ display:
         operations:
           label: 'Thao tác'
       filters:
+        roles_target_id:
+          expose:
+            label: 'Vai trò'
         status:
           group_info:
             label: 'Trạng thái'
+  page_1:
+    display_options:
+      arguments:
+        field_domain_access_target_id:
+          exception:
+            title: 'Tất cả'
   page_2:
     display_options:
       filters:
+        roles_target_id:
+          expose:
+            label: 'Vai trò'
         status:
           group_info:
             label: 'Trạng thái'

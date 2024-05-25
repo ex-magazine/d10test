@@ -1,0 +1,14 @@
+title: 'Đặt lịch hẹn'
+elements: |
+  processed_text:
+    '#text': '<div class="thumbnail appoinment-m-thumb"><img src="/sites/default/files/inline-images/make-an-app-02_0.png" data-entity-uuid="90cf21fd-b8de-4a8e-8962-3811eb3fbb01" data-entity-type="file" alt="make an appoinment"><div class="inner-wrapper"><h6>5</h6><p><span>kinh nghiệm</span></p></div></div>'
+  processed_text_01:
+    '#text': '<h3 class="title animated fadeIn">Đặt lịch hẹn</h3>'
+  your_name:
+    '#title': 'Họ và Tên'
+    '#placeholder': 'Họ và Tên'
+  your_email:
+    '#placeholder': 'Địa chỉ email'
+  actions:
+    '#title': 'Đặt lịch ngay'
+    '#submit__label': 'Đặt lịch ngay'

@@ -1,0 +1,19 @@
+uuid: 326932a2-8ec1-41fd-b379-3d194504bce8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_card_title
+    - paragraphs.paragraphs_type.complianceitem
+id: paragraph.complianceitem.bp_card_title
+field_name: bp_card_title
+entity_type: paragraph
+bundle: complianceitem
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

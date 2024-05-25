@@ -1,0 +1,19 @@
+uuid: 84df23e0-dbfe-4d64-bd40-7e3465b21df0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_accordion_section_title
+    - paragraphs.paragraphs_type.committedprojectitem
+id: paragraph.committedprojectitem.bp_accordion_section_title
+field_name: bp_accordion_section_title
+entity_type: paragraph
+bundle: committedprojectitem
+label: Title
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

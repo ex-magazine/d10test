@@ -7,11 +7,11 @@ module:
   admin_toolbar_tools: 0
   automated_cron: 0
   backup_migrate: 0
-  big_pipe: 0
   block: 0
   block_classes: 0
   block_content: 0
   breakpoint: 0
+  captcha: 0
   ckeditor5: 0
   color_field: 0
   comment: 0
@@ -25,8 +25,6 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
-  devel: 0
-  devel_generate: 0
   domain: 0
   domain_access: 0
   domain_config: 0
@@ -82,6 +80,10 @@ module:
   path: 0
   path_alias: 0
   pdf: 0
+  recaptcha: 0
+  recaptcha_v3: 0
+  redirect: 0
+  redis: 0
   responsive_image: 0
   search_api: 0
   search_api_db: 0
@@ -93,6 +95,7 @@ module:
   smtp: 0
   solaru: 0
   statistics: 0
+  svg_image_field: 0
   syslog: 0
   system: 0
   taxonomy: 0
@@ -105,10 +108,13 @@ module:
   tour: 0
   twig_tweak: 0
   user: 0
+  user_redirect: 0
   views_ui: 0
   viewsreference: 0
   webform: 0
   webform_ui: 0
+  webp: 0
+  webp_extras: 0
   pathauto: 1
   content_translation: 10
   views: 10

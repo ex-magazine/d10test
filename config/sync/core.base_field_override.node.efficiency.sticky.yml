@@ -1,0 +1,22 @@
+uuid: 9501be1a-a4ae-4cc4-b0c6-a52bae46757f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+id: node.efficiency.sticky
+field_name: sticky
+entity_type: node
+bundle: efficiency
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

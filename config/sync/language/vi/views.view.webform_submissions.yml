@@ -1,17 +1,47 @@
 display:
   default:
+    display_title: Chính
     display_options:
+      exposed_form:
+        options:
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
+      pager:
+        options:
+          tags:
+            previous: ‹‹
+            next: ››
+          expose:
+            items_per_page_label: 'Số mục trên một trang'
+            items_per_page_options_all_label: '- Tất cả -'
+            offset_label: 'Độ dịch'
       fields:
+        created:
+          label: 'Tạo bởi'
         view_webform_submission:
           label: 'Thao tác'
+      arguments:
+        in_draft:
+          exception:
+            title: 'Tất cả'
   embed_administer:
     display_options:
       fields:
+        webform_submission_bulk_form:
+          action_title: 'Thao tác'
+        created:
+          label: 'Tạo bởi'
         operations:
           label: 'Thao tác'
   embed_manage:
     display_options:
       fields:
+        webform_submission_bulk_form:
+          action_title: 'Thao tác'
+        created:
+          label: 'Tạo bởi'
         view_webform_submission:
           label: 'Thao tác'
         edit_webform_submission:
@@ -19,5 +49,7 @@ display:
   embed_review:
     display_options:
       fields:
+        created:
+          label: 'Tạo bởi'
         view_webform_submission:
           label: 'Thao tác'

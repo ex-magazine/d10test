@@ -1,0 +1,38 @@
+uuid: 7c4b582d-e608-42c4-8523-bfbafee9b37d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_image_field
+    - paragraphs.paragraphs_type.ourprocessitemv2
+  module:
+    - image
+id: paragraph.ourprocessitemv2.bp_image_field
+field_name: bp_image_field
+entity_type: paragraph
+bundle: ourprocessitemv2
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

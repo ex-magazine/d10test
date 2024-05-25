@@ -1,0 +1,26 @@
+title: 'Ước tính điện năng tạo ra'
+elements: |
+  your_info:
+    '#title': 'Nhập diện tích mái nhà của bạn (m2)'
+    '#prev_button_label': Trước
+    '#next_button_label': Sau
+  sqm:
+    '#title': 'Nhập diện tích mái nhà của bạn (m2)'
+    '#placeholder': 'Nhập diện tích mái nhà của bạn (m2)'
+  location:
+    '#title': 'Vị trí'
+    '#options':
+      North: Bắc
+      South: Nam
+  actions:
+    '#title': 'Gửi đi'
+  result:
+    '#title': 'Kết quả'
+  your_info2:
+    '#title': 'Thông tin của bạn'
+  your_name:
+    '#title': 'Họ và Tên'
+    '#placeholder': 'Họ và Tên'
+  your_email:
+    '#title': 'Địa chỉ email'
+    '#placeholder': 'Địa chỉ email'

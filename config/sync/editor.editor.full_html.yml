@@ -27,6 +27,7 @@ settings:
       - '|'
       - blockQuote
       - drupalInsertImage
+      - imce_image
       - insertTable
       - horizontalLine
       - '|'

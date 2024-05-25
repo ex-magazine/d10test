@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: おすすめのブログ
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>おすすめのブログ</h5></div>'
+            format: full_html

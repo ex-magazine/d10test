@@ -11,7 +11,10 @@ dependencies:
     - field.field.node.banner.field_lean_more
     - field.field.node.banner.field_position
     - field.field.node.banner.field_svg
+    - field.field.node.banner.field_time_to_read
     - field.field.node.banner.field_title_second
+    - field.field.node.banner.field_video
+    - field.field.node.banner.field_youtube
     - image.style.medium
     - node.type.banner
   module:
@@ -49,7 +52,10 @@ hidden:
   field_lean_more: true
   field_position: true
   field_svg: true
+  field_time_to_read: true
   field_title_second: true
+  field_video: true
+  field_youtube: true
   langcode: true
   links: true
   search_api_excerpt: true

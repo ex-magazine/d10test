@@ -1,0 +1,20 @@
+uuid: b60656c4-1f30-4877-bf90-e3a801ab5da2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+  module:
+    - path
+id: node.efficiency.path
+field_name: path
+entity_type: node
+bundle: efficiency
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

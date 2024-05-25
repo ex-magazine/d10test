@@ -1,0 +1,15 @@
+elements: |
+  your_name:
+    '#title': 'Họ và Tẽn'
+    '#placeholder': 'Họ và Tẽn'
+  your_email:
+    '#title': 'Địa chỉ email'
+    '#placeholder': 'Địa chỉ email'
+  message:
+    '#title': 'Thư xin việc'
+    '#placeholder': 'Thư xin việc'
+  your_cv:
+    '#title': 'CV của bạn'
+    '#file_placeholder': '<p>CV của bạn</p>'
+  actions:
+    '#submit__label': 'Gửi CV đi'

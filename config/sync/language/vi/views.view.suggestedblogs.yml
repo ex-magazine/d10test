@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: 'Bài viết liên quan'
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>Bài viết liên quan</h5></div>'
+            format: full_html

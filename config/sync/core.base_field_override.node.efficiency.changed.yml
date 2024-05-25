@@ -1,0 +1,18 @@
+uuid: 0097ecbd-3dcb-47a2-a3f5-b765472d9b38
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+id: node.efficiency.changed
+field_name: changed
+entity_type: node
+bundle: efficiency
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

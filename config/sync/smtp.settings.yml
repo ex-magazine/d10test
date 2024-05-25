@@ -1,19 +1,19 @@
 _core:
   default_config_hash: HENvUIeX6xNPGRB1w3z6rT9a71LM_hKXATF6XrM9WvM
-smtp_on: false
-smtp_host: ''
+smtp_on: true
+smtp_host: smtp.gmail.com
 smtp_hostbackup: ''
-smtp_port: '25'
-smtp_protocol: standard
+smtp_port: '465'
+smtp_protocol: ssl
 smtp_autotls: true
 smtp_timeout: 30
-smtp_username: ''
-smtp_password: ''
+smtp_username: tranthanhbinhmathdephcm@gmail.com
+smtp_password: qkqkddljupbmewcl
 smtp_from: ''
 smtp_fromname: ''
 smtp_client_hostname: ''
 smtp_client_helo: ''
-smtp_allowhtml: ''
+smtp_allowhtml: '1'
 smtp_test_address: ''
 smtp_reroute_address: ''
 smtp_debugging: false

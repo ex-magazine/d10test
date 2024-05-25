@@ -23,6 +23,7 @@ display:
       fields:
         node_bulk_form:
           label: ノード一括操作フォーム
+          action_title: 選択リスト付
         simplenews_issue:
           label: ニュースレター
           separator: ', '

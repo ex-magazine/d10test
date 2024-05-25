@@ -14,7 +14,7 @@ dependencies:
     - field.field.node.teammember.field_time_to_read
     - field.field.node.teammember.field_twitter
     - field.field.node.teammember.field_webform
-    - image.style.medium
+    - image.style.story424x310
     - node.type.teammember
   module:
     - image
@@ -38,7 +38,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: story424x310
       image_loading:
         attribute: lazy
     third_party_settings: {  }

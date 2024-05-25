@@ -6,11 +6,9 @@ dependencies:
     - filter.format.restricted_html
   module:
     - comment
-    - contact
     - filter
     - media
     - paragraphs_type_permissions
-    - simplenews
     - system
 _core:
   default_config_hash: 6WavjUYXIegP9AAg2zXGx54MWIVoomC3SZhNiqe-Dyk
@@ -21,14 +19,23 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'post comments'
-  - 'subscribe to newsletters'
   - 'use text format restricted_html'
   - 'view media'
+  - 'view paragraph content ataglance'
+  - 'view paragraph content ataglanceitem'
   - 'view paragraph content bp_view'
   - 'view paragraph content bp_webform'
   - 'view paragraph content challengeproject'
+  - 'view paragraph content committedproject'
+  - 'view paragraph content committedprojectitem'
+  - 'view paragraph content compliance'
+  - 'view paragraph content complianceitem'
+  - 'view paragraph content content'
+  - 'view paragraph content milestone'
+  - 'view paragraph content milestoneitems'
+  - 'view paragraph content ourprocessitemv2'
+  - 'view paragraph content ourprocessv2'
   - 'view paragraph content ourservice3cols'
   - 'view paragraph content solar_about_company'
   - 'view paragraph content solar_amazing_feedback_item'
@@ -44,9 +51,13 @@ permissions:
   - 'view paragraph content solarqualityhandymansolution'
   - 'view paragraph content solarqualityitem'
   - 'view paragraph content solarwebform'
+  - 'view paragraph content timeline'
+  - 'view paragraph content timeline_item'
   - 'view paragraph content wcuagp'
   - 'view paragraph content wcuagp_items'
   - 'view paragraph content wcuagpitems'
   - 'view paragraph content webform'
+  - 'view paragraph content whatmakesusdifferent'
   - 'view paragraph content whyrooftopsolar'
   - 'view paragraph content whyrooftopsolaritems'
+  - 'view paragraph content wmusditem'

@@ -1,0 +1,18 @@
+favicon:
+  use_default: true
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  use_default: true
+twitter: ''
+facebook: 'https://www.facebook.com/cmesolarenergy'
+instagram: ''
+youtube: 'https://www.youtube.com/@cmesolarinvestments8235'
+linkedin: 'https://www.linkedin.com/company/copper-mountain-energy/'
+phone: ''
+email: ''
+address: ''
+management_message: ''

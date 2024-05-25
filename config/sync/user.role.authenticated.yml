@@ -7,13 +7,12 @@ dependencies:
     - filter.format.webform_default
   module:
     - comment
-    - contact
     - file
     - filter
     - media
     - shortcut
-    - simplenews
     - system
+    - toolbar
 _core:
   default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
 id: authenticated
@@ -24,11 +23,10 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access shortcuts'
-  - 'access site-wide contact form'
+  - 'access toolbar'
   - 'delete own files'
   - 'post comments'
   - 'skip comment approval'
-  - 'subscribe to newsletters'
   - 'use text format basic_html'
   - 'use text format webform_default'
   - 'view media'

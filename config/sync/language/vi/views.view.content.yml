@@ -1,7 +1,9 @@
+label: 'Nội dung'
 display:
   default:
     display_title: 'Mặc định'
     display_options:
+      title: 'Nội dung'
       fields:
         title:
           label: 'Tiêu đề'
@@ -9,6 +11,13 @@ display:
           label: 'Trạng thái'
         operations:
           label: 'Thao tác'
+      exposed_form:
+        options:
+          submit_button: Lọc
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
       filters:
         title:
           expose:
@@ -19,3 +28,10 @@ display:
         langcode:
           expose:
             label: 'Ngôn ngữ'
+  page_1:
+    display_title: Trang
+    display_options:
+      menu:
+        title: 'Nội dung'
+      tab_options:
+        title: 'Nội dung'

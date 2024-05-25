@@ -1,0 +1,15 @@
+uuid: 0850f1c5-d790-4678-9101-e142032139f0
+langcode: en
+status: true
+dependencies: {  }
+name: service312x438
+label: service312x438
+effects:
+  294098cd-f820-4b87-ac46-2c20acbce4e7:
+    uuid: 294098cd-f820-4b87-ac46-2c20acbce4e7
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 312
+      height: 438
+      anchor: center-center

@@ -1,0 +1,53 @@
+uuid: 3255b44d-f7d0-4b7b-b933-d7068ed9310b
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.ournewsright
+    - field.field.node.banner.body
+    - field.field.node.banner.field_domain_access
+    - field.field.node.banner.field_domain_all_affiliates
+    - field.field.node.banner.field_image
+    - field.field.node.banner.field_lean_more
+    - field.field.node.banner.field_position
+    - field.field.node.banner.field_svg
+    - field.field.node.banner.field_time_to_read
+    - field.field.node.banner.field_title_second
+    - field.field.node.banner.field_video
+    - field.field.node.banner.field_youtube
+    - node.type.banner
+  module:
+    - user
+id: node.banner.ournewsright
+targetEntityType: node
+bundle: banner
+mode: ournewsright
+content:
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  body: true
+  field_domain_access: true
+  field_domain_all_affiliates: true
+  field_image: true
+  field_lean_more: true
+  field_position: true
+  field_svg: true
+  field_title_second: true
+  field_video: true
+  field_youtube: true
+  langcode: true
+  search_api_excerpt: true

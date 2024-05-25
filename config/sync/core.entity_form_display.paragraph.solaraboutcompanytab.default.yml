@@ -6,6 +6,7 @@ dependencies:
     - field.field.paragraph.solaraboutcompanytab.bp_accordion_section_title
     - field.field.paragraph.solaraboutcompanytab.bp_card_image
     - field.field.paragraph.solaraboutcompanytab.bp_card_link
+    - field.field.paragraph.solaraboutcompanytab.bp_card_title
     - field.field.paragraph.solaraboutcompanytab.bp_modal_title
     - field.field.paragraph.solaraboutcompanytab.field_items
     - field.field.paragraph.solaraboutcompanytab.field_section_content
@@ -44,6 +45,14 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
+    third_party_settings: {  }
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
     third_party_settings: {  }
   bp_modal_title:
     type: string_textfield

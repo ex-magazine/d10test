@@ -1,0 +1,45 @@
+uuid: bc54ba26-5656-466f-badc-d56595509bc2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ourprocessitemv2.bp_card_title
+    - field.field.paragraph.ourprocessitemv2.bp_image_field
+    - field.field.paragraph.ourprocessitemv2.field_text
+    - paragraphs.paragraphs_type.ourprocessitemv2
+  module:
+    - image
+    - text
+id: paragraph.ourprocessitemv2.default
+targetEntityType: paragraph
+bundle: ourprocessitemv2
+mode: default
+content:
+  bp_card_title:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  bp_image_field:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_text:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  search_api_excerpt: true

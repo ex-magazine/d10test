@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="row"><div class="col-lg-12"><div class="title-area-center"><p class="pre skew-up"><span>お気に入りの質問のリスト</span></p><h2 class="title skew-up">よくある質問</h2></div></div></div>'
+            format: full_html

@@ -4,5 +4,5 @@ display:
       header:
         area:
           content:
-            value: '<div class="row"><div class="col-lg-12"><div class="title-area-center"><p class="pre skew-up"><span>Our </span>khách hàng</p></div></div></div>'
+            value: '<div class="row"><div class="col-lg-12"><div class="title-area-center"><p class="pre skew-up"><span>Khách hàng</span> của chúng tôi</p><h2 class="title skew-up">Cập nhật khách hàng mới nhất</h2></div></div></div>'
             format: full_html

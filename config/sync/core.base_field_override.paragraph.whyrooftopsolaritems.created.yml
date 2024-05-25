@@ -1,0 +1,18 @@
+uuid: 81ecc393-8f16-492b-bd60-1804f73f754e
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.whyrooftopsolaritems
+id: paragraph.whyrooftopsolaritems.created
+field_name: created
+entity_type: paragraph
+bundle: whyrooftopsolaritems
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

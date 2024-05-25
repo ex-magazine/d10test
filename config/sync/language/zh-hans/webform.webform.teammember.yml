@@ -1,0 +1,16 @@
+elements: |
+  your_name:
+    '#title': 你的名字
+    '#placeholder': 你的名字
+  your_email:
+    '#title': 你的邮件
+    '#placeholder': 你的邮件
+  subject:
+    '#title': 主题
+    '#placeholder': 主题
+  message:
+    '#title': 信息
+    '#placeholder': 信息
+  actions:
+    '#title': 提交
+    '#submit__label': 提交

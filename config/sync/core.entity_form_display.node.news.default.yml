@@ -88,7 +88,6 @@ third_party_settings:
         required_fields: true
     group_catalogue:
       children:
-        - field_news_type
         - field_subjects
         - field_expiration_date
         - field_tags
@@ -123,7 +122,7 @@ content:
     third_party_settings: {  }
   comment:
     type: comment_default
-    weight: 13
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -143,13 +142,13 @@ content:
     third_party_settings: {  }
   field_domain_access:
     type: options_buttons
-    weight: 11
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_domain_all_affiliates:
     type: boolean_checkbox
-    weight: 12
+    weight: 11
     region: content
     settings:
       display_label: true
@@ -187,12 +186,6 @@ content:
     settings:
       placeholder_url: ''
       placeholder_title: ''
-    third_party_settings: {  }
-  field_news_type:
-    type: options_select
-    weight: 31
-    region: content
-    settings: {  }
     third_party_settings: {  }
   field_paragraph:
     type: paragraphs
@@ -245,7 +238,7 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 9
+    weight: 8
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -263,14 +256,14 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 10
+    weight: 9
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 8
+    weight: 7
     region: content
     settings:
       display_label: true
@@ -299,4 +292,5 @@ content:
       placeholder: ''
     third_party_settings: {  }
 hidden:
+  field_news_type: true
   field_tip: true

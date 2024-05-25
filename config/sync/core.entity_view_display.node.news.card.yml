@@ -70,6 +70,14 @@ content:
     third_party_settings: {  }
     weight: 0
     region: content
+  field_subjects:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
   links:
     settings: {  }
     third_party_settings: {  }
@@ -84,7 +92,6 @@ hidden:
   field_expiration_date: true
   field_ldbackground: true
   field_paragraph: true
-  field_subjects: true
   field_tags: true
   field_time_to_read: true
   field_tip: true

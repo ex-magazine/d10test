@@ -1,0 +1,7 @@
+uuid: 7c195b9a-1362-46ef-9de6-42b760661c64
+langcode: en
+status: false
+dependencies: {  }
+formId: node_customerfeedbacks_form
+captchaType: default
+label: node_customerfeedbacks_form

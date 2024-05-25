@@ -1,0 +1,31 @@
+uuid: c0985f0b-1a9f-47a4-949a-ca9e7842b48f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f564ec3e-8605-4974-9156-7c726e18c398'
+  module:
+    - block_classes
+    - block_content
+    - system
+  theme:
+    - solar
+id: solar_whatmakesusdiffirent
+theme: solar
+region: about_us
+weight: 0
+provider: null
+plugin: 'block_content:f564ec3e-8605-4974-9156-7c726e18c398'
+settings:
+  id: 'block_content:f564ec3e-8605-4974-9156-7c726e18c398'
+  label: 'What makes us diffirent'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

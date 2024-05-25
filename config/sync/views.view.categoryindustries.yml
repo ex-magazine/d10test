@@ -152,7 +152,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "   <div class=\"rts-bread-crumb-area bg_image bg-breadcrumb-green-projects\">\r\n        <div class=\"container ptb--65\">\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-12\">\r\n<div class=\"con-tent-main\">\r\n                        <div class=\"wrapper\">\r\n                            <span class=\"bg-text-stok\">Green Projects Details</span>\r\n                            <div class=\"title skew-up\">\r\n                                <a href=\"/green-projects\">Green projects</a>\r\n                            </div>\r\n                            <div class=\"slug skew-up\">\r\n                                <a href=\"/\">HOME /</a>\r\n                                <a class=\"active\" href=\"{{ view_taxonomy_term }}\">{{ name }} </a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n         </div>\r\n            </div>\r\n        </div>\r\n    </div> "
+            text: "<div class=\"rts-bread-crumb-area bg_image\">\r\n\r\n        <div class=\"container ptb--65\">\r\n            <div class=\"row\">\r\n                <div class=\"col-lg-12\">\r\n<div class=\"con-tent-main\">\r\n                        <div class=\"wrapper\">\r\n                            <span class=\"bg-text-stok\">Green Projects Details</span>\r\n                            <div class=\"title skew-up\">\r\n                                <a href=\"/green-projects\">Green projects</a>\r\n                            </div>\r\n                            <div class=\"slug skew-up\">\r\n                                <a href=\"/\">HOME /</a>\r\n                                <a class=\"active\" href=\"{{ view_taxonomy_term }}\">{{ name }} </a>\r\n                            </div>\r\n                        </div>\r\n                    </div>\r\n         </div>\r\n            </div>\r\n        </div>\r\n    </div> "
             make_link: false
             path: ''
             absolute: false
@@ -267,6 +267,48 @@ display:
           group: 1
           expose:
             operator: ''
+        langcode:
+          id: langcode
+          table: taxonomy_term_field_data
+          field: langcode
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: taxonomy_term
+          entity_field: langcode
+          plugin_id: language
+          operator: in
+          value:
+            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
       style:
         type: default
       row:
@@ -280,7 +322,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "<style type=\"text/css\">\r\n    .rts-bread-crumb-area.bg_image { \r\n      background: url('/sites/default/files/2024-05/solution_7.jpg'); \r\n    }  \r\n.view-categoryindustries .view-header{\r\nmargin-bottom: 0;\r\n}\r\n</style>   \r\n"
+            format: full_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:

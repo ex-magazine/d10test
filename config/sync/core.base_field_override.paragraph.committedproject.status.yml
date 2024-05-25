@@ -1,0 +1,22 @@
+uuid: e917142c-d162-4f52-b1e4-c06fe38da40f
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.committedproject
+id: paragraph.committedproject.status
+field_name: status
+entity_type: paragraph
+bundle: committedproject
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

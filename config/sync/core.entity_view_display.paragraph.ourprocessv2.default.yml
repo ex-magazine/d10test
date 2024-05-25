@@ -1,0 +1,25 @@
+uuid: eb957886-53a8-41b2-85a2-c5856e91aa91
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ourprocessv2.field_ourprocessv2
+    - paragraphs.paragraphs_type.ourprocessv2
+  module:
+    - entity_reference_revisions
+id: paragraph.ourprocessv2.default
+targetEntityType: paragraph
+bundle: ourprocessv2
+mode: default
+content:
+  field_ourprocessv2:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

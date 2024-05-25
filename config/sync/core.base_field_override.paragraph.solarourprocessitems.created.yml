@@ -1,0 +1,18 @@
+uuid: 26689973-01d3-4cd0-9c23-34bf3697b700
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarourprocessitems
+id: paragraph.solarourprocessitems.created
+field_name: created
+entity_type: paragraph
+bundle: solarourprocessitems
+label: 'Authored on'
+description: 'The time that the Paragraph was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

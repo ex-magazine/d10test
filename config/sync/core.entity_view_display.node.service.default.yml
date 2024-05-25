@@ -7,16 +7,20 @@ dependencies:
     - field.field.node.service.field_domain_access
     - field.field.node.service.field_domain_all_affiliates
     - field.field.node.service.field_icon
+    - field.field.node.service.field_icon_svg
     - field.field.node.service.field_image
+    - field.field.node.service.field_linkto
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_servicecategory
     - field.field.node.service.field_svg
+    - field.field.node.service.field_time_to_read
     - image.style.wide
     - node.type.service
   module:
     - entity_reference_revisions
     - image
     - options
+    - svg_image_field
     - text
     - user
 id: node.service.default
@@ -29,7 +33,7 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 4
     region: content
   field_icon:
     type: image
@@ -40,7 +44,24 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 102
+    weight: 5
+    region: content
+  field_icon_svg:
+    type: svg_image_field_formatter
+    label: above
+    settings:
+      inline: false
+      apply_dimensions: true
+      width: 25
+      height: 25
+      enable_alt: true
+      enable_title: true
+      link: ''
+      force_fill: false
+      sanitize: true
+      sanitize_remote: false
+    third_party_settings: {  }
+    weight: 8
     region: content
   field_image:
     type: image
@@ -51,7 +72,7 @@ content:
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: -1
+    weight: 0
     region: content
   field_paragraph:
     type: entity_reference_revisions_entity_view
@@ -60,29 +81,40 @@ content:
       view_mode: default
       link: ''
     third_party_settings: {  }
-    weight: 6
+    weight: 1
     region: content
   field_servicecategory:
     type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 105
+    weight: 7
     region: content
   field_svg:
     type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 104
+    weight: 6
+    region: content
+  field_time_to_read:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 2
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 3
     region: content
 hidden:
   addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
+  field_linkto: true
   langcode: true
+  search_api_excerpt: true

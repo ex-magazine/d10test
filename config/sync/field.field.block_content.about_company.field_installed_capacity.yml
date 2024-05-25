@@ -9,7 +9,7 @@ id: block_content.about_company.field_installed_capacity
 field_name: field_installed_capacity
 entity_type: block_content
 bundle: about_company
-label: 'Installed Capacity'
+label: 'Trees planted'
 description: ''
 required: false
 translatable: true

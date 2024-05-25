@@ -17,6 +17,8 @@ display:
             first: '« 最初'
             last: '最後 »'
       fields:
+        node_bulk_form:
+          action_title: 選択リスト付
         title:
           label: タイトル
         type:

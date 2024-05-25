@@ -1,0 +1,16 @@
+elements: |
+  your_name:
+    '#title': あなたの名前
+    '#placeholder': あなたの名前
+  your_email:
+    '#title': あなたのメールアドレス
+    '#placeholder': あなたのメールアドレス
+  subject:
+    '#title': 主題
+    '#placeholder': 主題
+  message:
+    '#title': メッセージ
+    '#placeholder': メッセージ
+  actions:
+    '#title': 提出する
+    '#submit__label': 提出する

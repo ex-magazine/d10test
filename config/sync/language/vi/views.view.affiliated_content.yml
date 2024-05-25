@@ -1,6 +1,13 @@
 display:
   default:
     display_options:
+      exposed_form:
+        options:
+          submit_button: Lọc
+          reset_button_label: 'Thiết lập lại'
+          exposed_sorts_label: 'Sắp xếp theo'
+          sort_asc_label: 'Tăng dần'
+          sort_desc_label: 'Giảm dần'
       fields:
         title:
           label: 'Tiêu đề'
@@ -21,8 +28,17 @@ display:
         langcode:
           expose:
             label: 'Ngôn ngữ'
+      arguments:
+        field_domain_access_target_id:
+          exception:
+            title: 'Tất cả'
+    display_title: Chính
   page_1:
     display_options:
+      menu:
+        title: 'Nội dung'
+      tab_options:
+        title: 'Nội dung'
       filters:
         status:
           expose:
@@ -36,6 +52,7 @@ display:
         langcode:
           expose:
             label: 'Ngôn ngữ'
+      title: 'Nội dung'
   page_2:
     display_options:
       filters:

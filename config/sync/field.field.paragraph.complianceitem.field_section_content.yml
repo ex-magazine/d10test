@@ -1,0 +1,24 @@
+uuid: b3274fce-d168-47a6-861f-2cf67de552df
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_section_content
+    - filter.format.full_html
+    - paragraphs.paragraphs_type.complianceitem
+  module:
+    - text
+id: paragraph.complianceitem.field_section_content
+field_name: field_section_content
+entity_type: paragraph
+bundle: complianceitem
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats:
+    - full_html
+field_type: text_long

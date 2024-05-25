@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: '<h2>结果为空</h2>'
+            format: full_html
+      filters:
+        field_categoryv2_value:
+          expose:
+            label: 地区
+        field_growth_value:
+          expose:
+            label: 定位
+        field_category_target_id:
+          expose:
+            label: 行业
+      exposed_form:
+        options:
+          submit_button: 申请
+          reset_button_label: 重置

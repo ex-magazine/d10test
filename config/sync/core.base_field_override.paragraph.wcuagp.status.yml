@@ -1,0 +1,22 @@
+uuid: d57dac77-7e19-4bae-a6ff-c8aacc5fcfad
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.wcuagp
+id: paragraph.wcuagp.status
+field_name: status
+entity_type: paragraph
+bundle: wcuagp
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

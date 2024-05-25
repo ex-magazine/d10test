@@ -1,0 +1,14 @@
+elements: |
+  your_name:
+    '#placeholder': 'Họ và Tên'
+  your_email:
+    '#placeholder': 'Địa chỉ email'
+  select_subject:
+    '#placeholder': 'Chủ đề liên hệ'
+  type_your_message:
+    '#placeholder': 'Nội dung liên hệ'
+  actions:
+    '#submit__label': 'Gửi đi'
+    '#update__label': 'Gửi đi'
+settings:
+  confirmation_url: /vi/cme-solar-mot-lan-nua-xin-cam-phan-hoi-cua-ban

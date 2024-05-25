@@ -1,0 +1,14 @@
+elements: |
+  your_name:
+    '#placeholder': '당신의 이름'
+  your_email:
+    '#placeholder': '귀하의 이메일'
+  select_subject:
+    '#placeholder': 주제
+  type_your_message:
+    '#placeholder': '메시지를 입력하세요'
+  actions:
+    '#submit__label': '문자 보내'
+    '#update__label': '문자 보내'
+settings:
+  confirmation_url: /ko/cme-solar-pideubaegeul-bonaejusyeoseo-dasi-hanbeon-gamsadeulibnida

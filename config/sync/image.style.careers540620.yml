@@ -1,0 +1,15 @@
+uuid: d35ca1c2-2314-43e9-998f-2a017aad68d8
+langcode: en
+status: true
+dependencies: {  }
+name: careers540620
+label: careers540x620
+effects:
+  c26a9496-615e-45d8-80a2-2db74842e35c:
+    uuid: c26a9496-615e-45d8-80a2-2db74842e35c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 540
+      height: 620
+      anchor: center-center

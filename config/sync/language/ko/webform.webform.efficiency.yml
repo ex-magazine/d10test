@@ -1,0 +1,26 @@
+title: '예상 발전량'
+elements: |
+  your_info:
+    '#title': '지붕(평방미터)을 입력하세요.'
+    '#prev_button_label': 이전의
+    '#next_button_label': 다음
+  sqm:
+    '#title': '지붕(평방미터)을 입력하세요.'
+    '#placeholder': '지붕(평방미터)을 입력하세요.'
+  location:
+    '#title': 위치
+    '#options':
+      North: 북쪽
+      South: 남쪽
+  actions:
+    '#title': '제출 버튼'
+  result:
+    '#title': 결과
+  your_info2:
+    '#title': '귀하의 정보'
+  your_name:
+    '#title': '당신의 이름'
+    '#placeholder': '당신의 이름'
+  your_email:
+    '#title': '귀하의 이메일'
+    '#placeholder': '귀하의 이메일'

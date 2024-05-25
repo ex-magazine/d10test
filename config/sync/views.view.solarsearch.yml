@@ -161,13 +161,13 @@ display:
           exposed: true
           expose:
             operator_id: search_api_fulltext_op
-            label: 'Fulltext search'
+            label: ''
             description: ''
             use_operator: false
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: fulltext
+            identifier: keyword
             required: false
             remember: false
             multiple: false
@@ -177,7 +177,7 @@ display:
               content_editor: '0'
               administrator: '0'
             expose_fields: false
-            placeholder: ''
+            placeholder: 'Search by keyword'
             searched_fields_id: search_api_fulltext_searched_fields
           is_grouped: false
           group_info:

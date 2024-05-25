@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="row"><div class="col-lg-12"><div class="title-area-center"><p class="pre skew-up"><span>즐겨찾는 질문 목록</span></p><h2 class="title skew-up">자주 묻는 질문</h2></div></div></div>'
+            format: full_html

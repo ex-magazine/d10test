@@ -31,7 +31,7 @@ third_party_settings:
     sticky_stop_padding: '0'
 _core:
   default_config_hash: 9_TpfMu__RqAev9Z7v-khVQAF1xBm4bUzxk0EcmiKgI
-name: News
+name: Blogs
 type: news
 description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
 help: ''

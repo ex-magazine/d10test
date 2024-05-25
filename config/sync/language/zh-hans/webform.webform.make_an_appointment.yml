@@ -1,0 +1,13 @@
+title: 预约
+elements: |
+  processed_text:
+    '#text': '<div class="thumbnail appoinment-m-thumb"><img src="/sites/default/files/inline-images/make-an-app-02_0.png" data-entity-uuid="90cf21fd-b8de-4a8e-8962-3811eb3fbb01" data-entity-type="file" alt="make an appoinment"><div class="inner-wrapper"><h6>5</h6><p><span>年经验</span></p></div></div>'
+  processed_text_01:
+    '#text': '<h3 class="title animated fadeIn">预约</h3>'
+  your_name:
+    '#placeholder': 你的名字
+  your_email:
+    '#placeholder': 你的邮件
+  actions:
+    '#title': 提交留言
+    '#submit__label': 提交留言

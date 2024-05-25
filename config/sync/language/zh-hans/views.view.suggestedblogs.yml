@@ -1,0 +1,9 @@
+display:
+  default:
+    display_options:
+      title: 推荐博客
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>推荐博客</h5></div>'
+            format: full_html

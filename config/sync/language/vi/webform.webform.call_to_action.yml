@@ -1,0 +1,7 @@
+elements: |
+  your_name:
+    '#placeholder': 'Họ và Tên'
+  your_email:
+    '#placeholder': 'Địa chỉ email'
+  processed_text:
+    '#text': "<span class=\"pre  skew-up\">\r\n                            <span>\r\n                            Liên hệ \r\n                            </span> với chúng tôi\r\n                        </span>\r\n                        <h4 class=\"title skew-up\">Nhận tư vấn miễn phí</h4>"

@@ -1,0 +1,8 @@
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="row"><div class="col-lg-12"><div class="title-area-center title-g"><p class="pre"><span>사보</span></p><h2 class="title">우리 회사의 내부 이야기</h2></div></div></div>'
+            format: full_html

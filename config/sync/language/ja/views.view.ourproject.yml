@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: '<h2>結果は空です</h2>'
+            format: full_html
+      filters:
+        field_categoryv2_value:
+          expose:
+            label: 国
+        field_growth_value:
+          expose:
+            label: 位置
+        field_category_target_id:
+          expose:
+            label: 業種
+      exposed_form:
+        options:
+          submit_button: 適用する
+          reset_button_label: リセット

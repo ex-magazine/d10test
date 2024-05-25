@@ -1,0 +1,25 @@
+uuid: a9747de7-a05e-447f-9728-2c40aa56173d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.milestone.field_milestone
+    - paragraphs.paragraphs_type.milestone
+  module:
+    - entity_reference_revisions
+id: paragraph.milestone.default
+targetEntityType: paragraph
+bundle: milestone
+mode: default
+content:
+  field_milestone:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  search_api_excerpt: true

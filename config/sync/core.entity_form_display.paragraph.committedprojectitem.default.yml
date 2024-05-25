@@ -1,0 +1,32 @@
+uuid: b4d5a7e3-82c2-491e-bc41-9b2a83d578f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.committedprojectitem.bp_accordion_section_title
+    - field.field.paragraph.committedprojectitem.bp_card_title
+    - paragraphs.paragraphs_type.committedprojectitem
+id: paragraph.committedprojectitem.default
+targetEntityType: paragraph
+bundle: committedprojectitem
+mode: default
+content:
+  bp_accordion_section_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

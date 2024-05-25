@@ -1,0 +1,11 @@
+uuid: aabf4ff9-d1ac-43b9-80d1-8141122cc0d8
+langcode: en
+status: true
+dependencies: {  }
+id: biomass_cmenergy_vn
+domain_id: 9492989
+hostname: biomass.cmenergy.vn
+name: 'CME - Biomass'
+scheme: http
+weight: 5
+is_default: false

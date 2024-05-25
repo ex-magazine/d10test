@@ -1,0 +1,11 @@
+label: '제안된 친환경 프로젝트'
+description: '제안된 친환경 프로젝트'
+display:
+  default:
+    display_options:
+      title: '제안된 친환경 프로젝트'
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>제안된 친환경 프로젝트</h5></div>'
+            format: full_html

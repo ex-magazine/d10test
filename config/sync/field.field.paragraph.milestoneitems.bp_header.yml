@@ -1,0 +1,19 @@
+uuid: f5e8fef0-94ad-4cc9-bec4-31de2887ca00
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_header
+    - paragraphs.paragraphs_type.milestoneitems
+id: paragraph.milestoneitems.bp_header
+field_name: bp_header
+entity_type: paragraph
+bundle: milestoneitems
+label: Header
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

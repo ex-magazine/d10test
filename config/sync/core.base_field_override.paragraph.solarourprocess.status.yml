@@ -1,0 +1,22 @@
+uuid: 33114611-d145-4f8a-9c46-ac787aaf21f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.solarourprocess
+id: paragraph.solarourprocess.status
+field_name: status
+entity_type: paragraph
+bundle: solarourprocess
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

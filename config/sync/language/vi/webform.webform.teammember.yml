@@ -1,0 +1,14 @@
+elements: |
+  your_name:
+    '#placeholder': 'Họ và Tên'
+  your_email:
+    '#placeholder': 'Địa chỉ email'
+  subject:
+    '#title': 'Tiêu đề'
+    '#placeholder': 'Tiêu đề'
+  message:
+    '#title': 'Nội dung'
+    '#placeholder': 'Nội dung'
+  actions:
+    '#title': 'Gửi đi'
+    '#submit__label': 'Gửi đi'

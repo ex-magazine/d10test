@@ -1,0 +1,14 @@
+uuid: 8de2c830-a2f5-4552-bfee-9e258060d15e
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_vn
+  module:
+    - domain_access
+id: domain_access_add_action.biomass_cmenergy_vn
+label: 'Add selected content to the CME - Biomass domain'
+type: node
+plugin: domain_access_add_action
+configuration:
+  domain_id: biomass_cmenergy_vn

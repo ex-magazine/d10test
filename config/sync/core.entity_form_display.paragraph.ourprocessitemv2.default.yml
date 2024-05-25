@@ -1,0 +1,45 @@
+uuid: fe7dc183-54f3-4b4e-b1e0-d7a26027ea32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ourprocessitemv2.bp_card_title
+    - field.field.paragraph.ourprocessitemv2.bp_image_field
+    - field.field.paragraph.ourprocessitemv2.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.ourprocessitemv2
+  module:
+    - image
+    - text
+id: paragraph.ourprocessitemv2.default
+targetEntityType: paragraph
+bundle: ourprocessitemv2
+mode: default
+content:
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_image_field:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

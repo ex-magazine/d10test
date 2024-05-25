@@ -1,0 +1,18 @@
+uuid: f04ae7ea-b9b0-425c-b33d-8ae5365edef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.efficiency
+target_entity_type_id: node
+target_bundle: efficiency
+default_langcode: site_default
+language_alterable: false

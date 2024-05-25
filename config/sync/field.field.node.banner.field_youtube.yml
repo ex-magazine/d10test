@@ -1,0 +1,19 @@
+uuid: 57c50304-4861-4bb4-ae07-8d930bf709c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_youtube
+    - node.type.banner
+id: node.banner.field_youtube
+field_name: field_youtube
+entity_type: node
+bundle: banner
+label: Youtube
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

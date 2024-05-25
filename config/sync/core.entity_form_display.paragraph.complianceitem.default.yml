@@ -1,0 +1,63 @@
+uuid: 4e3ae2c1-4514-4367-9fe5-21f5b89305ec
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.complianceitem.bp_card_image
+    - field.field.paragraph.complianceitem.bp_card_title
+    - field.field.paragraph.complianceitem.bp_modal_title
+    - field.field.paragraph.complianceitem.field_pdf
+    - field.field.paragraph.complianceitem.field_section_content
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.complianceitem
+  module:
+    - file
+    - image
+    - text
+id: paragraph.complianceitem.default
+targetEntityType: paragraph
+bundle: complianceitem
+mode: default
+content:
+  bp_card_image:
+    type: image_image
+    weight: 4
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_modal_title:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pdf:
+    type: file_generic
+    weight: 5
+    region: content
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+  field_section_content:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

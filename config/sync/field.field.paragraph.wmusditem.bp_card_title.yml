@@ -1,0 +1,19 @@
+uuid: a3a66c1d-9f75-4de7-a948-3f09d92d6b6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_card_title
+    - paragraphs.paragraphs_type.wmusditem
+id: paragraph.wmusditem.bp_card_title
+field_name: bp_card_title
+entity_type: paragraph
+bundle: wmusditem
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

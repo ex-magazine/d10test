@@ -5,13 +5,18 @@ dependencies:
   config:
     - field.storage.node.field_paragraphs
     - node.type.landingpage
+    - paragraphs.paragraphs_type.ataglance
     - paragraphs.paragraphs_type.bp_view
     - paragraphs.paragraphs_type.cmenergysection
+    - paragraphs.paragraphs_type.committedproject
+    - paragraphs.paragraphs_type.compliance
     - paragraphs.paragraphs_type.content
     - paragraphs.paragraphs_type.gallery
     - paragraphs.paragraphs_type.hero
     - paragraphs.paragraphs_type.map
+    - paragraphs.paragraphs_type.milestone
     - paragraphs.paragraphs_type.node_reference
+    - paragraphs.paragraphs_type.ourprocessv2
     - paragraphs.paragraphs_type.ourservice3cols
     - paragraphs.paragraphs_type.section
     - paragraphs.paragraphs_type.settings
@@ -25,6 +30,7 @@ dependencies:
     - paragraphs.paragraphs_type.timeline
     - paragraphs.paragraphs_type.wcuagp
     - paragraphs.paragraphs_type.webform
+    - paragraphs.paragraphs_type.whatmakesusdifferent
     - paragraphs.paragraphs_type.whyrooftopsolar
   module:
     - entity_reference_revisions
@@ -35,7 +41,7 @@ bundle: landingpage
 label: Paragraphs
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -53,16 +59,22 @@ settings:
       webform: webform
       bp_view: bp_view
       cmenergysection: cmenergysection
+      ataglance: ataglance
       solarqualityhandymansolution: solarqualityhandymansolution
       ourservice3cols: ourservice3cols
       solar_about_company: solar_about_company
       solaramazingfeedback: solaramazingfeedback
       solar_contact: solar_contact
+      compliance: compliance
+      committedproject: committedproject
       solarcontactus: solarcontactus
       solarourprocess: solarourprocess
       solarwebform: solarwebform
+      milestone: milestone
       whyrooftopsolar: whyrooftopsolar
       wcuagp: wcuagp
+      ourprocessv2: ourprocessv2
+      whatmakesusdifferent: whatmakesusdifferent
     negate: 0
     target_bundles_drag_drop:
       accordion:
@@ -70,6 +82,12 @@ settings:
         enabled: false
       accordion_item:
         weight: 20
+        enabled: false
+      ataglance:
+        weight: 74
+        enabled: true
+      ataglanceitem:
+        weight: 75
         enabled: false
       attachments:
         weight: 21
@@ -155,6 +173,18 @@ settings:
       cmenergysection:
         weight: 71
         enabled: true
+      committedproject:
+        weight: 98
+        enabled: true
+      committedprojectitem:
+        weight: 99
+        enabled: false
+      compliance:
+        weight: 96
+        enabled: true
+      complianceitem:
+        weight: 97
+        enabled: false
       content:
         weight: 25
         enabled: true
@@ -173,8 +203,20 @@ settings:
       map:
         weight: 29
         enabled: true
+      milestone:
+        weight: 110
+        enabled: true
+      milestoneitems:
+        weight: 111
+        enabled: false
       node_reference:
         weight: 30
+        enabled: true
+      ourprocessitemv2:
+        weight: 121
+        enabled: false
+      ourprocessv2:
+        weight: 122
         enabled: true
       ourservice3cols:
         weight: 91
@@ -239,16 +281,25 @@ settings:
       wcuagp:
         weight: 120
         enabled: true
+      wcuagp_items:
+        weight: 127
+        enabled: false
       wcuagpitems:
         weight: 121
         enabled: false
       webform:
         weight: 36
         enabled: true
+      whatmakesusdifferent:
+        weight: 143
+        enabled: true
       whyrooftopsolar:
         weight: 119
         enabled: true
       whyrooftopsolaritems:
         weight: 120
+        enabled: false
+      wmusditem:
+        weight: 146
         enabled: false
 field_type: entity_reference_revisions

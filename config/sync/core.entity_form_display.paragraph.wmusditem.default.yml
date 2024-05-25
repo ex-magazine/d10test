@@ -1,0 +1,45 @@
+uuid: 7d7c69b3-57ac-45ec-ae31-8f832ae6048e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.wmusditem.bp_card_title
+    - field.field.paragraph.wmusditem.bp_image_field
+    - field.field.paragraph.wmusditem.field_text
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.wmusditem
+  module:
+    - image
+    - text
+id: paragraph.wmusditem.default
+targetEntityType: paragraph
+bundle: wmusditem
+mode: default
+content:
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_image_field:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

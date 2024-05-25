@@ -1,0 +1,14 @@
+uuid: 2d42b960-e371-4101-81f4-f3fdcf273c1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_vn
+  module:
+    - domain_access
+id: domain_access_remove_action.biomass_cmenergy_vn
+label: 'Remove selected content from the CME - Biomass domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: biomass_cmenergy_vn

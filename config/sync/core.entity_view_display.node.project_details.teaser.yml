@@ -22,7 +22,7 @@ dependencies:
     - field.field.node.project_details.field_the_challenge_of_project
     - field.field.node.project_details.field_time_to_read
     - field.field.node.project_details.field_youtube
-    - image.style.project424x513
+    - image.style.story424x310
     - node.type.project_details
   module:
     - image
@@ -54,7 +54,7 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: project424x513
+      image_style: story424x310
       image_loading:
         attribute: lazy
     third_party_settings: {  }

@@ -1,0 +1,14 @@
+uuid: 5208016f-7a26-4015-82fa-cc6ac1432b27
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.cmenergy_vn
+  module:
+    - domain_access
+id: domain_access_remove_action.cmenergy_vn
+label: 'Remove selected content from the CME - Copper Mountain Energy domain'
+type: node
+plugin: domain_access_remove_action
+configuration:
+  domain_id: cmenergy_vn

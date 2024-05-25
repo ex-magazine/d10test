@@ -1,0 +1,10 @@
+label: 建议的绿色项目
+description: 建议的绿色项目
+display:
+  default:
+    display_options:
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>建议的绿色项目</h5></div>'
+            format: full_html

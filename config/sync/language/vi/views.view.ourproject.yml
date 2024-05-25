@@ -1,0 +1,22 @@
+display:
+  default:
+    display_options:
+      empty:
+        area:
+          content:
+            value: '<h2>Không có dữ liệu phù hợp</h2>'
+            format: full_html
+      filters:
+        field_categoryv2_value:
+          expose:
+            label: 'Quốc gia'
+        field_growth_value:
+          expose:
+            label: 'Vị trí'
+        field_category_target_id:
+          expose:
+            label: 'Ngành nghề'
+      exposed_form:
+        options:
+          submit_button: 'Áp dụng'
+          reset_button_label: 'Cài lại'

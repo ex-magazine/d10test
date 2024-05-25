@@ -9,7 +9,7 @@ id: block_content.about_company.field_save_world
 field_name: field_save_world
 entity_type: block_content
 bundle: about_company
-label: 'Save World'
+label: 'Liters water saved'
 description: ''
 required: false
 translatable: true

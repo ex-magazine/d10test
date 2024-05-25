@@ -1,0 +1,18 @@
+uuid: 4f2367f5-05ed-41ab-8048-26aa9db26be3
+langcode: en
+status: true
+dependencies:
+  config:
+    - paragraphs.paragraphs_type.complianceitem
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: paragraph.complianceitem
+target_entity_type_id: paragraph
+target_bundle: complianceitem
+default_langcode: site_default
+language_alterable: true

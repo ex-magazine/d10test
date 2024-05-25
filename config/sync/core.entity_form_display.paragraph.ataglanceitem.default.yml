@@ -1,0 +1,52 @@
+uuid: 02a4640e-fd3c-4418-8958-cb44aef9c31f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.ataglanceitem.bp_card_title
+    - field.field.paragraph.ataglanceitem.bp_header
+    - field.field.paragraph.ataglanceitem.bp_statistic_header
+    - field.field.paragraph.ataglanceitem.field_text
+    - paragraphs.paragraphs_type.ataglanceitem
+  module:
+    - text
+id: paragraph.ataglanceitem.default
+targetEntityType: paragraph
+bundle: ataglanceitem
+mode: default
+content:
+  bp_card_title:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_header:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  bp_statistic_header:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_text:
+    type: text_textarea
+    weight: 3
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

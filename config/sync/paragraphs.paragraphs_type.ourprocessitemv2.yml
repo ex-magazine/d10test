@@ -1,0 +1,10 @@
+uuid: 2223432a-0265-4847-9deb-f37a4323b5c3
+langcode: en
+status: true
+dependencies: {  }
+id: ourprocessitemv2
+label: 'Our Process Item v2'
+icon_uuid: null
+icon_default: null
+description: 'Our Process Item v2'
+behavior_plugins: {  }

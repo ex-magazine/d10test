@@ -1,0 +1,10 @@
+uuid: 14a7f557-8b57-41b5-8d08-3373ec561833
+langcode: en
+status: true
+dependencies: {  }
+id: wmusditem
+label: 'What makes us different item'
+icon_uuid: null
+icon_default: null
+description: 'What makes us different item'
+behavior_plugins: {  }

@@ -1,0 +1,37 @@
+uuid: a456e31d-200d-4d2f-8568-030c51bbe0de
+langcode: vi
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: faq
+label: FAQ
+type: 'canonical_entities:node'
+pattern: 'solar-faqs/[node:title]'
+selection_criteria:
+  084416b1-ae74-46ed-9a75-4820e5c4b632:
+    id: 'entity_bundle:node'
+    negate: false
+    uuid: 084416b1-ae74-46ed-9a75-4820e5c4b632
+    context_mapping:
+      node: node
+    bundles:
+      faq: faq
+  36d22ae7-dc4e-4439-b172-c917af5425dd:
+    id: language
+    negate: false
+    uuid: 36d22ae7-dc4e-4439-b172-c917af5425dd
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+      vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: 'Ngôn ngữ'

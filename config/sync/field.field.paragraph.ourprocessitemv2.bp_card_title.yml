@@ -1,0 +1,19 @@
+uuid: 45a4a2b3-1f70-40f5-93f5-e6a8f2ccd5a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.bp_card_title
+    - paragraphs.paragraphs_type.ourprocessitemv2
+id: paragraph.ourprocessitemv2.bp_card_title
+field_name: bp_card_title
+entity_type: paragraph
+bundle: ourprocessitemv2
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

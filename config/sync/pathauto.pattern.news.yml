@@ -8,25 +8,28 @@ dependencies:
 id: news
 label: News
 type: 'canonical_entities:node'
-pattern: 'blog/[node:field_subjects]/[node:title].html'
+pattern: 'media/[node:field_subjects]/[node:title].html'
 selection_criteria:
-  68301a30-f2d6-462d-b0bc-71ca5088bdd4:
+  a874d17f-17b5-4c49-995b-0e1544e1a7a1:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 68301a30-f2d6-462d-b0bc-71ca5088bdd4
+    uuid: a874d17f-17b5-4c49-995b-0e1544e1a7a1
     context_mapping:
       node: node
     bundles:
       news: news
-  e42725f3-e9ef-4dc2-a86a-31a4ef8edee1:
+  63c98212-8edf-4f1c-9e7a-0973194147cb:
     id: language
     negate: false
-    uuid: e42725f3-e9ef-4dc2-a86a-31a4ef8edee1
+    uuid: 63c98212-8edf-4f1c-9e7a-0973194147cb
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
       vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
 selection_logic: and
 weight: -10
 relationships:

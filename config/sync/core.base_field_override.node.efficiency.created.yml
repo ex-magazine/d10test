@@ -1,0 +1,18 @@
+uuid: 5ae11609-764b-4a3c-8051-ba0d6cb89793
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.efficiency
+id: node.efficiency.created
+field_name: created
+entity_type: node
+bundle: efficiency
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

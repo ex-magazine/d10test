@@ -1,0 +1,11 @@
+label: '推奨されるグリーン プロジェクト'
+description: '推奨されるグリーン プロジェクト'
+display:
+  default:
+    display_options:
+      title: '推奨されるグリーン プロジェクト'
+      header:
+        area:
+          content:
+            value: '<div class="sug-header"><h5>推奨されるグリーン プロジェクト</h5></div>'
+            format: full_html

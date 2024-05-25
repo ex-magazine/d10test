@@ -1,0 +1,15 @@
+elements: |
+  your_name:
+    '#placeholder': 你的名字
+  your_email:
+    '#placeholder': 你的邮件
+  select_subject:
+    '#placeholder': 主题
+  type_your_message:
+    '#placeholder': 输入您的信息
+  actions:
+    '#submit__label': 发信息
+    '#update__label': 发信息
+settings:
+  confirmation_url: /zh-hans/cme-solar-zaiciganxienindefankui
+  confirmation_title: 'Cảm ơn'

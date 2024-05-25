@@ -5,6 +5,8 @@ dependencies:
   config:
     - views.view.newsdetails
   module:
+    - block_classes
+    - domain
     - node
     - views
   theme:
@@ -31,3 +33,10 @@ visibility:
       node: '@node.node_route_context:node'
     bundles:
       news: news
+  domain:
+    id: domain
+    negate: false
+    context_mapping:
+      domain: '@domain.current_domain_context:domain'
+    domains:
+      cmesolar_cmenergy_local: cmesolar_cmenergy_local

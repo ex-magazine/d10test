@@ -10,23 +10,26 @@ label: Project
 type: 'canonical_entities:node'
 pattern: 'project/[node:field_category]/[node:title].html'
 selection_criteria:
-  102794d0-0532-47f0-bdf0-0552c655d006:
+  3fdb7658-82ab-4d06-8812-2114bbb7b6a9:
     id: 'entity_bundle:node'
     negate: false
-    uuid: 102794d0-0532-47f0-bdf0-0552c655d006
+    uuid: 3fdb7658-82ab-4d06-8812-2114bbb7b6a9
     context_mapping:
       node: node
     bundles:
       project_details: project_details
-  f7f97368-4dbe-4990-b0e7-7402a9cd8fbf:
+  eff7b4ae-1581-4ed1-b33b-5ea7f11e11f3:
     id: language
     negate: false
-    uuid: f7f97368-4dbe-4990-b0e7-7402a9cd8fbf
+    uuid: eff7b4ae-1581-4ed1-b33b-5ea7f11e11f3
     context_mapping:
       language: 'node:langcode:language'
     langcodes:
       en: en
       vi: vi
+      zh-hans: zh-hans
+      ja: ja
+      ko: ko
 selection_logic: and
 weight: -10
 relationships:

@@ -1,0 +1,14 @@
+uuid: a14ee75b-4983-48a7-99e1-0f426ea70c5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - domain.record.biomass_cmenergy_vn
+  module:
+    - domain_access
+id: domain_access_remove_editor_action.biomass_cmenergy_vn
+label: 'Remove editors from the CME - Biomass domain'
+type: user
+plugin: domain_access_remove_editor_action
+configuration:
+  domain_id: biomass_cmenergy_vn

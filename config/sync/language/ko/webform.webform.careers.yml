@@ -1,0 +1,16 @@
+elements: |
+  your_name:
+    '#title': '당신의 이름'
+    '#placeholder': '당신의 이름'
+  your_email:
+    '#title': '귀하의 이메일'
+    '#placeholder': '귀하의 이메일'
+  message:
+    '#title': '자기 소개서'
+    '#placeholder': '자기 소개서'
+  your_cv:
+    '#title': '귀하의 이력서'
+    '#file_placeholder': '<p>귀하의 이력서</p>'
+  actions:
+    '#title': '내 이력서 보내기'
+    '#submit__label': '내 이력서 보내기'

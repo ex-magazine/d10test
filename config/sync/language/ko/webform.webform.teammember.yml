@@ -1,0 +1,16 @@
+elements: |
+  your_name:
+    '#title': '당신의 이름'
+    '#placeholder': '당신의 이름'
+  your_email:
+    '#title': '귀하의 이메일'
+    '#placeholder': '귀하의 이메일'
+  subject:
+    '#title': 주제
+    '#placeholder': 주제
+  message:
+    '#title': 메시지
+    '#placeholder': 메시지
+  actions:
+    '#title': 제출하다
+    '#submit__label': 제출하다

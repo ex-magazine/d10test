@@ -8,14 +8,18 @@ dependencies:
     - field.field.node.service.field_domain_access
     - field.field.node.service.field_domain_all_affiliates
     - field.field.node.service.field_icon
+    - field.field.node.service.field_icon_svg
     - field.field.node.service.field_image
+    - field.field.node.service.field_linkto
     - field.field.node.service.field_paragraph
     - field.field.node.service.field_servicecategory
     - field.field.node.service.field_svg
-    - image.style.medium
+    - field.field.node.service.field_time_to_read
+    - image.style.story424x310
     - node.type.service
   module:
     - image
+    - link
     - text
     - user
 id: node.service.teaser
@@ -36,20 +40,34 @@ content:
     label: hidden
     settings:
       image_link: content
-      image_style: medium
+      image_style: story424x310
       image_loading:
         attribute: lazy
     third_party_settings: {  }
     weight: 0
+    region: content
+  field_linkto:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden:
   addtoany: true
   field_domain_access: true
   field_domain_all_affiliates: true
   field_icon: true
+  field_icon_svg: true
   field_paragraph: true
   field_servicecategory: true
   field_svg: true
+  field_time_to_read: true
   langcode: true
   links: true
   search_api_excerpt: true

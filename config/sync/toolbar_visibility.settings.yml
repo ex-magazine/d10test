@@ -5,8 +5,7 @@ themes:
   wind: wind
   claro: 0
   stable9: 0
+  bootstrap_italia: 0
   gin: 0
 domains:
   biomass_cmenergy_local: biomass_cmenergy_local
-  cmesolar_cmenergy_local: cmesolar_cmenergy_local
-  wind_cmenergy_local: wind_cmenergy_local
