@@ -10,21 +10,25 @@
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
     {% block content %}     
-    <div class="row g-24">   
-        {% for key, item in content.field_ataglance['#items']  %}       
-            <div class="col-lg-3 col-md-6 cols-md-12 col-12">              
+        <div class="container"> 
+        {% for key, item in content.field_ataglance['#items']  %}     
+        {% if loop.index is odd %}
+            <div class="row g-24">   
+        {% endif %}
+            <div class="col-lg-6 col-md-6 cols-md-12 col-12">              
                 <div class="single-service-solari gl{{key + 1 }}">
-                    <h2><span>{{ item.entity.bp_header.value|raw }}</span><span class="counter">{{ item.entity.bp_card_title.value|number_format }}</span><span>{{ item.entity.bp_statistic_header.value|raw }}</span></h2>      
+                    <h2>{{ item.entity.bp_header.value|raw }}<span class="counter">{{ item.entity.bp_card_title.value|number_format }}</span>{{ item.entity.bp_statistic_header.value|raw }}</h2>      
                     <div class="disc">
                         {{ item.entity.field_text.value|raw }}
                     </div>     
                 </div>
             </div>
+        {% if loop.index is even or loop.last %}
+            </div>
+        {% endif %}
         {% endfor %}
-    </div>
+        </div>
     {% endblock %}
     </div>
-  {% endblock paragraph %}
-  
-  
+{% endblock paragraph %} 
   

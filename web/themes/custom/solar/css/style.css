@@ -15505,6 +15505,12 @@ header.header-four .header-right .action-button-menu #menu-btn {
   .side-bar.header-two .mobile-menu, .side-bar.header-three .mobile-menu {
     display: none !important;
   }
+  .paragraph.paragraph--type--ataglance.paragraph--view-mode--default{
+    position: absolute;
+    right: 0;
+    top: 400px;
+    width: 44%;
+  }
 }
 
 .header-one .main-nav-desk nav ul li.has-droupdown .submenu.inner-page .sub-dropdown {
@@ -20613,7 +20619,7 @@ body.language_en .solar-left-inner-area-cta .button-area .call-btn .info a {
   background-size: cover;
   z-index: 2;
   position: relative;
-  min-height: 344px;
+  min-height: 250px;
 }
 .single-service-solari.two {
   background-image: url(../images/26.png);
@@ -30954,4 +30960,7 @@ figure.caption figcaption{
 .ps-timeline-sec .container-op ol.ps-timeline li.ti-item h4{
   font-size: 20px;
   margin: 10px 0;
+}
+.paragraph.paragraph--type--ataglance.paragraph--view-mode--default .row.g-24{
+  margin-bottom: 24px;
 }
