@@ -1,0 +1,38 @@
+{%
+    set classes = [
+      'paragraph ps-timeline-sec',  
+      'paragraph--type--' ~ paragraph.bundle|clean_class,
+      view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+      not paragraph.isPublished() ? 'paragraph--unpublished'
+    ]
+%}
+
+{% block paragraph %}
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}     
+        <div class="container-op">   
+          <ol class="ps-timeline">
+            {% for key, item in content.field_ourprocessv2['#items']  %}                      
+                <li class="ti-item ti-{{ key }}">
+                    <div class="img-handler-bot">
+                      <img src="{{ file_url(item.entity.bp_image_field.entity.fileuri) }}" 
+                        alt="{{ item.entity.bp_image_field.alt }}" 
+                        title="{{ item.entity.bp_image_field.alt }}" />                         
+                    </div>
+                    <div class="img-deck">
+                      <img src="/themes/custom/solar/images/deck.png" alt="" /> 
+                    </div>
+                    <h4>{{ item.entity.bp_card_title.value|raw }}</h4>   
+                    <div class="ps-bot">
+                      {{ item.entity.field_text.value|raw }}
+                    </div>
+                    <span class="ps-sp-bot">{{ key + 1 }}</span>
+                </li>                
+            {% endfor %}
+          </ol>
+        </div>
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
+  
+  
