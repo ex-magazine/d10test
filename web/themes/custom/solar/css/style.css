@@ -30642,13 +30642,13 @@ figure.caption figcaption{
 .wmud-item-01 {
   display: flex;
   align-items: end;
-  margin-bottom: 7px;
+  margin-bottom: 12px;
 }
 .wmud-item-01-right{
-  flex-basis: 46%;
+  flex-basis: 44%;
 }
 .wmud-item-01-left {
-  flex-basis: 54%;
+  flex-basis: 56%;
 }
 .wmud-item-01-right,
 .wmud-item-01-left {
@@ -31071,4 +31071,10 @@ figure.caption figcaption{
  .tiles .tile:focus .t-des, 
  .tiles .tile:hover .t-des {
   transition-delay: 0.45s;
+}
+.wmud-right {
+  margin-left: 20px;
+}
+.wmud-item-01-left{
+  margin-right: 13px;
 }
