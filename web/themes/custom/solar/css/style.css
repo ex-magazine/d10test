@@ -30966,7 +30966,7 @@ figure.caption figcaption{
   margin-bottom: 24px;
 }
 
-
+ 
 /*
 .rts-single-team-one .inner-content {
   display: flex;
@@ -30979,7 +30979,7 @@ figure.caption figcaption{
   background: linear-gradient(90deg, #1F1F25 0%, rgba(0, 0, 0, 0) 100%);
 } 
 */
-.rts-single-team-one .tiles .tile {
+ .tiles .tile {
   display: inline-block;
   margin: 10px;
   text-align: left;
@@ -30989,7 +30989,7 @@ figure.caption figcaption{
   border-radius: 3px;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
 }
-.rts-single-team-one .tiles .tile:before {
+ .tiles .tile:before {
   content: "";
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
   width: 100%;
@@ -31002,13 +31002,13 @@ figure.caption figcaption{
   transition-property: top, opacity;
   transition-duration: 0.3s;
 }
-.rts-single-team-one .tiles .tile img {
+.tiles .tile img {
   display: block;
   max-width: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
-.rts-single-team-one .tiles .tile .details {
+ .tiles .tile .details {
   font-size: 16px;
   padding: 20px;
   color: #fff;
@@ -31018,7 +31018,7 @@ figure.caption figcaption{
   z-index: 3;
 }
 
-.rts-single-team-one .tiles .tile .details span {
+.tiles .tile .details span {
   display: block;
   opacity: 0;
   position: relative;
@@ -31027,48 +31027,48 @@ figure.caption figcaption{
   transition-duration: 0.3s;
   transition-delay: 0s;
 }
-.rts-single-team-one .tiles .tile .details .title {
+ .tiles .tile .details .title {
   line-height: 1;
   font-weight: 600;  
 }
-.rts-single-team-one .tiles .tile .details span.title{
+ .tiles .tile .details span.title{
   opacity: 1 !important;
   height: 40px;
 }
-.rts-single-team-one .tiles .tile .details .t-des {
+.tiles .tile .details .t-des {
   line-height: 1.2;
   margin-top: 5px;
   font-size: 13px;
   min-height: 100px;
 }
-.rts-single-team-one .tiles .tile .details .info {
+ .tiles .tile .details .info {
   line-height: 1.2;
   margin-top: 5px;
   font-size: 15px;
 }
-.rts-single-team-one .tiles .tile:focus:before,
-.rts-single-team-one .tiles .tile:focus span, 
-.rts-single-team-one .tiles .tile:hover:before,
-.rts-single-team-one .tiles .tile:hover span {
+.tiles .tile:focus:before,
+ .tiles .tile:focus span, 
+ .tiles .tile:hover:before,
+.tiles .tile:hover span {
   opacity: 1;
 }
-.rts-single-team-one .tiles .tile:focus:before, 
-.rts-single-team-one .tiles .tile:hover:before {
+.tiles .tile:focus:before, 
+.tiles .tile:hover:before {
   top: 50%;
 }
-.rts-single-team-one .tiles .tile:focus span,
-.rts-single-team-one .tiles .tile:hover span {
+.tiles .tile:focus span,
+ .tiles .tile:hover span {
   top: 0;
 }
-.rts-single-team-one .tiles .tile:focus .title, 
-.rts-single-team-one .tiles .tile:hover .title {
+ .tiles .tile:focus .title, 
+.tiles .tile:hover .title {
   transition-delay: 0.15s;
 }
-.rts-single-team-one .tiles .tile:focus .info, 
-.rts-single-team-one .tiles .tile:hover .info {
+.tiles .tile:focus .info, 
+.tiles .tile:hover .info {
   transition-delay: 0.25s;
 }
-.rts-single-team-one .tiles .tile:focus .t-des, 
-.rts-single-team-one .tiles .tile:hover .t-des {
+ .tiles .tile:focus .t-des, 
+ .tiles .tile:hover .t-des {
   transition-delay: 0.45s;
 }
