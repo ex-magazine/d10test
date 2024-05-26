@@ -133,6 +133,14 @@ body.language_ko {
   }
 }
 @media only screen and (max-width: 767px) {
+  .cards-container .content{
+    flex-direction: column;
+    text-align: center;
+    align-items: center;    
+  }
+  .cards-container .mil-left {
+    margin-right: 0 !important;
+  }
   body {
     overflow: hidden;
   }
@@ -31080,4 +31088,7 @@ figure.caption figcaption{
 }
 .field--name-field-paragraphs{
   position: relative;
+}
+#block-solar-menuaboutus {
+  margin-bottom: 75px !important;
 }

@@ -140,21 +140,23 @@
                       </div>      
                         <div class="d-none" id="youtube-embed-banner-{{ node.id }}">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/{{ content.field_youtube|render|striptags|trim }}" title="CME Solar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>                
-                      <div class="button-solari-banner-area">                      
-                          <a href="{{ content.field_lean_more.0['#url'] }}" class="rts-btn btn-primary">{{ content.field_lean_more.0['#title'] }}</a>
-                          <div class="vedio-icone d-none">
-                              <a class="video-play-button play-video-banner-{{ node.id }}" href="#">
-                                  <span></span>
-                                  <p class="text">
-                                      {{ 'Intro Video'|t }}
-                                  </p>
-                              </a>
-                              <div class="video-overlay">
-                                  <a class="video-overlay-close">×</a>
-                              </div>
-                          </div>
-                      </div>
+                        </div>    
+                        {% if content.field_lean_more.0['#url'] is not empty %}            
+                        <div class="button-solari-banner-area">                      
+                            <a href="{{ content.field_lean_more.0['#url'] }}" class="rts-btn btn-primary">{{ content.field_lean_more.0['#title'] }}</a>
+                            <div class="vedio-icone d-none">
+                                <a class="video-play-button play-video-banner-{{ node.id }}" href="#">
+                                    <span></span>
+                                    <p class="text">
+                                        {{ 'Intro Video'|t }}
+                                    </p>
+                                </a>
+                                <div class="video-overlay">
+                                    <a class="video-overlay-close">×</a>
+                                </div>
+                            </div>
+                        </div>
+                      {% endif %}
                   </div>
               </div>
           </div>
