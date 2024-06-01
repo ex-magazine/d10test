@@ -15519,6 +15519,9 @@ header.header-four .header-right .action-button-menu #menu-btn {
     top: 270px;
     width: 44%;
   }
+  .view-id-teammember .row.g-4 {
+    --bs-gutter-y: 0.7rem !important;
+  }
 }
 
 .header-one .main-nav-desk nav ul li.has-droupdown .submenu.inner-page .sub-dropdown {
@@ -23794,6 +23797,7 @@ body.language_vi #block-solar-callforhelp{
 }
 .rts-single-wized .single-categories li {
   list-style: none;
+  margin-bottom: 25px;
 }
 .rts-single-wized .single-categories li a {
   display: flex;
@@ -30691,6 +30695,7 @@ figure.caption figcaption{
 .node--view-mode-servicemain.node--type-service .single-service-solari{
   display: flex;
   align-items: center;    
+  min-height: 350px;
 }
 .node--view-mode-servicemain.node--type-service.cils .single-service-solari .icon-area,
 .node--view-mode-servicemain.node--type-service .single-service-solari h2{
@@ -30724,7 +30729,7 @@ figure.caption figcaption{
 @media screen and (max-width: 1024px) {
   .ps-timeline-sec .container-op ol.ps-timeline li.ti-item .img-handler-bot{
     margin-top: 0 !important;
-  }
+  }  
   .ps-timeline-sec .container-op ol.ps-timeline li.ti-item{
     margin: 0 0 30px 0 !important;
   }
@@ -30989,7 +30994,7 @@ figure.caption figcaption{
 */
  .tiles .tile {
   display: inline-block;
-  margin: 10px;
+  margin: 0px;
   text-align: left;
   opacity: 0.99;
   overflow: hidden;
@@ -31024,6 +31029,7 @@ figure.caption figcaption{
   bottom: 0;
   left: 0;
   z-index: 3;
+  min-height: 235px;
 }
 
 .tiles .tile .details span {
