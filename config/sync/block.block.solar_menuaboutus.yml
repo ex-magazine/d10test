@@ -27,4 +27,4 @@ visibility:
   request_path:
     id: request_path
     negate: false
-    pages: "/node/403\r\n/node/404\r\n/node/405\r\n/node/406\r\n/node/407\r\n/node/415"
+    pages: "/node/403\r\n/node/404\r\n/node/405\r\n/node/406\r\n/node/407\r\n/node/415\r\n/careers/*"

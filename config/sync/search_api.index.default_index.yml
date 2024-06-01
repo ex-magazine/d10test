@@ -127,7 +127,6 @@ datasource_settings:
     bundles:
       default: false
       selected:
-        - client
         - customerfeedbacks
         - faq
         - news

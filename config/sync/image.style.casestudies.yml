@@ -1,17 +1,15 @@
 uuid: cdb31fe9-f4e8-4b97-a51d-48f028d03420
 langcode: en
 status: true
-dependencies:
-  module:
-    - focal_point
+dependencies: {  }
 name: casestudies
 label: 'Case Studies'
 effects:
-  7e745657-b1d9-4f2c-aa4b-adda88b5a46c:
-    uuid: 7e745657-b1d9-4f2c-aa4b-adda88b5a46c
-    id: focal_point_scale_and_crop
-    weight: 1
+  07fd0beb-75d0-464c-8c1e-3018de88cb9d:
+    uuid: 07fd0beb-75d0-464c-8c1e-3018de88cb9d
+    id: image_scale_and_crop
+    weight: 2
     data:
       width: 540
       height: 560
-      crop_type: focal_point
+      anchor: left-bottom
