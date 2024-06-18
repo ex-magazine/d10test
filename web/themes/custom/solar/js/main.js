@@ -50,8 +50,8 @@
           drJs.backToTopInit(); 
           drJs.progressAvtivation(); 
           drJs.gsapTextanim(); 
-          drJs.smoothScroll(); 
-          //drJs.preloader();           
+          drJs.smoothScroll();           
+          drJs.preloader();           
           drJs.cartNumberIncDec(); 
           drJs.cartBarshow(); 
 
@@ -1088,23 +1088,24 @@
      
 
       preloader:function(){
-        var preload = $("#elevate-load");
-        function bannerStop() {
-          if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {      
-            document.querySelector(".block_content_banner").classList.add("d-none");
-          }                
-        }          
-        const bannerStopTimeout = setTimeout(bannerStop, 3000);
-        clearTimeout(bannerStopTimeout);
-        if (preload.length){                               
-          window.addEventListener('load',function(){
-            //document.querySelector('#elevate-load').classList.add("loaded");
-            if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {   
-              document.querySelector(".block_content_banner").classList.remove("d-none");
-            }
-          }); 
-        };
-
+        if ($(".page-node-type-landingpage").hasClass("path-frontpage")) {   
+          var preload = $("#elevate-load");
+          function bannerStop() {
+            if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {      
+              document.querySelector(".block_content_banner").classList.add("d-none");
+            }                
+          }          
+          const bannerStopTimeout = setTimeout(bannerStop, 3000);
+          clearTimeout(bannerStopTimeout);
+          if (preload.length){                               
+            window.addEventListener('load',function(){
+              document.querySelector('#elevate-load').classList.add("loaded");
+              if ($("#block-solar-views-block-banner-block-1").hasClass("block-views-blockbanner-block-1")) {   
+                document.querySelector(".block_content_banner").classList.remove("d-none");
+              }
+            }); 
+          };
+        }
       },
       cartNumberIncDec: function(){
         $(document).ready(function(){
